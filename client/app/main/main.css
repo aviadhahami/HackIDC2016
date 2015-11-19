@@ -41,7 +41,7 @@ article {
 
 .overlay-content {
   position: absolute;
-  top: 30%;
+  /*top: 30%;*/
   width: 100%;
   font-size: 36px;
   letter-spacing: 3px;
@@ -81,10 +81,11 @@ article {
   color: white;
   font-size: 2em;
   margin-bottom: 0.3em;
+  margin-top: 0.9em;
 }
 
 #blackOverlay {
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   height: 100%;
   width: 100%;
   position: fixed;
