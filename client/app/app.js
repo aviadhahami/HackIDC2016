@@ -8,8 +8,7 @@ angular.module('hackIdc2016App', [
   'ngMessages',
   'btford.socket-io',
   'ui.router',
-  'ngMaterial',
-  'angularVideoBg'
+  'ngMaterial'
 ])
   .config(function($mdIconProvider) {
     $mdIconProvider
