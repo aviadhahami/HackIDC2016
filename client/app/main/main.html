@@ -2,15 +2,16 @@
 
   <div ng-include="'components/shell/shell.html'"></div>
   <div>
-    <article class="z-index-99">
+    <article class="z-index-99 video-overlay">
       <!--  Content  -->
       <div class="overlay-content" layout="column">
 
-        <h1 style="font-family: 'Roboto', serif; font-weight: 400;color: white;">HackIDC 2016</h1>
-        <a href="#" class="href-overlay fancy-border">Learn More</a>
+        <h1 class=" title-overlay main-title md-headline">HackIDC 2016</h1>
+        <p class="sub-title-overlay md-title">Dream. Big.</p>
+        <a href="#" class="href-overlay"><i class="fa fa-chevron-down fa-3x"></i></a>
       </div>
     </article>
-
+    <div id="dot-matrix"></div>
     <!--  Video is muted & autoplays, placed after major DOM elements for performance & has an image fallback  -->
     <video autoplay loop id="video-background" muted class="blurBG">
       <source src="assets/video/hackidc2k14vid.mp4" type="video/mp4">

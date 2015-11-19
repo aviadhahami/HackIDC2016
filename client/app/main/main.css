@@ -1,3 +1,4 @@
+
 #video-background {
   /*  making the video fullscreen  */
   /*position: fixed;*/
@@ -34,7 +35,7 @@ article {
   left: 0;
   right: 0;
   bottom: 0;
-  border: 10px solid rgba(255, 255, 255, 1);
+  border: 0.1em solid rgba(255, 255, 255, 1);
   margin: 15%;
 }
 
@@ -50,6 +51,10 @@ article {
   z-index: 99;
 }
 
+.video-overlay {
+  background-color: rgba(232, 234, 246, 0.4);
+}
+
 .href-overlay {
   color: white;
   text-decoration: none;
@@ -57,9 +62,32 @@ article {
   margin: 0 auto;
 }
 
-h1 {
-
+.title-overlay {
   color: #fff;
   font-family: Oswald, sans-serif;
   text-align: center;
+}
+
+.sub-title-overlay {
+  color: #fff;
+  font-family: Oswald, sans-serif;
+  text-align: center;
+  margin-top: 0;
+}
+
+.main-title {
+  font-family: 'Roboto', serif;
+  font-weight: 700;
+  color: white;
+  font-size: 2em;
+  margin-bottom: 0.3em;
+}
+
+#dot-matrix {
+  background: url(http://s14.directupload.net/images/111129/44ga9qid.png);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1
 }
