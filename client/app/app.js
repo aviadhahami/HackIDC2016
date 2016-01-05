@@ -7,7 +7,8 @@ angular.module('hackIdcApp', [
   'ngAnimate',
   'ngMessages',
   'ui.router',
-  'ngMaterial'
+  'ngMaterial',
+  'duScroll'
 ])
   .config(function($mdIconProvider) {
     $mdIconProvider
