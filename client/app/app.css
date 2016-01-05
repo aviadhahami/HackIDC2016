@@ -19,6 +19,31 @@
 }
 
 /*Custom style*/
-.static-toolbar{
-  /*position: fixed;*/
+#page {
+  height: 1000px;
+}
+
+header {
+  top: 0;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  height: 100px;
+  background-color: grey;
+}
+
+section {
+  height: 900px;
+  background-color: lightgrey;
+}
+.min{
+  height: 50px;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -o-transition:  all 500ms ease;
+  transition: all 500ms ease;
+}
+.min section {
+  background-color: pink;
 }
