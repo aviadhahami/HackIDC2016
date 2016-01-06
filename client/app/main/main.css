@@ -19,7 +19,7 @@ header {
 section {
   /*TODO : Change to auto*/
   height: auto;
-  min-height: 800px;
+  min-height: 600px;
   background-color: #fefefe;
 }
 .min{
@@ -72,6 +72,18 @@ header .md-display-3,.md-display-1,p{
 
 /*home*/
 #home{
+  line-height:normal;
+  text-align: center;
+}
+#description{
+  line-height:normal;
+  text-align: center;
+}
+#prizes{
+  line-height:normal;
+  text-align: center;
+}
+#sponsors{
   line-height:normal;
   text-align: center;
 }
