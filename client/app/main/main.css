@@ -86,6 +86,7 @@ header .md-display-3,.md-display-1,p{
 #home h1{
   text-align: center;
   color:white;
+  text-shadow: 2px 2px grey;
 }
 #home-content{
   background-color: transparent;
