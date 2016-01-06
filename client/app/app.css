@@ -87,3 +87,6 @@ header .md-display-3,.md-display-1,p{
   -o-transition:  all 400ms ease;
   transition: all 400ms ease;
 }
+.fab-icon{
+  padding-top: 10px;
+}
