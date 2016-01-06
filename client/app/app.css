@@ -81,7 +81,7 @@ header .active a{
 #main-page-content section{
   padding-top:100px;
 }
-.md-display-3,.md-display-1,p{
+header .md-display-3,.md-display-1,p{
   -webkit-transition: all 400ms ease;
   -moz-transition: all 400ms ease;
   -o-transition:  all 400ms ease;

@@ -8,7 +8,8 @@ angular.module('hackIdcApp', [
   'ngMessages',
   'ui.router',
   'ngMaterial',
-  'duScroll'
+  'duScroll',
+  'ng-mfb'
 ])
   .config(function($mdIconProvider) {
     $mdIconProvider

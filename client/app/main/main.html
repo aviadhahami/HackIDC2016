@@ -4,7 +4,7 @@
     <div du-scrollspy="home" flex>
       <p ng-class="{'md-display-2':!boolChangeClass}"><a href="#home" du-smooth-scroll>Home</a></p>
     </div>
-    <div du-scrollspy="description" flex>
+    <div du-scrollspy="  <button mfb-button icon="paper-airplane" label="menu item"></button>" flex>
       <p ng-class="{'md-display-2':!boolChangeClass}"><a href="#description" du-smooth-scroll>Description</a>
       </p>
     </div>
@@ -21,6 +21,15 @@
     </div>
     <div flex="10" ></div>
   </header>
+  <nav ng-if="isMobile" mfb-menu position="br" effect="zoomin" label="Close"
+       active-icon="ion-edit" resting-icon="ion-plus-round"
+       toggling-method="click">
+    <button mfb-button icon="paper-airplane" label="Sponsors"></button>
+    <button mfb-button icon="paper-airplane" label="Prizes"></button>
+    <button mfb-button icon="paper-airplane" label="Description"></button>
+    <button mfb-button icon="paper-airplane" label="Home"></button>
+
+  </nav>
 
 
   <div id="main-page-content">
@@ -30,8 +39,3 @@
     <section id="sponsors">Make %$$%#$</section>
   </div>
 </div>
-<script>
-  window.mobilecheck = function() {
-
-  }
-</script>
