@@ -1,23 +1,25 @@
 <div ng-controller="MainCtrl" layout="column" ng-cloak>
-  <header layout="row" data-header-scroll  ng-class="{min:boolChangeClass}">
+  <header layout="row" data-header-scroll  ng-class="{min:boolChangeClass}" ng-if="!isMobile">
+    <div flex="10"></div>
     <div du-scrollspy="home" flex>
-      <h3><a href="#home" du-smooth-scroll>Home</a></h3>
+      <p ng-class="{'md-display-2':!boolChangeClass}"><a href="#home" du-smooth-scroll>Home</a></p>
     </div>
     <div du-scrollspy="description" flex>
-      <h3><a href="#description" du-smooth-scroll>Description</a>
-      </h3>
+      <p ng-class="{'md-display-2':!boolChangeClass}"><a href="#description" du-smooth-scroll>Description</a>
+      </p>
     </div>
-    <div flex="50">
+    <div flex="20">
       <h1 class="header-title" ng-class="{'md-display-3':!boolChangeClass,'md-title':boolChangeClass,'text-min':boolChangeClass}">
         HackIDC
       </h1>
     </div>
     <div du-scrollspy="prizes" flex>
-      <h3><a href="#prizes" du-smooth-scroll>Prizes</a></h3>
+      <p ng-class="{'md-display-2':!boolChangeClass}"><a href="#prizes" du-smooth-scroll>Prizes</a></p>
     </div>
-    <div du-scrollspy="sponsors" flex>
-      <h3><a href="#sponsors" du-smooth-scroll>sponsors</a></h3>
+    <div du-scrollspy="sponsors" flex layout="column">
+      <p flex ng-class="{'md-display-2':!boolChangeClass}"><a href="#sponsors" du-smooth-scroll>sponsors</a></p>
     </div>
+    <div flex="10" ></div>
   </header>
 
 
@@ -28,3 +30,8 @@
     <section id="sponsors">Make %$$%#$</section>
   </div>
 </div>
+<script>
+  window.mobilecheck = function() {
+
+  }
+</script>
