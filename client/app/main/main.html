@@ -34,7 +34,9 @@
 
   <div id="main-page-content">
     <section id="home">
-      <div class="md-padding">
+      <video-bg video-id="video.id" loop="true" mute="true"  start="22" end="120" content-z-index="500"></video-bg>
+<div style="height: 200px"></div>
+      <div id="home-content" class="md-padding">
         <h1 class="md-display-2" data-ng-model="titles.mainTitle" fittext  data-fittext-max="200">{{titles.mainTitle}}</h1>
 
         <!--<p>-->
@@ -42,7 +44,6 @@
         <!--</p>-->
 
       </div>
-      <video-bg video-id="video.id" loop="true" mute="true"  start="22" end="120" content-z-index="500" allow-click-events="true"></video-bg>
 
     </section>
     <section id="description" class="md-padding">
