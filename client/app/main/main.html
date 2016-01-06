@@ -33,8 +33,7 @@
 
 
   <div id="main-page-content">
-    <section style="height:120px" ng-if="!isMobile"></section>
-    <section id="home">This is home</i></section>
+    <section id="home" ng-style="{'padding-top':!isMobile? '120px' : '0px'}">This is home</i></section>
     <section id="description">some data goes here</section>
     <section id="prizes">PROZESSs</section>
     <section id="sponsors">Make %$$%#$</section>
