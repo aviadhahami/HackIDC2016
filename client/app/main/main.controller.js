@@ -15,7 +15,9 @@ angular.module('hackIdcApp')
       $timeout(function(){
         $scope.titles = {
           mainTitle : 'Welcome to HackIDC 2016',
-          description : 'What is HackIDC?'
+          description : 'What is HackIDC?',
+          prizes : 'Prizes',
+          sponsors : 'Sponsors'
         };
       },50);
 
@@ -24,7 +26,8 @@ angular.module('hackIdcApp')
       }
 
       $scope.scrollTo = function(location){
-        $document.scrollToElementAnimated( angular.element(document.getElementById(location)), 200);
+        var offset = -10;
+        $document.scrollToElementAnimated( angular.element(document.getElementById(location)), offset, 200);
       };
 
     }]);
