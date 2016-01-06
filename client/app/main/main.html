@@ -1,10 +1,30 @@
 <div ng-controller="MainCtrl" layout="column" ng-cloak>
-  <header  data-header-scroll  ng-class="{min:boolChangeClass}">
-   <h1 class="md-display-3 header-title" ng-class="{'text-min':boolChangeClass}">
-     HackIDC
-   </h1>
+  <header layout="row" data-header-scroll  ng-class="{min:boolChangeClass}">
+    <div du-scrollspy="home" flex>
+      <h3><a href="#home" du-smooth-scroll>Home</a></h3>
+    </div>
+    <div du-scrollspy="description" flex>
+      <h3><a href="#description" du-smooth-scroll>Description</a>
+      </h3>
+    </div>
+    <div flex="50">
+      <h1 class="md-display-3 header-title" ng-class="{'text-min':boolChangeClass}">
+        HackIDC
+      </h1>
+    </div>
+    <div du-scrollspy="prizes" flex>
+      <h3><a href="#prizes" du-smooth-scroll>Prizes</a></h3>
+    </div>
+    <div du-scrollspy="sponsors" flex>
+      <h3><a href="#sponsors" du-smooth-scroll>sponsors</a></h3>
+    </div>
   </header>
-  <section></section>
-  <section></section>
-  <section></section> <section></section> <section></section>
+
+
+  <div id="main-page-content">
+    <section id="home">This is home</section>
+    <section id="description">some data goes here</section>
+    <section id="prizes">PROZESSs</section>
+    <section id="sponsors">Make %$$%#$</section>
+  </div>
 </div>
