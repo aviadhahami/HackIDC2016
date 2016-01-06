@@ -1,16 +1,17 @@
 'use strict';
 
 angular.module('hackIdcApp', [
-  'ngCookies',
-  'ngResource',
-  'ngSanitize',
-  'ngAnimate',
-  'ngMessages',
-  'ui.router',
-  'ngMaterial',
-  'duScroll',
-  'ng-mfb'
-])
+    'ngCookies',
+    'ngResource',
+    'ngSanitize',
+    'ngAnimate',
+    'ngMessages',
+    'ui.router',
+    'ngMaterial',
+    'duScroll',
+    'ng-mfb',
+    'ngFitText'
+  ])
   .config(function($mdIconProvider) {
     $mdIconProvider
       .iconSet('action', '../assets/iconsets/action-icons.svg', 24)

@@ -19,7 +19,7 @@ header {
 section {
   /*TODO : Change to auto*/
   height: auto;
-  min-height: 600px;
+  min-height: 900px;
   background-color: #fefefe;
 }
 .min{

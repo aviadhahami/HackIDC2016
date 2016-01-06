@@ -1,8 +1,8 @@
 'use strict';
 
 angular.module('hackIdcApp')
-  .controller('MainCtrl',  ['$scope','$window','$mdUtil','$mdSidenav'
-    ,function ($scope,$window,$mdUtil,$mdSidenav) {
+  .controller('MainCtrl',  ['$scope','$window',
+    function ($scope) {
 
 
       $scope.isMobile = (function () {
@@ -12,10 +12,7 @@ angular.module('hackIdcApp')
           })(navigator.userAgent || navigator.vendor || window.opera);
           return check;}
       )();
-      $scope.toggleRight= function(){
 
-        $mdSidenav('right').toggle();
-
-      };
+      $scope.title = 'This is a title';
 
     }]);
