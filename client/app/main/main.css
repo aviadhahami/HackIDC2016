@@ -78,13 +78,13 @@ header .md-display-3,.md-display-1,p{
 }
 #home{
 line-height:normal;
-  background-color: #00C8BE;
+  background-color: #BBDEFB;
 }
 #home h1{
   text-align: center;
 }
 #description{
-  background-color: #0000FF;
+  background-color: #90CAF9;
   line-height:normal;
   text-align: center;
 }
@@ -92,10 +92,12 @@ line-height:normal;
   text-align: justify;
 }
 #prizes{
+  background-color: #64B5F6;
   line-height:normal;
   text-align: center;
 }
 #sponsors{
+  background: #42A5F5;
   line-height:normal;
   text-align: center;
 }
