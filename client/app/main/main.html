@@ -1,6 +1,6 @@
 <div ng-controller="MainCtrl" layout="column" ng-cloak>
   <header layout="row" data-header-scroll  ng-class="{min:boolChangeClass}" ng-if="!isMobile">
-    <div flex="10"></div>
+    <div flex="5"></div>
     <div du-scrollspy="home" flex>
       <p ng-class="{'md-display-2':!boolChangeClass}"><a href="#home" du-smooth-scroll>Home</a></p>
     </div>
@@ -19,30 +19,32 @@
     <div du-scrollspy="sponsors" flex>
       <p flex ng-class="{'md-display-2':!boolChangeClass}"><a href="#sponsors" du-smooth-scroll>Sponsors</a></p>
     </div>
-    <div flex="10" ></div>
+    <div flex="5" ></div>
   </header>
 
   <nav ng-if="isMobile" mfb-menu position="br" effect="zoomin" label="Close"
        active-icon="" resting-icon="fa fa-bars fa-2x fab-icon"
        toggling-method="click">
-    <button mfb-button icon="fa fa-users fa-2x fab-icon" label="Sponsors" onclick="window.location='#sponsors'"></button>
-    <button mfb-button icon="fa fa-trophy fa-2x fab-icon" label="Prizes" onclick="window.location='#prizes'" ></button>
-    <button mfb-button icon="fa fa-question fa-2x fab-icon" label="Description" onclick="window.location='#description'" ></button>
-    <button mfb-button icon="fa fa-home fa-2x fab-icon" label="Home" onclick="window.location='#home'"></button>
+    <button mfb-button icon="fa fa-users fa-2x fab-icon" label="Sponsors" ng-click="scrollTo('sponsors')"></button>
+    <button mfb-button icon="fa fa-trophy fa-2x fab-icon" label="Prizes" ng-click="scrollTo('prizes')" ></button>
+    <button mfb-button icon="fa fa-question fa-2x fab-icon" label="Description" ng-click="scrollTo('description')"></button>
+    <button mfb-button icon="fa fa-home fa-2x fab-icon" label="Home" ng-click="scrollTo('home')"></button>
   </nav>
 
 
   <div id="main-page-content">
     <section id="home">
 
-      <video-bg video-id="video.id" loop="true" mute="true"  start="22" end="120" content-z-index="500"></video-bg>
+      <video-bg video-id="video.id" loop="true" mobile-image="'assets/images/transparent.png'" mute="true"  start="22" end="120" content-z-index="500"></video-bg>
 
       <div style="height: 200px"></div>
       <div id="home-content" class="md-padding">
         <h1 class="md-display-2" data-ng-model="titles.mainTitle" fittext  data-fittext-max="200">{{titles.mainTitle}}</h1>
       </div>
-      <div id="main-chevron">
-        <i class="fa fa-chevron-down fa-5x"></i>
+      <div id="home-cta" ng-style="{width: isMobile? '60%' : '20%'}">
+        <a href="#description" du-smooth-scroll>
+          <p>Start Hacking</p>
+        </a>
       </div>
     </section>
     <section id="description" class="md-padding">

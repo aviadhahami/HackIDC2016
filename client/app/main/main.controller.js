@@ -1,8 +1,8 @@
 'use strict';
 
 angular.module('hackIdcApp')
-  .controller('MainCtrl',  ['$scope','$window','$timeout',
-    function ($scope,$window,$timeout) {
+  .controller('MainCtrl',  ['$scope','$window','$timeout','$document',
+    function ($scope,$window,$timeout,$document) {
       $scope.isMobile = (function () {
           var check = false;
           (function (a) {
@@ -23,6 +23,8 @@ angular.module('hackIdcApp')
         id : 'h_2iNc_-dDk'
       }
 
-
+      $scope.scrollTo = function(location){
+        $document.scrollToElementAnimated( angular.element(document.getElementById(location)), 200);
+      };
 
     }]);

@@ -89,13 +89,18 @@ header .md-display-3,.md-display-1,p{
 }
 #home-content{
   background-color: transparent;
-  border: 1px solid white;
   width:80%;
   margin:0 auto;
 }
-#main-chevron{
+#home-cta{
   color: white;
-text-align: center;
+  text-align: center;
+  border: 1px solid white;;
+  margin: 0 auto;
+}
+#home-cta a {
+  color: white;
+  text-decoration: none;
 }
 #description{
   background-color: #90CAF9;
