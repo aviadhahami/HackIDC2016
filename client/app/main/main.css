@@ -71,13 +71,25 @@ header .md-display-3,.md-display-1,p{
 }
 
 /*home*/
+
+#main-page-content{
+  margin:0 auto;
+  padding:0;
+}
 #home{
-  line-height:normal;
+line-height:normal;
+  background-color: #00C8BE;
+}
+#home h1{
   text-align: center;
 }
 #description{
+  background-color: #0000FF;
   line-height:normal;
   text-align: center;
+}
+#description p{
+  text-align: justify;
 }
 #prizes{
   line-height:normal;

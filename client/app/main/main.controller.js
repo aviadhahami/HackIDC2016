@@ -1,10 +1,8 @@
 'use strict';
 
 angular.module('hackIdcApp')
-  .controller('MainCtrl',  ['$scope','$window',
-    function ($scope) {
-
-
+  .controller('MainCtrl',  ['$scope','$window','$timeout',
+    function ($scope,$window,$timeout) {
       $scope.isMobile = (function () {
           var check = false;
           (function (a) {
@@ -13,6 +11,12 @@ angular.module('hackIdcApp')
           return check;}
       )();
 
-      $scope.title = 'This is a title';
+      // Workaround for the fittext thing
+      $timeout(function(){
+        $scope.titles = {
+          mainTitle : 'Welcome to HackIDC 2016',
+          description : 'What is HackIDC?'
+        };
+      },50);
 
     }]);

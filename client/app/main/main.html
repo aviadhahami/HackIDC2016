@@ -33,67 +33,46 @@
 
 
   <div id="main-page-content">
-    <section id="home" ng-style="{'margin-top':!isMobile? '120px' : '0px'}">
-      <md-content class="md-padding">
-        <md-card>
-          <md-card-content>
-            <h2 class="md-display-4">Welcome to HackIDC 2016</h2>
-            <p>
-              We're almost ready for you...Stay tuned!
-            </p>
-          </md-card-content>
-        </md-card>
-      </md-content>
+    <section id="home"  class="md-padding">
+      <h1 class="md-display-2" data-ng-model="titles.mainTitle" fittext>{{titles.mainTitle}}</h1>
+      <p>
+        We're almost ready for you...Stay tuned!
+      </p>
     </section>
-    <section id="description" ng-style="{'margin-top':!isMobile? '60px' : '0px'}">
-      <md-content class="md-padding">
-        <md-card>
-          <md-card-content>
-            <input type="text" ng-model="test">
+    <section id="description" class="md-padding">
 
-            <h1 data-ng-model="test" fittext>{{test}}</h1>
-            </span>
+      <h2 class="md-display-2" data-ng-model="titles.description" fittext data-fittext-max="200">{{titles.description}}</h2>
+      </span>
 
-            <p>
-              Lorem ipsum dolor sit amet, novum nobis his at, officiis placerat probatus pri ea. In pro novum consul legimus, cu posse graeci civibus pri. Et vel dico soleat neglegentur, cu qui summo ubique probatus. Sed te affert moderatius scripserit.
+      <p>
+        Lorem ipsum dolor sit amet, novum nobis his at, officiis placerat probatus pri ea. In pro novum consul legimus, cu posse graeci civibus pri. Et vel dico soleat neglegentur, cu qui summo ubique probatus. Sed te affert moderatius scripserit.
 
-              Vis ex libris ocurreret, cum te aeterno laoreet urbanitas. Postea aliquip oporteat sea ex. Et quis partem sit, quo ea libris nominavi urbanitas. Nec ad etiam partem mucius, ad elitr recteque accommodare qui. Ei elitr placerat scriptorem sed, te possit eirmod has. An sit sonet appareat, mei te esse interesset concludaturque, errem dolorem an eam.
+        Vis ex libris ocurreret, cum te aeterno laoreet urbanitas. Postea aliquip oporteat sea ex. Et quis partem sit, quo ea libris nominavi urbanitas. Nec ad etiam partem mucius, ad elitr recteque accommodare qui. Ei elitr placerat scriptorem sed, te possit eirmod has. An sit sonet appareat, mei te esse interesset concludaturque, errem dolorem an eam.
 
-              Ceteros scaevola assueverit vel an, cibo atomorum mel ea, per ut aeque iudicabit. At nam nulla scriptorem, sonet iudicabit has cu. Nominavi adipisci nec ad, id discere dignissim sea. No ornatus iracundia nam, vide atqui theophrastus sed eu, no eam labores omittam.
+        Ceteros scaevola assueverit vel an, cibo atomorum mel ea, per ut aeque iudicabit. At nam nulla scriptorem, sonet iudicabit has cu. Nominavi adipisci nec ad, id discere dignissim sea. No ornatus iracundia nam, vide atqui theophrastus sed eu, no eam labores omittam.
 
-              Saperet appetere invidunt eum cu, nobis aeterno vix ex, fastidii mnesarchum quo et. Vix id accusam corrumpit, invidunt deterruisset est ut. Et has rebum laudem referrentur, sea te omnes melius accusam, saepe accommodare ad nec. Pro no atqui propriae reprehendunt, ne sed autem diceret percipitur. Magna omnes qui ei, an euismod convenire mea.
+        Saperet appetere invidunt eum cu, nobis aeterno vix ex, fastidii mnesarchum quo et. Vix id accusam corrumpit, invidunt deterruisset est ut. Et has rebum laudem referrentur, sea te omnes melius accusam, saepe accommodare ad nec. Pro no atqui propriae reprehendunt, ne sed autem diceret percipitur. Magna omnes qui ei, an euismod convenire mea.
 
-              Falli utinam ad vim, aeterno sanctus mnesarchum te eum. Sed eu ridens putent legendos. Ad mea vide quaeque evertitur, sed cu sale mollis. Mel fugit consulatu ex, lucilius expetenda deterruisset eam an. Ne duo eirmod dissentias. Nullam latine et duo, choro alienum sea cu.
-            </p>
-          </md-card-content>
-        </md-card>
-      </md-content>
+        Falli utinam ad vim, aeterno sanctus mnesarchum te eum. Sed eu ridens putent legendos. Ad mea vide quaeque evertitur, sed cu sale mollis. Mel fugit consulatu ex, lucilius expetenda deterruisset eam an. Ne duo eirmod dissentias. Nullam latine et duo, choro alienum sea cu.
+      </p>
+
     </section>
-    <section id="prizes" ng-style="{'margin-top':!isMobile? '60px' : '0px'}">
-      <md-content class="md-padding">
-        <md-card>
-          <md-card-content>
-            <h2 class="md-display-4">Prizes</h2>
-            <p>
-              Soon..
-            </p>
-          </md-card-content>
-        </md-card>
-      </md-content>
+    <section id="prizes">
+
+      <h2 class="md-display-4">Prizes</h2>
+      <p>
+        Soon..
+      </p>
+
     </section>
-    <section id="sponsors" ng-style="{'margin-top':!isMobile? '60px' : '0px'}">
-      <md-content class="md-padding">
-        <md-card>
-          <md-card-content>
-            <h2 class="md-display-4">Sponsors</h2>
-            <p>
-              Interested in sponsoring?
-              <br>
-              Contact us here : <a href="mailto:sponsors@hackidc.com">sponsors@hackidc.com</a>
-            </p>
-          </md-card-content>
-        </md-card>
-      </md-content>
+    <section id="sponsors" >
+
+      <h2 class="md-display-4">Sponsors</h2>
+      <p>
+        Interested in sponsoring?
+        <br>
+        Contact us here : <a href="mailto:sponsors@hackidc.com">sponsors@hackidc.com</a>
+      </p>
 
     </section>
   </div>
