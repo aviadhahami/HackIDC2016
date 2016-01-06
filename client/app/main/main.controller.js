@@ -19,4 +19,10 @@ angular.module('hackIdcApp')
         };
       },50);
 
+      $scope.video = {
+        id : 'h_2iNc_-dDk'
+      }
+
+
+
     }]);

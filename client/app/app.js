@@ -10,7 +10,8 @@ angular.module('hackIdcApp', [
     'ngMaterial',
     'duScroll',
     'ng-mfb',
-    'ngFitText'
+    'ngFitText',
+  'angularVideoBg'
   ])
   .config(function($mdIconProvider) {
     $mdIconProvider

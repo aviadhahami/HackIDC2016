@@ -77,11 +77,12 @@ header .md-display-3,.md-display-1,p{
   padding:0;
 }
 #home{
-line-height:normal;
+  line-height:normal;
   background-color: #BBDEFB;
 }
 #home h1{
   text-align: center;
+  color:white;
 }
 #description{
   background-color: #90CAF9;
