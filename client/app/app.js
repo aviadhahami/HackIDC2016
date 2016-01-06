@@ -9,7 +9,8 @@ angular.module('hackIdcApp', [
   'ui.router',
   'ngMaterial',
   'duScroll',
-  'ng-mfb'
+  'ng-mfb',
+  'ngFitText'
 ])
   .config(function($mdIconProvider) {
     $mdIconProvider
