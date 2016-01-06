@@ -21,7 +21,7 @@
     </div>
     <div flex="10" ></div>
   </header>
-  
+
   <nav ng-if="isMobile" mfb-menu position="br" effect="zoomin" label="Close"
        active-icon="" resting-icon="fa fa-bars fa-2x fab-icon"
        toggling-method="click">
@@ -33,6 +33,7 @@
 
 
   <div id="main-page-content">
+    <section style="height:120px" ng-if="!isMobile"></section>
     <section id="home">This is home</i></section>
     <section id="description">some data goes here</section>
     <section id="prizes">PROZESSs</section>
