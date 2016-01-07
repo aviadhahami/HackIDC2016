@@ -72,7 +72,9 @@ header .md-display-3,.md-display-1,p{
 .fab-icon{
   padding-top: 12px;
 }
-
+.mfb-component__button--main, .mfb-component__button--child{
+  background: #2196F3;
+}
 /*home*/
 
 #main-page-content{
