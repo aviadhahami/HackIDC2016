@@ -12,7 +12,7 @@ angular.module('hackIdcApp', [
     'ng-mfb',
     'ngFitText',
     'angularVideoBg',
-    'angular-countdown'
+    'timer'
   ])
   .config(function($mdIconProvider) {
     $mdIconProvider
