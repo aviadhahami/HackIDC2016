@@ -12,7 +12,7 @@ angular.module('hackIdcApp')
         })(navigator.userAgent || navigator.vendor || window.opera);
         return check;
       }
-    }
+    };
     // AngularJS will instantiate a singleton by calling "new" on this function
 
   });
