@@ -4,7 +4,6 @@ angular.module('hackIdcApp')
   .controller('MainCtrl',  ['$scope','$window','$timeout','$document','isMobile',
     function ($scope,$window,$timeout,$document,isMobile) {
       $scope.isMobile = isMobile.isMobile();
-      console.log(isMobile);
 
       // Workaround for the fittext thing
       $timeout(function(){
