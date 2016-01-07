@@ -17,11 +17,12 @@
       </h1>
     </div>
     <div du-scrollspy="sponsors" flex>
-      <p flex ng-class="{'md-display-2':!boolChangeClass}"><a href="#sponsors" du-smooth-scroll>Sponsors</a></p>
-    </div>
-    <div du-scrollspy="sponsors" flex>
       <p flex ng-class="{'md-display-2':!boolChangeClass}"><a href="#team" du-smooth-scroll>Team</a></p>
     </div>
+    <div du-scrollspy="sponsors" flex>
+      <p flex ng-class="{'md-display-2':!boolChangeClass}"><a href="#sponsors" du-smooth-scroll>Sponsors</a></p>
+    </div>
+
     <div flex>
       <p flex ng-class="{'md-display-2':!boolChangeClass}">
         <a href="/signup">Sign up</a>
@@ -34,7 +35,7 @@
        active-icon="" resting-icon="fa fa-bars fa-2x fab-icon"
        toggling-method="click">
     <button mfb-button icon="fa fa-users fa-2x fab-icon" label="Sponsors" ng-click="scrollTo('sponsors')"></button>
-    <button mfb-button icon="fa fa-trophy fa-2x fab-icon" label="Team" ng-click="scrollTo('team')" ></button>
+    <!--<button mfb-button icon="fa fa-trophy fa-2x fab-icon" label="Team" ng-click="scrollTo('team')" ></button>-->
     <button mfb-button icon="fa fa-trophy fa-2x fab-icon" label="Prizes" ng-click="scrollTo('prizes')" ></button>
     <button mfb-button icon="fa fa-question fa-2x fab-icon" label="Description" ng-click="scrollTo('description')"></button>
     <button mfb-button icon="fa fa-home fa-2x fab-icon" label="Home" ng-click="scrollTo('home')"></button>
@@ -78,14 +79,12 @@
       </p>
     </section>
     <section id="sponsors"  class="md-padding">
-
       <h2 class="md-display-2" data-ng-model="titles.description" fittext data-fittext-max="70">{{titles.sponsors}}</h2>
       <p>
         Interested in sponsoring?
         <br>
         Contact us here : <a href="mailto:sponsors@hackidc.com">sponsors@hackidc.com</a>
       </p>
-
     </section>
   </div>
 </div>

@@ -84,7 +84,7 @@ header .md-display-3,.md-display-1,p{
 }
 #home{
   line-height:normal;
-  background-color: #BBDEFB;
+  background-color: #E3F2FD;
   padding:0;
 }
 #home div iframe{
@@ -111,7 +111,7 @@ header .md-display-3,.md-display-1,p{
   text-decoration: none;
 }
 #description{
-  background-color: #90CAF9;
+  background-color: #BBDEFB;
   line-height:normal;
   text-align: center;
 }
@@ -121,7 +121,12 @@ header .md-display-3,.md-display-1,p{
   margin: 0 auto;
 }
 #prizes{
-  background-color: #64B5F6;
+  background-color: #90CAF9;
+  line-height:normal;
+  text-align: center;
+}
+#team{
+  background: #64B5F6;
   line-height:normal;
   text-align: center;
 }
@@ -130,3 +135,4 @@ header .md-display-3,.md-display-1,p{
   line-height:normal;
   text-align: center;
 }
+
