@@ -1,0 +1,19 @@
+.singup-container{
+  background-color: white;
+}
+#not-mobile{
+  background-color: white;
+  color: #EF5350;
+  width:90vw;
+  margin:0 auto;
+}
+#not-mobile p{
+  padding:10px;
+  margin:0;
+}
+.signup-mobile{
+  background-color: #EF5350;
+  height:100vh;
+  width: 98vw;;
+  text-align: left;
+}
