@@ -84,7 +84,7 @@ header .md-display-3,.md-display-1,p{
 }
 #home{
   line-height:normal;
-  background-color: #E3F2FD;
+  background-color: #90CAF9;
   padding:0;
 }
 #home div iframe{
@@ -111,7 +111,7 @@ header .md-display-3,.md-display-1,p{
   text-decoration: none;
 }
 #description{
-  background-color: #BBDEFB;
+  background-color: #64B5F6;
   line-height:normal;
   text-align: center;
 }
@@ -121,17 +121,17 @@ header .md-display-3,.md-display-1,p{
   margin: 0 auto;
 }
 #prizes{
-  background-color: #90CAF9;
+  background-color: #42A5F5;
   line-height:normal;
   text-align: center;
 }
 #team{
-  background: #64B5F6;
+  background: #2196F3;
   line-height:normal;
   text-align: center;
 }
 #sponsors{
-  background: #42A5F5;
+  background: #1E88E5;
   line-height:normal;
   text-align: center;
 }
