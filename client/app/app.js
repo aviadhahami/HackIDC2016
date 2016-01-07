@@ -11,7 +11,8 @@ angular.module('hackIdcApp', [
     'duScroll',
     'ng-mfb',
     'ngFitText',
-  'angularVideoBg'
+    'angularVideoBg',
+    'angular-countdown'
   ])
   .config(function($mdIconProvider) {
     $mdIconProvider
