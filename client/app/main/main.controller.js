@@ -16,6 +16,11 @@ angular.module('hackIdcApp')
         };
       },50);
 
+// Flush all changes, one second in
+      $timeout(function(){
+        $scope.$apply();
+      },1000);
+
       $scope.video = {
         id : 'h_2iNc_-dDk'
       };
