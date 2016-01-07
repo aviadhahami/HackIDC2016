@@ -23,9 +23,19 @@
     < Ok, tablets are now allowed
   </code>
 </div>
-<div ng-if="!isMobile" class="singup-container">
+<md-content ng-if="!isMobile" class="singup-container">
 
-  <div ng-if="!isMobile" class="col-md-12">
-    not mobie
+  <div ng-if="!isMobile" class="md-padding signup">
+    <md-card id="timer-card">
+      <md-card-content>
+        <div>
+          <h2 class="md-display-2">
+            Registration will be open in
+          </h2>
+          <timer interval="1000" countdown="2160000 ">{{days}} day{{daysS}}, {{hours}} hour{{hoursS}}, {{minutes}} minute{{minutesS}}, {{seconds}} second{{secondsS}}.</timer>
+        </div>
+
+      </md-card-content>
+    </md-card>
   </div>
-</div>
+</md-content>
