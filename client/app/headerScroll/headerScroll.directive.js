@@ -10,7 +10,12 @@ angular.module('hackIdcApp')
               scope.scrollPosition = 0;
             }
 
-            if (this.pageYOffset > scope.scrollPosition) {
+            //if (this.pageYOffset > scope.scrollPosition) {
+            //  scope.boolChangeClass = true;
+            //} else {
+            //  scope.boolChangeClass = false;
+            //}
+            if (this.pageYOffset > 900) {
               scope.boolChangeClass = true;
             } else {
               scope.boolChangeClass = false;
