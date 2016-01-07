@@ -7,13 +7,18 @@
   width:90vw;
   margin:0 auto;
 }
+#not-mobile-inner-text{
+  color: white;
+  margin:0 auto;
+  padding:15px;
+}
 #not-mobile p{
-  padding:10px;
   margin:0;
+  padding:10px;
 }
 .signup-mobile{
-  background-color: #EF5350;
-  height:100vh;
-  width: 98vw;;
+  background-color: #272822;
+  max-width: 98vw;
+  min-height: 100vh;
   text-align: left;
 }
