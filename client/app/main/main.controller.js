@@ -12,7 +12,8 @@ angular.module('hackIdcApp')
           mainTitle : 'Welcome to HackIDC 2016',
           description : 'What is HackIDC?',
           prizes : 'Prizes',
-          sponsors : 'Sponsors'
+          sponsors : 'Sponsors',
+          team : 'Team'
         };
       },50);
 

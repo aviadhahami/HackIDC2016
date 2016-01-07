@@ -80,10 +80,15 @@ header .md-display-3,.md-display-1,p{
 #main-page-content{
   margin:0 auto;
   padding:0;
+  width:100%;
 }
 #home{
   line-height:normal;
   background-color: #BBDEFB;
+  padding:0;
+}
+#home div iframe{
+  width:100vw;
 }
 #home h1{
   text-align: center;
@@ -111,7 +116,7 @@ header .md-display-3,.md-display-1,p{
   text-align: center;
 }
 #description p{
-  text-align: justify;
+  text-align: center;
   width: 80%;
   margin: 0 auto;
 }

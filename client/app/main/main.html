@@ -1,6 +1,6 @@
 <div ng-controller="MainCtrl" layout="column" ng-cloak>
   <header layout="row" data-header-scroll  ng-class="{min:boolChangeClass}" ng-if="!isMobile">
-    <div flex="5"></div>
+    <div flex="1"></div>
     <div du-scrollspy="home" flex>
       <p ng-class="{'md-display-2':!boolChangeClass}"><a href="#home" du-smooth-scroll>Home</a></p>
     </div>
@@ -8,32 +8,41 @@
       <p ng-class="{'md-display-2':!boolChangeClass}"><a href="#description" du-smooth-scroll>Description</a>
       </p>
     </div>
+    <div du-scrollspy="prizes" flex>
+      <p ng-class="{'md-display-2':!boolChangeClass}"><a href="#prizes" du-smooth-scroll>Prizes</a></p>
+    </div>
     <div flex="20">
       <h1 class="header-title" ng-class="{'md-display-3':!boolChangeClass,'md-title':boolChangeClass,'text-min':boolChangeClass}">
         HackIDC
       </h1>
     </div>
-    <div du-scrollspy="prizes" flex>
-      <p ng-class="{'md-display-2':!boolChangeClass}"><a href="#prizes" du-smooth-scroll>Prizes</a></p>
-    </div>
     <div du-scrollspy="sponsors" flex>
       <p flex ng-class="{'md-display-2':!boolChangeClass}"><a href="#sponsors" du-smooth-scroll>Sponsors</a></p>
     </div>
-    <div flex="5" ></div>
+    <div du-scrollspy="sponsors" flex>
+      <p flex ng-class="{'md-display-2':!boolChangeClass}"><a href="#team" du-smooth-scroll>Team</a></p>
+    </div>
+    <div flex>
+      <p flex ng-class="{'md-display-2':!boolChangeClass}">
+        <a href="/signup">Sign up</a>
+      </p>
+    </div>
+    <div flex="1" ></div>
   </header>
 
   <nav ng-if="isMobile" mfb-menu position="br" effect="zoomin" label="Close"
        active-icon="" resting-icon="fa fa-bars fa-2x fab-icon"
        toggling-method="click">
     <button mfb-button icon="fa fa-users fa-2x fab-icon" label="Sponsors" ng-click="scrollTo('sponsors')"></button>
+    <button mfb-button icon="fa fa-trophy fa-2x fab-icon" label="Team" ng-click="scrollTo('team')" ></button>
     <button mfb-button icon="fa fa-trophy fa-2x fab-icon" label="Prizes" ng-click="scrollTo('prizes')" ></button>
     <button mfb-button icon="fa fa-question fa-2x fab-icon" label="Description" ng-click="scrollTo('description')"></button>
     <button mfb-button icon="fa fa-home fa-2x fab-icon" label="Home" ng-click="scrollTo('home')"></button>
   </nav>
 
 
-  <div id="main-page-content">
-    <section id="home">
+  <div id="main-page-content" class="md-padding">
+    <section id="home" class="md-padding">
       <video-bg video-id="video.id" loop="true" mobile-image="'assets/images/transparent.png'" mute="true"  start="22" end="120" content-z-index="500"></video-bg>
 
       <div style="height: 200px"></div>
@@ -52,25 +61,21 @@
       </span>
 
       <p>
-        Lorem ipsum dolor sit amet, novum nobis his at, officiis placerat probatus pri ea. In pro novum consul legimus, cu posse graeci civibus pri. Et vel dico soleat neglegentur, cu qui summo ubique probatus. Sed te affert moderatius scripserit.
-
-        Vis ex libris ocurreret, cum te aeterno laoreet urbanitas. Postea aliquip oporteat sea ex. Et quis partem sit, quo ea libris nominavi urbanitas. Nec ad etiam partem mucius, ad elitr recteque accommodare qui. Ei elitr placerat scriptorem sed, te possit eirmod has. An sit sonet appareat, mei te esse interesset concludaturque, errem dolorem an eam.
-
-        Ceteros scaevola assueverit vel an, cibo atomorum mel ea, per ut aeque iudicabit. At nam nulla scriptorem, sonet iudicabit has cu. Nominavi adipisci nec ad, id discere dignissim sea. No ornatus iracundia nam, vide atqui theophrastus sed eu, no eam labores omittam.
-
-        Saperet appetere invidunt eum cu, nobis aeterno vix ex, fastidii mnesarchum quo et. Vix id accusam corrumpit, invidunt deterruisset est ut. Et has rebum laudem referrentur, sea te omnes melius accusam, saepe accommodare ad nec. Pro no atqui propriae reprehendunt, ne sed autem diceret percipitur. Magna omnes qui ei, an euismod convenire mea.
-
-        Falli utinam ad vim, aeterno sanctus mnesarchum te eum. Sed eu ridens putent legendos. Ad mea vide quaeque evertitur, sed cu sale mollis. Mel fugit consulatu ex, lucilius expetenda deterruisset eam an. Ne duo eirmod dissentias. Nullam latine et duo, choro alienum sea cu.
+        Soon to be typed..
       </p>
 
     </section>
     <section id="prizes" class="md-padding">
-
       <h2 class="md-display-2" data-ng-model="titles.description" fittext data-fittext-max="70">{{titles.prizes}}</h2>
       <p>
-        TBA
+        To be announced
       </p>
-
+    </section>
+    <section id="team" class="md-padding">
+      <h2 class="md-display-2" data-ng-model="titles.team" fittext data-fittext-max="70">{{titles.team}}</h2>
+      <p>
+       Team members
+      </p>
     </section>
     <section id="sponsors"  class="md-padding">
 

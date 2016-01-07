@@ -25,9 +25,10 @@
 .signup{
   background-color: #BBDEFB;
   min-height:97vh;
-  text-align: center;
+
 }
 #timer-card{
   width:50%;
   margin: 0 auto;
+  text-align: center;
 }
