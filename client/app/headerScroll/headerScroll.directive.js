@@ -15,11 +15,13 @@ angular.module('hackIdcApp')
             //} else {
             //  scope.boolChangeClass = false;
             //}
-            if (this.pageYOffset > 900) {
-              scope.boolChangeClass = true;
-            } else {
-              scope.boolChangeClass = false;
-            }
+            // Will check if we're on the top or not
+            //if (this.pageYOffset > 600) {
+            //  scope.boolChangeClass = true;
+            //} else {
+            //  scope.boolChangeClass = false;
+            //}
+            scope.boolChangeClass = this.pageYOffset > 600 ? true : false;
             scope.scrollPosition = this.pageYOffset;
             scope.$apply();
           }
