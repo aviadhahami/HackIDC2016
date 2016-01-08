@@ -61,9 +61,9 @@
       <h2 class="md-display-2" data-ng-model="titles.description" fittext data-fittext-max="70">{{titles.description}}</h2>
       </span>
 
-      <p>
-        Soon to be typed..
-      </p>
+      <p data-fittext data-fittext-max="{{isMobile ? 20 : 50}}" data-ng-model="content.descriptionContent">
+        {{content.descriptionContent}}
+       </p>
 
     </section>
     <section id="prizes" class="md-padding">
