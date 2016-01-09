@@ -87,9 +87,7 @@ header .md-display-3,.md-display-1,p{
   line-height:normal;
   background-color: #90CAF9;
   padding:0;
-}
-#home div iframe{
-  width:100vw;
+  height:90vh;
 }
 #home h1{
   text-align: center;
@@ -112,13 +110,21 @@ header .md-display-3,.md-display-1,p{
   text-decoration: none;
 }
 #description{
-  background-color: #64B5F6;
+  background-color: #fefefe;
   line-height:normal;
   text-align: center;
 }
+#description h2{
+  color: rgba(0, 0, 0, 0.87);
+}
 #description p{
+  color: rgba(0, 0, 0, 0.6);
   text-align: justify;
   width: 80%;
+  margin: 0 auto;
+}
+#description-cards{
+  width:80%;
   margin: 0 auto;
 }
 #prizes{

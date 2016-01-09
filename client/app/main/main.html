@@ -46,7 +46,7 @@
     <section id="home" class="md-padding">
       <video-bg video-id="video.id" loop="true" mobile-image="'assets/images/transparent.png'" mute="true"  start="22" end="120" content-z-index="500"></video-bg>
 
-      <div style="height: 150px"></div>
+      <div style="height: 200px"></div>
       <div id="home-content" class="md-padding">
         <h1 class="md-display-2" data-ng-model="titles.mainTitle" fittext data-fittext-max="200">{{titles.mainTitle}}</h1>
       </div>
@@ -64,7 +64,37 @@
       <p data-fittext data-fittext-max="{{isMobile ? 20 : 50}}" data-ng-model="content.descriptionContent">
         {{content.descriptionContent}}
       </p>
+      <div id="description-cards">
+        <md-content class="md-padding">
+          <md-tabs md-dynamic-height md-border-bottom md-stretch-tabs="always">
+            <md-tab label="Pricing">
+              <md-content class="md-padding">
+                <h1 class="md-display-2">Does it cost anything to participate?</h1>
+                <p>
+                  Nope, It’s totally free! We’ll also take care of provide you with a the best food available, a lot of swag and a place to sleep when you need a break from coding.
+                </p>
+               </md-content>
+            </md-tab>
+            <md-tab label="register">
+              <md-content class="md-padding">
+                <h1 class="md-display-2">Who can register?
+                </h1>
+            <p>
+              If you are an active student (e.g. have a student ID) in any academic institute in Israel or abroad, feel free to register ! Most participants should have some background knowledge of programming/hardware/graphic design to make sure they can contribute to the event. You are still encouraged to register if you are not from these fields but believe you are relevant.
 
+            </p>
+                   </md-content>
+            </md-tab>
+            <md-tab label="work">
+              <md-content class="md-padding">
+                <h1 class="md-display-2">What am i expected to build in 36 hours?</h1>
+
+             <p>36 hours isn’t much, but surely enough to bring something to life. You are expected to finish a first version of your product within that time. This can be a demo, POC or beta version, but it must work and must be finished in time.</p>
+               </md-content>
+            </md-tab>
+          </md-tabs>
+        </md-content>
+      </div>
     </section>
     <section id="prizes" class="md-padding">
       <h2 class="md-display-2" data-ng-model="titles.description" fittext data-fittext-max="70">{{titles.prizes}}</h2>
