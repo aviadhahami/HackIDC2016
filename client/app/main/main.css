@@ -1,3 +1,8 @@
+
+html{
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
 #page {
   height: 1000px;
 }
@@ -88,6 +93,9 @@ header .md-display-3,.md-display-1,p{
   background-color: #90CAF9;
   padding:0;
   height:90vh;
+}
+section#home{
+  width:100vw;
 }
 #home h1{
   text-align: center;
