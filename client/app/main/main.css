@@ -81,6 +81,11 @@ header .md-display-3,.md-display-1,p{
 .mfb-component__button--main, .mfb-component__button--child{
   background: #2196F3;
 }
+
+#hackidc-logo{
+  width:100%;
+}
+
 /*home*/
 
 #main-page-content{
