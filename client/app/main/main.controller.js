@@ -4,6 +4,9 @@ angular.module('hackIdcApp')
   .controller('MainCtrl',  ['$scope','$window','$timeout','$document','isMobile',
     function ($scope,$window,$timeout,$document,isMobile) {
       $scope.isMobile = isMobile.isMobile();
+
+
+
       // Workaround for the fittext thing
       $timeout(function(){
         $scope.titles = {
@@ -16,7 +19,7 @@ angular.module('hackIdcApp')
         $scope.content= {
           descriptionContent : "HackIDC is the first national student hackathon in Israel. It is the biggest hackathon in Israel and it’s run by students from the IDC. This hackathon is an event that brings together software,hardware, and design enthusiasts to create new and innovative applications or services from scratch in 36 hours. It is an opportunity to meet and learn from people from different backgrounds and schools and an opportunity to learn from mentors that come from the top companies in the high tech industry in Israel. Ultimately it is a fun & professional experience."
         };
-      },50);
+      },1000);
 
 // Flush all changes, one second in
       $timeout(function(){
