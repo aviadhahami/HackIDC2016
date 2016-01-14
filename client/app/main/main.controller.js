@@ -54,6 +54,73 @@ angular.module('hackIdcApp')
           action : scrollTo,
           actionArgs: '#prizes'
         },
+        // Dummies
+        {
+          iconClass: 'fa-trophy',
+          label : 'prizes',
+          action : scrollTo,
+          actionArgs: '#prizes'
+        },  {
+          iconClass: 'fa-trophy',
+          label : 'prizes',
+          action : scrollTo,
+          actionArgs: '#prizes'
+        },  {
+          iconClass: 'fa-trophy',
+          label : 'prizes',
+          action : scrollTo,
+          actionArgs: '#prizes'
+        },  {
+          iconClass: 'fa-trophy',
+          label : 'prizes',
+          action : scrollTo,
+          actionArgs: '#prizes'
+        },  {
+          iconClass: 'fa-trophy',
+          label : 'prizes',
+          action : scrollTo,
+          actionArgs: '#prizes'
+        },  {
+          iconClass: 'fa-trophy',
+          label : 'prizes',
+          action : scrollTo,
+          actionArgs: '#prizes'
+        },  {
+          iconClass: 'fa-trophy',
+          label : 'prizes',
+          action : scrollTo,
+          actionArgs: '#prizes'
+        },  {
+          iconClass: 'fa-trophy',
+          label : 'prizes',
+          action : scrollTo,
+          actionArgs: '#prizes'
+        },  {
+          iconClass: 'fa-trophy',
+          label : 'prizes',
+          action : scrollTo,
+          actionArgs: '#prizes'
+        },  {
+          iconClass: 'fa-trophy',
+          label : 'prizes',
+          action : scrollTo,
+          actionArgs: '#prizes'
+        },  {
+          iconClass: 'fa-trophy',
+          label : 'prizes',
+          action : scrollTo,
+          actionArgs: '#prizes'
+        },  {
+          iconClass: 'fa-trophy',
+          label : 'prizes',
+          action : scrollTo,
+          actionArgs: '#prizes'
+        },  {
+          iconClass: 'fa-trophy',
+          label : 'prizes',
+          action : scrollTo,
+          actionArgs: '#prizes'
+        },
       ];
 
     }]);

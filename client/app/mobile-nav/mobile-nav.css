@@ -23,9 +23,16 @@
   color: white;
   text-align: center;
 }
+#grid-bg div div div{
+ padding-bottom: 10px;
+}
 #grid-bg div div div button{
   margin:0 auto;
 }
 .fa-center{
   padding-top:15px;
+}
+.inner-grid{
+  height:75vh;
+  overflow-y: scroll;
 }
