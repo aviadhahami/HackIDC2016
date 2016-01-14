@@ -12,7 +12,7 @@ angular.module('hackIdcApp')
         var pageBody = angular.element($document[0].body);
 
         scope.bgColor = attrs.triggerFabColor || 'rgb(255,87,34)';
-        scope.bgGridColor = attrs.bgGridColor || 'rgba(0,0,0,0.5)';
+        scope.bgGridColor = attrs.bgGridColor || 'rgba(1,1,1,0.9';
 
 
 
