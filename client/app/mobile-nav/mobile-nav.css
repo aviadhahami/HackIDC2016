@@ -13,11 +13,18 @@
   -o-transition: opacity 0.2s linear;
   -ms-transition: opacity 0.2s linear;
 
-  padding:20px;
+  padding:20px 0 0 0 ;
   position: fixed;
   width:100vw;
   height: 100vh;
   opacity:0;
+}
+#grid-bg div div div span{
+  color: white;
+  text-align: center;
+}
+#grid-bg div div div button{
+  margin:0 auto;
 }
 .fa-center{
   padding-top:15px;
