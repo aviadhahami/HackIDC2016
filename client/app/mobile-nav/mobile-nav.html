@@ -1,7 +1,7 @@
 <div class="grid-bg" id="grid-bg" ng-style="{'background-color':bgGridColor}"></div>
 <div class="mobile-nav-container">
-  <md-button class="md-fab" ng-style="{'background-color':bgColor}" ng-click="toggleGrid()">
-   <i class="fa fa-bars fa-2x bars-center"></i>
+  <md-button class="md-fab" id='grid-trigger' ng-style="{'background-color':bgColor}" ng-click="toggleGrid()">
+    <i class="fa fa-2x fa-center" ng-class="{'fa-bars':!isGridVisible, 'fa-times' : isGridVisible}"></i>
   </md-button>
 
 </div>
