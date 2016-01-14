@@ -5,3 +5,9 @@
   padding-bottom:5vh;
   padding-right:5vw;
 }
+.grid-bg{
+  position: fixed;
+  width:100vw;
+  height: 100vh;
+  display:none;
+}
