@@ -3,7 +3,7 @@
   <div class="inner-grid">
     <div ng-repeat="link in links track by $index">
       <div layout="row" layout-xs="row" ng-if="$index % 3 === 0">
-        <div flex="33" layout="column">
+        <div flex="33" ng-if="!!links[$index]" layout="column">
           <md-button class="md-fab" ng-click="links[$index].action(links[$index].actionArgs)">
             <i class="fa fa-2x fa-center" ng-class="links[$index].iconClass"></i>
           </md-button>
@@ -11,7 +11,7 @@
           {{links[$index].label}}
           </span>
         </div>
-        <div flex="33" layout="column">
+        <div flex="33" ng-if="!!links[$index+1]" layout="column">
           <md-button class="md-fab" ng-click="links[$index+1].action(links[$index+1].actionArgs)">
             <i class="fa fa-2x fa-center" ng-class="links[$index+1].iconClass"></i>
           </md-button>
@@ -19,7 +19,7 @@
           {{links[$index+1].label}}
         </span>
         </div>
-        <div flex="33" layout="column">
+        <div flex="33" ng-if="!!links[$index+2]" layout="column">
           <md-button class="md-fab" ng-click="links[$index+2].action(links[$index+2].actionArgs)">
             <i class="fa fa-2x fa-center" ng-class="links[$index+2].iconClass"></i>
           </md-button>
@@ -29,10 +29,6 @@
         </div>
       </div>
     </div>
-
-
-
-
   </div>
 </div>
 
