@@ -6,6 +6,7 @@ angular.module('hackIdcApp')
       templateUrl: 'app/mobile-nav/mobile-nav.html',
       restrict: 'E',
       link: function (scope, element, attrs) {
+        scope.isGridVisible = false;
         var links = attrs.links;
         var gridContainer = angular.element(element[0].querySelector('#grid-bg'));
         var pageBody = angular.element($document[0].body);
@@ -15,13 +16,22 @@ angular.module('hackIdcApp')
 
 
 
-        scope.displayGrid = function(){
-
-          gridContainer.css('display','block');
-          pageBody.css('overflow','hidden');
+        scope.toggleGrid = function(){
+          if(scope.isGridVisible){
+            hideGrid()
+          }else{
+            displayGrid()
+          }
         };
-        scope.hideGrid = function(){
-          gridContainer.css('display','none');
+        var displayGrid = function(){
+          scope.isGridVisible =true;
+          gridContainer.css('opacity','1');
+          pageBody.css('overflow','hidden');
+
+        };
+        var hideGrid = function(){
+          scope.isGridVisible=false;
+          gridContainer.css('opacity','0');
           pageBody.css('overflow','auto');
         };
       }
