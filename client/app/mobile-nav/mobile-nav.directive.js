@@ -7,7 +7,7 @@ angular.module('hackIdcApp')
       restrict: 'E',
       link: function (scope, element, attrs) {
         scope.isGridVisible = false;
-        var links = attrs.links;
+        scope.links = attrs.links;
         var gridContainer = angular.element(element[0].querySelector('#grid-bg'));
         var pageBody = angular.element($document[0].body);
 
