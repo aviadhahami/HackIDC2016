@@ -5,9 +5,15 @@ angular.module('hackIdcApp')
     return {
       templateUrl: 'app/mobile-nav/mobile-nav.html',
       restrict: 'E',
+      scope:{
+        links: '='
+      },
       link: function (scope, element, attrs) {
         scope.isGridVisible = false;
-        scope.links = attrs.links;
+        //scope.links = attrs.links;
+
+        console.log(scope.links);
+
         var gridContainer = angular.element(element[0].querySelector('#grid-bg'));
         var pageBody = angular.element($document[0].body);
 

@@ -35,4 +35,25 @@ angular.module('hackIdcApp')
         $document.scrollToElementAnimated( angular.element(document.getElementById(location)), offset, 200);
       };
 
+      $scope.mobileLinks = [
+        {
+          iconClass: 'fa-home',
+          label : 'home',
+          action : scrollTo,
+          actionArgs: '#home'
+        },
+        {
+          iconClass: 'fa-info',
+          label : 'description',
+          action : scrollTo,
+          actionArgs: '#description'
+        },
+        {
+          iconClass: 'fa-trophy',
+          label : 'prizes',
+          action : scrollTo,
+          actionArgs: '#prizes'
+        },
+      ];
+
     }]);
