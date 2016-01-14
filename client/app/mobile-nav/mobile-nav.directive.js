@@ -29,15 +29,14 @@ angular.module('hackIdcApp')
         };
         var displayGrid = function(){
           scope.isGridVisible =true;
-          gridContainer.css('width','100vw');
+          gridContainer.css('left','0');
+          gridContainer.css('opacity','1');
           pageBody.css('overflow','hidden');
-
         };
         var hideGrid = function(){
           scope.isGridVisible=false;
-          gridContainer.css('width','0');
-
-
+          gridContainer.css('left','100%');
+          gridContainer.css('opacity','0');
           pageBody.css('overflow','auto');
         };
       }

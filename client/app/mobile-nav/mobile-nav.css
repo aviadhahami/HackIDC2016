@@ -8,16 +8,18 @@
 }
 
 .grid-bg{
-  transition: all 0.2s linear;
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  -ms-transition: all 0.2s linear;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
 
   padding:20px 0 0 0 ;
   position: fixed;
-  width:0;
+  width:100vw;
   height: 100vh;
+  left:100%;
+  opacity:0;
 }
 #grid-bg div div div span{
   color: white;
