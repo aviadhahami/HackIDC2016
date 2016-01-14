@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('hackIdcApp')
-  .directive('mobileNav', ['$document',function ($document) {
+  .directive('mobileNav', ['$document','$timeout',function ($document,$timeout) {
     return {
       templateUrl: 'app/mobile-nav/mobile-nav.html',
       restrict: 'E',
@@ -20,8 +20,6 @@ angular.module('hackIdcApp')
         scope.bgColor = attrs.triggerFabColor || 'rgb(255,87,34)';
         scope.bgGridColor = attrs.bgGridColor || 'rgba(1,1,1,0.9';
 
-
-
         scope.toggleGrid = function(){
           if(scope.isGridVisible){
             hideGrid()
@@ -31,13 +29,15 @@ angular.module('hackIdcApp')
         };
         var displayGrid = function(){
           scope.isGridVisible =true;
-          gridContainer.css('opacity','1');
+          gridContainer.css('width','100vw');
           pageBody.css('overflow','hidden');
 
         };
         var hideGrid = function(){
           scope.isGridVisible=false;
-          gridContainer.css('opacity','0');
+          gridContainer.css('width','0');
+
+
           pageBody.css('overflow','auto');
         };
       }

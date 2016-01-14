@@ -1,8 +1,8 @@
 'use strict';
 
 angular.module('hackIdcApp')
-  .controller('MainCtrl',  ['$scope','$window','$timeout','$document','isMobile',
-    function ($scope,$window,$timeout,$document,isMobile) {
+  .controller('MainCtrl',  ['$scope','$window','$timeout','$document','isMobile','$location',
+    function ($scope,$window,$timeout,$document,isMobile,$location) {
       $scope.isMobile = isMobile.isMobile();
 
 
@@ -39,88 +39,29 @@ angular.module('hackIdcApp')
         {
           iconClass: 'fa-home',
           label : 'home',
-          action : scrollTo,
+          action : $scope.scrollTo,
           actionArgs: '#home'
         },
         {
           iconClass: 'fa-info',
           label : 'description',
-          action : scrollTo,
+          action : $scope.scrollTo,
           actionArgs: '#description'
         },
         {
           iconClass: 'fa-trophy',
           label : 'prizes',
-          action : scrollTo,
+          action : $scope.scrollTo,
           actionArgs: '#prizes'
         },
-        // Dummies
         {
           iconClass: 'fa-trophy',
-          label : 'prizes',
-          action : scrollTo,
-          actionArgs: '#prizes'
-        },  {
-          iconClass: 'fa-trophy',
-          label : 'prizes',
-          action : scrollTo,
-          actionArgs: '#prizes'
-        },  {
-          iconClass: 'fa-trophy',
-          label : 'prizes',
-          action : scrollTo,
-          actionArgs: '#prizes'
-        },  {
-          iconClass: 'fa-trophy',
-          label : 'prizes',
-          action : scrollTo,
-          actionArgs: '#prizes'
-        },  {
-          iconClass: 'fa-trophy',
-          label : 'prizes',
-          action : scrollTo,
-          actionArgs: '#prizes'
-        },  {
-          iconClass: 'fa-trophy',
-          label : 'prizes',
-          action : scrollTo,
-          actionArgs: '#prizes'
-        },  {
-          iconClass: 'fa-trophy',
-          label : 'prizes',
-          action : scrollTo,
-          actionArgs: '#prizes'
-        },  {
-          iconClass: 'fa-trophy',
-          label : 'prizes',
-          action : scrollTo,
-          actionArgs: '#prizes'
-        },  {
-          iconClass: 'fa-trophy',
-          label : 'prizes',
-          action : scrollTo,
-          actionArgs: '#prizes'
-        },  {
-          iconClass: 'fa-trophy',
-          label : 'prizes',
-          action : scrollTo,
-          actionArgs: '#prizes'
-        },  {
-          iconClass: 'fa-trophy',
-          label : 'prizes',
-          action : scrollTo,
-          actionArgs: '#prizes'
-        },  {
-          iconClass: 'fa-trophy',
-          label : 'prizes',
-          action : scrollTo,
-          actionArgs: '#prizes'
-        },  {
-          iconClass: 'fa-trophy',
-          label : 'prizes',
-          action : scrollTo,
-          actionArgs: '#prizes'
-        },
+          label : 'Register',
+          action : function(){
+            $location.path( '/signup' );
+          },
+          actionArgs: ''
+        }
       ];
 
     }]);
