@@ -1,0 +1,7 @@
+.mobile-nav-container{
+  position:fixed;
+  right:0;
+  bottom:0;
+  padding-bottom:5vh;
+  padding-right:5vw;
+}
