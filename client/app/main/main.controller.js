@@ -31,8 +31,10 @@ angular.module('hackIdcApp')
       };
 
       $scope.scrollTo = function(location){
+        console.log(location);
+        console.log(angular.element(document.getElementById(location)));
         var offset = -10;
-        $document.scrollToElementAnimated( angular.element(document.getElementById(location)), offset, 200);
+        $document.scrollToElementAnimated(angular.element(document.getElementById(location)), offset, 200);
       };
 
       $scope.mobileLinks = [
@@ -40,19 +42,19 @@ angular.module('hackIdcApp')
           iconClass: 'fa-home',
           label : 'home',
           action : $scope.scrollTo,
-          actionArgs: '#home'
+          actionArgs: 'home'
         },
         {
           iconClass: 'fa-info',
           label : 'description',
           action : $scope.scrollTo,
-          actionArgs: '#description'
+          actionArgs: 'description'
         },
         {
           iconClass: 'fa-trophy',
           label : 'prizes',
           action : $scope.scrollTo,
-          actionArgs: '#prizes'
+          actionArgs: 'prizes'
         },
         {
           iconClass: 'fa-trophy',

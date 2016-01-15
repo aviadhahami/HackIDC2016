@@ -31,13 +31,11 @@ angular.module('hackIdcApp')
           scope.isGridVisible =true;
           gridContainer.css('left','0');
           gridContainer.css('opacity','1');
-          pageBody.css('overflow','hidden');
         };
         var hideGrid = function(){
           scope.isGridVisible=false;
           gridContainer.css('left','100%');
           gridContainer.css('opacity','0');
-          pageBody.css('overflow','auto');
         };
       }
     };
