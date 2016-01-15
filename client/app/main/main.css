@@ -84,14 +84,20 @@ header .md-display-3,.md-display-1,p{
 
 #hackidc-logo{
   -webkit-transition: all 0.5s ease;
+
+}
+figure{
+  margin: 0 auto;
 }
 .small-logo{
   height:30px;
   width:auto;
+  padding-top: 2vh;
 }
 .big-logo{
   height: auto;
   width:100%;
+  padding-top: 3vh;
 }
 
 /*home*/
