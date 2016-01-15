@@ -170,10 +170,20 @@ section#home{
 }
 .podium md-card {
   margin: 1vh 1vw 0 1vw;
-  height: 50vh;
+  min-height: 50vh;
 }
 .podium md-card h1{
   font-family: 'Exo', sans-serif;
+}
+.podium-title{
+  padding-bottom: 0;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  font-weight: bold;
+}
+.podium-text p{
+  padding: 0;
+  margin: 0 auto;
 }
 #team{
   background: #2196F3;
