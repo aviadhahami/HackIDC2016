@@ -14,7 +14,8 @@ angular.module('hackIdcApp')
           description : 'What is HackIDC?',
           prizes : 'Prizes',
           sponsors : 'Sponsors',
-          team : 'Team'
+          team : 'Team',
+          mentorship :'Mentorship'
         };
         $scope.content= {
           descriptionContent : "HackIDC is the first national student hackathon in Israel. It is the biggest hackathon in Israel and it’s run by students from the IDC. This hackathon is an event that brings together software,hardware, and design enthusiasts to create new and innovative applications or services from scratch in 36 hours. It is an opportunity to meet and learn from people from different backgrounds and schools and an opportunity to learn from mentors that come from the top companies in the high tech industry in Israel. Ultimately it is a fun & professional experience."
@@ -66,6 +67,13 @@ angular.module('hackIdcApp')
             $location.path( '/signup' );
           },
           actionArgs: '',
+          bgColor: '#2185D5'
+        },
+        {
+          iconClass: 'fa-graduation-cap',
+          label : 'Mentorship',
+          action : $scope.scrollTo,
+          actionArgs: 'mentorship',
           bgColor: '#2185D5'
         }
       ];

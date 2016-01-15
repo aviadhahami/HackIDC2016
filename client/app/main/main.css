@@ -18,7 +18,8 @@ header {
   left: 0;
   z-index: 1030;
   height: 120px;
-  background-color: #3949AB;
+  background-color: #1A237E;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 section {
@@ -78,9 +79,9 @@ header .md-display-3,.md-display-1,p{
 .fab-icon{
   padding-top: 12px;
 }
-.mfb-component__button--main, .mfb-component__button--child{
-  background: #2196F3;
-}
+/*.mfb-component__button--main, .mfb-component__button--child{*/
+  /*background: #2196F3;*/
+/*}*/
 
 #hackidc-logo{
   -webkit-transition: all 0.5s ease;
@@ -96,8 +97,9 @@ figure{
 }
 .big-logo{
   height: auto;
+  max-height: 100px;
   width:100%;
-  padding-top: 4vh;
+  padding-top: 2vh;
 }
 
 /*home*/
@@ -165,6 +167,11 @@ section#home{
   text-align: center;
 }
 #sponsors{
+  background: #1E88E5;
+  line-height:normal;
+  text-align: center;
+}
+#mentorship{
   background: #1E88E5;
   line-height:normal;
   text-align: center;
