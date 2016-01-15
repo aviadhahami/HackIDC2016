@@ -80,7 +80,7 @@ header .md-display-3,.md-display-1,p{
   padding-top: 12px;
 }
 /*.mfb-component__button--main, .mfb-component__button--child{*/
-  /*background: #2196F3;*/
+/*background: #2196F3;*/
 /*}*/
 
 #hackidc-logo{
@@ -160,12 +160,20 @@ section#home{
   background-color: #1976D2;
   line-height:normal;
   text-align: center;
+  min-height: 90vh;
 }
 #prizes h2{
   font-family: 'Exo', sans-serif;
   text-shadow: 0px 10px black;
   color: #FFFF00;
   -webkit-text-stroke: 2px rgba(0,0,0,0.8);
+}
+.podium md-card {
+  margin: 1vh 1vw 0 1vw;
+  height: 50vh;
+}
+.podium md-card h1{
+  font-family: 'Exo', sans-serif;
 }
 #team{
   background: #2196F3;
