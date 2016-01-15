@@ -27,14 +27,97 @@
       <i class="fa fa-chevron-left"></i>
       back
     </md-button>
-    <md-card id="timer-card">
-      <md-card-content>
-        <div>
-          <h2 class="md-display-2">
-            Registration will be open in
-          </h2>
-          <timer interval="1000" countdown="timeToCount">{{days}} day{{daysS}}, {{hours}} hour{{hoursS}}, {{minutes}} minute{{minutesS}}, {{seconds}} second{{secondsS}}.</timer>
+    <!--<md-card id="timer-card">-->
+    <!--<md-card-content>-->
+    <!--<div>-->
+    <!--<h2 class="md-display-2">-->
+    <!--Registration will be open in-->
+    <!--</h2>-->
+    <!--<timer interval="1000" countdown="timeToCount">{{days}} day{{daysS}}, {{hours}} hour{{hoursS}}, {{minutes}} minute{{minutesS}}, {{seconds}} second{{secondsS}}.</timer>-->
+    <!--</div>-->
+    <!--</md-card-content>-->
+    <!--</md-card>-->
+    <md-card class="signup-form">
+      <md-card-content class="signup-form-content" layout-padding>
+        <div class="form-title">
+
+          <h3 class="md-display-3">HackIDC 2016 Application</h3>
+          <hr />
         </div>
+        <div class="form-fields">
+          <form name="projectForm" layout="column">
+            <div layout="row">
+              <md-input-container flex>
+                <label>First Name</label>
+                <input md-maxlength="20" required name="firstName" ng-model="project.firstName">
+                <div ng-messages="projectForm.firstName.$error">
+                  <div ng-message="required">This is required.</div>
+                  <div ng-message="md-maxlength">The name has to be less than 20 characters long.</div>
+                </div>
+              </md-input-container>
+              <md-input-container flex>
+                <label>Last Name</label>
+                <input  md-maxlength="20" required name="lastName" ng-model="project.lastName">
+                <div ng-messages="projectForm.lastName.$error">
+                  <div ng-message="required">This is required.</div>
+                  <div ng-message="md-maxlength">The name has to be less than 20 characters long.</div>
+                </div>
+              </md-input-container>
+              <md-input-container flex>
+                <label>Gender</label>
+                <md-select ng-model="projectForm.gender">
+                  <md-option value="male">
+                    Male
+                  </md-option>
+                  <md-option value="female">
+                    Female
+                  </md-option>
+                  <md-option value="other">
+                    Other
+                  </md-option>
+                </md-select>
+                <div ng-messages="projectForm.gender.$error">
+                  <div ng-message="required">This is required.</div>
+                </div>
+              </md-input-container>
+
+            </div>
+
+            <md-input-container>
+              <label>Client Email</label>
+              <input required type="email" name="clientEmail" ng-model="project.clientEmail"
+                     minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/" />
+              <div ng-messages="projectForm.clientEmail.$error" role="alert">
+                <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+                  Your email must be between 10 and 100 characters long and look like an e-mail address.
+                </div>
+              </div>
+            </md-input-container>
+            <md-input-container>
+              <label>Hourly Rate (USD)</label>
+              <input required type="number" step="any" name="rate" ng-model="project.rate" min="800"
+                     max="4999" ng-pattern="/^1234$/" md-maxlength="20" />
+              <div ng-messages="projectForm.rate.$error" multiple>
+                <div ng-message="required">
+                  You've got to charge something! You can't just <b>give away</b> a Missile Defense
+                  System.
+                </div>
+                <div ng-message="min">
+                  You should charge at least $800 an hour. This job is a big deal... if you mess up,
+                  everyone dies!
+                </div>
+                <div ng-message="pattern">
+                  You should charge exactly $1,234.
+                </div>
+                <div ng-message="max">
+                  {{projectForm.rate.$viewValue | currency:"$":0}} an hour? That's a little ridiculous. I
+                  doubt event Bill Clinton could afford that.
+                </div>
+              </div>
+            </md-input-container>
+          </form>
+        </div>
+
 
       </md-card-content>
     </md-card>

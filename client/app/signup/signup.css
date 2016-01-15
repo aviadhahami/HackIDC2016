@@ -24,11 +24,30 @@
 }
 .signup{
   background-color: #BBDEFB;
-  min-height:97vh;
+  min-height: 96.5vh;
 
 }
 #timer-card{
   width:50%;
   margin: 0 auto;
   text-align: center;
+}
+
+.signup-form{
+  margin: 0 auto;
+  width:90vw;
+}
+.signup-form md-card-content{
+  margin: 0 auto;
+}
+.signup-form h3{
+  font-family:'roboto';
+  font-weight:300;
+  text-align: center;
+}
+.signup-form-content{
+width:98%;
+}
+.form-fields{
+
 }
