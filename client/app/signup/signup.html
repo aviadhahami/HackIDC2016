@@ -1,9 +1,10 @@
 <div class="md-padding signup-mobile" ng-if="isMobile">
-  <nav ng-if="isMobile" mfb-menu position="br" effect="zoomin" label="Close"
-       active-icon="" resting-icon="fa fa-bars fa-2x fab-icon"
-       toggling-method="click">
-    <button mfb-button icon="fa fa-home fa-2x fab-icon" label="Home" ui-sref="main"></button>
-  </nav>
+
+  <mobile-nav
+    ng-if="isMobile"
+    links="mobileLinks"
+    trigger-fab-color="#1565C0"
+    bg-grid-color="rgba(1,1,1,0.9)"></mobile-nav>
 
   <div id="not-mobile"class="col-md-12">
     <p class="md-title" fittext data-fittext-min="55" data-fittext-max="120">

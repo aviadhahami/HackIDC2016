@@ -10,7 +10,6 @@ angular.module('hackIdcApp')
       },
       link: function (scope, element, attrs) {
         scope.isGridVisible = false;
-        //scope.links = attrs.links;
 
         console.log(scope.links);
 

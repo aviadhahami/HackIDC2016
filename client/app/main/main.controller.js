@@ -1,8 +1,8 @@
 'use strict';
 
 angular.module('hackIdcApp')
-  .controller('MainCtrl',  ['$scope','$window','$timeout','$document','isMobile','$location',
-    function ($scope,$window,$timeout,$document,isMobile,$location) {
+  .controller('MainCtrl',  ['$scope','$window','$timeout','$document','isMobile','$location','$rootScope',
+    function ($scope,$window,$timeout,$document,isMobile,$location,$rootScope) {
       $scope.isMobile = isMobile.isMobile();
 
 
@@ -37,33 +37,37 @@ angular.module('hackIdcApp')
         $document.scrollToElementAnimated(angular.element(document.getElementById(location)), offset, 200);
       };
 
-      $scope.mobileLinks = [
+      $rootScope.mobileLinks = [
         {
           iconClass: 'fa-home',
-          label : 'home',
+          label : 'Home',
           action : $scope.scrollTo,
-          actionArgs: 'home'
+          actionArgs: 'home',
+          bgColor:'#2185D5'
         },
         {
           iconClass: 'fa-info',
-          label : 'description',
+          label : 'Description',
           action : $scope.scrollTo,
-          actionArgs: 'description'
+          actionArgs: 'description',
+          bgColor : '#2185D5'
         },
         {
           iconClass: 'fa-trophy',
-          label : 'prizes',
+          label : 'Prizes',
           action : $scope.scrollTo,
-          actionArgs: 'prizes'
+          actionArgs: 'prizes',
+          bgColor : '#2185D5'
         },
         {
-          iconClass: 'fa-trophy',
+          iconClass: 'fa-pencil',
           label : 'Register',
           action : function(){
             $location.path( '/signup' );
           },
-          actionArgs: ''
+          actionArgs: '',
+          bgColor: '#2185D5'
         }
       ];
-
+      $scope.mobileLinks = $rootScope.mobileLinks;
     }]);
