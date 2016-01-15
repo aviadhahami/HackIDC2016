@@ -34,22 +34,18 @@
     <div flex="1" ></div>
   </header>
 
-  <nav ng-if="isMobile" mfb-menu position="br" effect="zoomin" label="Close"
-       active-icon="" resting-icon="fa fa-bars fa-2x fab-icon"
-       toggling-method="click">
-    <button mfb-button icon="fa fa-users fa-2x fab-icon" label="Sponsors" ng-click="scrollTo('sponsors')"></button>
-    <!--<button mfb-button icon="fa fa-trophy fa-2x fab-icon" label="Team" ng-click="scrollTo('team')" ></button>-->
-    <button mfb-button icon="fa fa-trophy fa-2x fab-icon" label="Prizes" ng-click="scrollTo('prizes')" ></button>
-    <button mfb-button icon="fa fa-question fa-2x fab-icon" label="Description" ng-click="scrollTo('description')"></button>
-    <button mfb-button icon="fa fa-home fa-2x fab-icon" label="Home" ng-click="scrollTo('home')"></button>
-  </nav>
+  <mobile-nav
+    ng-if="isMobile"
+    links="mobileLinks"
+    trigger-fab-color="#1565C0"
+    bg-grid-color="rgba(1,1,1,0.9)"></mobile-nav>
 
 
   <div id="main-page-content" class="md-padding">
     <section id="home" class="md-padding">
       <video-bg video-id="video.id" loop="true" mobile-image="'assets/images/transparent.png'" mute="true"  start="22" end="120" content-z-index="500"></video-bg>
 
-      <div style="height: 200px"></div>
+      <div style="height: 30vh"></div>
       <div id="home-content" class="md-padding">
         <h1 class="md-display-2" data-ng-model="titles.mainTitle" fittext data-fittext-max="200">{{titles.mainTitle}}</h1>
       </div>

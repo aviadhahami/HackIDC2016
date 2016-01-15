@@ -1,8 +1,8 @@
 'use strict';
 
 angular.module('hackIdcApp')
-  .controller('MainCtrl',  ['$scope','$window','$timeout','$document','isMobile',
-    function ($scope,$window,$timeout,$document,isMobile) {
+  .controller('MainCtrl',  ['$scope','$window','$timeout','$document','isMobile','$location',
+    function ($scope,$window,$timeout,$document,isMobile,$location) {
       $scope.isMobile = isMobile.isMobile();
 
 
@@ -31,8 +31,39 @@ angular.module('hackIdcApp')
       };
 
       $scope.scrollTo = function(location){
+        console.log(location);
+        console.log(angular.element(document.getElementById(location)));
         var offset = -10;
-        $document.scrollToElementAnimated( angular.element(document.getElementById(location)), offset, 200);
+        $document.scrollToElementAnimated(angular.element(document.getElementById(location)), offset, 200);
       };
+
+      $scope.mobileLinks = [
+        {
+          iconClass: 'fa-home',
+          label : 'home',
+          action : $scope.scrollTo,
+          actionArgs: 'home'
+        },
+        {
+          iconClass: 'fa-info',
+          label : 'description',
+          action : $scope.scrollTo,
+          actionArgs: 'description'
+        },
+        {
+          iconClass: 'fa-trophy',
+          label : 'prizes',
+          action : $scope.scrollTo,
+          actionArgs: 'prizes'
+        },
+        {
+          iconClass: 'fa-trophy',
+          label : 'Register',
+          action : function(){
+            $location.path( '/signup' );
+          },
+          actionArgs: ''
+        }
+      ];
 
     }]);

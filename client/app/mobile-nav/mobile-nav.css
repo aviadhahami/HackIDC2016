@@ -1,0 +1,40 @@
+.mobile-nav-container{
+  position:fixed;
+  right:0;
+  bottom:0;
+  padding-bottom:5vh;
+  padding-right:5vw;
+  z-index: 999;
+}
+
+.grid-bg{
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+
+  padding:20px 0 0 0 ;
+  position: fixed;
+  width:100vw;
+  height: 100vh;
+  left:100%;
+  opacity:0;
+}
+#grid-bg div div div span{
+  color: white;
+  text-align: center;
+}
+#grid-bg div div div{
+  padding-bottom: 10px;
+}
+#grid-bg div div div button{
+  margin:0 auto;
+}
+.fa-center{
+  padding-top:15px;
+}
+.inner-grid{
+  height:75vh;
+  overflow-y: scroll;
+}
