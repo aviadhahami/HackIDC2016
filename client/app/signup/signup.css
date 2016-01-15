@@ -51,3 +51,6 @@ width:98%;
 .form-fields{
 
 }
+md-input-container label{
+  font-size: 1.4em;
+}
