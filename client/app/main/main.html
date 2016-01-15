@@ -111,8 +111,12 @@
     </section>
     <section id="mentorship" class="md-padding">
       <h2 class="md-display-2" data-ng-model="titles.mentorship" fittext data-fittext-max="70">{{titles.mentorship}}</h2>
-      <p>
-        To be announced
+      <p data-fittext data-fittext-max="{{isMobile ? 20 : 50}}" data-ng-model="content.mentorshipContent.A">
+        {{content.mentorshipContent.A}}
+      </p>
+      <h3 class="md-title">What does it include?</h3>
+      <p data-fittext data-fittext-max="{{isMobile ? 20 : 50}}" data-ng-model="content.mentorshipContent.B">
+        {{content.mentorshipContent.B}}
       </p>
     </section>
     <section id="team" class="md-padding">

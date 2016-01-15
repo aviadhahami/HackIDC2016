@@ -176,3 +176,10 @@ section#home{
   line-height:normal;
   text-align: center;
 }
+#mentorship h3{
+  text-align: center;
+}
+#mentorship p{
+  padding: 0 5px 0 5px;
+  text-align: justify;
+}
