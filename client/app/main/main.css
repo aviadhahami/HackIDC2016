@@ -161,6 +161,12 @@ section#home{
   line-height:normal;
   text-align: center;
 }
+#prizes h2{
+  font-family: 'Exo', sans-serif;
+  text-shadow: 0px 7px white;
+  color: rgb(251, 222, 67);
+  -webkit-text-stroke: 1px rgba(255,255,255,1);
+}
 #team{
   background: #2196F3;
   line-height:normal;
@@ -171,10 +177,16 @@ section#home{
   line-height:normal;
   text-align: center;
 }
+#sponsors h2{
+
+}
 #mentorship{
-  background: #1E88E5;
+  background: #E1F5FE;
   line-height:normal;
   text-align: center;
+}
+#mentorship h2{
+  font-family: 'Yesteryear', cursive;
 }
 #mentorship h3{
   text-align: center;
