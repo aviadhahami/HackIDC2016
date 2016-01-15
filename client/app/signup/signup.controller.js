@@ -2,8 +2,8 @@
 
 angular.module('hackIdcApp')
 
-  .controller('SignupCtrl',  ['$scope','isMobile','$rootScope','$location',
-      function ($scope,isMobile,$rootScope,$location) {
+  .controller('SignupCtrl',  ['$scope','isMobile','$rootScope','$location','$mdDialog',
+      function ($scope,isMobile,$rootScope,$location,$mdDialog) {
         $scope.mobileLinks =[{
           iconClass: 'fa-home',
           label : 'Home',
@@ -44,7 +44,6 @@ angular.module('hackIdcApp')
           "Avni Institute of Art and Design",
           "Other"
         ];
-
         $scope.isMobile = isMobile.isMobile();
         $scope.timeToCount = (function(){
           return Math.round((new Date('02/01/2016') -new Date())/1000);

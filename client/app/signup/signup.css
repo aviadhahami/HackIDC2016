@@ -54,3 +54,19 @@ width:98%;
 md-input-container label, md-select-value span{
   font-size: 1.2em;
 }
+.mentorship-help{
+  margin-left: 10px;
+}
+md-tooltip.large .md-content {
+  width:150%;
+  height: 150%;
+  font-size: 2em;
+  background-color: #424242;
+  color: #fefefe;
+  font-weight: 300;
+}
+md-tooltip.large .md-content p{
+  margin:10px;
+  text-align: justify;
+  line-height: 1.5;
+}

@@ -202,8 +202,6 @@
                   <div ng-message="md-maxlength">Too long, please revise.</div>
                 </div>
               </md-input-container>
-            </div>
-            <div layout="row">
               <!--TODO: upload CV-->
             </div>
             <div layout="row">
@@ -231,6 +229,31 @@
                   </div>
                 </div>
               </md-input-container>
+
+            </div>
+            <div layout="row">
+              <fieldset class="standard">
+                <legend>Mentorship</legend>
+                <div layout="row" layout-wrap>
+                  <md-checkbox ng-model="projectForm.needMentor" aria-label="Would you like a mentor?">
+                    I would like to a part of the
+                    <a href="">
+                      Mentorship Program
+                      <md-tooltip class="large" md-direction="top">
+                        <p>
+                          HackIDC will operate a special mentorship program, <br>
+                          targeting those who want to participate in the hackathon <br>
+                          but still need to work on their development skills. <br>
+                          <i style="font-size: 15px">Further information can be found at our main page</i>
+                        </p>
+                      </md-tooltip>
+                    </a>
+                  </md-checkbox>
+                  <!--<md-checkbox ng-model="projectForm.agreeToTerms" aria-label="Accept terms and conditions">-->
+                  <!--I have read the <a href="http://2015.hackidc.com/docs/HackerTermsofService.pdf">term and conditions</a> and I agree-->
+                  <!--</md-checkbox>-->
+                </div>
+              </fieldset>
             </div>
           </form>
         </div>
