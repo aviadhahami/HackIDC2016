@@ -103,7 +103,6 @@
                   <div ng-message="pattern">This doesn't look like a phone number.</div>
                 </div>
               </md-input-container>
-
               <md-input-container flex>
                 <label>Academic Institution</label>
                 <md-select ng-model="projectForm.school">
@@ -115,7 +114,6 @@
                   <div ng-message="required">This is required.</div>
                 </div>
               </md-input-container>
-
             </div>
             <div layout="row">
               <md-input-container flex>
@@ -196,9 +194,44 @@
               </md-input-container>
             </div>
             <div layout="row">
-
+              <md-input-container flex>
+                <label>Why are you interested in HackIDC?</label>
+                <textarea required md-maxlength="500" name="interestReason" ng-model="project.interestReason"></textarea>
+                <div ng-messages="projectForm.interestReason.$error">
+                  <div ng-message="required">This is required.</div>
+                  <div ng-message="md-maxlength">Too long, please revise.</div>
+                </div>
+              </md-input-container>
             </div>
-
+            <div layout="row">
+              <!--TODO: upload CV-->
+            </div>
+            <div layout="row">
+              <md-input-container flex>
+                <label>Are you applying as a part of a team?</label>
+                <md-select required ng-model="projectForm.gotTeam">
+                  <md-option value="Yes">
+                    Yes
+                  </md-option>
+                  <md-option value="No">
+                    No
+                  </md-option>
+                </md-select>
+                <div ng-messages="projectForm.gotTeam.$error">
+                  <div ng-message="required">This is required.</div>
+                </div>
+              </md-input-container>
+              <md-input-container flex ng-if="projectForm.gotTeam === 'Yes'">
+                <label>Please supply your team leader's mail</label>
+                <input required type="email" name="teamLeaderMail" ng-model="project.leaderMail"
+                       minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/" />
+                <div ng-messages="projectForm.email.$error" role="alert">
+                  <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+                    Your email must be between 10 and 100 characters long and look like an e-mail address.
+                  </div>
+                </div>
+              </md-input-container>
+            </div>
           </form>
         </div>
 
