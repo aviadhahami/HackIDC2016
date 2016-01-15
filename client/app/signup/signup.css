@@ -41,7 +41,7 @@
   margin: 0 auto;
 }
 .signup-form h3{
-  font-family:'roboto';
+  font-family: 'Roboto', sans-serif;
   font-weight:300;
   text-align: center;
 }
@@ -51,6 +51,6 @@ width:98%;
 .form-fields{
 
 }
-md-input-container label{
-  font-size: 1.4em;
+md-input-container label, md-select-value span{
+  font-size: 1.2em;
 }

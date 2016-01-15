@@ -64,18 +64,6 @@
                 </div>
               </md-input-container>
               <md-input-container flex>
-                <label>Email</label>
-                <input required type="email" name="email" ng-model="project.email"
-                       minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/" />
-                <div ng-messages="projectForm.email.$error" role="alert">
-                  <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
-                    Your email must be between 10 and 100 characters long and look like an e-mail address.
-                  </div>
-                </div>
-              </md-input-container>
-            </div>
-            <div layout="row">
-              <md-input-container flex>
                 <label>Gender</label>
                 <md-select ng-model="projectForm.gender">
                   <md-option value="male">
@@ -92,9 +80,22 @@
                   <div ng-message="required">This is required.</div>
                 </div>
               </md-input-container>
+
+            </div>
+            <div layout="row">
+              <md-input-container flex>
+                <label>Email</label>
+                <input required type="email" name="email" ng-model="project.email"
+                       minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/" />
+                <div ng-messages="projectForm.email.$error" role="alert">
+                  <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+                    Your email must be between 10 and 100 characters long and look like an e-mail address.
+                  </div>
+                </div>
+              </md-input-container>
               <md-input-container flex>
                 <label>Phone</label>
-                <input required type="number" name="phone" ng-model="project.phone"
+                <input required type="text" name="phone" ng-model="project.phone"
                        ng-pattern="/^05[0-9]{8}$/" />
                 <div ng-messages="projectForm.phone.$error" role="alert">
                   <div ng-message="required">This is required.</div>
@@ -102,6 +103,7 @@
                   <div ng-message="pattern">This doesn't look like a phone number.</div>
                 </div>
               </md-input-container>
+
               <md-input-container flex>
                 <label>Academic Institution</label>
                 <md-select ng-model="projectForm.school">
@@ -110,6 +112,85 @@
                   </md-option>
                 </md-select>
                 <div ng-messages="projectForm.school.$error">
+                  <div ng-message="required">This is required.</div>
+                </div>
+              </md-input-container>
+
+            </div>
+            <div layout="row">
+              <md-input-container flex>
+                <label>Shirt Size</label>
+                <md-select ng-model="projectForm.shirtSize">
+                  <md-option value="s">
+                    S
+                  </md-option>
+                  <md-option value="m">
+                    M
+                  </md-option>
+                  <md-option value="L">
+                    L
+                  </md-option>
+                  <md-option value="XL">
+                    XL
+                  </md-option>
+                  <md-option value="XXL">
+                    XXL
+                  </md-option>
+                </md-select>
+                <div ng-messages="projectForm.shirtSize.$error">
+                  <div ng-message="required">This is required.</div>
+                </div>
+              </md-input-container>
+              <md-input-container flex>
+                <label>Special Dietary Preferences</label>
+                <md-select required ng-model="projectForm.diet">
+                  <md-option value="Vegetarian">
+                    Vegetarian
+                  </md-option>
+                  <md-option value="Vegan">
+                    Vegan
+                  </md-option>
+                  <md-option value="Pescetarian">
+                    Pescetarian
+                  </md-option>
+                  <md-option value="Paleolithic">
+                    Paleolithic
+                  </md-option>
+                  <md-option value="Other">
+                    Other
+                  </md-option>
+                </md-select>
+                <div ng-messages="projectForm.shirtSize.$error">
+                  <div ng-message="required">This is required.</div>
+                </div>
+              </md-input-container>
+              <md-input-container flex>
+                <label>Link to a project you have created</label>
+                <input required name="pastProject" ng-model="project.pastProject">
+                <div ng-messages="projectForm.pastProject.$error">
+                  <div ng-message="required">This is required.</div>
+                </div>
+              </md-input-container>
+              <md-input-container flex>
+                <label>Where did you hear about HackIDC?</label>
+                <md-select required ng-model="projectForm.heardFrom">
+                  <md-option value="Friends">
+                    Friends
+                  </md-option>
+                  <md-option value="Social Network">
+                    Social Network
+                  </md-option>
+                  <md-option value="Media">
+                    Media (TV, newspaper etc.)
+                  </md-option>
+                  <md-option value="Student Union">
+                    Student Union
+                  </md-option>
+                  <md-option value="Other">
+                    Other
+                  </md-option>
+                </md-select>
+                <div ng-messages="projectForm.heardFrom.$error">
                   <div ng-message="required">This is required.</div>
                 </div>
               </md-input-container>
