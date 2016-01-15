@@ -64,6 +64,18 @@
                 </div>
               </md-input-container>
               <md-input-container flex>
+                <label>Email</label>
+                <input required type="email" name="email" ng-model="project.email"
+                       minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/" />
+                <div ng-messages="projectForm.email.$error" role="alert">
+                  <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+                    Your email must be between 10 and 100 characters long and look like an e-mail address.
+                  </div>
+                </div>
+              </md-input-container>
+            </div>
+            <div layout="row">
+              <md-input-container flex>
                 <label>Gender</label>
                 <md-select ng-model="projectForm.gender">
                   <md-option value="male">
@@ -80,18 +92,6 @@
                   <div ng-message="required">This is required.</div>
                 </div>
               </md-input-container>
-            </div>
-            <div class="row">
-              <md-input-container flex>
-                <label>Email</label>
-                <input required type="email" name="email" ng-model="project.email"
-                       minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/" />
-                <div ng-messages="projectForm.email.$error" role="alert">
-                  <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
-                    Your email must be between 10 and 100 characters long and look like an e-mail address.
-                  </div>
-                </div>
-              </md-input-container>
               <md-input-container flex>
                 <label>Phone</label>
                 <input required type="number" name="phone" ng-model="project.phone"
@@ -102,32 +102,19 @@
                   <div ng-message="pattern">This doesn't look like a phone number.</div>
                 </div>
               </md-input-container>
-
+              <md-input-container flex>
+                <label>Academic Institution</label>
+                <md-select ng-model="projectForm.school">
+                  <md-option ng-repeat="school in schools" value="{{school}}">
+                    {{school}}
+                  </md-option>
+                </md-select>
+                <div ng-messages="projectForm.school.$error">
+                  <div ng-message="required">This is required.</div>
+                </div>
+              </md-input-container>
             </div>
 
-
-            <md-input-container>
-              <label>Hourly Rate (USD)</label>
-              <input required type="number" step="any" name="rate" ng-model="project.rate" min="800"
-                     max="4999" ng-pattern="/^1234$/" md-maxlength="20" />
-              <div ng-messages="projectForm.rate.$error" multiple>
-                <div ng-message="required">
-                  You've got to charge something! You can't just <b>give away</b> a Missile Defense
-                  System.
-                </div>
-                <div ng-message="min">
-                  You should charge at least $800 an hour. This job is a big deal... if you mess up,
-                  everyone dies!
-                </div>
-                <div ng-message="pattern">
-                  You should charge exactly $1,234.
-                </div>
-                <div ng-message="max">
-                  {{projectForm.rate.$viewValue | currency:"$":0}} an hour? That's a little ridiculous. I
-                  doubt event Bill Clinton could afford that.
-                </div>
-              </div>
-            </md-input-container>
           </form>
         </div>
 
