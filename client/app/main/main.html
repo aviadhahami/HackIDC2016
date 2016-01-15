@@ -104,7 +104,7 @@
       </div>
     </section>
     <section id="prizes" class="md-padding">
-      <h2 class="md-display-2" data-ng-model="titles.prizes" fittext data-fittext-max="70">{{titles.prizes}}</h2>
+      <h2 class="md-display-2" data-ng-model="titles.prizes" fittext data-fittext-max="120">{{titles.prizes}}</h2>
       <div style="height: 10vh;"></div>
       <div layout="column" layout-gt-md="row" class="podium">
         <md-card flex="30" flex-sm="66">
@@ -126,25 +126,27 @@
           </md-card-content>
         </md-card>
         <md-card flex="30" flex-sm="66">
-        <md-card-content>
-          <h1 class="md-display-2 podium-title">3<small>rd</small> Place</h1>
-          <hr>
-          <p>
-            To be announced...
-          </p>
-        </md-card-content>
-      </md-card>
+          <md-card-content>
+            <h1 class="md-display-2 podium-title">3<small>rd</small> Place</h1>
+            <hr>
+            <p>
+              To be announced...
+            </p>
+          </md-card-content>
+        </md-card>
       </div>
     </section>
     <section id="mentorship" class="md-padding">
-      <h2 class="md-display-2" data-ng-model="titles.mentorship" fittext data-fittext-max="70">{{titles.mentorship}}</h2>
-      <p data-fittext data-fittext-max="{{isMobile ? 20 : 50}}" data-ng-model="content.mentorshipContent.A">
-        {{content.mentorshipContent.A}}
-      </p>
-      <h3 class="md-title">What does it include?</h3>
-      <p data-fittext data-fittext-max="{{isMobile ? 20 : 50}}" data-ng-model="content.mentorshipContent.B">
-        {{content.mentorshipContent.B}}
-      </p>
+      <div style="width: 80vw; margin: 0 auto;">
+        <h2 class="md-display-2" data-ng-model="titles.mentorship" fittext data-fittext-max="120">{{titles.mentorship}}</h2>
+        <p data-fittext data-fittext-max="{{isMobile ? 20 : 50}}" data-ng-model="content.mentorshipContent.A">
+          {{content.mentorshipContent.A}}
+        </p>
+        <h3 class="md-title">What does it include?</h3>
+        <p data-fittext data-fittext-max="{{isMobile ? 20 : 50}}" data-ng-model="content.mentorshipContent.B">
+          {{content.mentorshipContent.B}}
+        </p>
+      </div>
     </section>
     <section id="team" class="md-padding">
       <h2 class="md-display-2" data-ng-model="titles.team" fittext data-fittext-max="70">{{titles.team}}</h2>
