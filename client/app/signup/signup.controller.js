@@ -54,7 +54,7 @@ angular.module('hackIdcApp')
             lastName : data.lastName.$modelValue,
             gender : data.gender,
             mail : data.email.$modelValue,
-            phone:  data.phone.$modelValue,
+            phone:  '\'' + data.phone.$modelValue, // Important to keep the apostrophe in order to display as string
             academicInstitution:data.school,
             shirtSize :data.shirtSize,
             diet : data.diet,
