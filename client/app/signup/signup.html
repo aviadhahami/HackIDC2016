@@ -249,15 +249,15 @@
                   </md-checkbox>
                 </div>
               </fieldset>
-              <div flex="40"></div>
+              <div flex></div>
               <fieldset class="standard" flex="40">
                 <legend>Final step</legend>
                 <div layout="row" layout-wrap>
-                  <md-checkbox class="md-primary" ng-model="projectForm.agreeToTerms" aria-label="Accept terms and conditions">
+                  <md-checkbox required="" class="md-primary" ng-model="projectForm.agreeToTerms" aria-label="Accept terms and conditions">
                     I have read the <a href="http://2015.hackidc.com/docs/HackerTermsofService.pdf">term and conditions</a> and I agree
                   </md-checkbox>
                   <div flex="10"></div>
-                  <md-button flex="20" class="md-raised md-primary">Submit</md-button>
+                  <md-button flex ng-disabled="projectForm.$invalid" class="md-raised md-primary">Submit</md-button>
                 </div>
               </fieldset>
 
