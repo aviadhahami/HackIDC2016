@@ -238,8 +238,8 @@
                 </div>
               </md-input-container>
             </div>
-            <div layout="row">
-              <fieldset class="standard" flex="30">
+            <div layout="row" >
+              <fieldset class="standard" flex="30" ng-if="projectForm.school === 'IDC Herzliya'">
                 <legend>Mentorship</legend>
                 <div layout="row" layout-wrap>
                   <md-checkbox ng-model="projectForm.needMentor" aria-label="Would you like a mentor?">
