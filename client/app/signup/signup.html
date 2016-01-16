@@ -228,10 +228,9 @@
                   </div>
                 </div>
               </md-input-container>
-
             </div>
             <div layout="row">
-              <fieldset class="standard">
+              <fieldset class="standard" flex="30">
                 <legend>Mentorship</legend>
                 <div layout="row" layout-wrap>
                   <md-checkbox ng-model="projectForm.needMentor" aria-label="Would you like a mentor?">
@@ -248,11 +247,20 @@
                       </md-tooltip>
                     </a>
                   </md-checkbox>
-                  <!--<md-checkbox ng-model="projectForm.agreeToTerms" aria-label="Accept terms and conditions">-->
-                  <!--I have read the <a href="http://2015.hackidc.com/docs/HackerTermsofService.pdf">term and conditions</a> and I agree-->
-                  <!--</md-checkbox>-->
                 </div>
               </fieldset>
+              <div flex="40"></div>
+              <fieldset class="standard" flex="40">
+                <legend>Final step</legend>
+                <div layout="row" layout-wrap>
+                  <md-checkbox class="md-primary" ng-model="projectForm.agreeToTerms" aria-label="Accept terms and conditions">
+                    I have read the <a href="http://2015.hackidc.com/docs/HackerTermsofService.pdf">term and conditions</a> and I agree
+                  </md-checkbox>
+                  <div flex="10"></div>
+                  <md-button flex="20" class="md-raised md-primary">Submit</md-button>
+                </div>
+              </fieldset>
+
             </div>
           </form>
         </div>
