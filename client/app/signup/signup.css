@@ -23,9 +23,9 @@
   text-align: left;
 }
 .signup{
-  background-color: #BBDEFB;
+  background-color: #B3E5FC;
+  background-image: url("../../assets/logos/herzelBgRotated.png");
   min-height: 96.5vh;
-
 }
 #timer-card{
   width:50%;
