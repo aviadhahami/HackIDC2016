@@ -196,7 +196,7 @@
               </md-input-container>
             </div>
             <div layout="row">
-              <md-input-container flex>
+              <md-input-container flex="60">
                 <label>Why are you interested in HackIDC?</label>
                 <textarea required md-maxlength="500" name="interestReason" ng-model="project.interestReason"></textarea>
                 <div ng-messages="projectForm.interestReason.$error">
@@ -204,7 +204,13 @@
                   <div ng-message="md-maxlength">Too long, please revise.</div>
                 </div>
               </md-input-container>
-              <!--TODO: upload CV-->
+              <md-input-container flex="">
+
+
+                <input required type="file" style="border:0;" name="cv" ng-model="projectForm.cv"/>
+
+
+              </md-input-container>
             </div>
             <div layout="row">
               <md-input-container flex>
@@ -257,7 +263,7 @@
                 <legend>Final step</legend>
                 <div layout="row" layout-wrap>
                   <md-checkbox required="" class="md-primary" ng-model="projectForm.agreeToTerms" aria-label="Accept terms and conditions">
-                    I have read the <a href="http://2015.hackidc.com/docs/HackerTermsofService.pdf">term and conditions</a> and I agree
+                    I have read the <a href="http://2015.hackidc.com/docs/HackerTermsofService.pdf" target="_blank">term and conditions</a> and I agree
                   </md-checkbox>
                   <div flex="10"></div>
 

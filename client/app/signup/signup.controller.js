@@ -48,7 +48,11 @@ angular.module('hackIdcApp')
         $scope.timeToCount = (function(){
           return Math.round((new Date('02/01/2016') -new Date())/1000);
         })();
+
+
+
         $scope.submit = function(data){
+          console.log(data);
           $scope.formData = {
             firstName : data.firstName.$modelValue,
             lastName : data.lastName.$modelValue,
@@ -72,7 +76,6 @@ angular.module('hackIdcApp')
             needMentor: !!data.needMentor ? 'yes' : 'no'
           };
           console.log ($scope.formData);
-
 
           var url = 'https://sheetsu.com/apis/89ab6aa2';
           var req = {
