@@ -23,10 +23,6 @@
 </div>
 <md-content ng-if="!isMobile" class="singup-container">
   <div ng-if="!isMobile" class="md-padding signup">
-    <md-button ui-sref="main" ui-sref-opts="{reload: true}">
-      <i class="fa fa-chevron-left"></i>
-      back
-    </md-button>
     <!--<md-card id="timer-card">-->
     <!--<md-card-content>-->
     <!--<div>-->
@@ -38,9 +34,13 @@
     <!--</md-card-content>-->
     <!--</md-card>-->
     <md-card class="signup-form">
-      <md-card-content class="signup-form-content" layout-padding>
+      <md-button flex="5" ui-sref="main" ui-sref-opts="{reload: true}" style="float: left; margin-bottom: 0;">
+        <i class="fa fa-chevron-left"></i>
+        back
+      </md-button>
+      <md-card-content style="margin-top:0;padding-top: 0;" class="signup-form-content" layout-padding>
         <div class="form-title">
-          <h3 class="md-display-3">HackIDC 2016 Application</h3>
+          <h3 class="md-display-3" style="margin-top:0;">HackIDC 2016 Application</h3>
           <hr />
         </div>
         <div class="form-fields">
