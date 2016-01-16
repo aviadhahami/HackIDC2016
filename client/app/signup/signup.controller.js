@@ -2,8 +2,8 @@
 
 angular.module('hackIdcApp')
 
-  .controller('SignupCtrl',  ['$scope','isMobile','$rootScope','$location','$mdDialog',
-      function ($scope,isMobile,$rootScope,$location,$mdDialog) {
+  .controller('SignupCtrl',  ['$scope','isMobile','$rootScope','$location','$mdDialog','$http',
+      function ($scope,isMobile,$rootScope,$location,$mdDialog,$http) {
         $scope.mobileLinks =[{
           iconClass: 'fa-home',
           label : 'Home',
@@ -48,6 +48,49 @@ angular.module('hackIdcApp')
         $scope.timeToCount = (function(){
           return Math.round((new Date('02/01/2016') -new Date())/1000);
         })();
+        $scope.submit = function(data){
+          $scope.formData = {
+            firstName : data.firstName.$modelValue,
+            lastName : data.lastName.$modelValue,
+            gender : data.gender,
+            mail : data.email.$modelValue,
+            phone:  data.phone.$modelValue,
+            academicInstitution:data.school,
+            shirtSize :data.shirtSize,
+            diet : data.diet,
+            linkToProject :  data.pastProject.$modelValue,
+            heardFrom : data.heardFrom,
+            intrestReason :  data.interestReason.$modelValue,
+            gotTeam : data.gotTeam,
+            teamLeaderMail :  (function(){
+              if(data.hasOwnProperty('teamLeaderMail')){
+                return data.teamLeaderMail.$modelValue
+              }else{
+                return ''
+              }
+            })(),
+            needMentor: !!data.needMentor ? 'yes' : 'no'
+          };
+          console.log ($scope.formData);
+
+
+          var url = 'https://sheetsu.com/apis/89ab6aa2';
+          var req = {
+            method: 'POST',
+            url: url,
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            data: $scope.formData
+          };
+          console.log('introduction http')
+          $http(req).then(function(res){
+            console.log(res);
+          }, function(err){
+            console.log(err);
+          });
+
+        };
       }
     ]
   );

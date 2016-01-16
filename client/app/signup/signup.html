@@ -257,7 +257,8 @@
                     I have read the <a href="http://2015.hackidc.com/docs/HackerTermsofService.pdf">term and conditions</a> and I agree
                   </md-checkbox>
                   <div flex="10"></div>
-                  <md-button flex ng-disabled="projectForm.$invalid" class="md-raised md-primary">Submit</md-button>
+
+                  <md-button flex ng-disabled="projectForm.$invalid" class="md-raised md-primary" ng-click="submit(projectForm)">Submit</md-button>
                 </div>
               </fieldset>
 
