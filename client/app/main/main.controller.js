@@ -24,12 +24,12 @@ angular.module('hackIdcApp')
             B :'The program\'s goal is to provide the participants with the tools necessary to build a prototype, in the timeframe of a hackathon.To achieve that we will host several sessions with top developers from hi­tech companies, some sessions will be dedicated to provide the participants with practical knowledge, while others will focus on hackathons in general, and how to prototype correctly.Once the hackathon begins, onsite mentors will be available to provide additional assistance and guidance.'
           }
         };
-      },1000);
+      },2000);
 
 // Flush all changes, one second in
       $timeout(function(){
         $scope.$apply();
-      },1000);
+      },5000);
 
       $scope.video = {
         id : 'h_2iNc_-dDk'

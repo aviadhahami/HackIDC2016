@@ -6,7 +6,7 @@ angular.module('hackIdcApp')
       function ($scope,isMobile,$rootScope,$location,$mdDialog,Upload,$http,$timeout) {
         var fileUploadConfig = "";
         $scope.cvFileName = '';
-
+$scope.finalShow = {};
 
 
 
@@ -107,6 +107,7 @@ angular.module('hackIdcApp')
           fileUploadConfig.data.firstName = $scope.formData.firstName;
           fileUploadConfig.data.lastName = $scope.formData.lastName;
 
+          $scope.finalShow.isUploading = true;
 
           Upload.upload(fileUploadConfig)
             .then(function (res) {
