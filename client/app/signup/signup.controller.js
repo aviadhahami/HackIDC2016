@@ -76,9 +76,8 @@ angular.module('hackIdcApp')
         })();
 
 
-        $scope.submittingForm = true;
+        $scope.submittingForm = false;
         $scope.submit = function(data){
-          $scope.submittingForm = true;
           $scope.formData = {
             firstName : data.firstName.$modelValue,
             lastName : data.lastName.$modelValue,
@@ -111,8 +110,10 @@ angular.module('hackIdcApp')
 
           Upload.upload(fileUploadConfig)
             .then(function (res) {
+
               console.log(res)
               if(res.status == '200' && res.data.status =='200'){
+                $scope.submittingForm = true;
                 $scope.formData['cvLink'] = 'http://2016.hackidc.com/cvs/' + res.data.url;
               }else{
                 alert('error uploading the file');
