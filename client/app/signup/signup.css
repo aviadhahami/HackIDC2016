@@ -149,12 +149,13 @@ md-tooltip.large .md-content p{
 .finalText{
   color: rgba(255,255,255,0.85);
   margin: 0 auto;
-
+  text-align: center;
 
   -webkit-transition: 0.5s linear all;
   -o-transition: 0.5s linear all;
   -moz-transition: 0.5s linear all;
 }
 .finalText p {
+  margin: 0 auto;
   text-align: center;
 }
