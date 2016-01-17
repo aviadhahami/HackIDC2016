@@ -26,17 +26,17 @@
 
     <div class="modal-logo" layout="row">
       <div flex="50" class="type-text" layout="column">
-        <p>Okay {{test.firstName}}, let's see what we've got here..</p>
+        <p>Okay {{finalShow.firstName}}, let's see what we've got here..</p>
         <p>Uploading your resume to our sever : {{progressPercentage || 0}}%</p>
         <p>This is your form summery:</p>
         <p>-------------</p>
-        <p>Name : {{test.firstName}} {{test.lastName}}</p>
-        <p>Phone: {{test.phone}}</p>
-        <p>Mail : {{test.mail}}</p>
+        <p>Name : {{finalShow.firstName}} {{finalShow.lastName}}</p>
+        <p>Phone: {{finalShow.phone}}</p>
+        <p>Mail : {{finalShow.mail}}</p>
         <p>-------------</p>
         <p>{{someting}}</p>
-        <p>{{test.finalText}}<span>|</span></p>
-        <div class="finalText" ng-show="!test.isUploading">
+        <p>{{finalShow.finalText}}<span>|</span></p>
+        <div class="finalText" ng-show="!finalShow.isUploading">
           <h3>Congragulations! We've received your application</h3>
 
           <p>Click <a ui-sref="main">here</a> to go back</p>
@@ -50,8 +50,7 @@
 
 
   </div>
-  <!--FIXME : remove the false-->
-  <div ng-if="!isMobile && false" class="md-padding signup">
+  <div ng-if="!isMobile" class="md-padding signup">
 
     <md-card class="signup-form">
       <md-button flex="5" ui-sref="main" ui-sref-opts="{reload: true}" style="float: left; margin-bottom: 0;">

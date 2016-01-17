@@ -8,19 +8,7 @@ angular.module('hackIdcApp')
         $scope.cvFileName = '';
 
 
-        //FIXME: delete this
-        $scope.test = {
-          firstName : 'aviad',
-          lastName : 'hahami',
-          mail : 'aaa@awlla.com',
-          phone : '0234972342',
-          isUploading : true,
-          finalText : 'Waiting upload'
-        };
-        $timeout(function(){
-          $scope.test.isUploading = false;
-          $scope.test.finalText = 'Done';
-        },7000);
+
 
 
 // upload on file select or drop
@@ -143,6 +131,21 @@ angular.module('hackIdcApp')
               console.log('introduction http')
               $http(req).then(function(res){
                 console.log(res);
+                $scope.finalShow = {
+                  firstName :  $scope.formData.firstName,
+                  lastName : $scope.formData.lastName,
+                  mail : $scope.formData.mail,
+                  phone : $scope.formData.phone,
+                  isUploading : true,
+                  finalText : 'Waiting upload'
+                };
+                $timeout(function(){
+                  $scope.finalShow.isUploading = false;
+                  $scope.finalShow.finalText = 'Done';
+                },10000);
+
+
+
               }, function(err){
                 console.log(err);
               });
