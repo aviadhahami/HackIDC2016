@@ -23,16 +23,7 @@
 </div>
 <md-content ng-if="!isMobile" class="singup-container">
   <div ng-if="!isMobile" class="md-padding signup">
-    <!--<md-card id="timer-card">-->
-    <!--<md-card-content>-->
-    <!--<div>-->
-    <!--<h2 class="md-display-2">-->
-    <!--Registration will be open in-->
-    <!--</h2>-->
-    <!--<timer interval="1000" countdown="timeToCount">{{days}} day{{daysS}}, {{hours}} hour{{hoursS}}, {{minutes}} minute{{minutesS}}, {{seconds}} second{{secondsS}}.</timer>-->
-    <!--</div>-->
-    <!--</md-card-content>-->
-    <!--</md-card>-->
+
     <md-card class="signup-form">
       <md-button flex="5" ui-sref="main" ui-sref-opts="{reload: true}" style="float: left; margin-bottom: 0;">
         <i class="fa fa-chevron-left"></i>
@@ -204,13 +195,16 @@
                   <div ng-message="md-maxlength">Too long, please revise.</div>
                 </div>
               </md-input-container>
-              <md-input-container flex="">
+              <div flex=""></div>
+              <div flex="30" >
+                <div layout="row" style="padding-top: 2vh;">
+                  <md-button  md-no-ink class="md-primary" flex="">
+                    <div ngf-select="upload($file)">Attach CV</div>
+                  </md-button>
 
-
-                <input required type="file" style="border:0;" name="cv" ng-model="projectForm.cv"/>
-
-
-              </md-input-container>
+                  <p flex="">{{cvFileName}}</p>
+                </div>
+              </div>
             </div>
             <div layout="row">
               <md-input-container flex>

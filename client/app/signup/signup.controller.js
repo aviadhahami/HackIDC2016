@@ -2,8 +2,26 @@
 
 angular.module('hackIdcApp')
 
-  .controller('SignupCtrl',  ['$scope','isMobile','$rootScope','$location','$mdDialog','$http',
-      function ($scope,isMobile,$rootScope,$location,$mdDialog,$http) {
+  .controller('SignupCtrl',  ['$scope','isMobile','$rootScope','$location','$mdDialog','Upload','$http',
+      function ($scope,isMobile,$rootScope,$location,$mdDialog,Upload,$http) {
+        var fileUploadConfig = "";
+        $scope.cvFileName = '';
+
+// upload on file select or drop
+        $scope.upload = function (file) {
+          $scope.cvFileName = file.name.length > 15? file.name.substr(0,15) + '...':file.name ;
+          fileUploadConfig = {
+            url: '/upload.php',
+            data: {
+              firstName: '',
+              lastName: '',
+              file: file
+            }
+          };
+        };
+
+
+        // Mobile links directive config
         $scope.mobileLinks =[{
           iconClass: 'fa-home',
           label : 'Home',
@@ -13,6 +31,8 @@ angular.module('hackIdcApp')
           actionArgs: 'home',
           bgColor:'#2185D5'
         }];
+
+        // Schools array of options holder
         $scope.schools =[
           "IDC Herzliya",
           "Academic College of Tel Aviv-Yafo",
@@ -45,6 +65,8 @@ angular.module('hackIdcApp')
           "Other"
         ];
         $scope.isMobile = isMobile.isMobile();
+
+        // Time counter for timer
         $scope.timeToCount = (function(){
           return Math.round((new Date('02/01/2016') -new Date())/1000);
         })();
@@ -52,7 +74,6 @@ angular.module('hackIdcApp')
 
 
         $scope.submit = function(data){
-          console.log(data);
           $scope.formData = {
             firstName : data.firstName.$modelValue,
             lastName : data.lastName.$modelValue,
@@ -75,23 +96,47 @@ angular.module('hackIdcApp')
             })(),
             needMentor: !!data.needMentor ? 'yes' : 'no'
           };
-          console.log ($scope.formData);
+          if(!fileUploadConfig){
+            alert('no file picked');
+            return;
+          }
+          fileUploadConfig.data.firstName = $scope.formData.firstName;
+          fileUploadConfig.data.lastName = $scope.formData.lastName;
 
-          var url = 'https://sheetsu.com/apis/89ab6aa2';
-          var req = {
-            method: 'POST',
-            url: url,
-            headers: {
-              'Content-Type': 'application/json'
-            },
-            data: $scope.formData
-          };
-          console.log('introduction http')
-          $http(req).then(function(res){
-            console.log(res);
-          }, function(err){
-            console.log(err);
-          });
+
+          Upload.upload(fileUploadConfig)
+            .then(function (res) {
+              console.log(res)
+              if(res.status == '200' && res.data.status =='200'){
+                $scope.formData['cvLink'] = 'http://2016.hackidc.com/cvs/' + res.data.url;
+              }else{
+                alert('error uploading the file');
+                return;
+              }
+              // Post data to sheets
+              var url = 'https://sheetsu.com/apis/89ab6aa2';
+              var req = {
+                method: 'POST',
+                url: url,
+                headers: {
+                  'Content-Type': 'application/json'
+                },
+                data: $scope.formData
+              };
+              console.log('introduction http')
+              $http(req).then(function(res){
+                console.log(res);
+              }, function(err){
+                console.log(err);
+              });
+
+            }, function (err) {
+              console.log(err);
+            }, function (evt) {
+              var progressPercentage = parseInt(100.0 * evt.loaded / evt.total);
+              console.log('progress: ' + progressPercentage + '% ' + evt.config.data.file.name);
+            });
+
 
         };
       }
