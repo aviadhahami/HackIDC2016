@@ -138,11 +138,11 @@ angular.module('hackIdcApp')
                   mail : $scope.formData.mail,
                   phone : $scope.formData.phone,
                   isUploading : true,
-                  finalText : 'Waiting upload'
+                  finalText : 'Finalizing...'
                 };
                 $timeout(function(){
                   $scope.finalShow.isUploading = false;
-                  $scope.finalShow.finalText = 'Done';
+                  $scope.finalShow.finalText = 'Done!';
                 },10000);
 
 

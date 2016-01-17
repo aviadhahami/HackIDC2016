@@ -36,6 +36,7 @@
 .signup-form{
   margin: 0 auto;
   width:90vw;
+  height: 100%;
 }
 .signup-form md-card-content{
   margin: 0 auto;
@@ -74,7 +75,9 @@ md-tooltip.large .md-content p{
 
 /*Modal*/
 .submit-modal-container{
-  -webkit-transition: all 0.5s ease;
+  -webkit-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
 
   top:0;
   left:0;
@@ -95,24 +98,15 @@ md-tooltip.large .md-content p{
 }
 
 .type-text p:nth-child(2){
-  -webkit-animation-delay: 2s;
-  -moz-animation-delay: 2s;
-  -o-animation-delay: 2s;
-  animation-delay: 2s;
+
   animation: type2 4s steps(60, end);
 }
 .type-text p:nth-child(3){
-  -webkit-animation-delay: 8s;
-  -moz-animation-delay: 8s;
-  -o-animation-delay: 8s;
-  animation-delay: 8s;
+
   animation: type2 8s steps(60, end);
 }
 .type-text p:nth-child(n+4):nth-child(-n+8){
-  -webkit-animation-delay: 15s;
-  -moz-animation-delay: 15s;
-  -o-animation-delay: 15s;
-  animation-delay: 15s;
+
    animation: type2 12s steps(60, end);
  }
 .type-text p:nth-child(10){
@@ -155,6 +149,11 @@ md-tooltip.large .md-content p{
 .finalText{
   color: rgba(255,255,255,0.85);
   margin: 0 auto;
+
+
+  -webkit-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
 }
 .finalText p {
   text-align: center;

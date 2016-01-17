@@ -34,10 +34,9 @@
         <p>Phone: {{finalShow.phone}}</p>
         <p>Mail : {{finalShow.mail}}</p>
         <p>-------------</p>
-        <p>{{someting}}</p>
         <p>{{finalShow.finalText}}<span>|</span></p>
-        <div class="finalText" ng-show="!finalShow.isUploading">
-          <h3>Congragulations! We've received your application</h3>
+        <div class="finalText" ng-if="!finalShow.isUploading">
+          <h3>Congratulations! We've received your application</h3>
 
           <p>Click <a ui-sref="main">here</a> to go back</p>
         </div>
