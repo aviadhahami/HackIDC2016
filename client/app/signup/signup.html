@@ -22,7 +22,36 @@
   </code>
 </div>
 <md-content ng-if="!isMobile" class="singup-container">
-  <div ng-if="!isMobile" class="md-padding signup">
+  <div ng-if="submittingForm" class="submit-modal-container">
+
+    <div class="modal-logo" layout="row">
+      <div flex="50" class="type-text" layout="column">
+        <p>Okay {{test.firstName}}, let's see what we've got here..</p>
+        <p>Uploading your resume to our sever : {{progressPercentage || 0}}%</p>
+        <p>This is your form summery:</p>
+        <p>-------------</p>
+        <p>Name : {{test.firstName}} {{test.lastName}}</p>
+        <p>Phone: {{test.phone}}</p>
+        <p>Mail : {{test.mail}}</p>
+        <p>-------------</p>
+        <p>{{someting}}</p>
+        <p>{{test.finalText}}<span>|</span></p>
+        <div class="finalText" ng-show="!test.isUploading">
+          <h3>Congragulations! We've received your application</h3>
+
+          <p>Click <a ui-sref="main">here</a> to go back</p>
+        </div>
+      </div>
+      <div flex="50">
+        <img src="../../assets/logos/HerzelHeadBlack.png" alt="">
+      </div>
+
+    </div>
+
+
+  </div>
+  <!--FIXME : remove the false-->
+  <div ng-if="!isMobile && false" class="md-padding signup">
 
     <md-card class="signup-form">
       <md-button flex="5" ui-sref="main" ui-sref-opts="{reload: true}" style="float: left; margin-bottom: 0;">
@@ -201,7 +230,6 @@
                   <md-button  md-no-ink class="md-primary" flex="">
                     <div ngf-select="upload($file)">Attach CV</div>
                   </md-button>
-
                   <p flex="">{{cvFileName}}</p>
                 </div>
               </div>
@@ -268,9 +296,8 @@
             </div>
           </form>
         </div>
-
-
       </md-card-content>
     </md-card>
   </div>
+
 </md-content>

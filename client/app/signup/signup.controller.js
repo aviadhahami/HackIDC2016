@@ -2,10 +2,26 @@
 
 angular.module('hackIdcApp')
 
-  .controller('SignupCtrl',  ['$scope','isMobile','$rootScope','$location','$mdDialog','Upload','$http',
-      function ($scope,isMobile,$rootScope,$location,$mdDialog,Upload,$http) {
+  .controller('SignupCtrl',  ['$scope','isMobile','$rootScope','$location','$mdDialog','Upload','$http','$timeout',
+      function ($scope,isMobile,$rootScope,$location,$mdDialog,Upload,$http,$timeout) {
         var fileUploadConfig = "";
         $scope.cvFileName = '';
+
+
+        //FIXME: delete this
+        $scope.test = {
+          firstName : 'aviad',
+          lastName : 'hahami',
+          mail : 'aaa@awlla.com',
+          phone : '0234972342',
+          isUploading : true,
+          finalText : 'Waiting upload'
+        };
+        $timeout(function(){
+          $scope.test.isUploading = false;
+          $scope.test.finalText = 'Done';
+        },7000);
+
 
 // upload on file select or drop
         $scope.upload = function (file) {
@@ -72,8 +88,9 @@ angular.module('hackIdcApp')
         })();
 
 
-
+        $scope.submittingForm = true;
         $scope.submit = function(data){
+          $scope.submittingForm = true;
           $scope.formData = {
             firstName : data.firstName.$modelValue,
             lastName : data.lastName.$modelValue,
@@ -134,6 +151,7 @@ angular.module('hackIdcApp')
               console.log(err);
             }, function (evt) {
               var progressPercentage = parseInt(100.0 * evt.loaded / evt.total);
+              $scope.progressPercentage = progressPercentage;
               console.log('progress: ' + progressPercentage + '% ' + evt.config.data.file.name);
             });
 

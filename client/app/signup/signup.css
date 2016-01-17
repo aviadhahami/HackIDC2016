@@ -70,3 +70,92 @@ md-tooltip.large .md-content p{
   text-align: justify;
   line-height: 1.5;
 }
+
+
+/*Modal*/
+.submit-modal-container{
+  -webkit-transition: all 0.5s ease;
+
+  top:0;
+  left:0;
+  width:80vw;
+  height: 80vh;
+  margin: 0 auto;
+  margin-top: 10vh;
+}
+.type-text>p{
+  color: lime;
+  font-family: "Courier";
+  font-size: 20px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 2s steps(60, end);
+}
+
+.type-text p:nth-child(2){
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  animation-delay: 2s;
+  animation: type2 4s steps(60, end);
+}
+.type-text p:nth-child(3){
+  -webkit-animation-delay: 8s;
+  -moz-animation-delay: 8s;
+  -o-animation-delay: 8s;
+  animation-delay: 8s;
+  animation: type2 8s steps(60, end);
+}
+.type-text p:nth-child(n+4):nth-child(-n+8){
+  -webkit-animation-delay: 15s;
+  -moz-animation-delay: 15s;
+  -o-animation-delay: 15s;
+  animation-delay: 15s;
+   animation: type2 12s steps(60, end);
+ }
+.type-text p:nth-child(10){
+  animation: type2 14s steps(60, end);
+}
+
+.type-text p a{
+  color: lime;
+  text-decoration: none;
+}
+
+.type-text span{
+  animation: blink 1s infinite;
+}
+
+@keyframes type{
+  from { width: 0; }
+}
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; }
+}
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+.modal-logo img{
+  padding-left: 10vw;
+  margin: 0 auto;
+  padding-top: 10vh;
+}
+.type-text{
+  background-color: black;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  border-radius:10px;
+}
+.finalText{
+  color: rgba(255,255,255,0.85);
+  margin: 0 auto;
+}
+.finalText p {
+  text-align: center;
+}
