@@ -118,15 +118,39 @@ figure{
 section#home{
   width:100vw;
 }
-#home h1{
+#home-content h1{
   text-align: center;
   color:white;
   text-shadow: 2px 2px grey;
+  font-family: 'Ultra', serif;
+  margin-bottom: 5%;
 }
+
 #home-content{
   background-color: transparent;
-  width:80%;
   margin:0 auto;
+}
+#home-content img{
+  margin: 0 auto;
+}
+#home-content h2{
+  padding-bottom: 10vh;
+  font-family: 'Ultra', serif;
+  text-shadow: 2px 2px white;
+  color: black;
+}
+
+
+
+
+.no-margins{
+  margin : 0 auto;
+}
+.no-paddings{
+  padding: 0;
+}
+.text-center{
+  text-align: center;
 }
 #home-cta{
   color: white;

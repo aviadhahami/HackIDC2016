@@ -10,7 +10,9 @@ angular.module('hackIdcApp')
       // Workaround for the fittext thing
       $timeout(function(){
         $scope.titles = {
-          mainTitle : 'Welcome to HackIDC 2016',
+          //mainTitle : 'Welcome to HackIDC 2016',
+          mainTitle : 'HackIDC 2016',
+          eventDate : '6-7, May 16',
           description : 'What is HackIDC?',
           prizes : 'Prizes',
           sponsors : 'Sponsors',

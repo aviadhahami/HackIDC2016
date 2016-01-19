@@ -52,15 +52,20 @@
     <section id="home" class="md-padding">
       <video-bg video-id="video.id" loop="true" mobile-image="'assets/images/transparent.png'" mute="true"  start="22" end="120" content-z-index="500"></video-bg>
 
-      <div style="height: 30vh"></div>
-      <div id="home-content" class="md-padding">
-        <h1 class="md-display-2" data-ng-model="titles.mainTitle" fittext data-fittext-max="200">{{titles.mainTitle}}</h1>
+      <div ng-style="{'height': isMobile ? '10vh' : '20vh'}"></div>
+      <div id="home-content" class="md-padding text-center" layout="column">
+        <!--<h1 class="md-display-2" data-ng-model="titles.mainTitle" fittext data-fittext-max="{{isMobile? 30 : 150}}" ng-bind="titles.mainTitle"></h1>-->
+        <img src="../../assets/logos/Logo-Final.png" ng-style="{'width': isMobile? '90vw' : '50vw'}">
+        <h2 class="md-display-1 no-margins no-paddings" fittext="" data-fittext-max="{{isMobile? 20 : 80}}" ng-bind="titles.eventDate" data-ng-model="titles.eventDate"></h2>
       </div>
+
       <div id="home-cta" ng-style="{width: isMobile? '60%' : '20%'}">
         <a href="#description" du-smooth-scroll>
           <p>Start Hacking</p>
-        </a>
+        </a>g
       </div>
+
+
     </section>
     <section id="description" class="md-padding">
 
