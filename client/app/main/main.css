@@ -85,7 +85,7 @@ header .md-display-3,.md-display-1,p{
 
 #hackidc-logo{
   -webkit-transition: all 0.5s ease;
-
+  margin: 0 auto;
 }
 figure{
   margin: 0 auto;
@@ -96,10 +96,8 @@ figure{
   padding-top: 2vh;
 }
 .big-logo{
-  height: auto;
   max-height: 100px;
-  width:100%;
-  padding-top: 2vh;
+  /*padding-top: 2vh;*/
 }
 
 /*home*/
