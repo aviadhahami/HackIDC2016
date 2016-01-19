@@ -12,7 +12,8 @@ angular.module('hackIdcApp')
         $scope.titles = {
           //mainTitle : 'Welcome to HackIDC 2016',
           mainTitle : 'HackIDC 2016',
-          eventDate : '6-7, May 16',
+          eventDate : ' May 6-7, 2016 ',
+          eventLine : 'Israel\'s Leading Student Hackathon',
           description : 'What is HackIDC?',
           prizes : 'Prizes',
           sponsors : 'Sponsors',
