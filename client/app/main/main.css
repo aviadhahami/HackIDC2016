@@ -93,7 +93,7 @@ figure{
 .small-logo{
   height:30px;
   width:auto;
-  padding-top: 2vh;
+  /*padding-top: 2vh;*/
 }
 .big-logo{
   max-height: 100px;
