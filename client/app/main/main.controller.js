@@ -5,6 +5,34 @@ angular.module('hackIdcApp')
     function ($scope,$window,$timeout,$document,isMobile,$location,$rootScope) {
       $scope.isMobile = isMobile.isMobile();
 
+      $scope.FAQ = [
+        {
+          title:'Who can register',
+          content: 'Another answer'
+        },
+        {
+          title:'What is HackIDC',
+          content: 'Answer goes here'
+        },
+        {
+          title:'When will I know if I got in?',
+          content: 'Answer goes here'
+        },
+        {
+          title:'What can I win?',
+          content: 'Answer goes here'
+        },
+        {
+          title:'What am I expected to build?',
+          content: 'Answer goes here'
+        },
+        {
+          title:'How are the projects being judged',
+          content: 'Answer goes here'
+        },
+
+      ];
+
 
 
       // Workaround for the fittext thing
@@ -14,15 +42,15 @@ angular.module('hackIdcApp')
           mainTitle : 'HackIDC 2016',
           eventDate : ' May 6-7, 2016 ',
           eventLine : 'Israel\'s Leading Student Hackathon',
-          description : 'What is HackIDC?',
+          description : 'FAQ',
           prizes : 'Prizes',
           sponsors : 'Sponsors',
           team : 'Team',
           mentorship :'Mentorship'
         };
         $scope.content= {
-          descriptionContent : "HackIDC is the first national student hackathon in Israel. It is the biggest hackathon in Israel and it’s run by students from the IDC. This hackathon is an event that brings together software,hardware, and design enthusiasts to create new and innovative applications or services from scratch in 36 hours. It is an opportunity to meet and learn from people from different backgrounds and schools and an opportunity to learn from mentors that come from the top companies in the high tech industry in Israel. Ultimately it is a fun & professional experience.",
-          mentorshipContent:{
+          descriptionContent :'Information you might need to know'
+          ,mentorshipContent:{
             A : 'HackIDC will operate a special mentorship program, targeting those who want to participate in a hackathon but still needs to work on their development skills.',
             B :'The program\'s goal is to provide the participants with the tools necessary to build a prototype, in the timeframe of a hackathon.To achieve that we will host several sessions with top developers from hi­tech companies, some sessions will be dedicated to provide the participants with practical knowledge, while others will focus on hackathons in general, and how to prototype correctly.Once the hackathon begins, onsite mentors will be available to provide additional assistance and guidance.'
           }

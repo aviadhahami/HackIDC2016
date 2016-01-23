@@ -61,38 +61,46 @@
         <h2 class="md-display-1 no-margins no-paddings" fittext="" data-fittext-max="{{isMobile? 20 : 60}}" ng-bind="titles.eventDate" data-ng-model="titles.eventDate"></h2>
 
         <!--<div id="home-cta" ng-style="{width: isMobile? '60%' : '20%'}">-->
-          <!--<a href="#description" du-smooth-scroll>-->
-            <!--<p>Start Hacking</p>-->
-          <!--</a>-->
+        <!--<a href="#description" du-smooth-scroll>-->
+        <!--<p>Start Hacking</p>-->
+        <!--</a>-->
         <!--</div>-->
-       </div>
+      </div>
 
 
 
 
     </section>
     <section id="description" class="md-padding">
+      <div class="section-header">
+        <h2 class="md-display-4 section-title">{{titles.description}}</h2>
 
-      <h2 class="md-display-2" data-ng-model="titles.description" fittext data-fittext-max="70">{{titles.description}}</h2>
-      </span>
+        <p class="section-subtitle">{{content.descriptionContent}}</p>
+      </div>
 
-      <p data-fittext data-fittext-max="{{isMobile ? 20 : 50}}" data-ng-model="content.descriptionContent">
-        {{content.descriptionContent}}
-      </p>
       <div id="description-cards">
         <md-content class="md-padding">
-          <div layout="row">
-            <div flex="33" class="card">
-              <h2>title</h2>
-              <p>Content</p>
+          <div layout-gt-sm="row" layout="column" ng-repeat="q in FAQ track by $index" ng-if="$index % 3 == 0">
+            <div flex="30" class="card" ng-if="FAQ[$index]">
+              <div class="card-content">
+                <h2>{{FAQ[$index].title}}</h2>
+                <hr>
+                <p>{{FAQ[$index].content}}</p>
+              </div>
             </div>
-            <div flex="33" class="card">
-              <h2>title</h2>
-              <p>Content</p>
+            <div flex="30" class="card" ng-if="FAQ[$index+1]">
+              <div class="card-content">
+                <h2>{{FAQ[$index+1].title}}</h2>
+                <hr>
+                <p>{{FAQ[$index+1].content}}</p>
+              </div>
             </div>
-            <div flex="33" class="card">
-              <h2>title</h2>
-              <p>ConteContentContentContentContentContentContentContentContentContentnt</p>
+            <div flex="30" class="card" ng-if="FAQ[$index+2]">
+              <div class="card-content">
+                <h2>{{FAQ[$index+2].title}}</h2>
+                <hr>
+                <p>{{FAQ[$index+2].content}}</p>
+              </div>
             </div>
           </div>
         </md-content>

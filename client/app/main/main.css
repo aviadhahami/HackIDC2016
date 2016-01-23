@@ -44,6 +44,12 @@ section {
   color:white;
   font-weight: 500;
 }
+.section-title{
+  font-size: 20vmin;
+}
+.section-subtitle{
+  font-size: 4vmin;
+}
 .text-min{
   font-weight: 100;
   -webkit-transition: all 500ms ease;
@@ -152,7 +158,9 @@ section#home{
 
 
 
-
+.display-block{
+  display: block!important;
+}
 .no-margins{
   margin : 0 auto;
 }
@@ -180,18 +188,39 @@ section#home{
 #description h2{
   color: rgba(0, 0, 0, 0.87);
 }
+#description .section-header h2{
+
+  padding-bottom: 3%;
+  margin-bottom: 0;
+}
+#description .section-header{
+  padding-bottom: 5%;
+}
+
 #description p{
   color: rgba(0, 0, 0, 0.6);
-  text-align: justify;
   width: 80%;
   margin: 0 auto;
 }
 .card{
   /*box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);*/
   transition: all 0.2s ease-in-out;
+  margin: 0 auto;
+  width:100%;
+}
+.card p{
+  padding-bottom: 10px;
 }
 .card:hover{
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.card .card-content{
+  margin: 10px;
+
+}
+.card .card-content p{
+  text-align: justify;
+
 }
 
 
