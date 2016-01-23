@@ -203,6 +203,8 @@ section#home{
   transition: all 0.2s ease-in-out;
   margin: 0 auto;
   width:100%;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 .card p{
   padding-bottom: 10px;
@@ -212,10 +214,14 @@ section#home{
 }
 .card .card-content{
   margin: 10px;
+
 }
 .card .card-content h3{
   color: rgba(0, 0, 0, 0.87);
   margin-bottom: 0;
+  text-align: left;
+  padding-left: 0;
+  font-size: 3vmin;
 
 }
 .card .card-content p{

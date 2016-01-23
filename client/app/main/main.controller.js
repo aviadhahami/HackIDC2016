@@ -39,7 +39,7 @@ angular.module('hackIdcApp')
         },
         {
           title:'Is there a specified theme for the Hackathon?',
-          content: 'Answer goes here'
+          content: 'Answer goes here Answer goes hereAnswer goes hereAnswer goes hereAnswer goes here Answer goes hereAnswer goes here'
         },
         {
           title:'I\'m a CS student without much experience, should I apply?',
