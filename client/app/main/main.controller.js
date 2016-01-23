@@ -30,6 +30,30 @@ angular.module('hackIdcApp')
           title:'How are the projects being judged',
           content: 'Answer goes here'
         },
+        {
+          title:'How much does it cost to participate?',
+          content: 'Answer goes here'
+        },
+        {
+          title:'Once I get in, what should I bring?',
+          content: 'Answer goes here'
+        },
+        {
+          title:'Is there a specified theme for the Hackathon?',
+          content: 'Answer goes here'
+        },
+        {
+          title:'I\'m a CS student without much experience, should I apply?',
+          content: 'Answer goes here'
+        },
+        {
+          title:'Who runs HackIDC?',
+          content: 'Answer goes here'
+        },
+        {
+          title:'I have one more question',
+          content: 'Answer goes here'
+        },
 
       ];
 

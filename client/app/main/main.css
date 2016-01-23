@@ -185,9 +185,6 @@ section#home{
   line-height:normal;
   text-align: center;
 }
-#description h2{
-  color: rgba(0, 0, 0, 0.87);
-}
 #description .section-header h2{
 
   padding-bottom: 3%;
@@ -199,7 +196,6 @@ section#home{
 
 #description p{
   color: rgba(0, 0, 0, 0.6);
-  width: 80%;
   margin: 0 auto;
 }
 .card{
@@ -212,10 +208,14 @@ section#home{
   padding-bottom: 10px;
 }
 .card:hover{
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  /*box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);*/
 }
 .card .card-content{
   margin: 10px;
+}
+.card .card-content h3{
+  color: rgba(0, 0, 0, 0.87);
+  margin-bottom: 0;
 
 }
 .card .card-content p{
@@ -225,8 +225,14 @@ section#home{
 
 
 #description-cards{
-  width:80%;
+  width:100%;
   margin: 0 auto;
+
+}
+.card-title{
+  background-color: transparent;
+  padding: 1.5%;
+  margin: 0;
 }
 #prizes{
   background-color: #1976D2;

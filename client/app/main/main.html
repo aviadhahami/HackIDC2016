@@ -83,23 +83,24 @@
           <div layout-gt-sm="row" layout="column" ng-repeat="q in FAQ track by $index" ng-if="$index % 3 == 0">
             <div flex="30" class="card" ng-if="FAQ[$index]">
               <div class="card-content">
-                <h2>{{FAQ[$index].title}}</h2>
+                <h3 class="md-display-1 card-title">{{FAQ[$index].title}}</h3>
                 <hr>
-                <p>{{FAQ[$index].content}}</p>
+                <p class="md-headline">{{FAQ[$index].content}}</p>
               </div>
             </div>
             <div flex="30" class="card" ng-if="FAQ[$index+1]">
-              <div class="card-content">
-                <h2>{{FAQ[$index+1].title}}</h2>
+              <div class="card-content ">
+                <h3 class="md-display-1 card-title">{{FAQ[$index+1].title}}</h3>
                 <hr>
-                <p>{{FAQ[$index+1].content}}</p>
+                <p class="md-headline">{{FAQ[$index+1].content}}</p>
               </div>
             </div>
+
             <div flex="30" class="card" ng-if="FAQ[$index+2]">
               <div class="card-content">
-                <h2>{{FAQ[$index+2].title}}</h2>
+                <h3 class="md-display-1 card-title">{{FAQ[$index+2].title}}</h3>
                 <hr>
-                <p>{{FAQ[$index+2].content}}</p>
+                <p class="md-headline">{{FAQ[$index+2].content}}</p>
               </div>
             </div>
           </div>
