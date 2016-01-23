@@ -4,8 +4,7 @@ angular.module('hackIdcApp')
   .controller('MainCtrl',  ['$scope','$window','$timeout','$document','isMobile','$location','$rootScope',
     function ($scope,$window,$timeout,$document,isMobile,$location,$rootScope) {
       $scope.isMobile = isMobile.isMobile();
-
-      $scope.FAQ = [
+      var FAQ =[
         {
           title:'Who can register',
           content: 'Another answer'
@@ -53,9 +52,11 @@ angular.module('hackIdcApp')
         {
           title:'I have one more question',
           content: 'Answer goes here'
-        },
+        }
 
       ];
+      $scope.FAQ = FAQ;
+
 
 
 
