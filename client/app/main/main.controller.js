@@ -4,54 +4,56 @@ angular.module('hackIdcApp')
   .controller('MainCtrl',  ['$scope','$window','$timeout','$document','isMobile','$location','$rootScope',
     function ($scope,$window,$timeout,$document,isMobile,$location,$rootScope) {
       $scope.isMobile = isMobile.isMobile();
+
+      // Might need to bind these with ng-bind-html
       var FAQ =[
         {
           title:'Who can register',
-          content: 'Another answer'
+          content: 'Keep on moving to the first rays of dawn Keeping it on \'til the day stays strong Runnin \'til the night time blazes on All along I keep singing my song I said, this phase is always Sometimes I get so crazed But just know that I\'ll always stay \'Cause you\'re my light through the haze'
         },
         {
           title:'What is HackIDC',
-          content: 'Answer goes here'
+          content: 'I\'ve said it once, I\'ve said it twice, I\'ve said it a thousand fucking times That I\'m OK, that I\'m fine, that it\'s all just in my mind But this has got the best of me, and I can\'t seem to sleep It\'s not \'cause you\'re not with me, it\'s \'cause you never leave'
         },
         {
           title:'When will I know if I got in?',
-          content: 'Answer goes here'
+          content: 'Keep on moving to the first rays of dawn Keeping it on \'til the day stays strong Runnin \'til the night time blazes on All along I keep singing my song I said, this phase is always Sometimes I get so crazed But just know that I\'ll always stay \'Cause you\'re my light through the haze'
         },
         {
           title:'What can I win?',
-          content: 'Answer goes here'
+          content: 'Keep on moving to the first rays of dawn Keeping it on \'til the day stays strong Runnin \'til the night time blazes on All along I keep singing my song I said, this phase is always Sometimes I get so crazed But just know that I\'ll always stay \'Cause you\'re my light through the haze'
         },
         {
           title:'What am I expected to build?',
-          content: 'Answer goes here'
+          content: 'Keep on moving to the first rays of dawn Keeping it on \'til the day stays strong Runnin \'til the night time blazes on All along I keep singing my song I said, this phase is always Sometimes I get so crazed But just know that I\'ll always stay \'Cause you\'re my light through the haze'
         },
         {
           title:'How are the projects being judged',
-          content: 'Answer goes here'
+          content: 'Keep on moving to the first rays of dawn Keeping it on \'til the day stays strong Runnin \'til the night time blazes on All along I keep singing my song I said, this phase is always Sometimes I get so crazed But just know that I\'ll always stay \'Cause you\'re my light through the haze'
         },
         {
           title:'How much does it cost to participate?',
-          content: 'Answer goes here'
+          content: 'Keep on moving to the first rays of dawn Keeping it on \'til the day stays strong Runnin \'til the night time blazes on All along I keep singing my song I said, this phase is always Sometimes I get so crazed But just know that I\'ll always stay \'Cause you\'re my light through the haze'
         },
         {
           title:'Once I get in, what should I bring?',
-          content: 'Answer goes here'
+          content: 'Keep on moving to the first rays of dawn Keeping it on \'til the day stays strong Runnin \'til the night time blazes on All along I keep singing my song I said, this phase is always Sometimes I get so crazed But just know that I\'ll always stay \'Cause you\'re my light through the haze'
         },
         {
           title:'Is there a specified theme for the Hackathon?',
-          content: 'Answer goes here Answer goes hereAnswer goes hereAnswer goes hereAnswer goes here Answer goes hereAnswer goes here'
+          content: 'Keep on moving to the first rays of dawn Keeping it on \'til the day stays strong Runnin \'til the night time blazes on All along I keep singing my song I said, this phase is always Sometimes I get so crazed But just know that I\'ll always stay \'Cause you\'re my light through the haze'
         },
         {
           title:'I\'m a CS student without much experience, should I apply?',
-          content: 'Answer goes here'
+          content: 'Keep on moving to the first rays of dawn Keeping it on \'til the day stays strong Runnin \'til the night time blazes on All along I keep singing my song I said, this phase is always Sometimes I get so crazed But just know that I\'ll always stay \'Cause you\'re my light through the haze'
         },
         {
           title:'Who runs HackIDC?',
-          content: 'Answer goes here'
+          content: 'Keep on moving to the first rays of dawn Keeping it on \'til the day stays strong Runnin \'til the night time blazes on All along I keep singing my song I said, this phase is always Sometimes I get so crazed But just know that I\'ll always stay \'Cause you\'re my light through the haze'
         },
         {
           title:'I have one more question',
-          content: 'Answer goes here'
+          content: 'Keep on moving to the first rays of dawn Keeping it on \'til the day stays strong Runnin \'til the night time blazes on All along I keep singing my song I said, this phase is always Sometimes I get so crazed But just know that I\'ll always stay \'Cause you\'re my light through the haze'
         }
 
       ];
