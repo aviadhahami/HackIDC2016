@@ -223,8 +223,6 @@ section#home{
   margin-bottom: 0;
   text-align: left;
   padding-left: 0;
-  font-size: 3vmin;
-
 }
 .card .card-content p{
   text-align: justify;
@@ -241,6 +239,7 @@ section#home{
   background-color: transparent;
   padding: 1.5%;
   margin: 0;
+  /*font-size: 5vmin;*/
 }
 #prizes{
   background-color:#80CBC4;
@@ -276,12 +275,26 @@ section#home{
   text-align: center;
 }
 #sponsors{
-  background: #1E88E5;
+  background: #263238;
   line-height:normal;
   text-align: center;
 }
 #sponsors h2{
   font-weight: 300;
+  color: rgba(255,255,255,0.85);
+}
+#sponsor-us{
+  color: rgba(255,255,255,0.85);
+  font-weight: 100;
+}
+#sponsor-us a{
+  text-decoration: none;
+  color:#2196F3;
+}
+.cohost-logo{
+  margin:0 auto;
+  width:50vw;
+  height:100%;
 }
 #mentorship{
   background: #E1F5FE;
