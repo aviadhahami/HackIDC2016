@@ -61,56 +61,15 @@ angular.module('hackIdcApp')
 
       $scope.mentorshipFAQ = [
         {
-          title:'AJ',
-          content:' Sé que mis rimas a veces causan disgustos,' +
-          'Cuando mis neuronas corren' +
-          'Hasta yo mismo me asusto' +
-          'Mis respuestas pueden ser tan agresivas,' +
-          'Que hasta las letras me huyen' +
-          'Porque tienen miedo de que las escriba' +
-          'No tengo rifles pa\' matarte' +
-          'Solo basta con la pista' +
-          'Convierto letras en ideas como un ilusionista' +
-          'En una línea te mato, te fracturo, te lesiono' +
-          'Y en la siguiente te resucito cuando te menciono' +
-          'Eso es parte de mi arte' +
-          'Que todo el mundo sepa,' +
-          'Que estas rimas son pa\'' +
-          'ti sin tener que mencionarte' +
-          'Y no lo hago para evitar el roce' +
-          'Lo hago para no hacerte famoso' +
-          'En los países donde nadie te conoce' +
-          'Después de ver como se mueven las guerras y las guerrillas' +
-          'Tu crees que le voy a tener miedo a tu pandilla?' +
-          'Dispara cuando quieras raperito maleantoso,' +
-          'Aquí no gana el mas maleante' +
-          'Gana el mas ingenioso'
+          title:'What is the Mentorship program?',
+          content: 'HackIDC will operate a special mentorship program, targeting those who want to participate in a hackathon but still needs to work on their development skills.'
         },
         {
-          title:'Abraham',
-          content:' Sé que mis rimas a veces causan disgustos,' +
-          'Cuando mis neuronas corren' +
-          'Hasta yo mismo me asusto' +
-          'Mis respuestas pueden ser tan agresivas,' +
-          'Que hasta las letras me huyen' +
-          'Porque tienen miedo de que las escriba' +
-          'No tengo rifles pa\' matarte' +
-          'Solo basta con la pista' +
-          'Convierto letras en ideas como un ilusionista' +
-          'En una línea te mato, te fracturo, te lesiono' +
-          'Y en la siguiente te resucito cuando te menciono' +
-          'Eso es parte de mi arte' +
-          'Que todo el mundo sepa,' +
-          'Que estas rimas son pa\'' +
-          'ti sin tener que mencionarte' +
-          'Y no lo hago para evitar el roce' +
-          'Lo hago para no hacerte famoso' +
-          'En los países donde nadie te conoce' +
-          'Después de ver como se mueven las guerras y las guerrillas' +
-          'Tu crees que le voy a tener miedo a tu pandilla?' +
-          'Dispara cuando quieras raperito maleantoso,' +
-          'Aquí no gana el mas maleante' +
-          'Gana el mas ingenioso'
+          title:'What does it include?',
+          content:'The program\'s goal is to provide the participants with the tools necessary to build a prototype, in the timeframe of a hackathon. <br>' +
+          'To achieve that we will host several sessions with top developers from hi­tech companies, ' +
+          'some sessions will be dedicated to provide the participants with practical knowledge, while others will focus on hackathons in general, and how to prototype correctly. ' +
+          'Once the hackathon begins, onsite mentors will be available to provide additional assistance and guidance.'
         },
         {
           title:'Jesus',
