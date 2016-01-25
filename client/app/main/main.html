@@ -152,15 +152,21 @@
 
     </section>
     <section id="prizes" class="md-padding">
-      <h2 class="md-display-3 section-title">{{titles.prizes}}</h2>
-      <div style="height: 10vh;"></div>
-      <p class="ten-vim">To be announced</p>
+      <div class="section-header">
+        <h2 class="md-display-4 section-title">{{titles.prizes}}</h2>
+
+        <p class="section-subtitle">{{content.prizesSub}}</p>
+      </div>
     </section>
     <section id="team" class="md-padding">
-      <h2 class="md-display-2  section-title">{{titles.team}}</h2>
-      <p class="five-vim">
-        They are busy planning and will be present on this section asap.
-      </p>
+      <div class="section-header">
+        <h2 class="md-display-4 section-title">{{titles.team}}</h2>
+        <p class="section-subtitle">{{content.teamSub}}</p>
+
+      </div>
+      <div class="team-showcase-container">
+        <img ng-style="{width : isMobile? '50vw' : '30vw'}" src="http://icons.iconarchive.com/icons/webalys/kameleon.pics/512/Ninja-icon.png" alt="">
+      </div>
     </section>
 
   </div>

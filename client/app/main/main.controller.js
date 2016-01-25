@@ -61,7 +61,7 @@ angular.module('hackIdcApp')
 
       $scope.mentorshipFAQ = [
         {
-          title:'Card 1',
+          title:'AJ',
           content:' Sé que mis rimas a veces causan disgustos,' +
           'Cuando mis neuronas corren' +
           'Hasta yo mismo me asusto' +
@@ -87,7 +87,7 @@ angular.module('hackIdcApp')
           'Gana el mas ingenioso'
         },
         {
-          title:'Card 2',
+          title:'Abraham',
           content:' Sé que mis rimas a veces causan disgustos,' +
           'Cuando mis neuronas corren' +
           'Hasta yo mismo me asusto' +
@@ -113,7 +113,7 @@ angular.module('hackIdcApp')
           'Gana el mas ingenioso'
         },
         {
-          title:'Card 3',
+          title:'Jesus',
           content:' Sé que mis rimas a veces causan disgustos,' +
           'Cuando mis neuronas corren' +
           'Hasta yo mismo me asusto' +
@@ -157,7 +157,9 @@ angular.module('hackIdcApp')
         $scope.content= {
           descriptionContent :'Information you might need to know',
           sponsorsSub:'Those who make it happen',
-          mentorshipContent:'A program for highly-motivated newbies'
+          mentorshipContent:'A program for highly-motivated newbies',
+          prizesSub : 'To feed the motivation',
+          teamSub : 'They are busy planning and will be present soon'
         };
       },0);
 
