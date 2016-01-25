@@ -353,6 +353,24 @@ section#home{
 .weight-300{
   font-weight:300;
 }
+.width-20vmin{
+  width:20vmin;
+}
+.width-30vmin{
+  width:30vmin;
+}
+.width-40vmin{
+  width:40vmin;
+}
+.margin-auto{
+  margin: auto;
+}
+.margin-left-3vw{
+  margin-left:3vw;
+}
+.margin-right-3vw{
+  margin-right:3vw;
+}
 /*HEAD ANIMATION*/
 
 .footer{
@@ -367,7 +385,7 @@ section#home{
   padding-top: 5vh;
 }
 .footer-item{
- margin: 0 auto;
+  margin: 0 auto;
 }
 .footer-item a{
   text-decoration: none;

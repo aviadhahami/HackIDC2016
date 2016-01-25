@@ -121,14 +121,30 @@
           <div flex layout="column">
             <p class="cohost-text md-headline">Co-Hosted by</p>
             <br>
-            <a href="http://www.amadeus.co.il/" title="Amadeus">
-              <img src="../../assets/logos/amadeus_logo_transparent.png" class="cohost-logo"alt="amadeus">
+            <div layout-gt-sm="row" layout="column" >
+
+              <a ng-class="{'margin-right-3vw':!isMobile}" href="http://www.amadeus.co.il/" class="margin-auto" target="_blank">
+                <img src="../../assets/logos/agoda-white.png" class="cohost-logo width-40vmin" alt="Agoda" >
+              </a>
+              <a ng-class="{'margin-left-3vw':!isMobile}" href="http://www.amadeus.co.il/" class="margin-auto" target="_blank">
+                <img src="../../assets/logos/IEC-white.png" class="cohost-logo width-40vmin" alt="Izam!">
+              </a>
+            </div>
+
+            <br>
+            <a href="http://www.amadeus.co.il/" title="Amadeus" target="_blank">
+              <img src="../../assets/logos/amadeus_logo_transparent.png" class="cohost-logo" alt="amadeus">
             </a>
           </div>
 
         </div>
       </div>
-      <div style="height: 20vh;"></div>
+      <div style="height: 10vh;"></div>
+      <div>
+        <br>
+        <p class="mc-white three-vim weight-300">The rest of our sponsors will be announced soon!</p>
+      </div>
+      <div style="height: 10vh;"></div>
       <p class="five-vim" id="sponsor-us">
         Interested in sponsoring?
         <br>
