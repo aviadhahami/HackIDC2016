@@ -101,7 +101,7 @@ $scope.finalShow = {};
             needMentor: !!data.needMentor ? 'yes' : 'no'
           };
           if(!fileUploadConfig){
-            alert('no file picked');
+            alert('Please make sure you upload your CV');
             return;
           }
           fileUploadConfig.data.firstName = $scope.formData.firstName;
@@ -117,7 +117,7 @@ $scope.finalShow = {};
                 $scope.submittingForm = true;
                 $scope.formData['cvLink'] = 'http://2016.hackidc.com/cvs/' + res.data.url;
               }else{
-                alert('error uploading the file');
+                alert('Error uploading the file, try again later');
                 return;
               }
               // Post data to sheets
