@@ -81,24 +81,24 @@
           <div layout-gt-sm="row" layout="column" ng-repeat="q in FAQ track by $index" ng-if="$index % 3 == 0">
             <div flex class="card" ng-if="FAQ[$index]">
               <div class="card-content">
-                <h3 class="md-display-1 card-title three-vim">{{FAQ[$index].title}}</h3>
+                <h3 class="md-display-1 card-title" ng-class="{'three-vim':!isMobile,'five-vim':isMobile}">{{FAQ[$index].title}}</h3>
 
-                <p class="md-headline two-vim">{{FAQ[$index].content}}</p>
+                <p class="md-headline" ng-class="{'two-vim':!isMobile,'five-vim':isMobile}">{{FAQ[$index].content}}</p>
               </div>
             </div>
             <div flex class="card" ng-if="FAQ[$index+1]">
               <div class="card-content ">
-                <h3 class="md-display-1 card-title three-vim">{{FAQ[$index+1].title}}</h3>
+                <h3 class="md-display-1 card-title" ng-class="{'three-vim':!isMobile,'five-vim':isMobile}">{{FAQ[$index+1].title}}</h3>
 
-                <p class="md-headline two-vim">{{FAQ[$index+1].content}}</p>
+                <p class="md-headline" ng-class="{'two-vim':!isMobile,'five-vim':isMobile}">{{FAQ[$index+1].content}}</p>
               </div>
             </div>
 
             <div flex class="card" ng-if="FAQ[$index+2]">
               <div class="card-content">
-                <h3 class="md-display-1 card-title three-vim">{{FAQ[$index+2].title}}</h3>
+                <h3 class="md-display-1 card-title" ng-class="{'three-vim':!isMobile,'five-vim':isMobile}">{{FAQ[$index+2].title}}</h3>
 
-                <p class="md-headline two-vim">{{FAQ[$index+2].content}}</p>
+                <p class="md-headline" ng-class="{'two-vim':!isMobile,'five-vim':isMobile}">{{FAQ[$index+2].content}}</p>
               </div>
             </div>
           </div>
