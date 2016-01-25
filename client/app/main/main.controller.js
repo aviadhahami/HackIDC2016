@@ -191,6 +191,20 @@ angular.module('hackIdcApp')
           bgColor : '#2185D5'
         },
         {
+          iconClass: 'fa-heart',
+          label : 'Sponsors',
+          action : $scope.scrollTo,
+          actionArgs: 'sponsors',
+          bgColor : '#2185D5'
+        },
+        {
+          iconClass: 'fa-graduation-cap',
+          label : 'Mentorship',
+          action : $scope.scrollTo,
+          actionArgs: 'mentorship',
+          bgColor: '#2185D5'
+        },
+        {
           iconClass: 'fa-trophy',
           label : 'Prizes',
           action : $scope.scrollTo,
@@ -207,12 +221,13 @@ angular.module('hackIdcApp')
           bgColor: '#2185D5'
         },
         {
-          iconClass: 'fa-graduation-cap',
-          label : 'Mentorship',
+          iconClass: 'fa-users',
+          label : 'Team',
           action : $scope.scrollTo,
-          actionArgs: 'mentorship',
-          bgColor: '#2185D5'
+          actionArgs: 'team',
+          bgColor : '#2185D5'
         }
+
       ];
       $scope.mobileLinks = $rootScope.mobileLinks;
     }]);
