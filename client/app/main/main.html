@@ -2,10 +2,7 @@
   <header layout="row"  layout-align="center center"
           data-header-scroll  ng-class="{min:boolChangeClass}" ng-if="!isMobile">
 
-    <!--<div flex="1"></div>-->
-    <!--<div du-scrollspy="home" flex>-->
-    <!--<p ng-class="{'md-display-1':!boolChangeClass}"><a href="#home" du-smooth-scroll>Home</a></p>-->
-    <!--</div>-->
+
     <div du-scrollspy="prizes" flex>
       <p ng-class="{'md-display-1':!boolChangeClass}"><a href="#prizes" du-smooth-scroll>Prizes</a></p>
     </div>
@@ -57,15 +54,15 @@
           <img src="../../assets/logos/test.png" ng-style="{'width': isMobile? '90vw' : '50vw'}">
 
         </div>
-        <!--<h1 class="md-display-2" data-ng-model="titles.mainTitle" fittext data-fittext-max="{{isMobile? 30 : 150}}" ng-bind="titles.mainTitle"></h1>-->
 
         <h2 class="md-display-1 no-margins no-paddings five-vim" ng-bind="titles.eventDate" ></h2>
 
-        <!--<div id="home-cta" ng-style="{width: isMobile? '60%' : '20%'}">-->
-        <!--<a href="#description" du-smooth-scroll>-->
-        <!--<p>Start Hacking</p>-->
-        <!--</a>-->
-        <!--</div>-->
+        <div class="cta">
+          <a href="#description" du-smooth-scroll>
+            <p class="mc-white weight-300 five-vim margin-auto">Start hacking!</p>
+            <i class="fa fa-chevron-down fa-4x mc-white bounce"></i>
+          </a>
+        </div>
       </div>
 
 
