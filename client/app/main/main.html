@@ -59,7 +59,7 @@
         </div>
         <!--<h1 class="md-display-2" data-ng-model="titles.mainTitle" fittext data-fittext-max="{{isMobile? 30 : 150}}" ng-bind="titles.mainTitle"></h1>-->
 
-        <h2 class="md-display-1 no-margins no-paddings" fittext="" data-fittext-max="{{isMobile? 20 : 60}}" ng-bind="titles.eventDate" data-ng-model="titles.eventDate"></h2>
+        <h2 class="md-display-1 no-margins no-paddings five-vim" ng-bind="titles.eventDate" ></h2>
 
         <!--<div id="home-cta" ng-style="{width: isMobile? '60%' : '20%'}">-->
         <!--<a href="#description" du-smooth-scroll>-->
@@ -109,18 +109,23 @@
       </div>
     </section>
     <section id="sponsors"  class="md-padding">
-      <h2 class="md-display-2  section-title">{{titles.sponsors}}</h2>
+      <div class="section-header">
+        <h2 class="md-display-4 section-title">{{titles.sponsors}}</h2>
+
+        <p class="section-subtitle">{{content.sponsorsSub}}</p>
+      </div>
+
       <div layout="column">
         <div layout="row">
 
-          <div flex="10">
-
-            <p>Co-hosted with:</p>
+          <div flex layout="column">
+            <p class="cohost-text md-headline">Sponsored by</p>
+            <br>
+            <a href="http://www.amadeus.co.il/" title="Amadeus">
+              <img src="../../assets/logos/amadeus_logo_transparent.png" class="cohost-logo"alt="amadeus">
+            </a>
           </div>
-          <div flex="">
 
-            <img src="../../assets/logos/amadeus_logo_transparent.png" class="cohost-logo"alt="amadeus">
-          </div>
         </div>
       </div>
       <div style="height: 20vh;"></div>
