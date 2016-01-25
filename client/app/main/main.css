@@ -23,7 +23,7 @@ header {
 }
 
 section {
-  /*TODO : Change to auto*/
+
   min-height: 100vh;
   /*min-height: 1000px;*/
   background-color: #fefefe;
@@ -331,4 +331,34 @@ section#home{
 }
 .five-vim{
   font-size:5vmin;
+}
+.three-vim{
+  font-size:3vmin;
+}
+.flex-end{
+  align-self: flex-end;
+}
+
+/*HEAD ANIMATION*/
+
+.footer{
+  height: 30vh;
+  padding-bottom: 0!important;
+  min-height: 0;
+  background-color: #1A237E;
+}
+.footer-logo{
+  height: 20vh;
+  margin:0 auto;
+  padding-top: 5vh;
+}
+.footer-item{
+ margin: 0 auto;
+}
+.footer-item a{
+  text-decoration: none;
+  color: #2196F3;
+}
+.footer-item p{
+  color : rgba(255,255,255,0.8);
 }
