@@ -335,10 +335,24 @@ section#home{
 .three-vim{
   font-size:3vmin;
 }
+.two-vim{
+  font-size:2vmin;
+}
 .flex-end{
   align-self: flex-end;
 }
-
+.mc-white{
+  color: rgba(255,255,255,0.9);
+}
+.mc-black{
+  color: rgba(0,0,0,0.9);
+}
+.weight-100{
+  font-weight: 100;
+}
+.weight-300{
+  font-weight:300;
+}
 /*HEAD ANIMATION*/
 
 .footer{

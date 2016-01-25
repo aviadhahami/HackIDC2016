@@ -84,24 +84,24 @@
           <div layout-gt-sm="row" layout="column" ng-repeat="q in FAQ track by $index" ng-if="$index % 3 == 0">
             <div flex class="card" ng-if="FAQ[$index]">
               <div class="card-content">
-                <h3 class="md-display-1 card-title">{{FAQ[$index].title}}</h3>
+                <h3 class="md-display-1 card-title three-vim">{{FAQ[$index].title}}</h3>
 
-                <p class="md-headline">{{FAQ[$index].content}}</p>
+                <p class="md-headline two-vim">{{FAQ[$index].content}}</p>
               </div>
             </div>
             <div flex class="card" ng-if="FAQ[$index+1]">
               <div class="card-content ">
-                <h3 class="md-display-1 card-title">{{FAQ[$index+1].title}}</h3>
+                <h3 class="md-display-1 card-title three-vim">{{FAQ[$index+1].title}}</h3>
 
-                <p class="md-headline">{{FAQ[$index+1].content}}</p>
+                <p class="md-headline two-vim">{{FAQ[$index+1].content}}</p>
               </div>
             </div>
 
             <div flex class="card" ng-if="FAQ[$index+2]">
               <div class="card-content">
-                <h3 class="md-display-1 card-title">{{FAQ[$index+2].title}}</h3>
+                <h3 class="md-display-1 card-title three-vim">{{FAQ[$index+2].title}}</h3>
 
-                <p class="md-headline">{{FAQ[$index+2].content}}</p>
+                <p class="md-headline two-vim">{{FAQ[$index+2].content}}</p>
               </div>
             </div>
           </div>
@@ -119,7 +119,7 @@
         <div layout="row">
 
           <div flex layout="column">
-            <p class="cohost-text md-headline">Sponsored by</p>
+            <p class="cohost-text md-headline">Co-Hosted by</p>
             <br>
             <a href="http://www.amadeus.co.il/" title="Amadeus">
               <img src="../../assets/logos/amadeus_logo_transparent.png" class="cohost-logo"alt="amadeus">
@@ -153,26 +153,27 @@
     </section>
     <section id="prizes" class="md-padding">
       <div class="section-header">
-        <h2 class="md-display-4 section-title">{{titles.prizes}}</h2>
-        <p class="section-subtitle">{{content.prizesSub}}</p>
+        <h2 class="md-display-4 section-title mc-white">{{titles.prizes}}</h2>
+        <p class="section-subtitle mc-white">{{content.prizesSub}}</p>
       </div>
       <div layout="column">
         <div class="prizes-container" layout="column" layout-gt-sm="row">
           <div layout="column" flex="33">
             <img class="prize-coin" src="../../assets/images/1-coin.png" alt="">
-            <p class="md-headline">To be announced</p>
+            <p class="md-headline five-vim mc-white">15,000₪</p>
           </div>
           <div layout="column" flex="33">
             <img class="prize-coin" src="../../assets/images/2-coin.png" alt="">
-            <p class="md-headline">To be announced</p>
+            <p class="md-headline five-vim mc-white">7,000₪</p>
           </div>
           <div layout="column" flex="33">
             <img class="prize-coin" src="../../assets/images/3-coin.png" alt="">
-            <p class="md-headline">To be announced</p>
+            <p class="md-headline five-vim mc-white">3,000₪</p>
           </div>
         </div>
         <div>
-          <p class="five-vim">External giveaways will be announced soon!</p>
+          <br>
+          <p class="five-vim mc-white weight-100">Stay tuned for more prizes to be announced soon!</p>
         </div>
       </div>
 
