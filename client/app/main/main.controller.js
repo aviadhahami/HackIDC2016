@@ -59,7 +59,86 @@ angular.module('hackIdcApp')
       ];
       $scope.FAQ = FAQ;
 
-
+      $scope.mentorshipFAQ = [
+        {
+          title:'Card 1',
+          content:' Sé que mis rimas a veces causan disgustos,' +
+          'Cuando mis neuronas corren' +
+          'Hasta yo mismo me asusto' +
+          'Mis respuestas pueden ser tan agresivas,' +
+          'Que hasta las letras me huyen' +
+          'Porque tienen miedo de que las escriba' +
+          'No tengo rifles pa\' matarte' +
+          'Solo basta con la pista' +
+          'Convierto letras en ideas como un ilusionista' +
+          'En una línea te mato, te fracturo, te lesiono' +
+          'Y en la siguiente te resucito cuando te menciono' +
+          'Eso es parte de mi arte' +
+          'Que todo el mundo sepa,' +
+          'Que estas rimas son pa\'' +
+          'ti sin tener que mencionarte' +
+          'Y no lo hago para evitar el roce' +
+          'Lo hago para no hacerte famoso' +
+          'En los países donde nadie te conoce' +
+          'Después de ver como se mueven las guerras y las guerrillas' +
+          'Tu crees que le voy a tener miedo a tu pandilla?' +
+          'Dispara cuando quieras raperito maleantoso,' +
+          'Aquí no gana el mas maleante' +
+          'Gana el mas ingenioso'
+        },
+        {
+          title:'Card 2',
+          content:' Sé que mis rimas a veces causan disgustos,' +
+          'Cuando mis neuronas corren' +
+          'Hasta yo mismo me asusto' +
+          'Mis respuestas pueden ser tan agresivas,' +
+          'Que hasta las letras me huyen' +
+          'Porque tienen miedo de que las escriba' +
+          'No tengo rifles pa\' matarte' +
+          'Solo basta con la pista' +
+          'Convierto letras en ideas como un ilusionista' +
+          'En una línea te mato, te fracturo, te lesiono' +
+          'Y en la siguiente te resucito cuando te menciono' +
+          'Eso es parte de mi arte' +
+          'Que todo el mundo sepa,' +
+          'Que estas rimas son pa\'' +
+          'ti sin tener que mencionarte' +
+          'Y no lo hago para evitar el roce' +
+          'Lo hago para no hacerte famoso' +
+          'En los países donde nadie te conoce' +
+          'Después de ver como se mueven las guerras y las guerrillas' +
+          'Tu crees que le voy a tener miedo a tu pandilla?' +
+          'Dispara cuando quieras raperito maleantoso,' +
+          'Aquí no gana el mas maleante' +
+          'Gana el mas ingenioso'
+        },
+        {
+          title:'Card 3',
+          content:' Sé que mis rimas a veces causan disgustos,' +
+          'Cuando mis neuronas corren' +
+          'Hasta yo mismo me asusto' +
+          'Mis respuestas pueden ser tan agresivas,' +
+          'Que hasta las letras me huyen' +
+          'Porque tienen miedo de que las escriba' +
+          'No tengo rifles pa\' matarte' +
+          'Solo basta con la pista' +
+          'Convierto letras en ideas como un ilusionista' +
+          'En una línea te mato, te fracturo, te lesiono' +
+          'Y en la siguiente te resucito cuando te menciono' +
+          'Eso es parte de mi arte' +
+          'Que todo el mundo sepa,' +
+          'Que estas rimas son pa\'' +
+          'ti sin tener que mencionarte' +
+          'Y no lo hago para evitar el roce' +
+          'Lo hago para no hacerte famoso' +
+          'En los países donde nadie te conoce' +
+          'Después de ver como se mueven las guerras y las guerrillas' +
+          'Tu crees que le voy a tener miedo a tu pandilla?' +
+          'Dispara cuando quieras raperito maleantoso,' +
+          'Aquí no gana el mas maleante' +
+          'Gana el mas ingenioso'
+        }
+      ];
 
 
       // Workaround for the fittext thing

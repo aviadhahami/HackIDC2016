@@ -141,7 +141,14 @@
 
         <p class="section-subtitle">{{content.mentorshipContent}}</p>
       </div>
-
+      <div class="mentorship-card-container" layout-gt-sm="row" layout="column">
+        <div flex="33" class="card"  ng-repeat="d in mentorshipFAQ">
+          <div class="card-content">
+            <h3 class="md-display-1 card-title">{{d.title}}</h3>
+            <p class="md-headline -align-justify">{{d.content}}</p>
+          </div>
+        </div>
+      </div>
 
     </section>
     <section id="prizes" class="md-padding">
