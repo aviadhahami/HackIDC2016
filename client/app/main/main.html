@@ -141,9 +141,9 @@
               </div>
             </div>
           </div>
-          <md-button class="md-raised" ng-show="showQuestions" ng-click="showQuestions = !showQuestions">
+          <md-button class="md-raised" ng-show="showQuestions" ng-click="showQuestions = !showQuestions; scrollTo('description')">
             <div layout="column">
-              <p>Ok, enough..close this scroll-scroll</p>
+              <p>Ok, enough, close this scroll-scroll</p>
               <i class="fa fa-chevron-up fa-2x"></i>
             </div>
 
@@ -243,11 +243,10 @@
       <div class="section-header">
         <h2 class="md-display-4 section-title">{{titles.team}}</h2>
         <p class="section-subtitle">{{content.teamSub}}</p>
-
       </div>
       <div class="team-showcase-container">
-        <img ng-style="{width : isMobile? '50vw' : '30vw'}" src="http://icons.iconarchive.com/icons/webalys/kameleon.pics/512/Ninja-icon.png" alt="">
-      </div>
+
+       </div>
     </section>
   </div>
 
