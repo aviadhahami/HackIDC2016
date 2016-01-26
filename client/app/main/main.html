@@ -247,7 +247,7 @@
       <div class="team-showcase-container">
         <div layout-gt-sm="row" layout="column" class="padd-bottom-2vh" ng-repeat="p in team track by $index" ng-if="$index %4 ==0">
 
-          <div class="margin-auto" ng-if="team[$index]" layout="column">
+          <div class="margin-auto inline-block" ng-if="team[$index]" layout="column">
             <img class="memeber-profile-pic" ng-src="{{team[$index].imgSrc}}" alt="">
             <div layout="column">
               <div layout="row">
@@ -265,7 +265,7 @@
             </div>
           </div>
 
-          <div class="margin-auto" ng-if="team[$index+1]" layout="column">
+          <div class="margin-auto  inline-block" ng-if="team[$index+1]" layout="column">
             <img class="memeber-profile-pic" ng-src="{{team[$index+1].imgSrc}}" alt="">
             <div layout="column">
               <div layout="row">
@@ -282,7 +282,7 @@
             </div>
           </div>
 
-          <div class="margin-auto" ng-if="team[$index+2]" layout="column">
+          <div class="margin-auto  inline-block" ng-if="team[$index+2]" layout="column">
             <img class="memeber-profile-pic" ng-src="{{team[$index+2].imgSrc}}" alt="">
             <div layout="column">
               <div layout="row">
@@ -300,7 +300,7 @@
             </div>
           </div>
 
-          <div class="margin-auto" ng-if="team[$index+3]" layout="column">
+          <div class="margin-auto  inline-block" ng-if="team[$index+3]" layout="column">
             <img class="memeber-profile-pic" ng-src="{{team[$index+3].imgSrc}}" alt="">
             <div layout="column">
               <div layout="row">

@@ -495,13 +495,16 @@ a{
 }
 .memeber-profile-pic{
   border-radius: 999px;
-  width:15vw;
+  width:20vw;
 }
 .mc-light-blue{
   color: #2196F3;
 }
 .team-showcase-container .fa{
   color:#4875B4;
+}
+.inline-block{
+  display: inline-block;
 }
 /*ANIMATION BOUNCE*/
 .bounce{
