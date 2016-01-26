@@ -13,7 +13,7 @@ angular.module('hackIdcApp')
         },
         {
           title:'Is there a specific theme for the Hackathon?',
-          content: 'Keep on moving to the first rays of dawn Keeping it on \'til the day stays strong Runnin \'til the night time blazes on All along I keep singing my song I said, this phase is always Sometimes I get so crazed But just know that I\'ll always stay \'Cause you\'re my light through the haze'
+          content: 'We’ll suggest ideas and themes leading up to the Hackathon, as well as during the event.'
         },
         {
           title:'What about students without programming experience?',
@@ -21,7 +21,7 @@ angular.module('hackIdcApp')
         },
         {
           title: 'What am I expected to build?',
-          content: '36 hours isn’t much, but surely enough to bring something to life. You are expected to finish a first version of your product within that time. This can be a demo, POC or a beta version.<br>All work eligible for prizes must be completed between Friday morning after the kick-off and Saturday night at the hacking location (IDC Herzliya Campus).'
+          content: '36 hours isn’t much, but surely enough to bring something to life. You are expected to finish a first version of your product within that time.<br> This can be a demo, POC or a beta version.<br>All work eligible for prizes must be completed between Friday morning after the kick-off and Saturday night at the hacking location (IDC Herzliya Campus).'
         },
         {
           title:'What about hardware projects?',
