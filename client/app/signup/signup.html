@@ -246,6 +246,9 @@
                 <div ng-messages="projectForm.gotTeam.$error">
                   <div ng-message="required">This is required.</div>
                 </div>
+                <div>
+                  <p class="md-caption mc-black">We allow teams of up to five members</p>
+                </div>
               </md-input-container>
               <md-input-container flex ng-if="projectForm.gotTeam === 'Yes'">
                 <label>Please supply your team leader's mail</label>
