@@ -305,8 +305,7 @@ section#home{
 }
 .cohost-text{
   margin: 0 auto;
-  float: right;
-  text-align: right;
+  text-align: center;
   color: rgba(255,255,255,0.8);
   font-weight: 300;
 }
