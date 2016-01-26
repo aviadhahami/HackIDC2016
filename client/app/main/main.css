@@ -192,7 +192,9 @@ section#home{
   line-height:normal;
   text-align: center;
 }
-
+.cta i{
+  margin-top: 2vh;
+}
 .section-header{
   padding-bottom: 5%;
 }
@@ -317,10 +319,10 @@ section#home{
 
 }
 #mentorship h3{
-  text-align: center;
+  text-align: left;
 }
 #mentorship p{
-
+color:rgba(0, 0, 0, 0.6)
 }
 .prize-coin{
   width:20vw;

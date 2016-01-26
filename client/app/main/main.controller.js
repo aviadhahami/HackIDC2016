@@ -113,8 +113,8 @@ angular.module('hackIdcApp')
           'Once the hackathon begins, onsite mentors will be available to provide additional assistance and guidance.'
         },
         {
-          title:'Got more questions?',
-          content:'Contact us here <a href="mailto:contact@hackidc.com">contact@hackidc.com</a>'
+          title:'Still not sure?',
+          content:'Contact us at <a href="mailto:mentorship@hackidc.com" class="mc-light-blue weight-100">mentorship@hackidc.com</a>'
         }
       ];
 
