@@ -481,6 +481,10 @@ color: rgba(187, 0, 0,0.9);
 .soc-insta:hover{
   color: rgba(0, 126, 229,1);
 }
+.small-footer-logo{
+  height: 15vh!important;
+  max-width: 100%;
+}
 
 /*ANIMATION BOUNCE*/
 .bounce{

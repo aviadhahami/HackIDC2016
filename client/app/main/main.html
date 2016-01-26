@@ -256,7 +256,7 @@
     <div layout="row">
       <a href="http://www.myidc.org.il/" target="_blank" class="margin-auto" >
 
-        <img style="height: 22vh;" class="footer-logo" src="../../assets/logos/agoda-white.png" alt="">
+        <img style="height: 22vh;" ng-class="{'small-footer-logo':isMobile}" class="footer-logo" src="../../assets/logos/agoda-white.png" alt="">
       </a>
       <!--FIXME : Make sure this works-->
       <div layout="column">
@@ -282,8 +282,7 @@
         </div>
       </div>
       <a href="http://www.iec.idc.ac.il/" class="margin-auto" target="_blank">
-
-        <img class="footer-logo" src="../../assets/logos/IEC-white.png" alt="">
+        <img class="footer-logo" ng-class="{'small-footer-logo':isMobile}" src="../../assets/logos/IEC-white.png" alt="">
       </a>
     </div>
   </section>
