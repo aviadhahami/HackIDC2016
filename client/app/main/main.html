@@ -267,87 +267,87 @@
       </div>
 
     </section>
-    <section id="team" class="md-padding">
-      <div class="section-header">
-        <h2 class="md-display-4 section-title">{{titles.team}}</h2>
-        <p class="section-subtitle">{{content.teamSub}}</p>
-      </div>
-      <div class="team-showcase-container">
-        <div layout-gt-sm="row" layout="column" class="padd-bottom-2vh" ng-repeat="p in team track by $index" ng-if="$index %4 ==0">
+    <!--<section id="team" class="md-padding">-->
+      <!--<div class="section-header">-->
+        <!--<h2 class="md-display-4 section-title">{{titles.team}}</h2>-->
+        <!--<p class="section-subtitle">{{content.teamSub}}</p>-->
+      <!--</div>-->
+      <!--<div class="team-showcase-container">-->
+        <!--<div layout-gt-sm="row" layout="column" class="padd-bottom-2vh" ng-repeat="p in team track by $index" ng-if="$index %4 ==0">-->
 
-          <div class="margin-auto inline-block" ng-if="team[$index]" layout="column">
-            <img class="memeber-profile-pic" ng-src="{{team[$index].imgSrc}}" alt="">
-            <div layout="column">
-              <div layout="row">
-                <p class="margin-auto" ng-bind="team[$index].name"></p>
-              </div>
-              <div  class="margin-auto" layout="row">
-                <a class="margin-auto md-padding" ng-href="{{team[$index].linkedin}}" target="_blank" >
-                  <i class="fa fa-linkedin-square fa-2x"></i>
-                </a>
+          <!--<div class="margin-auto inline-block" ng-if="team[$index]" layout="column">-->
+            <!--<img class="memeber-profile-pic" ng-src="{{team[$index].imgSrc}}" alt="">-->
+            <!--<div layout="column">-->
+              <!--<div layout="row">-->
+                <!--<p class="margin-auto" ng-bind="team[$index].name"></p>-->
+              <!--</div>-->
+              <!--<div  class="margin-auto" layout="row">-->
+                <!--<a class="margin-auto md-padding" ng-href="{{team[$index].linkedin}}" target="_blank" >-->
+                  <!--<i class="fa fa-linkedin-square fa-2x"></i>-->
+                <!--</a>-->
 
-                <a class="margin-auto  md-padding" ng-href="{{team[$index].mail}}" target="_blank" >
-                  <i class="fa fa-envelope fa-2x"></i>
-                </a>
-              </div>
-            </div>
-          </div>
+                <!--<a class="margin-auto  md-padding" ng-href="{{team[$index].mail}}" target="_blank" >-->
+                  <!--<i class="fa fa-envelope fa-2x"></i>-->
+                <!--</a>-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</div>-->
 
-          <div class="margin-auto  inline-block" ng-if="team[$index+1]" layout="column">
-            <img class="memeber-profile-pic" ng-src="{{team[$index+1].imgSrc}}" alt="">
-            <div layout="column">
-              <div layout="row">
-                <p class="margin-auto" ng-bind="team[$index+1].name"></p>
-              </div>
-              <div  class="margin-auto" layout="row">
-                <a class="margin-auto md-padding" ng-href="{{team[$index+1].linkedin}}" target="_blank" >
-                  <i class="fa fa-linkedin-square fa-2x"></i>
-                </a>
-                <a class="margin-auto  md-padding" ng-href="{{team[$index+1].mail}}" target="_blank" >
-                  <i class="fa fa-envelope fa-2x"></i>
-                </a>
-              </div>
-            </div>
-          </div>
+          <!--<div class="margin-auto  inline-block" ng-if="team[$index+1]" layout="column">-->
+            <!--<img class="memeber-profile-pic" ng-src="{{team[$index+1].imgSrc}}" alt="">-->
+            <!--<div layout="column">-->
+              <!--<div layout="row">-->
+                <!--<p class="margin-auto" ng-bind="team[$index+1].name"></p>-->
+              <!--</div>-->
+              <!--<div  class="margin-auto" layout="row">-->
+                <!--<a class="margin-auto md-padding" ng-href="{{team[$index+1].linkedin}}" target="_blank" >-->
+                  <!--<i class="fa fa-linkedin-square fa-2x"></i>-->
+                <!--</a>-->
+                <!--<a class="margin-auto  md-padding" ng-href="{{team[$index+1].mail}}" target="_blank" >-->
+                  <!--<i class="fa fa-envelope fa-2x"></i>-->
+                <!--</a>-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</div>-->
 
-          <div class="margin-auto  inline-block" ng-if="team[$index+2]" layout="column">
-            <img class="memeber-profile-pic" ng-src="{{team[$index+2].imgSrc}}" alt="">
-            <div layout="column">
-              <div layout="row">
-                <p class="margin-auto" ng-bind="team[$index+2].name"></p>
-              </div>
-              <div  class="margin-auto" layout="row">
-                <a class="margin-auto md-padding" ng-href="{{team[$index+2].linkedin}}" target="_blank" >
-                  <i class="fa fa-linkedin-square fa-2x"></i>
-                </a>
+          <!--<div class="margin-auto  inline-block" ng-if="team[$index+2]" layout="column">-->
+            <!--<img class="memeber-profile-pic" ng-src="{{team[$index+2].imgSrc}}" alt="">-->
+            <!--<div layout="column">-->
+              <!--<div layout="row">-->
+                <!--<p class="margin-auto" ng-bind="team[$index+2].name"></p>-->
+              <!--</div>-->
+              <!--<div  class="margin-auto" layout="row">-->
+                <!--<a class="margin-auto md-padding" ng-href="{{team[$index+2].linkedin}}" target="_blank" >-->
+                  <!--<i class="fa fa-linkedin-square fa-2x"></i>-->
+                <!--</a>-->
 
-                <a class="margin-auto  md-padding" ng-href="{{team[$index+2].mail}}" target="_blank" >
-                  <i class="fa fa-envelope fa-2x"></i>
-                </a>
-              </div>
-            </div>
-          </div>
+                <!--<a class="margin-auto  md-padding" ng-href="{{team[$index+2].mail}}" target="_blank" >-->
+                  <!--<i class="fa fa-envelope fa-2x"></i>-->
+                <!--</a>-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</div>-->
 
-          <div class="margin-auto  inline-block" ng-if="team[$index+3]" layout="column">
-            <img class="memeber-profile-pic" ng-src="{{team[$index+3].imgSrc}}" alt="">
-            <div layout="column">
-              <div layout="row">
-                <p class="margin-auto" ng-bind="team[$index+3].name"></p>
-              </div>
-              <div  class="margin-auto" layout="row">
-                <a class="margin-auto md-padding" ng-href="{{team[$index+3].linkedin}}" target="_blank" >
-                  <i class="fa fa-linkedin-square fa-2x"></i>
-                </a>
+          <!--<div class="margin-auto  inline-block" ng-if="team[$index+3]" layout="column">-->
+            <!--<img class="memeber-profile-pic" ng-src="{{team[$index+3].imgSrc}}" alt="">-->
+            <!--<div layout="column">-->
+              <!--<div layout="row">-->
+                <!--<p class="margin-auto" ng-bind="team[$index+3].name"></p>-->
+              <!--</div>-->
+              <!--<div  class="margin-auto" layout="row">-->
+                <!--<a class="margin-auto md-padding" ng-href="{{team[$index+3].linkedin}}" target="_blank" >-->
+                  <!--<i class="fa fa-linkedin-square fa-2x"></i>-->
+                <!--</a>-->
 
-                <a class="margin-auto  md-padding" ng-href="{{team[$index+3].mail}}" target="_blank" >
-                  <i class="fa fa-envelope fa-2x"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+                <!--<a class="margin-auto  md-padding" ng-href="{{team[$index+3].mail}}" target="_blank" >-->
+                  <!--<i class="fa fa-envelope fa-2x"></i>-->
+                <!--</a>-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</section>-->
   </div>
 
 
