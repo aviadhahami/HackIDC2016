@@ -47,6 +47,56 @@ angular.module('hackIdcApp')
       ];
       $scope.FAQ = FAQ;
 
+      $scope.team = [
+        {
+          name:'Matan Gidnian',
+          imgSrc : 'http://2015.hackidc.com/wp-content/uploads/2014/12/this_guy_is_goddamn_hot-450x450.jpg',
+          linkedin:'link@url',
+          mail:'me@there.com'
+        },
+        {
+          name:'Matan Gidnian',
+          imgSrc : 'http://2015.hackidc.com/wp-content/uploads/2014/12/this_guy_is_goddamn_hot-450x450.jpg',
+          linkedin:'link@url',
+          mail:'me@there.com'
+        },
+        {
+          name:'Matan Gidnian',
+          imgSrc : 'http://2015.hackidc.com/wp-content/uploads/2014/12/this_guy_is_goddamn_hot-450x450.jpg',
+          linkedin:'link@url',
+          mail:'me@there.com'
+        },
+        {
+          name:'Matan Gidnian',
+          imgSrc : 'http://2015.hackidc.com/wp-content/uploads/2014/12/this_guy_is_goddamn_hot-450x450.jpg',
+          linkedin:'link@url',
+          mail:'me@there.com'
+        },
+        {
+          name:'Matan Gidnian',
+          imgSrc : 'http://2015.hackidc.com/wp-content/uploads/2014/12/this_guy_is_goddamn_hot-450x450.jpg',
+          linkedin:'link@url',
+          mail:'me@there.com'
+        },
+        {
+          name:'Matan Gidnian',
+          imgSrc : 'http://2015.hackidc.com/wp-content/uploads/2014/12/this_guy_is_goddamn_hot-450x450.jpg',
+          linkedin:'link@url',
+          mail:'me@there.com'
+        },
+        {
+          name:'Matan Gidnian',
+          imgSrc : 'http://2015.hackidc.com/wp-content/uploads/2014/12/this_guy_is_goddamn_hot-450x450.jpg',
+          linkedin:'link@url',
+          mail:'me@there.com'
+        },
+        {
+          name:'Matan Gidnian',
+          imgSrc : 'http://2015.hackidc.com/wp-content/uploads/2014/12/this_guy_is_goddamn_hot-450x450.jpg',
+          linkedin:'link@url',
+          mail:'me@there.com'
+        }
+      ];
       $scope.showQuestions= false;
 
       $scope.mentorshipFAQ = [

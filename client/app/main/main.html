@@ -93,7 +93,7 @@
               <div class="card-content ">
                 <h3 class="md-display-1 card-title" ng-class="{'three-vim':!isMobile,'five-vim':isMobile}">What is HackIDC</h3>
                 <p class="md-headline" ng-class="{'three-vim':!isMobile,'five-vim':isMobile}">
-                 I've said it once, I've said it twice, I've said it a thousand fucking times That I'm OK, that I'm fine, that it's all just in my mind But this has got the best of me, and I can't seem to sleep It's not 'cause you're not with me, it\'s \'cause you never leave'
+                  I've said it once, I've said it twice, I've said it a thousand fucking times That I'm OK, that I'm fine, that it's all just in my mind But this has got the best of me, and I can't seem to sleep It's not 'cause you're not with me, it\'s \'cause you never leave'
                 </p>
               </div>
             </div>
@@ -109,13 +109,13 @@
             </div>
           </div>
 
-            <md-button class="" ng-show="!showQuestions" ng-click="showQuestions = !showQuestions">
-              <div layout="column">
-                <p>Got more questions? Check these out!</p>
-                <i class="fa fa-chevron-down fa-2x"></i>
-              </div>
+          <md-button class="" ng-show="!showQuestions" ng-click="showQuestions = !showQuestions">
+            <div layout="column">
+              <p>Got more questions? Check these out!</p>
+              <i class="fa fa-chevron-down fa-2x"></i>
+            </div>
 
-            </md-button>
+          </md-button>
 
           <div class="box-one" layout-gt-sm="row" ng-show="showQuestions" id="collapse-questions" layout="column" ng-repeat="q in FAQ track by $index" ng-if="$index % 3 == 0">
             <div flex class="card" ng-if="FAQ[$index]">
@@ -245,8 +245,81 @@
         <p class="section-subtitle">{{content.teamSub}}</p>
       </div>
       <div class="team-showcase-container">
+        <div layout-gt-sm="row" layout="column" class="padd-bottom-2vh" ng-repeat="p in team track by $index" ng-if="$index %4 ==0">
 
-       </div>
+          <div class="margin-auto" ng-if="team[$index]" layout="column">
+            <img class="memeber-profile-pic" ng-src="{{team[$index].imgSrc}}" alt="">
+            <div layout="column">
+              <div layout="row">
+                <p class="margin-auto" ng-bind="team[$index].name"></p>
+              </div>
+              <div  class="margin-auto" layout="row">
+                <a class="margin-auto md-padding" ng-href="{{team[$index].linkedin}}" target="_blank" >
+                  <i class="fa fa-linkedin-square fa-2x"></i>
+                </a>
+
+                <a class="margin-auto  md-padding" ng-href="{{team[$index].mail}}" target="_blank" >
+                  <i class="fa fa-envelope fa-2x"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="margin-auto" ng-if="team[$index+1]" layout="column">
+            <img class="memeber-profile-pic" ng-src="{{team[$index+1].imgSrc}}" alt="">
+            <div layout="column">
+              <div layout="row">
+                <p class="margin-auto" ng-bind="team[$index+1].name"></p>
+              </div>
+              <div  class="margin-auto" layout="row">
+                <a class="margin-auto md-padding" ng-href="{{team[$index+1].linkedin}}" target="_blank" >
+                  <i class="fa fa-linkedin-square fa-2x"></i>
+                </a>
+
+                <a class="margin-auto  md-padding" ng-href="{{team[$index+1].mail}}" target="_blank" >
+                  <i class="fa fa-envelope fa-2x"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="margin-auto" ng-if="team[$index+2]" layout="column">
+            <img class="memeber-profile-pic" ng-src="{{team[$index+2].imgSrc}}" alt="">
+            <div layout="column">
+              <div layout="row">
+                <p class="margin-auto" ng-bind="team[$index+2].name"></p>
+              </div>
+              <div  class="margin-auto" layout="row">
+                <a class="margin-auto md-padding" ng-href="{{team[$index+2].linkedin}}" target="_blank" >
+                  <i class="fa fa-linkedin-square fa-2x"></i>
+                </a>
+
+                <a class="margin-auto  md-padding" ng-href="{{team[$index+2].mail}}" target="_blank" >
+                  <i class="fa fa-envelope fa-2x"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="margin-auto" ng-if="team[$index+3]" layout="column">
+            <img class="memeber-profile-pic" ng-src="{{team[$index+3].imgSrc}}" alt="">
+            <div layout="column">
+              <div layout="row">
+                <p class="margin-auto" ng-bind="team[$index+3].name"></p>
+              </div>
+              <div  class="margin-auto" layout="row">
+                <a class="margin-auto md-padding" ng-href="{{team[$index+3].linkedin}}" target="_blank" >
+                  <i class="fa fa-linkedin-square fa-2x"></i>
+                </a>
+
+                <a class="margin-auto  md-padding" ng-href="{{team[$index+3].mail}}" target="_blank" >
+                  <i class="fa fa-envelope fa-2x"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </div>
 
@@ -257,12 +330,11 @@
 
         <img style="height: 22vh;" ng-class="{'small-footer-logo':isMobile}" class="footer-logo" src="../../assets/logos/agoda-white.png" alt="">
       </a>
-      <!--FIXME : Make sure this works-->
+
       <div layout="column">
         <div flex="10"></div>
         <div flex="10" class="margin-auto" >
           <p class="two-vim mc-white weight-300">Contact us at <a class="mc-light-blue" href="mailto:contact@hackidc.com">contact@hackidc.com</a></p>
-
         </div>
         <div flex="10" layout="row" class="margin-auto" >
           <a href="https://www.facebook.com/HackIDC" target="_blank" class="social-media-icon mc-white soc-facebook">

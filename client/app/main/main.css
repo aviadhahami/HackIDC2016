@@ -485,11 +485,21 @@ color: rgba(187, 0, 0,0.9);
   height: 15vh!important;
   max-width: 100%;
 }
+.padd-bottom-2vh{
+  padding-bottom: 2vh;
+}
 a{
   text-decoration: none;
 }
+.memeber-profile-pic{
+  border-radius: 999px;
+  width:15vw;
+}
 .mc-light-blue{
   color: #2196F3;
+}
+.team-showcase-container .fa{
+  color:#4875B4;
 }
 /*ANIMATION BOUNCE*/
 .bounce{
