@@ -485,7 +485,12 @@ color: rgba(187, 0, 0,0.9);
   height: 15vh!important;
   max-width: 100%;
 }
-
+a{
+  text-decoration: none;
+}
+.mc-light-blue{
+  color: #2196F3;
+}
 /*ANIMATION BOUNCE*/
 .bounce{
   -moz-animation: bounce 2s infinite;
