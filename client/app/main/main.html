@@ -78,7 +78,46 @@
 
       <div id="description-cards">
         <md-content class="md-padding">
-          <div layout-gt-sm="row" layout="column" ng-repeat="q in FAQ track by $index" ng-if="$index % 3 == 0">
+          <div layout-gt-sm="row" layout="column" id="top-questions">
+            <div flex class="card">
+              <div class="card-content">
+                <h3 class="md-display-1 card-title" ng-class="{'three-vim':!isMobile,'five-vim':isMobile}">
+                  Who can register
+                </h3>
+                <p class="md-headline" ng-class="{'three-vim':!isMobile,'five-vim':isMobile}">
+                  Keep on moving to the first rays of dawn Keeping it on 'til the day stays strong Runnin 'til the night time blazes on All along I keep singing my song I said, this phase is always Sometimes I get so crazed But just know that I'll always stay 'Cause you're my light through the haze
+                </p>
+              </div>
+            </div>
+            <div flex class="card" >
+              <div class="card-content ">
+                <h3 class="md-display-1 card-title" ng-class="{'three-vim':!isMobile,'five-vim':isMobile}">What is HackIDC</h3>
+                <p class="md-headline" ng-class="{'three-vim':!isMobile,'five-vim':isMobile}">
+                 I've said it once, I've said it twice, I've said it a thousand fucking times That I'm OK, that I'm fine, that it's all just in my mind But this has got the best of me, and I can't seem to sleep It's not 'cause you're not with me, it\'s \'cause you never leave'
+                </p>
+              </div>
+            </div>
+
+            <div flex class="card" >
+              <div class="card-content">
+                <h3 class="md-display-1 card-title" ng-class="{'three-vim':!isMobile,'five-vim':isMobile}">When will I know if I got in?</h3>
+                <p class="md-headline" ng-class="{'three-vim':!isMobile,'five-vim':isMobile}">
+                  Keep on moving to the first rays of dawn Keeping it on \'til the day stays strong Runnin \'til the night time blazes on All along I keep singing my song I said, this phase is always Sometimes I get so crazed But just know that I\'ll always stay \'Cause you\'re my light through the haze'
+
+                </p>
+              </div>
+            </div>
+          </div>
+
+            <md-button class="md-raised" ng-show="!showQuestions" ng-click="showQuestions = !showQuestions">
+              <div layout="column">
+                <p>Got more questions? Check these out!</p>
+                <i class="fa fa-chevron-down fa-2x"></i>
+              </div>
+
+            </md-button>
+
+          <div class="box-one" layout-gt-sm="row" ng-show="showQuestions" id="collapse-questions" layout="column" ng-repeat="q in FAQ track by $index" ng-if="$index % 3 == 0">
             <div flex class="card" ng-if="FAQ[$index]">
               <div class="card-content">
                 <h3 class="md-display-1 card-title" ng-class="{'three-vim':!isMobile,'five-vim':isMobile}">{{FAQ[$index].title}}</h3>
@@ -102,6 +141,13 @@
               </div>
             </div>
           </div>
+          <md-button class="md-raised" ng-show="showQuestions" ng-click="showQuestions = !showQuestions">
+            <div layout="column">
+              <p>Ok, enough..close this scroll-scroll</p>
+              <i class="fa fa-chevron-up fa-2x"></i>
+            </div>
+
+          </md-button>
         </md-content>
       </div>
     </section>

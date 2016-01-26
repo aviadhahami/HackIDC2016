@@ -8,18 +8,6 @@ angular.module('hackIdcApp')
       // Might need to bind these with ng-bind-html
       var FAQ =[
         {
-          title:'Who can register',
-          content: 'Keep on moving to the first rays of dawn Keeping it on \'til the day stays strong Runnin \'til the night time blazes on All along I keep singing my song I said, this phase is always Sometimes I get so crazed But just know that I\'ll always stay \'Cause you\'re my light through the haze'
-        },
-        {
-          title:'What is HackIDC',
-          content: 'I\'ve said it once, I\'ve said it twice, I\'ve said it a thousand fucking times That I\'m OK, that I\'m fine, that it\'s all just in my mind But this has got the best of me, and I can\'t seem to sleep It\'s not \'cause you\'re not with me, it\'s \'cause you never leave'
-        },
-        {
-          title:'When will I know if I got in?',
-          content: 'Keep on moving to the first rays of dawn Keeping it on \'til the day stays strong Runnin \'til the night time blazes on All along I keep singing my song I said, this phase is always Sometimes I get so crazed But just know that I\'ll always stay \'Cause you\'re my light through the haze'
-        },
-        {
           title:'What can I win?',
           content: 'Keep on moving to the first rays of dawn Keeping it on \'til the day stays strong Runnin \'til the night time blazes on All along I keep singing my song I said, this phase is always Sometimes I get so crazed But just know that I\'ll always stay \'Cause you\'re my light through the haze'
         },
@@ -58,6 +46,8 @@ angular.module('hackIdcApp')
 
       ];
       $scope.FAQ = FAQ;
+
+      $scope.showQuestions= false;
 
       $scope.mentorshipFAQ = [
         {
