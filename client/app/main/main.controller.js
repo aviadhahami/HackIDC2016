@@ -8,36 +8,34 @@ angular.module('hackIdcApp')
       // Might need to bind these with ng-bind-html
       var FAQ =[
         {
-          title:'What can I win?',
+          title:'How much does it cost to participate?',
+          content: 'Nothing. Zero. Nil. Just bring your laptop, creativity and passion.<br>We will provide you with swag, meals, drinks, snacks, unlimited coffee, full meals and a place to crash when you need a break from hacking.'},
+        {
+          title:'Is there a specific theme for the Hackathon?',
           content: 'Keep on moving to the first rays of dawn Keeping it on \'til the day stays strong Runnin \'til the night time blazes on All along I keep singing my song I said, this phase is always Sometimes I get so crazed But just know that I\'ll always stay \'Cause you\'re my light through the haze'
+        },
+        {
+          title:'What about students without programming experience?',
+          content: 'You are a great part of the reason we are doing this!<br>This is your chance to turn your CS101 Knowledge into a real deal.<br> We have lots of resources to help beginners. Check out our <a href="#mentorship" class="mc-light-blue weight-300" du-smooth-scroll>Mentorship</a> section for more information.'
         },
         {
           title:'What am I expected to build?',
-          content: 'Keep on moving to the first rays of dawn Keeping it on \'til the day stays strong Runnin \'til the night time blazes on All along I keep singing my song I said, this phase is always Sometimes I get so crazed But just know that I\'ll always stay \'Cause you\'re my light through the haze'
+          content: '36 hours isn’t much, but surely enough to bring something to life. You are expected to finish a first version of your product within that time. This can be a demo, POC or a beta version. <br>All work eligible for prizes must be completed between Friday morning after the kick-off and Saturday night at the hacking location (IDC Herzliya Campus).'},
+        {
+          title:'What about hardware projects?',
+          content: 'We fancy them.<br>We’ll provide you with some valuable hardware to work on and some basic equipment.<br>We’ll put out a list closer to the event so you can see what’s available. You are welcome to bring along any gear of your own, just contact us about it first'
         },
         {
-          title:'How are the projects being judged',
-          content: 'Keep on moving to the first rays of dawn Keeping it on \'til the day stays strong Runnin \'til the night time blazes on All along I keep singing my song I said, this phase is always Sometimes I get so crazed But just know that I\'ll always stay \'Cause you\'re my light through the haze'
+          title:'What if I don’t have a team?',
+          content: 'We will contact you after application results are published.<br>You can decide whether we team you up or you find one on your own.<br>You can join an existing team or construct one through HackIDC Hackers 2016 Facebook group we assemble closer to the event.'
         },
         {
-          title:'How much does it cost to participate?',
-          content: 'Keep on moving to the first rays of dawn Keeping it on \'til the day stays strong Runnin \'til the night time blazes on All along I keep singing my song I said, this phase is always Sometimes I get so crazed But just know that I\'ll always stay \'Cause you\'re my light through the haze'
-        },
-        {
-          title:'Once I get in, what should I bring?',
-          content: 'Keep on moving to the first rays of dawn Keeping it on \'til the day stays strong Runnin \'til the night time blazes on All along I keep singing my song I said, this phase is always Sometimes I get so crazed But just know that I\'ll always stay \'Cause you\'re my light through the haze'
-        },
-        {
-          title:'Is there a specified theme for the Hackathon?',
-          content: 'Keep on moving to the first rays of dawn Keeping it on \'til the day stays strong Runnin \'til the night time blazes on All along I keep singing my song I said, this phase is always Sometimes I get so crazed But just know that I\'ll always stay \'Cause you\'re my light through the haze'
-        },
-        {
-          title:'I\'m a CS student without much experience, should I apply?',
-          content: 'Keep on moving to the first rays of dawn Keeping it on \'til the day stays strong Runnin \'til the night time blazes on All along I keep singing my song I said, this phase is always Sometimes I get so crazed But just know that I\'ll always stay \'Cause you\'re my light through the haze'
+          title:'What can I win?',
+          content: 'You mean other than the opportunity to meet awesome people and learn from mentors of some of the world’s most influential companies?<br>A panel of professional judges will select the best three projects based on the following criteria: creativity, technical difficulty, aesthetics and function.<br>Top <a href="#prizes" class="mc-light-blue weight-300" du-smooth-scroll>prizes</a> involve financial giveaways. Sponsors also offer their own prizes for specific categories, which they judge and fund themselves.'
         },
         {
           title:'Who runs HackIDC?',
-          content: 'Keep on moving to the first rays of dawn Keeping it on \'til the day stays strong Runnin \'til the night time blazes on All along I keep singing my song I said, this phase is always Sometimes I get so crazed But just know that I\'ll always stay \'Cause you\'re my light through the haze'
+          content: 'HackIDC is run entirely by student of the Interdisciplinary Center Herzliya.<br><br>With some advice and assistance from our friends at the Student Union and Entrepreneurship Club, and funding of corporate <a href="#sponsors" class="mc-light-blue weight-300" du-smooth-scroll>sponsor</a> donations, we aspire to bring you the leading student Hackathon in Israel.'
         },
         {
           title:'I have one more question',
