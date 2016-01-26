@@ -102,18 +102,15 @@ angular.module('hackIdcApp')
       $scope.mentorshipFAQ = [
         {
           title:'What is the Mentorship program?',
-          content: 'HackIDC will operate a special mentorship program, targeting those who want to participate in a hackathon but still needs to work on their development skills.'
+          content: 'As part of the agenda of promoting talented students, HackIDC offers a pre-Hackathon training program. The program is intended to guide young programmers, who wish to turn their basic coding skills into real experience, through their first Hackathon.'
         },
         {
-          title:'What does it include?',
-          content:'The program\'s goal is to provide the participants with the tools necessary to build a prototype, in the timeframe of a hackathon. <br>' +
-          'To achieve that we will host several sessions with top developers from hi­tech companies, ' +
-          'some sessions will be dedicated to provide the participants with practical knowledge, while others will focus on hackathons in general, and how to prototype correctly. ' +
-          'Once the hackathon begins, onsite mentors will be available to provide additional assistance and guidance.'
+          title:'What does the program include?',
+          content:'The program\'s goal is to provide the participants with the tools necessary to build a prototype in a short time frame.<br><br>To achieve that, we will host several hands-on workshops with some of the top developers of the tech industry. We will focus on prototype development, with an emphasis on eye level practice sessions.<br><br>During the Hackathon itself, onsite designated mentors will provide close assistance and guidance.'
         },
         {
-          title:'Still not sure?',
-          content:'Contact us at <a href="mailto:mentorship@hackidc.com" class="mc-light-blue weight-100">mentorship@hackidc.com</a>'
+          title:'Who should apply?',
+          content:'The program currently accepts Interdisciplinary Center Herzliya students only. If you wish to participate in the Hackathon and have technical background but little to no experience, this program is for you.<br><br>Just check the “I want to be part of the mentorship program” box when submitting the registration form. We will contact you once the application results are announced.<br><br>Be advised that you will be required to attend 5 to 6 weekly sessions in the weeks preceding the Hackathon. We expect you to meet this requirement so we can advance your skills to a Hackathon Hacker level'
         }
       ];
 
