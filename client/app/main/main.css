@@ -402,7 +402,28 @@ section#home{
 .footer-item p{
   color : rgba(255,255,255,0.8);
 }
+.social-media-icon{
+  text-decoration: none;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -o-transition:  all 200ms ease;
+  transition: all 200ms ease;
+  padding-right: 0.5vw;
+  padding-left: 0.5vw;
+}
+.soc-facebook:hover{
+  color: rgba(109, 132, 180,1);
+}
+.soc-twitter:hover{
+color: rgba(0, 172, 237,0.9);
+}
 
+.soc-youtube:hover{
+color: rgba(187, 0, 0,0.9);
+}
+.soc-insta:hover{
+  color: rgba(0, 126, 229,1);
+}
 
 /*ANIMATION BOUNCE*/
 .bounce{
