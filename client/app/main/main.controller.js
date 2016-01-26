@@ -37,7 +37,7 @@ angular.module('hackIdcApp')
         },
         {
           title:'Who runs HackIDC?',
-          content: 'HackIDC is run entirely by student of the Interdisciplinary Center Herzliya.<br><br>With great assistance from our partners at the Student Union and Entrepreneurship Club, and funding of corporate <a href="#sponsors" class="mc-light-blue weight-300" du-smooth-scroll="">sponsor</a> donations, we aspire to bring you the leading student Hackathon in Israel. '
+          content: 'HackIDC is run entirely by students of the Interdisciplinary Center Herzliya.<br><br>With great assistance from our partners at the Student Union and Entrepreneurship Club, and funding of corporate <a href="#sponsors" class="mc-light-blue weight-300" du-smooth-scroll="">sponsor</a> donations, we aspire to bring you the leading student Hackathon in Israel. '
         },
         {
           title:'I have one more question...',
