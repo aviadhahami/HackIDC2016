@@ -17,7 +17,7 @@ angular.module('hackIdcApp')
         },
         {
           title:'What about students without programming experience?',
-          content: 'You are a great part of the reason we are doing this!<br>This is your chance to turn your CS101 Knowledge into a real deal.<br><br>We have lots of resources to help beginners. Check out our <a href="#mentorship" class="mc-light-blue weight-300" du-smooth-scroll>Mentorship</a> section for more information'
+          content: 'You are a great part of the reason we are doing this!<br>This is your chance to turn your CS101 Knowledge into a real deal.<br><br>We have lots of resources to help beginners. Check out our <a href="#mentorship" class="mc-light-blue weight-300" du-smooth-scroll>Mentorship</a> section for more information.'
         },
         {
           title: 'What am I expected to build?',
