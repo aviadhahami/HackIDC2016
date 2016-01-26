@@ -368,8 +368,19 @@ section#home{
 .margin-right-3vw{
   margin-right:3vw;
 }
-/*HEAD ANIMATION*/
-
+.contact-us-button{
+  color: rgba(255,255,255,0.9)!important;
+  background: #536DFE!important;
+  align-self: center;
+  height: 8vh;
+}
+.contact-us-button p{
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+.align-self-center{
+  align-self: center;
+}
 .footer{
   height: 30vh;
   padding-bottom: 0!important;

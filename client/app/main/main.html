@@ -120,12 +120,12 @@
             <!--<br>-->
             <!--<div layout-gt-sm="row" layout="column" >-->
 
-              <!--<a ng-class="{'margin-right-3vw':!isMobile}" href="http://www.amadeus.co.il/" class="margin-auto" target="_blank">-->
-                <!--<img src="../../assets/logos/agoda-white.png" class="cohost-logo width-40vmin" alt="Agoda" >-->
-              <!--</a>-->
-              <!--<a ng-class="{'margin-left-3vw':!isMobile}" href="http://www.amadeus.co.il/" class="margin-auto" target="_blank">-->
-                <!--<img src="../../assets/logos/IEC-white.png" class="cohost-logo width-40vmin" alt="Izam!">-->
-              <!--</a>-->
+            <!--<a ng-class="{'margin-right-3vw':!isMobile}" href="http://www.amadeus.co.il/" class="margin-auto" target="_blank">-->
+            <!--<img src="../../assets/logos/agoda-white.png" class="cohost-logo width-40vmin" alt="Agoda" >-->
+            <!--</a>-->
+            <!--<a ng-class="{'margin-left-3vw':!isMobile}" href="http://www.amadeus.co.il/" class="margin-auto" target="_blank">-->
+            <!--<img src="../../assets/logos/IEC-white.png" class="cohost-logo width-40vmin" alt="Izam!">-->
+            <!--</a>-->
             <!--</div>-->
 
             <br>
@@ -209,20 +209,12 @@
 
   <section class="footer">
     <div layout="row">
-      <div class="footer-item">
         <img class="footer-logo" src="../../assets/logos/agoda-white.png" alt="">
-      </div>
-      <div class="footer-item flex-end">
-        <p class="three-vim">
-          Interdisciplinary Center (IDC) Herzliya <br>
-          P.O.Box 167 <br>
-          Herzliya, 4610101, Israel <br>
-          Tel: + 972-9-9527272 <br>
-          <a href="mailto:contact@hackidc.com">contact@hackidc.com</a></p>
-      </div>
-      <div  class="footer-item">
+      <!--FIXME : Make sure this works-->
+        <md-button class="md-raised contact-us-button" ng-click="window.location='contact@hackidc.com'">
+            <p class="two-vim ">Contact Us</p>
+        </md-button>
         <img class="footer-logo" src="../../assets/logos/IEC-white.png" alt="">
-      </div>
     </div>
   </section>
 </div>
