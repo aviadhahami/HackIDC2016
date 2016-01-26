@@ -21,7 +21,7 @@ angular.module('hackIdcApp')
         },
         {
           title: 'What am I expected to build?',
-          content: '36 hours isn’t much, but surely enough to bring something to life. You are expected to finish a first version of your product within that time.<br> This can be a demo, POC or a beta version.<br>All work eligible for prizes must be completed between Friday morning after the kick-off and Saturday night at the hacking location (IDC Herzliya Campus).'
+          content: 'Thirty-six hours isn’t much, but surely enough to bring something to life. You are expected to finish a first version of your product within that time.<br> This can be a demo, POC or a beta version.<br>All work eligible for prizes must be completed between Friday morning after the kick-off and Saturday night at the hacking location (IDC Herzliya Campus).'
         },
         {
           title:'What about hardware projects?',
