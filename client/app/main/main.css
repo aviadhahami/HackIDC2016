@@ -105,11 +105,14 @@ figure{
 }
 .small-logo{
   height:30px;
+  max-height:30px;
   width:auto;
   /*padding-top: 2vh;*/
 }
 .big-logo{
-  max-height: 100px;
+  /*max-height: 100px;*/
+  max-height:30px;
+  opacity: 0;
   /*padding-top: 2vh;*/
 }
 
