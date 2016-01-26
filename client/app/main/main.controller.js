@@ -136,7 +136,7 @@ angular.module('hackIdcApp')
           sponsorsSub:'Those who make it possible',
           mentorshipContent:'A program for highly-motivated newbies',
           prizesSub : 'To feed the motivation',
-          teamSub : 'They are busy planning and will be present soon'
+          teamSub : 'From the people who brought you Shrek'
         };
       },0);
 
