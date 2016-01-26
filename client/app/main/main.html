@@ -218,7 +218,21 @@
         <p class="section-subtitle mc-white">{{content.prizesSub}}</p>
       </div>
       <div layout="column">
-        <div class="prizes-container" layout="column" layout-gt-sm="row">
+        <div class="prizes-container" ng-if="!isMobile" layout="column" layout-gt-sm="row">
+          <div layout="column" flex="33">
+            <img class="prize-coin" src="../../assets/images/2-coin.png" alt="">
+            <p class="md-headline ten-vim mc-white">7,000₪</p>
+          </div>
+          <div layout="column" flex="33">
+            <img class="prize-coin" src="../../assets/images/1-coin.png" alt="">
+            <p class="md-headline ten-vim mc-white">15,000₪</p>
+          </div>
+          <div layout="column" flex="33">
+            <img class="prize-coin" src="../../assets/images/3-coin.png" alt="">
+            <p class="md-headline ten-vim mc-white">3,000₪</p>
+          </div>
+        </div>
+        <div class="prizes-container" ng-if="isMobile" layout="column" layout-gt-sm="row">
           <div layout="column" flex="33">
             <img class="prize-coin" src="../../assets/images/1-coin.png" alt="">
             <p class="md-headline ten-vim mc-white">15,000₪</p>
