@@ -2,25 +2,19 @@
   <header layout="row"  layout-align="center center"
           data-header-scroll  ng-class="{min:boolChangeClass}" ng-if="!isMobile">
 
-
-    <div du-scrollspy="prizes" flex>
-      <p ng-class="{'md-display-1':!boolChangeClass}"><a href="#prizes" du-smooth-scroll>Prizes</a></p>
-    </div>
-    <div du-scrollspy="mentorship" flex>
-      <p flex ng-class="{'md-display-1':!boolChangeClass}"><a href="#mentorship" du-smooth-scroll>Mentorship</a></p>
-    </div>
-    <div du-scrollspy="sponsors" flex>
-      <p flex ng-class="{'md-display-1':!boolChangeClass}"><a href="#sponsors" du-smooth-scroll>Sponsors</a></p>
-    </div>
-
-
     <div du-scrollspy="description" flex>
       <p ng-class="{'md-display-1':!boolChangeClass}"><a href="#description" du-smooth-scroll>FAQ</a>
       </p>
     </div>
-
-
-
+    <div du-scrollspy="sponsors" flex>
+      <p flex ng-class="{'md-display-1':!boolChangeClass}"><a href="#sponsors" du-smooth-scroll>Sponsors</a></p>
+    </div>
+    <div du-scrollspy="mentorship" flex>
+      <p flex ng-class="{'md-display-1':!boolChangeClass}"><a href="#mentorship" du-smooth-scroll>Mentorship</a></p>
+    </div>
+    <div du-scrollspy="prizes" flex>
+      <p ng-class="{'md-display-1':!boolChangeClass}"><a href="#prizes" du-smooth-scroll>Prizes</a></p>
+    </div>
     <div flex>
       <p flex ng-class="{'md-display-1':!boolChangeClass}">
         <a ui-sref="signup" style="color: #FF6F00;font-weight: bold;">Sign up</a>
@@ -414,8 +408,6 @@
         <a href="https://twitter.com/search?q=%23hackidc"  flex target="_blank" class="social-media-icon mc-white soc-insta">
           <i class="fa fa-instagram fa-2x"></i>
         </a>
-
-
       </div>
       <div flex layout="row" class="margin-auto inline-block" >
         <a href="http://www.iec.idc.ac.il/" class="margin-auto"  flex target="_blank">
