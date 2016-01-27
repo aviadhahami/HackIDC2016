@@ -7,7 +7,7 @@
           <md-button class="md-fab" ng-disabled="links[$index].disabled === 'true'" ng-style="{'background-color':links[$index].bgColor}" ng-click="links[$index].action(links[$index].actionArgs); toggleGrid()">
             <i class="fa fa-2x fa-center" ng-class="links[$index].iconClass"></i>
           </md-button>
-        <span>
+        <span ng-class="{'disabled-button-text-color-span':links[$index].disabled === 'true'}">
           {{links[$index].label}}
           </span>
         </div>
@@ -15,7 +15,7 @@
           <md-button class="md-fab" ng-disabled="links[$index+1].disabled === 'true'" ng-style="{'background-color':links[$index+1].bgColor}" ng-click="links[$index+1].action(links[$index+1].actionArgs); toggleGrid()">
             <i class="fa fa-2x fa-center" ng-class="links[$index+1].iconClass"></i>
           </md-button>
-        <span>
+        <span ng-class="{'disabled-button-text-color-span':links[$index+2].disabled === 'true'}">
           {{links[$index+1].label}}
         </span>
         </div>
@@ -23,7 +23,7 @@
           <md-button class="md-fab" ng-disabled="links[$index+2].disabled === 'true'" ng-style="{'background-color':links[$index+2].bgColor}" ng-click="links[$index+2].action(links[$index+2].actionArgs); toggleGrid()">
             <i class="fa fa-2x fa-center" ng-class="links[$index+2].iconClass"></i>
           </md-button>
-        <span>
+        <span ng-class="{'disabled-button-text-color-span':links[$index+2].disabled === 'true'}">
         {{links[$index+2].label}}
         </span>
         </div>
