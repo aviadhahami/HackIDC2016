@@ -198,7 +198,8 @@ angular.module('hackIdcApp')
           label : 'Team',
           action : $scope.scrollTo,
           actionArgs: 'team',
-          bgColor : '#2185D5'
+          bgColor : '#2185D5',
+          disabled : 'true'
         }
 
       ];
