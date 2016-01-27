@@ -352,31 +352,29 @@
 
 
   <section class="footer" ng-style="{'height':isMobile? 'auto':'30vh'}">
-    <div layout="row" ng-if="!isMobile">
+    <div layout="row" class="text-center" ng-if="!isMobile">
       <div  class="inline-flex" flex>
         <a href="http://www.myidc.org.il/" target="_blank" class="margin-auto" >
 
           <img style="height: 22vh;" ng-class="{'small-footer-logo':isMobile}" class="footer-logo" src="../../assets/logos/agoda-white.png" alt="">
         </a>
       </div>
-
-
       <div layout="column"  class="inline-flex" flex>
         <div flex="10"></div>
         <div flex class="margin-auto" >
           <p class=" md-headline  three-vim mc-white weight-300">Contact us at <a class="mc-light-blue" href="mailto:contact@hackidc.com">contact@hackidc.com</a></p>
         </div>
         <div flex layout="row" class="margin-auto" >
-          <a href="https://www.facebook.com/HackIDC" target="_blank" class="social-media-icon mc-white soc-facebook">
+          <a href="https://www.facebook.com/HackIDC" flex target="_blank" class="social-media-icon mc-white soc-facebook">
             <i class="fa fa-facebook fa-3x"></i>
           </a>
-          <a href="https://twitter.com/HackIDC" target="_blank" class="social-media-icon mc-white  soc-twitter">
+          <a href="https://twitter.com/HackIDC" flex target="_blank" class="social-media-icon mc-white  soc-twitter">
             <i class="fa fa-twitter fa-3x"></i>
           </a>
-          <a href="https://www.youtube.com/channel/UCfilhGTdVddG-JEkgY8CA_Q" target="_blank" class="social-media-icon mc-white  soc-youtube">
+          <a href="https://www.youtube.com/channel/UCfilhGTdVddG-JEkgY8CA_Q"  flex target="_blank" class="social-media-icon mc-white  soc-youtube">
             <i class="fa fa-youtube fa-3x"></i>
           </a>
-          <a href="https://twitter.com/search?q=%23hackidc" target="_blank" class="social-media-icon mc-white soc-insta">
+          <a href="https://twitter.com/search?q=%23hackidc"  flex target="_blank" class="social-media-icon mc-white soc-insta">
             <i class="fa fa-instagram fa-3x"></i>
           </a>
         </div>
