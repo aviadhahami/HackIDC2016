@@ -4,9 +4,14 @@ angular.module('hackIdcApp')
 
   .controller('SignupCtrl',  ['$scope','isMobile','$rootScope','$location','$mdDialog','Upload','$http','$timeout',
       function ($scope,isMobile,$rootScope,$location,$mdDialog,Upload,$http,$timeout) {
+
+
+        $scope.timeToGo = (new Date ("january 30 2016") - new Date())/1000;
+
+
         var fileUploadConfig = "";
         $scope.cvFileName = '';
-$scope.finalShow = {};
+        $scope.finalShow = {};
 
 
 
