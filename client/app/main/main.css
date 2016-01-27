@@ -309,6 +309,9 @@ section#home{
   color: rgba(255,255,255,0.8);
   font-weight: 300;
 }
+.inline-flex{
+  display: inline-flex;
+}
 #mentorship{
   background: #E3F2FD;
   line-height:normal;
