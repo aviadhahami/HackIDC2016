@@ -2,6 +2,13 @@
   <header layout="row"  layout-align="center center"
           data-header-scroll  ng-class="{min:boolChangeClass}" ng-if="!isMobile">
 
+    <div class="transition-ease" ng-class="{'flex-10':boolChangeClass,'flex-0':!boolChangeClass}">
+      <figure>
+        <a href="#home" du-smooth-scroll>
+          <img id="hackidc-logo" ng-class="{'big-logo' : !boolChangeClass, 'small-logo' : boolChangeClass}" src="../../assets/logos/HerzelHeadWhite.png"  alt="">
+        </a>
+      </figure>
+    </div>
     <div du-scrollspy="description" flex>
       <span ng-class="{'md-display-1':!boolChangeClass}">
         <a href="#description" du-smooth-scroll>
@@ -44,13 +51,7 @@
       </span>
     </div>
 
-    <div class="transition-ease" ng-class="{'flex-10':boolChangeClass,'flex-0':!boolChangeClass}">
-      <figure>
-        <a href="#home" du-smooth-scroll>
-          <img id="hackidc-logo" ng-class="{'big-logo' : !boolChangeClass, 'small-logo' : boolChangeClass}" src="../../assets/logos/HerzelHeadWhite.png"  alt="">
-        </a>
-      </figure>
-    </div>
+
 
   </header>
 
