@@ -3,22 +3,45 @@
           data-header-scroll  ng-class="{min:boolChangeClass}" ng-if="!isMobile">
 
     <div du-scrollspy="description" flex>
-      <p ng-class="{'md-display-1':!boolChangeClass}"><a href="#description" du-smooth-scroll>FAQ</a>
-      </p>
+      <span ng-class="{'md-display-1':!boolChangeClass}">
+        <a href="#description" du-smooth-scroll>
+          FAQ
+          <div class="track-bar"></div></a>
+        </a>
+      </span>
     </div>
     <div du-scrollspy="sponsors" flex>
-      <p flex ng-class="{'md-display-1':!boolChangeClass}"><a href="#sponsors" du-smooth-scroll>Sponsors</a></p>
+      <span flex ng-class="{'md-display-1':!boolChangeClass}" layout="column">
+        <a href="#sponsors" du-smooth-scroll>
+          Sponsors
+          <div class="track-bar"></div>
+        </a>
+
+      </span>
     </div>
     <div du-scrollspy="mentorship" flex>
-      <p flex ng-class="{'md-display-1':!boolChangeClass}"><a href="#mentorship" du-smooth-scroll>Mentorship</a></p>
+      <span flex ng-class="{'md-display-1':!boolChangeClass}" layout="column">
+        <a href="#mentorship" du-smooth-scroll>
+          Mentorship
+          <div class="track-bar"></div>
+        </a>
+      </span>
     </div>
     <div du-scrollspy="prizes" flex>
-      <p ng-class="{'md-display-1':!boolChangeClass}"><a href="#prizes" du-smooth-scroll>Prizes</a></p>
+      <span ng-class="{'md-display-1':!boolChangeClass}" layout="column">
+        <a href="#prizes" du-smooth-scroll>
+          Prizes
+          <div class="track-bar"></div>
+        </a>
+      </span>
     </div>
     <div flex>
-      <p flex ng-class="{'md-display-1':!boolChangeClass}">
-        <a ui-sref="signup" style="color: #FF6F00;font-weight: bold;">Sign up</a>
-      </p>
+      <span flex ng-class="{'md-display-1':!boolChangeClass}" layout="column">
+        <a ui-sref="signup" style="color: #FF6F00;font-weight: bold;">
+          Sign up
+          <div class="track-bar"></div>
+        </a>
+      </span>
     </div>
 
     <div class="transition-ease" ng-class="{'flex-10':boolChangeClass,'flex-0':!boolChangeClass}">
