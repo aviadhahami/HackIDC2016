@@ -6,7 +6,7 @@ angular.module('hackIdcApp')
       function ($scope,isMobile,$rootScope,$location,$mdDialog,Upload,$http,$timeout) {
 
 
-        $scope.timeToGo = (new Date('12:00 February 4 2016') - new Date())/1000;
+        $scope.timeToGo = (new Date('12:00 February 13 2016') - new Date())/1000;
 
 
         var fileUploadConfig = "";

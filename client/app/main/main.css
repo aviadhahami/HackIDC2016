@@ -344,6 +344,8 @@ section#home{
 .prize-coin{
   width:20vw;
   margin:0 auto;
+  max-height: 300px;
+  max-width: 300px;
 }
 .ten-vim{
   font-size:10vmin;
