@@ -22,292 +22,293 @@
   </code>
 </div>
 <md-content ng-if="!isMobile" class="singup-container">
-<div layout="column"  style="height: 100vh; width:100%; margin: 0 auto;text-align: center;background-color: rgba(26, 35, 126,1);">
-  <md-button ui-sref="main" style="float: left; margin-bottom: 0;width:20px; color: rgba(255,255,255,0.85);">
-    <i class="fa fa-chevron-left"></i>
-    back
-  </md-button>
-  <div flex=""  layout-align="center center" layout="column">
-    <p class="mc-white md-display-4 no-paddings">Registration will open in</p>
-    <timer class="mc-white md-display-3" interval="1000" countdown="timeToGo">{{days}} day{{daysS}}, {{hours}} hour{{hoursS}}, {{minutes}} minute{{minutesS}}, {{seconds}} second{{secondsS}}.</timer>
-  </div>
-</div>
-  <!--<div ng-if="submittingForm" class="submit-modal-container">-->
-
-  <!--<div class="modal-logo" layout="row">-->
-  <!--<div flex="50" class="type-text" layout="column">-->
-  <!--<p>Okay {{finalShow.firstName}}, let's see what we've got here..</p>-->
-  <!--<p>Uploading your resume to our sever : {{progressPercentage || 0}}%</p>-->
-  <!--<p>This is your form summery:</p>-->
-  <!--<p>-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;</p>-->
-  <!--<p>Name : {{finalShow.firstName}} {{finalShow.lastName}}</p>-->
-  <!--<p>Phone: {{finalShow.phone}}</p>-->
-  <!--<p>Mail : {{finalShow.mail}}</p>-->
-  <!--<p>-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;</p>-->
-  <!--<p>{{finalShow.finalText}}<span>|</span></p>-->
-  <!--<div class="finalText" ng-if="!finalShow.isUploading">-->
-  <!--<h3>Congratulations! We've received your application</h3>-->
-
-  <!--<p>Click <a ui-sref="main">here</a> to go back</p>-->
-  <!--</div>-->
-  <!--</div>-->
-  <!--<div flex="50">-->
-  <!--<img src="../../assets/logos/HerzelHeadBlack.png" alt="">-->
-  <!--</div>-->
-
-  <!--</div>-->
-
-
-  <!--</div>-->
-  <!--<div ng-if="!submittingForm" ng-if="!isMobile" class="md-padding signup">-->
-
-  <!--<md-card class="signup-form">-->
-  <!--<md-button flex="5" ui-sref="main" ui-sref-opts="{reload: true}" style="float: left; margin-bottom: 0;">-->
+  <!--<div layout="column"  style="height: 100vh; width:100%; margin: 0 auto;text-align: center;background-color: rgba(26, 35, 126,1);">-->
+  <!--<md-button ui-sref="main" style="float: left; margin-bottom: 0;width:20px; color: rgba(255,255,255,0.85);">-->
   <!--<i class="fa fa-chevron-left"></i>-->
   <!--back-->
   <!--</md-button>-->
-  <!--<md-card-content style="margin-top:0;padding-top: 0;" class="signup-form-content" layout-padding>-->
-  <!--<div class="form-title">-->
-  <!--<h3 class="md-display-3" style="margin-top:0;">HackIDC 2016 Application</h3>-->
-  <!--<hr />-->
+  <!--<div flex=""  layout-align="center center" layout="column">-->
+  <!--<p class="mc-white md-display-4 no-paddings">Registration will open in</p>-->
+  <!--<timer class="mc-white md-display-3" interval="1000" countdown="timeToGo">{{days}} day{{daysS}}, {{hours}} hour{{hoursS}}, {{minutes}} minute{{minutesS}}, {{seconds}} second{{secondsS}}.</timer>-->
   <!--</div>-->
-  <!--<div class="form-fields">-->
-  <!--<form name="projectForm" layout="column">-->
-  <!--<div layout="row">-->
-  <!--<md-input-container flex>-->
-  <!--<label>First Name</label>-->
-  <!--<input md-maxlength="20" required name="firstName" ng-model="project.firstName">-->
-  <!--<div ng-messages="projectForm.firstName.$error">-->
-  <!--<div ng-message="required">This is required.</div>-->
-  <!--<div ng-message="md-maxlength">The name has to be less than 20 characters long.</div>-->
   <!--</div>-->
-  <!--</md-input-container>-->
-  <!--<md-input-container flex>-->
-  <!--<label>Last Name</label>-->
-  <!--<input  md-maxlength="20" required name="lastName" ng-model="project.lastName">-->
-  <!--<div ng-messages="projectForm.lastName.$error">-->
-  <!--<div ng-message="required">This is required.</div>-->
-  <!--<div ng-message="md-maxlength">The name has to be less than 20 characters long.</div>-->
-  <!--</div>-->
-  <!--</md-input-container>-->
-  <!--<md-input-container flex>-->
-  <!--<label>Gender</label>-->
-  <!--<md-select ng-model="projectForm.gender">-->
-  <!--<md-option value="male">-->
-  <!--Male-->
-  <!--</md-option>-->
-  <!--<md-option value="female">-->
-  <!--Female-->
-  <!--</md-option>-->
-  <!--<md-option value="other">-->
-  <!--Other-->
-  <!--</md-option>-->
-  <!--</md-select>-->
-  <!--<div ng-messages="projectForm.gender.$error">-->
-  <!--<div ng-message="required">This is required.</div>-->
-  <!--</div>-->
-  <!--</md-input-container>-->
 
-  <!--</div>-->
-  <!--<div layout="row">-->
-  <!--<md-input-container flex>-->
-  <!--<label>Email</label>-->
-  <!--<input required type="email" name="email" ng-model="project.email"-->
-  <!--minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/" />-->
-  <!--<div ng-messages="projectForm.email.$error" role="alert">-->
-  <!--<div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">-->
-  <!--Your email must be between 10 and 100 characters long and look like an e-mail address.-->
-  <!--</div>-->
-  <!--</div>-->
-  <!--</md-input-container>-->
-  <!--<md-input-container flex>-->
-  <!--<label>Phone</label>-->
-  <!--<input required type="text" name="phone" ng-model="project.phone"-->
-  <!--ng-pattern="/^05[0-9]{8}$/" />-->
-  <!--<div ng-messages="projectForm.phone.$error" role="alert">-->
-  <!--<div ng-message="required">This is required.</div>-->
-  <!--<div ng-message="md-maxlength">Phone should be 10 digits</div>-->
-  <!--<div ng-message="pattern">Phone number should be of the form 0541234567.</div>-->
-  <!--</div>-->
-  <!--</md-input-container>-->
-  <!--<md-input-container flex>-->
-  <!--<label>Academic Institution</label>-->
-  <!--<md-select ng-model="projectForm.school">-->
-  <!--<md-option ng-repeat="school in schools" value="{{school}}">-->
-  <!--{{school}}-->
-  <!--</md-option>-->
-  <!--</md-select>-->
-  <!--<div ng-messages="projectForm.school.$error">-->
-  <!--<div ng-message="required">This is required.</div>-->
-  <!--</div>-->
-  <!--</md-input-container>-->
-  <!--</div>-->
-  <!--<div layout="row">-->
-  <!--<md-input-container flex="10">-->
-  <!--<label>Shirt Size</label>-->
-  <!--<md-select ng-model="projectForm.shirtSize">-->
-  <!--<md-option value="s">-->
-  <!--S-->
-  <!--</md-option>-->
-  <!--<md-option value="m">-->
-  <!--M-->
-  <!--</md-option>-->
-  <!--<md-option value="L">-->
-  <!--L-->
-  <!--</md-option>-->
-  <!--<md-option value="XL">-->
-  <!--XL-->
-  <!--</md-option>-->
-  <!--<md-option value="XXL">-->
-  <!--XXL-->
-  <!--</md-option>-->
-  <!--</md-select>-->
-  <!--<div ng-messages="projectForm.shirtSize.$error">-->
-  <!--<div ng-message="required">This is required.</div>-->
-  <!--</div>-->
-  <!--</md-input-container>-->
-  <!--<md-input-container flex>-->
-  <!--<label>Special Dietary Preferences</label>-->
-  <!--<md-select required ng-model="projectForm.diet">-->
-  <!--<md-option value="Vegetarian">-->
-  <!--Vegetarian-->
-  <!--</md-option>-->
-  <!--<md-option value="Vegan">-->
-  <!--Vegan-->
-  <!--</md-option>-->
-  <!--<md-option value="Pescetarian">-->
-  <!--Pescetarian-->
-  <!--</md-option>-->
-  <!--<md-option value="Paleolithic">-->
-  <!--Paleolithic-->
-  <!--</md-option>-->
-  <!--<md-option value="Regular">-->
-  <!--No Speciality-->
-  <!--</md-option>-->
-  <!--<md-option value="Other">-->
-  <!--Other-->
-  <!--</md-option>-->
-  <!--</md-select>-->
-  <!--<div ng-messages="projectForm.shirtSize.$error">-->
-  <!--<div ng-message="required">This is required.</div>-->
-  <!--</div>-->
-  <!--</md-input-container>-->
-  <!--<md-input-container flex>-->
-  <!--<label>Link to a project you have created</label>-->
-  <!--<input required name="pastProject" ng-model="project.pastProject">-->
-  <!--<div ng-messages="projectForm.pastProject.$error">-->
-  <!--<div ng-message="required">This is required.</div>-->
-  <!--</div>-->
-  <!--</md-input-container>-->
-  <!--<md-input-container flex>-->
-  <!--<label>Where did you hear about HackIDC?</label>-->
-  <!--<md-select required ng-model="projectForm.heardFrom">-->
-  <!--<md-option value="Friends">-->
-  <!--Friends-->
-  <!--</md-option>-->
-  <!--<md-option value="Social Network">-->
-  <!--Social Network-->
-  <!--</md-option>-->
-  <!--<md-option value="Media">-->
-  <!--Media (TV, newspaper etc.)-->
-  <!--</md-option>-->
-  <!--<md-option value="Student Union">-->
-  <!--Student Union-->
-  <!--</md-option>-->
-  <!--<md-option value="Other">-->
-  <!--Other-->
-  <!--</md-option>-->
-  <!--</md-select>-->
-  <!--<div ng-messages="projectForm.heardFrom.$error">-->
-  <!--<div ng-message="required">This is required.</div>-->
-  <!--</div>-->
-  <!--</md-input-container>-->
-  <!--</div>-->
-  <!--<div layout="row">-->
-  <!--<md-input-container flex="60">-->
-  <!--<label>Why are you interested in HackIDC?</label>-->
-  <!--<textarea required md-maxlength="500" name="interestReason" ng-model="project.interestReason"></textarea>-->
-  <!--<div ng-messages="projectForm.interestReason.$error">-->
-  <!--<div ng-message="required">This is required.</div>-->
-  <!--<div ng-message="md-maxlength">Too long, please revise.</div>-->
-  <!--</div>-->
-  <!--</md-input-container>-->
-  <!--<div flex=""></div>-->
-  <!--<div flex="30" >-->
-  <!--<div layout="row" style="padding-top: 2vh;">-->
-  <!--<md-button  md-no-ink class="md-primary" flex="">-->
-  <!--<div ngf-select="upload($file)">Attach CV</div>-->
-  <!--</md-button>-->
-  <!--<p flex="">{{cvFileName}}</p>-->
-  <!--</div>-->
-  <!--</div>-->
-  <!--</div>-->
-  <!--<div layout="row">-->
-  <!--<md-input-container flex>-->
-  <!--<label>Are you applying as a part of a team?</label>-->
-  <!--<md-select required ng-model="projectForm.gotTeam">-->
-  <!--<md-option value="Yes">-->
-  <!--Yes-->
-  <!--</md-option>-->
-  <!--<md-option value="No">-->
-  <!--No-->
-  <!--</md-option>-->
-  <!--</md-select>-->
-  <!--<div ng-messages="projectForm.gotTeam.$error">-->
-  <!--<div ng-message="required">This is required.</div>-->
-  <!--</div>-->
-  <!--<div>-->
-  <!--<p class="md-caption mc-black">We allow teams of up to five members</p>-->
-  <!--</div>-->
-  <!--</md-input-container>-->
-  <!--<md-input-container flex ng-if="projectForm.gotTeam === 'Yes'">-->
-  <!--<label>Please supply your team leader's mail</label>-->
-  <!--<input required type="email" name="teamLeaderMail" ng-model="project.leaderMail"-->
-  <!--minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/" />-->
-  <!--<div ng-messages="projectForm.email.$error" role="alert">-->
-  <!--<div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">-->
-  <!--Your email must be between 10 and 100 characters long and look like an e-mail address.-->
-  <!--</div>-->
-  <!--</div>-->
-  <!--</md-input-container>-->
-  <!--</div>-->
-  <!--<div layout="row" >-->
-  <!--<fieldset class="standard" flex="30" ng-if="projectForm.school === 'IDC Herzliya'">-->
-  <!--<legend>Mentorship</legend>-->
-  <!--<div layout="row" layout-wrap>-->
-  <!--<md-checkbox ng-model="projectForm.needMentor" aria-label="Would you like a mentor?">-->
-  <!--I would like to a part of the-->
-  <!--<a href="">-->
-  <!--Mentorship Program-->
-  <!--<md-tooltip class="large" md-direction="top">-->
-  <!--<p>-->
-  <!--HackIDC will operate a special mentorship program, <br>-->
-  <!--targeting those who want to participate in the hackathon <br>-->
-  <!--but still need to work on their development skills. <br>-->
-  <!--<i style="font-size: 15px">Further information can be found at our main page</i>-->
-  <!--</p>-->
-  <!--</md-tooltip>-->
-  <!--</a>-->
-  <!--</md-checkbox>-->
-  <!--</div>-->
-  <!--</fieldset>-->
-  <!--<div flex></div>-->
-  <!--<fieldset class="standard" flex="40">-->
-  <!--<legend>Final step</legend>-->
-  <!--<div layout="row" layout-wrap>-->
-  <!--<md-checkbox required="" class="md-primary" ng-model="projectForm.agreeToTerms" aria-label="Accept terms and conditions">-->
-  <!--I have read the <a href="../../assets/PDF/HackIDCTermsofService2016.pdf" target="_blank">term and conditions</a> and I agree-->
-  <!--</md-checkbox>-->
-  <!--<div flex="10"></div>-->
+  <div ng-if="submittingForm" class="submit-modal-container">
 
-  <!--<md-button flex ng-disabled="projectForm.$invalid" class="md-raised md-primary" ng-click="submit(projectForm)">Submit</md-button>-->
-  <!--</div>-->
-  <!--</fieldset>-->
+    <div class="modal-logo" layout="row">
+      <div flex="50" class="type-text" layout="column">
+        <p>Okay {{finalShow.firstName}}, let's see what we've got here..</p>
+        <p>Uploading your resume to our sever : {{progressPercentage || 0}}%</p>
+        <p>This is your form summery:</p>
+        <p>-------------</p>
+        <p>Name : {{finalShow.firstName}} {{finalShow.lastName}}</p>
+        <p>Phone: {{finalShow.phone}}</p>
+        <p>Mail : {{finalShow.mail}}</p>
+        <p>-------------</p>
+        <p>{{finalShow.finalText}}<span>|</span></p>
+        <div class="finalText" ng-if="!finalShow.isUploading">
+          <h3>Congratulations! We've received your application</h3>
 
-  <!--</div>-->
-  <!--</form>-->
-  <!--</div>-->
-  <!--</md-card-content>-->
-  <!--</md-card>-->
-  <!--</div>-->
+          <p>Click <a ui-sref="main">here</a> to go back</p>
+        </div>
+      </div>
+      <div flex="50">
+        <img src="../../assets/logos/HerzelHeadBlack.png" alt="">
+      </div>
+
+    </div>
+
+
+  </div>
+  <div ng-if="!submittingForm" ng-if="!isMobile" class="md-padding signup">
+
+    <md-card class="signup-form">
+      <md-button flex="5" ui-sref="main" ui-sref-opts="{reload: true}" style="float: left; margin-bottom: 0;">
+        <i class="fa fa-chevron-left"></i>
+        back
+      </md-button>
+      <md-card-content style="margin-top:0;padding-top: 0;" class="signup-form-content" layout-padding>
+        <div class="form-title">
+          <h3 class="md-display-3" style="margin-top:0;">HackIDC 2016 Application</h3>
+          <hr />
+        </div>
+        <div class="form-fields">
+          <form name="projectForm" layout="column">
+            <div layout="row">
+              <md-input-container flex>
+                <label>First Name</label>
+                <input md-maxlength="20" required name="firstName" ng-model="project.firstName">
+                <div ng-messages="projectForm.firstName.$error">
+                  <div ng-message="required">This is required.</div>
+                  <div ng-message="md-maxlength">The name has to be less than 20 characters long.</div>
+                </div>
+              </md-input-container>
+              <md-input-container flex>
+                <label>Last Name</label>
+                <input  md-maxlength="20" required name="lastName" ng-model="project.lastName">
+                <div ng-messages="projectForm.lastName.$error">
+                  <div ng-message="required">This is required.</div>
+                  <div ng-message="md-maxlength">The name has to be less than 20 characters long.</div>
+                </div>
+              </md-input-container>
+              <md-input-container flex>
+                <label>Gender</label>
+                <md-select ng-model="projectForm.gender">
+                  <md-option value="male">
+                    Male
+                  </md-option>
+                  <md-option value="female">
+                    Female
+                  </md-option>
+                  <md-option value="other">
+                    Other
+                  </md-option>
+                </md-select>
+                <div ng-messages="projectForm.gender.$error">
+                  <div ng-message="required">This is required.</div>
+                </div>
+              </md-input-container>
+
+            </div>
+            <div layout="row">
+              <md-input-container flex>
+                <label>Email</label>
+                <input required type="email" name="email" ng-model="project.email"
+                       minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/" />
+                <div ng-messages="projectForm.email.$error" role="alert">
+                  <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+                    Your email must be between 10 and 100 characters long and look like an e-mail address.
+                  </div>
+                </div>
+              </md-input-container>
+              <md-input-container flex>
+                <label>Phone</label>
+                <input required type="text" name="phone" ng-model="project.phone"
+                       ng-pattern="/^05[0-9]{8}$/" />
+                <div ng-messages="projectForm.phone.$error" role="alert">
+                  <div ng-message="required">This is required.</div>
+                  <div ng-message="md-maxlength">Phone should be 10 digits</div>
+                  <div ng-message="pattern">Phone number should be of the form 0541234567.</div>
+                </div>
+              </md-input-container>
+              <md-input-container flex>
+                <label>Academic Institution</label>
+                <md-select ng-model="projectForm.school">
+                  <md-option ng-repeat="school in schools" value="{{school}}">
+                    {{school}}
+                  </md-option>
+                </md-select>
+                <div ng-messages="projectForm.school.$error">
+                  <div ng-message="required">This is required.</div>
+                </div>
+              </md-input-container>
+            </div>
+            <div layout="row">
+              <md-input-container flex="10">
+                <label>Shirt Size</label>
+                <md-select ng-model="projectForm.shirtSize">
+                  <md-option value="s">
+                    S
+                  </md-option>
+                  <md-option value="m">
+                    M
+                  </md-option>
+                  <md-option value="L">
+                    L
+                  </md-option>
+                  <md-option value="XL">
+                    XL
+                  </md-option>
+                  <md-option value="XXL">
+                    XXL
+                  </md-option>
+                </md-select>
+                <div ng-messages="projectForm.shirtSize.$error">
+                  <div ng-message="required">This is required.</div>
+                </div>
+              </md-input-container>
+              <md-input-container flex>
+                <label>Special Dietary Preferences</label>
+                <md-select required ng-model="projectForm.diet">
+                  <md-option value="Vegetarian">
+                    Vegetarian
+                  </md-option>
+                  <md-option value="Vegan">
+                    Vegan
+                  </md-option>
+                  <md-option value="Pescetarian">
+                    Pescetarian
+                  </md-option>
+                  <md-option value="Paleolithic">
+                    Paleolithic
+                  </md-option>
+                  <md-option value="Regular">
+                    No Speciality
+                  </md-option>
+                  <md-option value="Other">
+                    Other
+                  </md-option>
+                </md-select>
+                <div ng-messages="projectForm.shirtSize.$error">
+                  <div ng-message="required">This is required.</div>
+                </div>
+              </md-input-container>
+              <md-input-container flex>
+                <label>Link to a project you have created</label>
+                <input required name="pastProject" ng-model="project.pastProject">
+                <div ng-messages="projectForm.pastProject.$error">
+                  <div ng-message="required">This is required.</div>
+                </div>
+              </md-input-container>
+              <md-input-container flex>
+                <label>Where did you hear about HackIDC?</label>
+                <md-select required ng-model="projectForm.heardFrom">
+                  <md-option value="Friends">
+                    Friends
+                  </md-option>
+                  <md-option value="Social Network">
+                    Social Network
+                  </md-option>
+                  <md-option value="Media">
+                    Media (TV, newspaper etc.)
+                  </md-option>
+                  <md-option value="Student Union">
+                    Student Union
+                  </md-option>
+                  <md-option value="Other">
+                    Other
+                  </md-option>
+                </md-select>
+                <div ng-messages="projectForm.heardFrom.$error">
+                  <div ng-message="required">This is required.</div>
+                </div>
+              </md-input-container>
+            </div>
+            <div layout="row">
+              <md-input-container flex="60">
+                <label>Why are you interested in HackIDC?</label>
+                <textarea required md-maxlength="500" name="interestReason" ng-model="project.interestReason"></textarea>
+                <div ng-messages="projectForm.interestReason.$error">
+                  <div ng-message="required">This is required.</div>
+                  <div ng-message="md-maxlength">Too long, please revise.</div>
+                </div>
+              </md-input-container>
+              <div flex=""></div>
+              <div flex="30" >
+                <div layout="row" style="padding-top: 2vh;">
+                  <md-button  md-no-ink class="md-primary" flex="">
+                    <div ngf-select="upload($file)">Attach CV</div>
+                  </md-button>
+                  <p flex="">{{cvFileName}}</p>
+                </div>
+              </div>
+            </div>
+            <div layout="row">
+              <md-input-container flex>
+                <label>Are you applying as a part of a team?</label>
+                <md-select required ng-model="projectForm.gotTeam">
+                  <md-option value="Yes">
+                    Yes
+                  </md-option>
+                  <md-option value="No">
+                    No
+                  </md-option>
+                </md-select>
+                <div ng-messages="projectForm.gotTeam.$error">
+                  <div ng-message="required">This is required.</div>
+                </div>
+                <div>
+                  <p class="md-caption mc-black">We allow teams of up to five members</p>
+                </div>
+              </md-input-container>
+              <md-input-container flex ng-if="projectForm.gotTeam === 'Yes'">
+                <label>Please supply your team leader's mail</label>
+                <input required type="email" name="teamLeaderMail" ng-model="project.leaderMail"
+                       minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/" />
+                <div ng-messages="projectForm.email.$error" role="alert">
+                  <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+                    Your email must be between 10 and 100 characters long and look like an e-mail address.
+                  </div>
+                </div>
+              </md-input-container>
+            </div>
+            <div layout="row" >
+              <fieldset class="standard" flex="30" ng-if="projectForm.school === 'IDC Herzliya'">
+                <legend>Mentorship</legend>
+                <div layout="row" layout-wrap>
+                  <md-checkbox ng-model="projectForm.needMentor" aria-label="Would you like a mentor?">
+                    I would like to a part of the
+                    <a href="">
+                      Mentorship Program
+                      <md-tooltip class="large" md-direction="top">
+                        <p>
+                          HackIDC will operate a special mentorship program, <br>
+                          targeting those who want to participate in the hackathon <br>
+                          but still need to work on their development skills. <br>
+                          <i style="font-size: 15px">Further information can be found at our main page</i>
+                        </p>
+                      </md-tooltip>
+                    </a>
+                  </md-checkbox>
+                </div>
+              </fieldset>
+              <div flex></div>
+              <fieldset class="standard" flex="40">
+                <legend>Final step</legend>
+                <div layout="row" layout-wrap>
+                  <md-checkbox required="" class="md-primary" ng-model="projectForm.agreeToTerms" aria-label="Accept terms and conditions">
+                    I have read the <a href="../../assets/PDF/HackIDCTermsofService2016.pdf" target="_blank">term and conditions</a> and I agree
+                  </md-checkbox>
+                  <div flex="10"></div>
+
+                  <md-button flex ng-disabled="projectForm.$invalid" class="md-raised md-primary" ng-click="submit(projectForm)">Submit</md-button>
+                </div>
+              </fieldset>
+
+            </div>
+          </form>
+        </div>
+      </md-card-content>
+    </md-card>
+  </div>
 </md-content>
