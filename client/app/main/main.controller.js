@@ -110,7 +110,7 @@ angular.module('hackIdcApp')
         },
         {
           title:'Who should apply?',
-          content:'The program currently accepts Interdisciplinary Center Herzliya students only. If you wish to participate in the Hackathon and have technical background but little to no experience, this program is for you.<br><br>Just check the “I want to be part of the mentorship program” box when submitting the registration form. We will contact you once the application results are announced.<br><br>Be advised that you will be required to attend 5 to 6 weekly sessions in the weeks preceding the Hackathon. We expect you to meet this requirement so we can advance your skills to a Hackathon Hacker level.'
+          content:'The program currently accepts students from IDC Herzliya.. If you wish to participate in the Hackathon and have technical background but little to no experience, this program is for you.<br><br>Just check the “I want to be part of the mentorship program” box when submitting the registration form. We will contact you once the application results are announced.<br><br>Be advised that you will be required to attend 5 to 6 weekly sessions in the weeks preceding the Hackathon. We expect you to meet this requirement so we can advance your skills to a Hackathon Hacker level.'
         }
       ];
 
