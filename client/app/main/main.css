@@ -329,8 +329,13 @@ section#home{
   font-weight: 300;
 }
 .silver-spons{
-  width:200px;
-  padding: 0 2vw 0 2vw;
+  width:10vw;
+  padding: 2vh 2vw 2vh 2vw;
+  height: auto;
+}
+.silver-spons-small{
+  width:20vw;
+  padding: 2vh 2vw 2vh 2vw;
   height: auto;
 }
 .inline-flex{
