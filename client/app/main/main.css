@@ -179,6 +179,11 @@ section#home{
   text-decoration:line-through;
 
 }
+.lines-before:before, .lines-after:after{
+  content:" \00a0\00a0\00a0\00a0\00a0";
+  text-decoration:line-through;
+
+}
 
 
 
@@ -313,7 +318,6 @@ section#home{
   color:#2196F3;
 }
 .cohost-logo{
-
   width: 50vw;
   height: 100%;
   margin: 0 auto;
@@ -323,6 +327,11 @@ section#home{
   text-align: center;
   color: rgba(255,255,255,0.8);
   font-weight: 300;
+}
+.silver-spons{
+  width:200px;
+  padding: 0 2vw 0 2vw;
+  height: auto;
 }
 .inline-flex{
   display: inline-flex;
