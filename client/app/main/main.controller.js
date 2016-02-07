@@ -40,6 +40,10 @@ angular.module('hackIdcApp')
           content: 'HackIDC is run entirely by students of the Interdisciplinary Center Herzliya.<br><br>With great assistance from our partners at the Student Union and Entrepreneurship Club, and funding of corporate <a href="#sponsors" class="mc-light-blue weight-300" du-smooth-scroll="">sponsor</a> donations, we aspire to bring you the leading student Hackathon in Israel. '
         },
         {
+          title:'About IEC',
+          content: 'The IDC Entrepreneurship Club is a student-run platform for creating and encouraging entrepreneurship among IDC Herzliya students and nurturing a culture of entrepreneurship on campus.<br>The club strives to provide each student with practical tools and knowledge in various fields of entrepreneurship.'
+        },
+        {
           title:'I have one more question...',
           content: 'We’re here for you!<br><br>Contact us at <a href="mailto:contact@hackidc.com" class="mc-light-blue weight-300">contact@hackidc.com</a> or via <a class="mc-light-blue weight-300" href="https://www.facebook.com/HackIDC" target="_blank">Facebook</a> messenger.<br><br><i>If you are looking for a specific team member, you can find us <a href="#team" du-smooth-scroll="" class="mc-light-blue weight-300">here</a>.</i>'
         }
