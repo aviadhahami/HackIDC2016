@@ -300,8 +300,11 @@
                     I have read the <a href="../../assets/PDF/HackIDCTermsofService2016.pdf" target="_blank">term and conditions</a> and I agree
                   </md-checkbox>
                   <div flex="10"></div>
+                  <div layout="column" flex="">
 
-                  <md-button flex ng-disabled="projectForm.$invalid" class="md-raised md-primary" ng-click="submit(projectForm)">Submit</md-button>
+                    <md-button flex ng-disabled="projectForm.$invalid" class="md-raised md-primary" ng-click="submit(projectForm);">Submit</md-button>
+                    <small id="please-wait" ng-style="{'display':sendingForm? 'block': 'none'}">Please wait....</small>
+                  </div>
                 </div>
               </fieldset>
 

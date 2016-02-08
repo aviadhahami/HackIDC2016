@@ -80,9 +80,13 @@ angular.module('hackIdcApp')
           return Math.round((new Date('02/01/2016') -new Date())/1000);
         })();
 
+        $scope.showPleaseWait = function(){
+          $scope.formsent = true;
+        };
 
         $scope.submittingForm = false;
         $scope.submit = function(data){
+          $scope.sendingForm = true;
           $scope.formData = {
             firstName : data.firstName.$modelValue,
             lastName : data.lastName.$modelValue,

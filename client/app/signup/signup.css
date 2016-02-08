@@ -159,3 +159,9 @@ md-tooltip.large .md-content p{
   margin: 0 auto;
   text-align: center;
 }
+#please-wait{
+  display: none;
+  -webkit-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
+}
