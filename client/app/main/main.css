@@ -356,8 +356,8 @@ section#home{
   color:rgba(0, 0, 0, 0.6)
 }
 .prize-coin{
-  width:20vw;
-  height: 20vw;
+  width:40vw;
+  height: 40vw;
   /*height and width are on view width units to keep the circles cimetric.*/
   margin:0 auto;
   max-height: 300px;
