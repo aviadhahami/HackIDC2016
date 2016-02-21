@@ -52,27 +52,27 @@ angular.module('hackIdcApp')
 
       $scope.team = [
         {
-          name:'Soon',
-          imgSrc : '../../assets/images/member-stub.png',
-          linkedin:'http://soon.com',
+          name:'Aj Neuhar',
+          imgSrc : '../../assets/team-photos/aj.jpg',
+          linkedin:'http://linkedin.com/in/aj-neuhar-47184a72',
           mail:'me@there.com'
         },
         {
-          name:'Soon',
-          imgSrc : '../../assets/images/member-stub.png',
-          linkedin:'http://soon.com',
+          name:'Aviya Sela',
+          imgSrc : '../../assets/team-photos/aviya.jpg',
+          linkedin:'http://linkedin.com/in/aviyasela',
           mail:'me@there.com'
         },
         {
-          name:'Soon',
-          imgSrc : '../../assets/images/member-stub.png',
-          linkedin:'http://soon.com',
+          name:'Ran Alter',
+          imgSrc : '../../assets/team-photos/ran.jpg',
+          linkedin:' https://il.linkedin.com/in/ran-alter-0a174a4b',
           mail:'me@there.com'
         },
         {
-          name:'Soon',
-          imgSrc : '../../assets/images/member-stub.png',
-          linkedin:'http://soon.com',
+          name:'Omri Gotlieb',
+          imgSrc :  '../../assets/team-photos/gotlib.jpg',
+          linkedin:' https://il.linkedin.com/in/omri-gotlieb-2930579b',
           mail:'me@there.com'
         },
         {
