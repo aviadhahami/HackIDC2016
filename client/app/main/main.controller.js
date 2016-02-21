@@ -55,49 +55,49 @@ angular.module('hackIdcApp')
           name:'Aj Neuhar',
           imgSrc : '../../assets/team-photos/aj.jpg',
           linkedin:'http://linkedin.com/in/aj-neuhar-47184a72',
-          mail:'me@there.com'
+          mail:'mailto:aj@hackidc.com'
         },
         {
           name:'Aviya Sela',
           imgSrc : '../../assets/team-photos/aviya.jpg',
           linkedin:'http://linkedin.com/in/aviyasela',
-          mail:'me@there.com'
+          mail:'mailto:aviya@hackidc.com'
         },
         {
           name:'Ran Alter',
           imgSrc : '../../assets/team-photos/ran.jpg',
           linkedin:' https://il.linkedin.com/in/ran-alter-0a174a4b',
-          mail:'me@there.com'
+          mail:'ran@hackidc.com'
         },
         {
           name:'Omri Gotlieb',
           imgSrc :  '../../assets/team-photos/gotlib.jpg',
           linkedin:' https://il.linkedin.com/in/omri-gotlieb-2930579b',
-          mail:'me@there.com'
+          mail:'mailto:omri@hackidc.com'
         },
         {
           name:'Shay Goldman',
           imgSrc :'../../assets/team-photos/goldman.jpg',
           linkedin:'https://il.linkedin.com/in/shay-goldman-7404895b',
-          mail:'me@there.com'
+          mail:'mailto:shay@hackidc.com'
         },
         {
           name:'Yuval Desheh',
           imgSrc : '../../assets/team-photos/deshe.jpg',
           linkedin:'https://il.linkedin.com/in/yuval-desheh-98066878',
-          mail:'me@there.com'
+          mail:'mailto:desheh@hackidc.com'
         },
         {
-          name:'Yarden Moalem', // TODO: Change pic
-          imgSrc : '../../assets/images/member-stub.png',
+          name:'Yarden Moalem',
+          imgSrc : '../../assets/team-photos/yarden.jpg',
           linkedin:'https://il.linkedin.com/in/yarden-moalem-5a489289',
-          mail:'me@there.com'
+          mail:'mailto:yarden@hackidc.com'
         },
         {
           name:'Jonatan Meczyk',
           imgSrc : '../../assets/team-photos/mexic.jpg',
           linkedin:'https://il.linkedin.com/in/jonatan-meczyk-a8876910b',
-          mail:'me@there.com'
+          mail:'mailto:Joni@hackidc.com'
         }
 
       ];
