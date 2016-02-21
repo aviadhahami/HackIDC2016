@@ -147,8 +147,7 @@ angular.module('hackIdcApp')
       };
 
       $scope.scrollTo = function(location){
-        console.log(location);
-        console.log(angular.element(document.getElementById(location)));
+
         var offset = -10;
         $document.scrollToElementAnimated(angular.element(document.getElementById(location)), offset, 200);
       };
