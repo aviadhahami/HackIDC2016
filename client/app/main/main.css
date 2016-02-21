@@ -539,7 +539,8 @@ a{
 }
 .memeber-profile-pic{
   border-radius: 999px;
-  width:20vw;
+  width:10vw;
+  height: 10vw;
 }
 .mc-light-blue{
   color: #2196F3;

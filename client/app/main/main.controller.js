@@ -101,6 +101,7 @@ angular.module('hackIdcApp')
         }
 
       ];
+
       $scope.showQuestions= false;
 
       $scope.mentorshipFAQ = [
@@ -119,26 +120,26 @@ angular.module('hackIdcApp')
       ];
 
 
-      // Workaround for the fittext thing
-      $timeout(function(){
-        $scope.titles = {
-          mainTitle : 'HackIDC 2016',
-          eventDate : ' May 6-7, 2016 ',
-          eventLine : 'Israel\'s Leading Student Hackathon',
-          description : 'FAQ',
-          prizes : 'Prizes',
-          sponsors : 'Sponsors',
-          team : 'Team',
-          mentorship :'Mentorship'
-        };
-        $scope.content= {
-          descriptionContent :'Information you might need to know',
-          sponsorsSub:'Those who make it possible',
-          mentorshipContent:'A program for highly-motivated newbies',
-          prizesSub : 'To feed the motivation',
-          teamSub : 'From the people who brought you Shrek'
-        };
-      },0);
+
+
+      $scope.titles = {
+        mainTitle : 'HackIDC 2016',
+        eventDate : ' May 6-7, 2016 ',
+        eventLine : 'Israel\'s Leading Student Hackathon',
+        description : 'FAQ',
+        prizes : 'Prizes',
+        sponsors : 'Sponsors',
+        team : 'Team',
+        mentorship :'Mentorship'
+      };
+      $scope.content= {
+        descriptionContent :'Information you might need to know',
+        sponsorsSub:'Those who make it possible',
+        mentorshipContent:'A program for highly-motivated newbies',
+        prizesSub : 'To feed the motivation',
+        teamSub : 'From the people who brought you Shrek'
+      };
+
 
 
       $scope.video = {
