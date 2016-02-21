@@ -14,7 +14,6 @@ angular.module('hackIdcApp')
 
 
         var gridContainer = angular.element(element[0].querySelector('#grid-bg'));
-        var pageBody = angular.element($document[0].body);
 
         scope.bgColor = attrs.triggerFabColor || 'rgb(255,87,34)';
         scope.bgGridColor = attrs.bgGridColor || 'rgba(1,1,1,0.9';
