@@ -76,27 +76,27 @@ angular.module('hackIdcApp')
           mail:'me@there.com'
         },
         {
-          name:'Soon',
-          imgSrc : '../../assets/images/member-stub.png',
-          linkedin:'http://soon.com',
+          name:'Shay Goldman',
+          imgSrc :'../../assets/team-photos/goldman.jpg',
+          linkedin:'https://il.linkedin.com/in/shay-goldman-7404895b',
           mail:'me@there.com'
         },
         {
-          name:'Soon',
-          imgSrc : '../../assets/images/member-stub.png',
-          linkedin:'http://soon.com',
+          name:'Yuval Desheh',
+          imgSrc : '../../assets/team-photos/deshe.jpg',
+          linkedin:'https://il.linkedin.com/in/yuval-desheh-98066878',
           mail:'me@there.com'
         },
         {
-          name:'Soon',
+          name:'Yarden Moalem',
           imgSrc : '../../assets/images/member-stub.png',
-          linkedin:'http://soon.com',
+          linkedin:'https://il.linkedin.com/in/yarden-moalem-5a489289',
           mail:'me@there.com'
         },
         {
-          name:'Soon',
-          imgSrc : '../../assets/images/member-stub.png',
-          linkedin:'http://soon.com',
+          name:'Jonatan Meczyk',
+          imgSrc : '../../assets/team-photos/mexic.jpg',
+          linkedin:'https://il.linkedin.com/in/jonatan-meczyk-a8876910b',
           mail:'me@there.com'
         }
 
