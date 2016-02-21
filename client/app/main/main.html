@@ -303,7 +303,7 @@
         <div layout-gt-sm="row" layout="column" class="padd-bottom-2vh" ng-repeat="p in team track by $index" ng-if="$index %4 ==0">
 
           <div class="margin-auto inline-block" ng-if="team[$index]" layout="column">
-            <img class="memeber-profile-pic" ng-src="{{team[$index].imgSrc}}" alt="">
+            <img ng-class="{'memeber-profile-pic':!isMobile, 'memeber-profile-pic-mobile':isMobile}" ng-src="{{team[$index].imgSrc}}" alt="">
             <div layout="column">
               <div layout="row">
                 <p class="margin-auto" ng-bind="team[$index].name"></p>
@@ -321,7 +321,7 @@
           </div>
 
           <div class="margin-auto  inline-block" ng-if="team[$index+1]" layout="column">
-            <img class="memeber-profile-pic" ng-src="{{team[$index+1].imgSrc}}" alt="">
+            <img ng-class="{'memeber-profile-pic':!isMobile, 'memeber-profile-pic-mobile':isMobile}" ng-src="{{team[$index+1].imgSrc}}" alt="">
             <div layout="column">
               <div layout="row">
                 <p class="margin-auto" ng-bind="team[$index+1].name"></p>
@@ -338,7 +338,7 @@
           </div>
 
           <div class="margin-auto  inline-block" ng-if="team[$index+2]" layout="column">
-            <img class="memeber-profile-pic" ng-src="{{team[$index+2].imgSrc}}" alt="">
+            <img ng-class="{'memeber-profile-pic':!isMobile, 'memeber-profile-pic-mobile':isMobile}" ng-src="{{team[$index+2].imgSrc}}" alt="">
             <div layout="column">
               <div layout="row">
                 <p class="margin-auto" ng-bind="team[$index+2].name"></p>
@@ -356,7 +356,7 @@
           </div>
 
           <div class="margin-auto  inline-block" ng-if="team[$index+3]" layout="column">
-            <img class="memeber-profile-pic" ng-src="{{team[$index+3].imgSrc}}" alt="">
+            <img ng-class="{'memeber-profile-pic':!isMobile, 'memeber-profile-pic-mobile':isMobile}" ng-src="{{team[$index+3].imgSrc}}" alt="">
             <div layout="column">
               <div layout="row">
                 <p class="margin-auto" ng-bind="team[$index+3].name"></p>
