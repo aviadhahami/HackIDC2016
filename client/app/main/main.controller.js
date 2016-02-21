@@ -88,7 +88,7 @@ angular.module('hackIdcApp')
           mail:'me@there.com'
         },
         {
-          name:'Yarden Moalem',
+          name:'Yarden Moalem', // TODO: Change pic
           imgSrc : '../../assets/images/member-stub.png',
           linkedin:'https://il.linkedin.com/in/yarden-moalem-5a489289',
           mail:'me@there.com'
