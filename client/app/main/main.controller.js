@@ -203,8 +203,8 @@ angular.module('hackIdcApp')
           label : 'Team',
           action : $scope.scrollTo,
           actionArgs: 'team',
-          bgColor : 'rgba(33, 133, 213, 0.12)', //TODO: change alpha to '1' when team is back
-          disabled : 'true'
+          bgColor : 'rgba(33, 133, 213, 1)',
+          disabled : 'false'
         }
 
       ];
