@@ -176,17 +176,8 @@
                   <md-option value="Vegan">
                     Vegan
                   </md-option>
-                  <md-option value="Pescetarian">
-                    Pescetarian
-                  </md-option>
-                  <md-option value="Paleolithic">
-                    Paleolithic
-                  </md-option>
                   <md-option value="Regular">
                     No Speciality
-                  </md-option>
-                  <md-option value="Other">
-                    Other
                   </md-option>
                 </md-select>
                 <div ng-messages="projectForm.shirtSize.$error">
@@ -301,13 +292,11 @@
                   </md-checkbox>
                   <div flex="10"></div>
                   <div layout="column" flex="">
-
                     <md-button flex ng-disabled="projectForm.$invalid" class="md-raised md-primary" ng-click="submit(projectForm);">Submit</md-button>
                     <small id="please-wait" ng-style="{'display':sendingForm? 'block': 'none'}">Please wait....</small>
                   </div>
                 </div>
               </fieldset>
-
             </div>
           </form>
         </div>
