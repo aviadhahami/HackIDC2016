@@ -492,6 +492,9 @@ section#home{
   margin:0 auto;
   padding-top: 5vh;
 }
+.small-long-logo{
+  height: 11vh!important;
+}
 .footer-item{
   margin: 0 auto;
 }
