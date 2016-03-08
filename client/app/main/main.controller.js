@@ -144,7 +144,7 @@ angular.module('hackIdcApp')
       $scope.sponsorsApiArr = [
         {
           name:'Amadeus',
-          logoSrc:'',
+          logoSrc:'../../assets/logos/amadeus_logo_transparent.png',
           dataObj:{
             logoSrc:'',
             companyName:'',
