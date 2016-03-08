@@ -141,6 +141,20 @@ angular.module('hackIdcApp')
       };
 
 
+      $scope.sponsorsApiArr = [
+        {
+          name:'Amadeus',
+          logoSrc:'',
+          dataObj:{
+            logoSrc:'',
+            companyName:'',
+            info:'',
+            specialOffer:'',
+            apiLink:''
+          }
+        }
+      ];
+
 
       $scope.video = {
         id : 'h_2iNc_-dDk'
