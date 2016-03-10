@@ -1,8 +1,8 @@
 'use strict';
 
 angular.module('hackIdcApp')
-  .controller('MainCtrl',  ['$scope','$window','$timeout','$document','isMobile','$location','$rootScope',
-    function ($scope,$window,$timeout,$document,isMobile,$location,$rootScope) {
+  .controller('MainCtrl',  ['$scope','$window','$timeout','$document','isMobile','$location','$rootScope','sponsorsApiGetter',
+    function ($scope,$window,$timeout,$document,isMobile,$location,$rootScope,sponsorsApiGetter) {
       $scope.isMobile = isMobile.isMobile();
 
       // Might need to bind these with ng-bind-html
@@ -141,23 +141,7 @@ angular.module('hackIdcApp')
       };
 
 
-      $scope.sponsorsApiArr = [
-        {
-          name:'Amadeus',
-          logoSrc:'../../assets/logos/amadeus_logo_transparent.png',
-          description:'',
-          dataObj:{
-            info:'',
-            specialOffer:'',
-            apiLink:''
-          }
-        }
-      ];
-
-
-      $scope.video = {
-        id : 'h_2iNc_-dDk'
-      };
+      $scope.sponsorsApiArr = sponsorsApiGetter.getData();
 
       $scope.scrollTo = function(location){
 

@@ -24,6 +24,26 @@ angular.module('hackIdcApp')
               specialOffer:'',
               apiLink:''
             }
+          },
+          {
+            name:'Amadeus',
+            logoSrc:'../../assets/logos/amadeus_logo_transparent.png',
+            description:'',
+            dataObj:{
+              info:'',
+              specialOffer:'',
+              apiLink:''
+            }
+          },
+          {
+            name:'Amadeus',
+            logoSrc:'../../assets/logos/amadeus_logo_transparent.png',
+            description:'',
+            dataObj:{
+              info:'',
+              specialOffer:'',
+              apiLink:''
+            }
           }
         ];
         return data;
