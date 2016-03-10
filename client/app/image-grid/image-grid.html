@@ -1,9 +1,7 @@
 
 <md-content class="image-grid-container md-padding" >
 
-  <div  ng-repeat="d in data track by $index" >
-    <div layout="column" layout-gt-sm="row" layout-align="center center" ng-if="$index % 3 === 0">
-
+  <div ng-repeat="d in data track by $index" ng-if="$index % 3 === 0" layout="column" layout-gt-sm="row" layout-align="center center" >
       <md-card flex="{{calcFlexSize()}}" class="image-grid-card" ng-if="data[$index]">
         <img ng-src="{{data[$index].logoSrc}}" alt="data[$index].name" class="image-grid-prize-image"/>
         <md-card-content>
@@ -24,9 +22,6 @@
           <h2 class="md-title">By {{data[$index+2].name}}</h2>
         </md-card-content>
       </md-card>
-
-
-    </div>
   </div>
 
 </md-content>
