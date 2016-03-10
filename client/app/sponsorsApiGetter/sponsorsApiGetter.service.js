@@ -7,7 +7,7 @@ angular.module('hackIdcApp')
         var data = [
           {
             name:'Amadeus',
-            logoSrc:'../../assets/logos/amadeus_logo_transparent.png',
+            logoSrc:'../../assets/icons/tbd.png',
             description:'',
             dataObj:{
               info:'',
@@ -17,7 +17,7 @@ angular.module('hackIdcApp')
           },
           {
             name:'Amadeus',
-            logoSrc:'../../assets/logos/amadeus_logo_transparent.png',
+            logoSrc:'../../assets/icons/tbd.png',
             description:'',
             dataObj:{
               info:'',
@@ -27,7 +27,7 @@ angular.module('hackIdcApp')
           },
           {
             name:'Amadeus',
-            logoSrc:'../../assets/logos/amadeus_logo_transparent.png',
+            logoSrc:'../../assets/icons/tbd.png',
             description:'',
             dataObj:{
               info:'',
@@ -37,7 +37,7 @@ angular.module('hackIdcApp')
           },
           {
             name:'Amadeus',
-            logoSrc:'../../assets/logos/amadeus_logo_transparent.png',
+            logoSrc:'../../assets/icons/tbd.png',
             description:'',
             dataObj:{
               info:'',

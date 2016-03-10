@@ -11,7 +11,18 @@ angular.module('hackIdcApp')
       link: function (scope, element, attrs) {
         scope.isMobile = isMobile.isMobile();
         console.log(scope.data);
-        console.log('run')
+        console.log('run');
+
+        scope.calcFlexSize =function(){
+          var res;
+          if(scope.isMobile){
+            res = '';
+          }else if(scope.data.length %3 !== 0){
+            res = '33'
+          }
+          console.log(res);
+          return res;
+        };
       }
     };
   }]);

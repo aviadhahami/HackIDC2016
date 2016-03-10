@@ -2,8 +2,9 @@
   background-color: transparent;
 }
 .image-grid-prize-image{
-  width:100%;
-  padding: 5vh 5vw 5vh 5vw;
+  width:calc(0.2 * 100vw);
+  margin:0 auto;
+  padding: 10px;
 }
 .image-grid-card{
 }
