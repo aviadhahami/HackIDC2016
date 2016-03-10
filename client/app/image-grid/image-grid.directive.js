@@ -13,16 +13,16 @@ angular.module('hackIdcApp')
         console.log(scope.data);
         console.log('run');
 
-        scope.calcFlexSize =function(){
+        scope.calcFlexSize = (function(){
           var res;
           if(scope.isMobile){
-            res = '';
+            res = "0";
           }else if(scope.data.length %3 !== 0){
-            res = '33'
+            res = "33";
           }
           console.log(res);
           return res;
-        };
+        })();
       }
     };
   }]);
