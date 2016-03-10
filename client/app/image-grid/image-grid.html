@@ -1,5 +1,15 @@
 
-<div ng-repeat="d in data">
-  <img ng-src="{{d.logoSrc}}" alt="d.name" />
-</div>
+<md-content class="image-grid-container md-padding">
+  <md-card ng-repeat="d in data" flex="25" class="image-grid-card">
+    <img ng-src="{{d.logoSrc}}" alt="d.name" class="image-grid-prize-image"/>
+    <md-card-content>
+      <h2 class="md-title" ng-bind="d.name"></h2>
+      <p>
+        The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+        two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+      </p>
+    </md-card-content>
+
+  </md-card>
+</md-content>
 

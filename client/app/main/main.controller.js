@@ -145,9 +145,8 @@ angular.module('hackIdcApp')
         {
           name:'Amadeus',
           logoSrc:'../../assets/logos/amadeus_logo_transparent.png',
+          description:'',
           dataObj:{
-            logoSrc:'',
-            companyName:'',
             info:'',
             specialOffer:'',
             apiLink:''
