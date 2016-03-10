@@ -16,7 +16,7 @@ angular.module('hackIdcApp')
             }
           },
           {
-            name:'Amadeus',
+            name:'Backand',
             logoSrc:'../../assets/icons/tbd.png',
             description:'',
             dataObj:{
@@ -26,7 +26,7 @@ angular.module('hackIdcApp')
             }
           },
           {
-            name:'Amadeus',
+            name:'Flying Cargo',
             logoSrc:'../../assets/icons/tbd.png',
             description:'',
             dataObj:{
@@ -36,7 +36,7 @@ angular.module('hackIdcApp')
             }
           },
           {
-            name:'Amadeus',
+            name:'RapidAPI',
             logoSrc:'../../assets/icons/tbd.png',
             description:'',
             dataObj:{
