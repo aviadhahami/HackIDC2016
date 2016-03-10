@@ -13,9 +13,7 @@ angular.module('hackIdcApp')
         console.log(scope.data);
         console.log('run');
 
-        scope.calcFlexSize = (function(){
-         return scope.isMobile ? 0 : 33;
-        })();
+        scope.calcFlexSize = scope.isMobile ? 0 : 20;
       }
     };
   }]);

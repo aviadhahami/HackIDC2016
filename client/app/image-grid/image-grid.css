@@ -2,10 +2,10 @@
   background-color: transparent;
 }
 .image-grid-prize-image{
-  width:75%;
+  /*width:75%;*/
   margin:0 auto;
   padding: 10px;
 }
 .image-grid-card{
-  width:100%;
+  max-width: 100%;
 }
