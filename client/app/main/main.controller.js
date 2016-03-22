@@ -120,8 +120,6 @@ angular.module('hackIdcApp')
       ];
 
 
-
-
       $scope.titles = {
         mainTitle : 'HackIDC 2016',
         eventDate : ' May 6-7, 2016 ',
@@ -139,8 +137,6 @@ angular.module('hackIdcApp')
         prizesSub : 'To feed the motivation',
         teamSub : ''
       };
-
-
       $scope.sponsorsApiArr = sponsorsApiGetter.getData();
 
       $scope.scrollTo = function(location){
