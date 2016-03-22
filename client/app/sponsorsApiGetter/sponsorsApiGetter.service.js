@@ -27,7 +27,7 @@ angular.module('hackIdcApp')
           },
           {
             name:'Flying Cargo',
-            logoSrc:'../../assets/icons/tbd.png',
+            logoSrc:'../../assets/prizes-grid-photos/flying-cargo.png',
             description:'',
             dataObj:{
               info:'',
