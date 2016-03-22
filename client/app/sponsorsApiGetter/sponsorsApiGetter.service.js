@@ -17,7 +17,7 @@ angular.module('hackIdcApp')
           },
           {
             name:'Backand',
-            logoSrc:'../../assets/icons/tbd.png',
+            logoSrc:'../../assets/prizes-grid-photos/backand.png',
             description:'',
             dataObj:{
               info:'',
