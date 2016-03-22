@@ -8,42 +8,22 @@ angular.module('hackIdcApp')
           {
             name:'Amadeus',
             logoSrc:'../../assets/icons/tbd.png',
-            description:'',
-            dataObj:{
-              info:'',
-              specialOffer:'',
-              apiLink:''
-            }
+            description:''
           },
           {
             name:'Backand',
             logoSrc:'../../assets/prizes-grid-photos/backand.png',
-            description:'',
-            dataObj:{
-              info:'',
-              specialOffer:'',
-              apiLink:''
-            }
+            description:''
           },
           {
             name:'Flying Cargo',
             logoSrc:'../../assets/prizes-grid-photos/flying-cargo.png',
-            description:'',
-            dataObj:{
-              info:'',
-              specialOffer:'',
-              apiLink:''
-            }
+            description:''
           },
           {
             name:'RapidAPI',
             logoSrc:'../../assets/icons/tbd.png',
-            description:'',
-            dataObj:{
-              info:'',
-              specialOffer:'',
-              apiLink:''
-            }
+            description:''
           }
         ];
         return data;
