@@ -4,5 +4,6 @@
 angular.module('hackIdcApp')
   .controller('apiPrizesCtrlr',['$scope',
     function($scope){
-    $scope.test = "123";
+
+
   }]);
