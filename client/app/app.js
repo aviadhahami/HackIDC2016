@@ -11,7 +11,6 @@ angular.module('hackIdcApp', [
     'duScroll',
     'ng-mfb',
     'ngFitText',
-    'angularVideoBg',
     'timer',
     'ngFileUpload'
   ])
