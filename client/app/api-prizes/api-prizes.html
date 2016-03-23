@@ -1,4 +1,14 @@
 <div ng-controller="apiPrizesCtrlr" layout="column" ng-cloak class="container">
+  <md-button ng-if="!isMobile" flex="5" ui-sref="main" ui-sref-opts="{reload: true}" style="float: left; margin-bottom: 0; color: rgba(255,255,255,0.85);width:5vw;">
+    <i class="fa fa-chevron-left"></i>
+    back
+  </md-button>
+  <mobile-nav
+    ng-if="isMobile"
+    links="mobileLinks"
+    trigger-fab-color="#1565C0"
+    bg-grid-color="rgba(1,1,1,0.9)"></mobile-nav>
+
   <div class="margin-5vh-top"></div>
   <div class="header">
     <h1 ng-class="{'md-display-4':!isMobile,'md-display-2':isMobile}">API's and Challenges</h1>
