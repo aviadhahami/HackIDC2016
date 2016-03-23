@@ -1,0 +1,51 @@
+.container{
+  min-height: 100vh;
+  /*min-width:100vw;*/
+  height: 100%;
+  width: 100%;
+
+  background-color: #006064;
+  overflow:hidden;
+  padding: 2vh 2vw 2vh 2vw;
+}
+.margin-5vh-top{
+  margin-top: 5vh;
+}
+.header{
+  margin: 0 auto;
+  text-align: center;
+  color:rgba(255,255,255,0.9);
+  font-weight: 300;
+}
+.header p{
+  font-weight: 300;
+}
+
+.content{
+  margin:0 auto;
+}
+.prize-card{
+  background-color: #00A000;
+  width: 100%;
+  padding: 1vh 1vw 1vh 1vw;
+}
+.company-logo{
+  max-width: 200px;
+  margin: 0 auto;
+}
+.card-content{
+margin: 0 auto;
+  text-align: center;
+}
+.card-content h2{
+  text-align: center;
+}
+
+
+
+.fullWidth{
+  width:90vw;
+}
+.seventy-present-width {
+  width:70vw;
+}

@@ -1,3 +1,19 @@
-<div ng-controller="apiPrizesCtrlr">
-{{test}}
+<div ng-controller="apiPrizesCtrlr" layout="column" ng-cloak class="container">
+  <div class="margin-5vh-top"></div>
+  <div class="header">
+    <h1 ng-class="{'md-display-4':!isMobile,'md-display-2':isMobile}">API's and Challenges</h1>
+    <p class="md-subhead" ng-bind="pageDescription"></p>
+  </div>
+  <div class="content">
+    <md-card ng-repeat="obj in apis" class="prize-card {{cardWidthClass}}" layout-gt-sm="row" layout="column">
+      <div class="company-logo" layout="column">
+        <img ng-src="{{obj.logo}}" flex="10">
+      </div>
+      <div class="card-content" flex="">
+        <h2 ng-bind="obj.title" class="md-display-2"></h2>
+      </div>
+    </md-card>
+  </div>
+
+
 </div>
