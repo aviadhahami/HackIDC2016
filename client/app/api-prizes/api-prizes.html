@@ -16,12 +16,12 @@
   </div>
   <div class="content">
     <md-card ng-repeat="obj in apis" id="{{obj.companyName}}" class="prize-card {{cardWidthClass}}" layout-gt-sm="row" layout="column">
-      <div  layout="column" layout-align="center center">
+      <div  layout="column" layout-align="center center" class="padding-top">
         <img class="company-logo" ng-src="{{obj.logo}}">
       </div>
       <div class="card-content" flex="">
         <h2 ng-bind="obj.title" class="md-display-2"></h2>
-        <p ng-bind-html="obj.info" class="justify md-headline"></p>
+        <p ng-bind-html="obj.info" class="align-left md-headline"></p>
         <p>
           <a ng-href="{{obj.link}}" ng-show="obj.link" class="api-link md-headline" target="_blank">{{obj.companyName}}'s API</a>
         </p>

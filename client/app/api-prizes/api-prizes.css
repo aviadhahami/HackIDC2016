@@ -52,6 +52,9 @@
   color: #A6E22E;
 }
 
+.align-left{
+  text-align: left;
+}
 .justify{
   text-align: justify;
 }
@@ -60,4 +63,7 @@
 }
 .seventy-present-width {
   width:70vw;
+}
+.padding-top{
+  padding-top: 5vh;
 }
