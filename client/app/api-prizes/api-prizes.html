@@ -15,7 +15,7 @@
     <p class="md-subhead" ng-bind="pageDescription"></p>
   </div>
   <div class="content">
-    <md-card ng-repeat="obj in apis" id="{{obj.companyName}}" class="prize-card {{cardWidthClass}}" layout-gt-sm="row" layout="column">
+    <md-card ng-repeat="obj in apis" id="{{obj.id}}" class="prize-card {{cardWidthClass}}" layout-gt-sm="row" layout="column">
       <div  layout="column" layout-align="center center" class="padding-top">
         <img class="company-logo" ng-src="{{obj.logo}}">
       </div>
