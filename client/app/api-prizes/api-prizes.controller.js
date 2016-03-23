@@ -26,7 +26,7 @@ angular.module('hackIdcApp')
       }
       ,{
         title:'iPad mini Wi-Fi Cellular',
-        companyName:'Flying Cargo',
+        companyName:'FlyingCargo',
         info:'Offers a variety of Logistic activities and acts not only as an Operator, but also as a lead player in the supply chain management arena.<br>We are here to offer start-up our advanced logistics services',
         link:'https://www.flying-cargo.com/he',
         logo:'../../assets/logos/fc_logo.png'
@@ -37,7 +37,7 @@ angular.module('hackIdcApp')
         info:'Backand challenge is simple! All you need to do is to use our service as the Backand for your project and you can enter the challenge!<br>The winner team will be the one who made the most use and complicated implementation of Backand. Bonus points will be given to each main feature Backand has to offer (use of real-time, actions, queries, hosting and much more)',
         link:'http://www.backand.com',
         logo:'../../assets/logos/backand-logo.png'
-      },
+      }
     ];
 // Mobile links directive config
 //   TODO: add links to each sponsor's gift
