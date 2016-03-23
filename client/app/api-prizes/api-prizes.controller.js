@@ -12,11 +12,25 @@ angular.module('hackIdcApp')
       $scope.cardWidthClass = !$scope.isMobile ? 'seventy-present-width' : 'fullWidth';
       var apis = [
         {
+          title:'Amadeus',
+          companyName:'Amadeus',
+          info:'To be announced',
+          link:'',
+          logo:'../../assets/logos/amadeus_logo_transparent.png'
+        },
+        {
           title:'RapidAPI',
           companyName:'RapidAPI',
           info:'To be announced',
           link:'',
           logo:'../../assets/logos/rapid-api-logo.png'
+        }
+        ,{
+          title:'iPad mini Wi-Fi Cellular',
+          companyName:'Flying Cargo',
+          info:'Offers a variety of Logistic activities and acts not only as an Operator, but also as a lead player in the supply chain management arena.<br>We are here to offer start-up our advanced logistics services',
+          link:'https://www.flying-cargo.com/he',
+          logo:'../../assets/logos/fc_logo.png'
         },
         {
           title:'Roundtrip flight tickets to Berlin',
@@ -25,8 +39,6 @@ angular.module('hackIdcApp')
           link:'http://www.backand.com',
           logo:'../../assets/logos/backand-logo.png'
         },
-        {},
-        {}
       ];
       $scope.apis = apis;
 
