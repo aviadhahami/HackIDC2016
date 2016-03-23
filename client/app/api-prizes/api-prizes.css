@@ -4,7 +4,7 @@
   height: 100%;
   width: 100%;
 
-  background-color: #006064;
+  background-color: #607D8B;
   overflow:hidden;
   padding: 2vh 2vw 2vh 2vw;
 }
@@ -25,24 +25,34 @@
   margin:0 auto;
 }
 .prize-card{
-  background-color: #00A000;
+  background-color: #272822;
   width: 100%;
   padding: 1vh 1vw 1vh 1vw;
 }
 .company-logo{
-  max-width: 200px;
-  margin: 0 auto;
+  width:200px;
+  height: auto;
 }
 .card-content{
-margin: 0 auto;
+  margin: 0 auto;
+  padding-left: 3vw;
+  padding-right: 3vw;
   text-align: center;
 }
 .card-content h2{
   text-align: center;
+  color:#F92672;
+}
+.card-content p{
+  color: #F8F8F2;
+}
+.api-link{
+  color: #A6E22E;
 }
 
-
-
+.justify{
+  text-align: justify;
+}
 .fullWidth{
   width:90vw;
 }

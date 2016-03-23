@@ -6,11 +6,15 @@
   </div>
   <div class="content">
     <md-card ng-repeat="obj in apis" class="prize-card {{cardWidthClass}}" layout-gt-sm="row" layout="column">
-      <div class="company-logo" layout="column">
-        <img ng-src="{{obj.logo}}" flex="10">
+      <div  layout="column" layout-align="center center">
+        <img class="company-logo" ng-src="{{obj.logo}}">
       </div>
       <div class="card-content" flex="">
         <h2 ng-bind="obj.title" class="md-display-2"></h2>
+        <p ng-bind-html="obj.info" class="justify md-headline"></p>
+        <p>
+          <a ng-href="{{obj.link}}" ng-show="obj.link" class="api-link md-headline" target="_blank">{{obj.companyName}}'s API</a>
+        </p>
       </div>
     </md-card>
   </div>
