@@ -1,12 +1,13 @@
 .container{
+  margin: 0 auto;
   min-height: 100vh;
   /*min-width:100vw;*/
   height: 100%;
-  width: 100%;
-
+  /*width: 100%;*/
   background-color: #607D8B;
   overflow:hidden;
-  padding: 2vh 2vw 2vh 2vw;
+  overflow-y: hidden;
+  padding: 2vh 0vw 2vh 0vw;
 }
 .margin-5vh-top{
   margin-top: 5vh;
