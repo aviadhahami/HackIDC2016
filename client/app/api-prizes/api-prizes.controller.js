@@ -19,7 +19,7 @@ angular.module('hackIdcApp')
           logo:'../../assets/logos/rapid-api-logo.png'
         },
         {
-          title:'Roundtrip flight ticket to Berlin',
+          title:'Roundtrip flight tickets to Berlin',
           companyName:'Backand',
           info:'Backand challenge is simple! All you need to do is to use our service as the Backand for your project and you can enter the challenge!<br>The winner team will be the one who made the most use and complicated implementation of Backand. Bonus points will be given to each main feature Backand has to offer (use of real-time, actions, queries, hosting and much more)',
           link:'http://www.backand.com',
