@@ -2,7 +2,7 @@
  * Created by aviad on 3/23/2016.
  */
 angular.module('hackIdcApp')
-  .controller('apiPrizesCtrlr',['$scope','isMobile',function($scope,isMobile){
+  .controller('apiPrizesCtrlr',['$scope','isMobile','$location',function($scope,isMobile,$location){
     $scope.isMobile = isMobile.isMobile();
 
     $scope.pageDescription='';
