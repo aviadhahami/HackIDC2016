@@ -21,7 +21,7 @@
       </div>
       <div class="card-content" flex="">
         <h2 ng-bind="obj.title" class="md-display-2"></h2>
-        <p ng-bind-html="obj.info" class="align-left md-headline"></p>
+        <p ng-bind-html="obj.info" class="align-left md-headline" ng-style="{'text-align':obj.info === 'To be announced' ? 'center' : ''}"></p>
         <p>
           <a ng-href="{{obj.link}}" ng-show="obj.link" class="api-link md-headline" target="_blank">{{obj.companyName}}'s API</a>
         </p>

@@ -11,7 +11,7 @@ angular.module('hackIdcApp')
     $scope.cardWidthClass = !$scope.isMobile ? 'seventy-present-width' : 'fullWidth';
     var apis = [
       {
-        title:'Amadeus',
+        title:'Amadeus\'s Secret Prizes',
         companyName:'Amadeus',
         info:'To be announced',
         link:'',
@@ -19,7 +19,7 @@ angular.module('hackIdcApp')
         id:'Amadeus'
       },
       {
-        title:'RapidAPI',
+        title:'Rapid API\'s Secret Prizes',
         companyName:'RapidAPI',
         info:'To be announced',
         link:'',
