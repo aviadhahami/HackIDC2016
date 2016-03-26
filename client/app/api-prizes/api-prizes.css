@@ -4,7 +4,7 @@
   /*min-width:100vw;*/
   height: 100%;
   /*width: 100%;*/
-  background-color: #607D8B;
+  background-color: #303F9F;
   overflow:hidden;
   overflow-y: hidden;
   padding: 2vh 0vw 2vh 0vw;
@@ -26,7 +26,7 @@
   margin:0 auto;
 }
 .prize-card{
-  background-color: #272822;
+  background-color:#fefefe;
   width: 100%;
   padding: 1vh 1vw 1vh 1vw;
 }
@@ -43,14 +43,14 @@
 }
 .card-content h2{
   text-align: center;
-  color:#F92672;
+  color:#212121;
 }
 .card-content p{
-  color: #F8F8F2;
+  color: #727272;
   opacity: 0.85;
 }
 .api-link{
-  color: #A6E22E;
+  color: #FF5722;
 }
 
 .align-left{
