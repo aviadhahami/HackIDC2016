@@ -4,7 +4,7 @@
   /*min-width:100vw;*/
   height: 100%;
   /*width: 100%;*/
-  background-color: #303F9F;
+  background-color: #263238;
   overflow:hidden;
   overflow-y: hidden;
   padding: 2vh 0vw 2vh 0vw;
@@ -26,7 +26,7 @@
   margin:0 auto;
 }
 .prize-card{
-  background-color:#fefefe;
+  background-color:#263238;
   width: 100%;
   padding: 1vh 1vw 1vh 1vw;
 }
