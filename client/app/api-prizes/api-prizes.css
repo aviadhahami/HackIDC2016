@@ -33,6 +33,7 @@
 .company-logo{
   width:200px;
   height: auto;
+  display: block;
 }
 .card-content{
   margin: 0 auto;
