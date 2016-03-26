@@ -130,6 +130,7 @@ angular.module('hackIdcApp')
         team : 'Team',
         mentorship :'Mentorship'
       };
+
       $scope.content= {
         descriptionContent :'Information you might need to know',
         sponsorsSub:'Those who make it possible',
@@ -137,6 +138,7 @@ angular.module('hackIdcApp')
         prizesSub : 'To feed the motivation',
         teamSub : ''
       };
+
       $scope.sponsorsApiArr = sponsorsApiGetter.getData();
 
       $scope.scrollTo = function(location){
