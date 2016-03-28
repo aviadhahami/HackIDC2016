@@ -2,7 +2,8 @@
   background-color: transparent;
 }
 .image-grid-prize-image{
-  /*width:75%;*/
+  width:300px;
+  height: 300px;
   margin:0 auto;
   padding: 10px;
 }

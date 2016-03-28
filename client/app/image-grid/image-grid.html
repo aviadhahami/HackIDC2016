@@ -9,7 +9,7 @@
       </md-card-content>
     </md-card>
 
-    <md-card  class="image-grid-card margin-auto" ng-if="data[$index+1]" ui-sref="api-prizes({'#':'{{data[$index+1].anchor}}'})">
+    <md-card class="image-grid-card margin-auto" ng-if="data[$index+1]" ui-sref="api-prizes({'#':'{{data[$index+1].anchor}}'})">
       <img ng-src="{{data[$index+1].logoSrc}}" alt="{{data[$index+1].name}}" class="image-grid-prize-image"/>
       <md-card-content>
         <h2 class="md-title">By {{data[$index+1].name}}</h2>

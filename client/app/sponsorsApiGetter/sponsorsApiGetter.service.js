@@ -7,19 +7,19 @@ angular.module('hackIdcApp')
         var data = [
           {
             name:'Amadeus',
-            logoSrc:'../../assets/icons/tbd.png',
+            logoSrc:'../../assets/prizes-grid-photos/hamburg.jpg',
             description:'',
             anchor:'Amadeus'
           },
           {
             name:'Backand',
-            logoSrc:'../../assets/prizes-grid-photos/backand.png',
+            logoSrc:'../../assets/prizes-grid-photos/berlin.jpg',
             description:'',
             anchor:'Backand'
           },
           {
             name:'Flying Cargo',
-            logoSrc:'../../assets/prizes-grid-photos/flying-cargo.png',
+            logoSrc:'../../assets/prizes-grid-photos/ipad.jpg',
             description:'',
             anchor:'FlyingCargo'
           },
