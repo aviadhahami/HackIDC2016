@@ -25,8 +25,8 @@ angular.module('hackIdcApp')
         link:'',
         logo:'../../assets/logos/rapid-api-logo.png',
         id:'RapidAPI'
-      }
-      ,{
+      },
+      {
         title:'iPad mini Wi-Fi Cellular',
         companyName:'Flying Cargo',
         info:'Offers a variety of Logistic activities and acts not only as an Operator, but also as a lead player in the supply chain management arena.<br>We are here to offer start-up our advanced logistics services',
@@ -45,8 +45,8 @@ angular.module('hackIdcApp')
     ];
 
 
-  // Mobile links directive config
-  //   TODO: add links to each sponsor's gift
+    // Mobile links directive config
+    //   TODO: add links to each sponsor's gift
     var mobileLinks = [{
       iconClass: 'fa-home',
       label : 'Home',

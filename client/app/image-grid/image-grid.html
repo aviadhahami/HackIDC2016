@@ -3,41 +3,35 @@
 
   <div layout="column" layout-gt-sm="row"  ng-repeat="d in data track by $index" ng-if="$index % 4 === 0" >
     <md-card ng-class="{'card-width-regular':!isMobile,'card-width-mobile':isMobile}" class="image-grid-card margin-auto" ng-if="data[$index]" ui-sref="api-prizes({'#':'{{data[$index].anchor}}'})">
-      <img ng-src="{{data[$index].logoSrc}}" alt="{{data[$index].name}}" class="image-grid-prize-image"/>
+      <img ng-src="{{data[$index].companyLogoSrc}}" alt="{{data[$index].companyName}}" class="image-grid-prize-image"/>
       <md-card-content>
         <div layout="column">
-          <p class="md-subhead" ng-bind="data[$index].description"></p>
-          <h2 class="md-title">By {{data[$index].name}}</h2>
+          <p class="md-subhead" ng-bind="data[$index].prizeTitle"></p>
+          <h2 class="md-title">By {{data[$index].companyName}}</h2>
         </div>
       </md-card-content>
-    </md-card>
-
-    <md-card ng-class="{'card-width-regular':!isMobile,'card-width-mobile':isMobile}" class="image-grid-card margin-auto" ng-if="data[$index+1]" ui-sref="api-prizes({'#':'{{data[$index+1].anchor}}'})">
-      <img ng-src="{{data[$index+1].logoSrc}}" alt="{{data[$index+1].name}}" class="image-grid-prize-image"/>
+    </md-card><md-card ng-class="{'card-width-regular':!isMobile,'card-width-mobile':isMobile}" class="image-grid-card margin-auto" ng-if="data[$index]" ui-sref="api-prizes({'#':'{{data[$index].anchor}}'})">
+      <img ng-src="{{data[$index+1].companyLogoSrc}}" alt="{{data[$index+1].companyName}}" class="image-grid-prize-image"/>
       <md-card-content>
         <div layout="column">
-          <p class="md-subhead" ng-bind="data[$index+1].description"></p>
-          <h2 class="md-title">By {{data[$index+1].name}}</h2>
+          <p class="md-subhead" ng-bind="data[$index+1].prizeTitle"></p>
+          <h2 class="md-title">By {{data[$index+1].companyName}}</h2>
         </div>
       </md-card-content>
-    </md-card>
-
-    <md-card ng-class="{'card-width-regular':!isMobile,'card-width-mobile':isMobile}" class="image-grid-card margin-auto" ng-if="data[$index+2]" ui-sref="api-prizes({'#':'{{data[$index+2].anchor}}'})">
-      <img ng-src="{{data[$index+2].logoSrc}}" alt="{{data[$index+2].name}}" class="image-grid-prize-image"/>
+    </md-card><md-card ng-class="{'card-width-regular':!isMobile,'card-width-mobile':isMobile}" class="image-grid-card margin-auto" ng-if="data[$index]" ui-sref="api-prizes({'#':'{{data[$index].anchor}}'})">
+      <img ng-src="{{data[$index+2].companyLogoSrc}}" alt="{{data[$index+2].companyName}}" class="image-grid-prize-image"/>
       <md-card-content>
         <div layout="column">
-          <p class="md-subhead" ng-bind="data[$index+2].description"></p>
-          <h2 class="md-title">By {{data[$index+2].name}}</h2>
+          <p class="md-subhead" ng-bind="data[$index+2].prizeTitle"></p>
+          <h2 class="md-title">By {{data[$index+2].companyName}}</h2>
         </div>
       </md-card-content>
-    </md-card>
-
-    <md-card ng-class="{'card-width-regular':!isMobile,'card-width-mobile':isMobile}" class="image-grid-card margin-auto" ng-if="data[$index+3]" ui-sref="api-prizes({'#':'{{data[$index+3].anchor}}'})">
-      <img ng-src="{{data[$index+3].logoSrc}}" alt="{{data[$index+3].name}}" class="image-grid-prize-image"/>
+    </md-card><md-card ng-class="{'card-width-regular':!isMobile,'card-width-mobile':isMobile}" class="image-grid-card margin-auto" ng-if="data[$index]" ui-sref="api-prizes({'#':'{{data[$index].anchor}}'})">
+      <img ng-src="{{data[$index+3].companyLogoSrc}}" alt="{{data[$index+3].companyName}}" class="image-grid-prize-image"/>
       <md-card-content>
         <div layout="column">
-          <p class="md-subhead" ng-bind="data[$index+3].description"></p>
-          <h2 class="md-title">By {{data[$index+3].name}}</h2>
+          <p class="md-subhead" ng-bind="data[$index+3].prizeTitle"></p>
+          <h2 class="md-title">By {{data[$index+3].companyName}}</h2>
         </div>
       </md-card-content>
     </md-card>
