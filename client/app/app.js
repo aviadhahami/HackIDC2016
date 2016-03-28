@@ -12,8 +12,7 @@ angular.module('hackIdcApp', [
     'ng-mfb',
     'ngFitText',
     'timer',
-    'ngFileUpload',
-    'wu.masonry'
+    'ngFileUpload'
   ])
   .config(function($mdIconProvider) {
     $mdIconProvider

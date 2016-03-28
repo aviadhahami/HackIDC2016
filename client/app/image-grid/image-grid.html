@@ -1,8 +1,9 @@
 
 <md-content class="image-grid-container md-padding" >
 
-  <div masonry>
-    <div class="masonry-brick" ng-repeat="brick in sponsorsData">
+  <div masonry='{ "transitionDuration" : "0.4s" , "itemSelector" : ".tile"}'>
+    <!-- items -->
+    <div masonry-tile ng-repeat="brick in sponsorsData">
       <p ng-bind="brick.companyName"></p>
     </div>
   </div>
