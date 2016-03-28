@@ -8,8 +8,14 @@
   padding: 10px;
 }
 .image-grid-card{
-  max-width: 100%;
   margin-top: 2vh!important;
   margin-bottom: 2vh!important;
   cursor: pointer;
+}
+
+.card-width-regular{
+  width: 20%;
+}
+.card-width-mobile{
+  width: 85%;
 }

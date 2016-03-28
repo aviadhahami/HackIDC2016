@@ -8,25 +8,25 @@ angular.module('hackIdcApp')
           {
             name:'Amadeus',
             logoSrc:'../../assets/prizes-grid-photos/hamburg.jpg',
-            description:'',
+            description:'Two Round-trip flight tickets to Hamburg, Germany',
             anchor:'Amadeus'
           },
           {
             name:'Backand',
             logoSrc:'../../assets/prizes-grid-photos/berlin.jpg',
-            description:'',
+            description:'Roundtrip flight tickets to Berlin, Germany',
             anchor:'Backand'
           },
           {
             name:'Flying Cargo',
             logoSrc:'../../assets/prizes-grid-photos/ipad.jpg',
-            description:'',
+            description:'iPad mini Wi-Fi Cellular',
             anchor:'FlyingCargo'
           },
           {
             name:'RapidAPI',
             logoSrc:'../../assets/icons/tbd.png',
-            description:'',
+            description:'To be announced',
             anchor:'RapidAPI'
           }
         ];
