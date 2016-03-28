@@ -3,9 +3,10 @@
 
   <div masonry='{ "transitionDuration" : "0.4s" , "itemSelector" : ".tile"}'>
     <!-- items -->
-    <div masonry-tile ng-repeat="brick in sponsorsData">
-      <p ng-bind="brick.companyName"></p>
+    <div masonry-tile ng-repeat="item in sponsorsData">
+      <p>{{item.companyName}}</p>
     </div>
+  </div>
   </div>
 
 </md-content>

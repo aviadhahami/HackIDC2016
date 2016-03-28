@@ -49,17 +49,18 @@ angular.module('hackIdcApp').directive('masonry', function($timeout) {
   return {
     restrict: 'AC',
     link: function(scope, elem) {
+      console.log(elem);
       elem.css('visibility', 'hidden');
       var master = elem.parent('*[masonry]:first').scope(),
         update = master.update,
         removeBrick = master.removeBrick,
         appendBricks = master.appendBricks;
       if (update) {
-        imagesLoaded( elem.get(0), update);
+        imagesLoaded( elem.get[0], update);
         elem.ready(update);
       }
       if (appendBricks) {
-        imagesLoaded( elem.get(0), appendBricks(elem));
+        imagesLoaded( elem.get[0], appendBricks(elem));
       }
       scope.$on('$destroy', function() {
         if (removeBrick) {
