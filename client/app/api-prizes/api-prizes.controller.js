@@ -11,10 +11,10 @@ angular.module('hackIdcApp')
     $scope.cardWidthClass = !$scope.isMobile ? 'seventy-present-width' : 'fullWidth';
     var apis = [
       {
-        title:'Amadeus\'s Secret Prizes',
+        title:'Two Round-trip flight tickets to Hamburg, Germany',
         companyName:'Amadeus',
-        info:'To be announced',
-        link:'',
+        info:'Win a pair of flight tickets to Europe!<br>The Amadeus Travel Innovation Sandbox currently includes APIs to help you build your travel related application or service proof-of-concept. <br>In order to increase your chances to win A pair of flight tickets to Europe you just need to use and work on Amadeus Sandbox.<br>The raffle (at the end of the 2016 Hackathon) will be held among all users of the Amadeus Sandbox.<br>Amadeus is a technology company dedicated to the global travel industry.<br>Use our Travel Innovation Sandbox and Make it happen!',
+        link:'https://sandbox.amadeus.com',
         logo:'../../assets/logos/amadeus_logo_transparent.png',
         id:'Amadeus'
       },
