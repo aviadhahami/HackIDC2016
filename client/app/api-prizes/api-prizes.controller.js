@@ -43,8 +43,10 @@ angular.module('hackIdcApp')
         id:'Backand'
       }
     ];
-// Mobile links directive config
-//   TODO: add links to each sponsor's gift
+
+
+  // Mobile links directive config
+  //   TODO: add links to each sponsor's gift
     var mobileLinks = [{
       iconClass: 'fa-home',
       label : 'Home',
