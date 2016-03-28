@@ -1,45 +1,10 @@
 
 <md-content class="image-grid-container md-padding" >
 
-  <div layout="column" layout-gt-sm="row"  ng-repeat="d in data track by $index" ng-if="$index % 4 === 0" >
-    <md-card ng-class="{'card-width-regular':!isMobile,'card-width-mobile':isMobile}" class="image-grid-card margin-auto" ng-if="data[$index]" ui-sref="api-prizes({'#':'{{data[$index].anchor}}'})">
-      <img ng-src="{{data[$index].prizePicSrc}}" alt="{{data[$index].companyName}}" class="image-grid-prize-image"/>
-      <md-card-content>
-        <div layout="column">
-          <p class="md-display-1" ng-bind="data[$index].prizeTitle"></p>
-          <h2 class="md-title">By {{data[$index].companyName}}</h2>
-        </div>
-      </md-card-content>
-    </md-card>
-    <md-card ng-class="{'card-width-regular':!isMobile,'card-width-mobile':isMobile}" class="image-grid-card margin-auto" ng-if="data[$index]" ui-sref="api-prizes({'#':'{{data[$index].anchor}}'})">
-      <img ng-src="{{data[$index+1].prizePicSrc}}" alt="{{data[$index+1].companyName}}" class="image-grid-prize-image"/>
-      <md-card-content>
-        <div layout="column">
-          <p class="md-display-1" ng-bind="data[$index+1].prizeTitle"></p>
-          <h2 class="md-title">By {{data[$index+1].companyName}}</h2>
-        </div>
-      </md-card-content>
-    </md-card>
-    <md-card ng-class="{'card-width-regular':!isMobile,'card-width-mobile':isMobile}" class="image-grid-card margin-auto" ng-if="data[$index]" ui-sref="api-prizes({'#':'{{data[$index].anchor}}'})">
-      <img ng-src="{{data[$index+2].prizePicSrc}}" alt="{{data[$index+2].companyName}}" class="image-grid-prize-image"/>
-      <md-card-content>
-        <div layout="column">
-          <p class="md-display-1" ng-bind="data[$index+2].prizeTitle"></p>
-          <h2 class="md-title">By {{data[$index+2].companyName}}</h2>
-        </div>
-      </md-card-content>
-    </md-card>
-    <md-card ng-class="{'card-width-regular':!isMobile,'card-width-mobile':isMobile}" class="image-grid-card margin-auto" ng-if="data[$index]" ui-sref="api-prizes({'#':'{{data[$index].anchor}}'})">
-      <img ng-src="{{data[$index+3].prizePicSrc}}" alt="{{data[$index+3].companyName}}" class="image-grid-prize-image"/>
-      <md-card-content>
-        <div layout="column">
-          <p class="md-display-1" ng-bind="data[$index+3].prizeTitle"></p>
-          <h2 class="md-title">By {{data[$index+3].companyName}}</h2>
-        </div>
-      </md-card-content>
-    </md-card>
-
-
+  <div masonry>
+    <div class="masonry-brick" ng-repeat="brick in sponsorsData">
+      <p ng-bind="brick.companyName"></p>
+    </div>
   </div>
 
 </md-content>
