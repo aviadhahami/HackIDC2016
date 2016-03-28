@@ -2,6 +2,10 @@
   "name": "hack-idc",
   "version": "0.0.0",
   "dependencies": {
+    "jquery": "~2.1.0",
+    "jquery-bridget": "~1.1.0",
+    "masonry": "~3.2.0",
+    "imagesloaded": "~3.1.0",
     "angular": ">=1.2.*",
     "json3": "~3.3.1",
     "es5-shim": "~3.0.1",
