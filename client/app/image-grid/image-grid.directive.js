@@ -14,7 +14,10 @@ angular.module('hackIdcApp')
           scope.sponsorsData = sponsorsApiGetter.getData();
 
           scope.calcFlexSize = scope.isMobile ? 0 : 20;
-
+          scope.enlarge = function(elem){
+            angular.element(elem)[0].style.height = '100px';
+            // console.log(elem);
+          };
         }
       };
     }]);

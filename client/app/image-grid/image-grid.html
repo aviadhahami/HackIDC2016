@@ -2,8 +2,8 @@
 <md-content class="image-grid-container md-padding" >
 
 
-  <ul class="grid" masonry="true">
-    <li ng-repeat="item in sponsorsData">
+  <ul class="grid float even" masonry="true">
+    <li ng-repeat="item in sponsorsData" ng-click="enlarge()">
       <span>{{item.companyName}}</span>
       <span>{{item.prizeTitle}}</span>
     </li>
