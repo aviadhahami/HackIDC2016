@@ -98,6 +98,18 @@ angular.module('hackIdcApp')
           imgSrc : '../../assets/team-photos/mexic.jpg',
           linkedin:'https://il.linkedin.com/in/jonatan-meczyk-a8876910b',
           mail:'mailto:Joni@hackidc.com'
+        },
+        {
+          name:'Elad Patt',
+          imgSrc : '../../assets/team-photos/elad.jpg',
+          linkedin:'https://www.linkedin.com/in/elad-patt-16b882a8',
+          mail:'mailto:elad@hackidc.com'
+        },
+        {
+          name:'Avihay Bar',
+          imgSrc : '../../assets/team-photos/avichi.jpg',
+          linkedin:'https://il.linkedin.com/in/avihaybar',
+          mail:'mailto:avihay@hackidc.com'
         }
 
       ];
