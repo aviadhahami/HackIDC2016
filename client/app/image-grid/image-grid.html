@@ -1,20 +1,22 @@
 
 <md-content class="image-grid-container md-padding">
-  <div layout="column" layout-gt-sm="row" layout-align="center center">
-    <div  layout="column" flex="25" class="prize-card" ng-repeat="brick in sponsorsData">
-      <img class="image-grid-prize-image" ng-src="{{brick.prizePicSrc}}" alt="{{brick.companyName}}'s prize photo" >
-      <div>
+  <div layout="column" layout-gt-sm="row">
+    <div ng-animate="'box'" layout="column" flex="25" class="prize-card hundred-pre-height" ng-repeat="brick in sponsorsData track by $index">
+      <div flex="33">
+        <img class="image-grid-prize-image" ng-src="{{brick.prizePicSrc}}" alt="{{brick.companyName}}'s prize photo" >
+      </div>
+      <div flex="10">
         <p class="md-display-1 prizes-title" ng-bind="brick.prizeTitle"></p>
       </div>
-      <div layout="column" layout-align="center center">
+      <div flex="5" layout="column" layout-align="center center">
         <p class="md-subhead prizes-company-name">By {{brick.companyName}}</p>
       </div>
-      <div>
-        <p ng-bind-html="brick.info"></p>
+      <div flex="" ng-show="tiles[$index]" class="animate-ease-1s">
+        <p class="prize-card-content" ng-bind-html="brick.info"></p>
         <a class="prize-link-href" ng-href="{{brick.apiLink}}" target="_blank">{{brick.companyName}}'s API</a>
       </div>
-      <i ng-click="toggleBrick($event)" class="fa fa-chevron-down fa-2x mc-white"></i>
-      <i ng-click="toggleBrick($event)" class="fa fa-chevron-up fa-2x mc-white"></i>
+      <i ng-click="toggleBrick($event,$index);" ng-if="!tiles[$index]" class="fa fa-chevron-down fa-2x mc-white"></i>
+      <i ng-click="toggleBrick($event,$index)" ng-if="tiles[$index]" class="fa fa-chevron-up fa-2x mc-white"></i>
     </div>
   </div>
 

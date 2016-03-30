@@ -23,13 +23,33 @@
 
 .prize-card{
   padding-bottom: 5vh;
+  padding-right: 2vw;
+  padding-left: 2vw;
+  transition: all 0.2s ease-in-out;
+}
+.hundred-pre-height{
+  height:100%;
+}
+.animate-ease-1s{
+  -webkit-transition: all linear 1s;
+  -moz-transition: all linear 1s;
+  -ms-transition: all linear 1s;
+  -o-transition: all linear 1s;
+  transition: all linear 1s;
 }
 .prize-link-href{
   color:white;
   text-decoration: none;
-
+  text-align: center;
 }
+.prize-card-content{
+  /*height: auto;*/
+  text-align: justify;
+}
+
+
 i{
   cursor: pointer;
   outline:none;
 }
+

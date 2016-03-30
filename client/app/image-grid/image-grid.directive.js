@@ -13,9 +13,17 @@ angular.module('hackIdcApp')
           scope.isMobile = isMobile.isMobile();
           scope.sponsorsData = sponsorsApiGetter.getData();
 
-          scope.toggleBrick = function(event){
-            console.log(event,event.target);
+          scope.tiles = {
+            1: false,
+            2:false,
+            3:false,
+            4:false
+          };
 
+          scope.toggleBrick = function(event,index){
+            console.log(event,event.target);
+            var tiles = scope.tiles;
+            tiles[index] = !tiles[index];
             // Inject Data
 
             //
