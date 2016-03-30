@@ -199,16 +199,6 @@ angular.module('hackIdcApp')
           actionArgs: 'team',
           bgColor : 'rgba(33, 133, 213, 1)',
           disabled : 'false'
-        },
-        {
-          iconClass: 'fa-code',
-          label : 'API\'s & additional prizes',
-          action : function(){
-            $location.path( '/api-prizes' );
-          },
-          actionArgs: '',
-          bgColor : 'rgba(33, 133, 213, 1)',
-          disabled : 'false'
         }
       ];
       $scope.mobileLinks = $rootScope.mobileLinks;
