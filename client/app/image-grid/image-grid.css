@@ -21,6 +21,14 @@
   color:white
 }
 
+.prize-card{
+  padding-bottom: 5vh;
+}
+.prize-link-href{
+  color:white;
+  text-decoration: none;
+
+}
 i{
   cursor: pointer;
   outline:none;

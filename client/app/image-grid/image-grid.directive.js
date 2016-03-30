@@ -15,6 +15,10 @@ angular.module('hackIdcApp')
 
           scope.toggleBrick = function(event){
             console.log(event,event.target);
+
+            // Inject Data
+
+            //
           }
         }
       };
