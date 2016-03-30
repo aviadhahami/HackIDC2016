@@ -6,14 +6,6 @@ angular.module('hackIdcApp')
       getData : function(){
         var data = [
           {
-            companyName:'Amadeus',
-            prizePicSrc:'../../assets/prizes-grid-photos/hamburg.jpg',
-            companyLogoSrc:'../../assets/logos/amadeus_logo_transparent.png',
-            prizeTitle:'Two Round-trip flight tickets to Hamburg, Germany',
-            apiLink: 'https://sandbox.amadeus.com',
-            info:'Win a pair of flight tickets to Europe!<br>The Amadeus Travel Innovation Sandbox currently includes APIs to help you build your travel related application or service proof-of-concept. <br>In order to increase your chances to win A pair of flight tickets to Europe you just need to use and work on Amadeus Sandbox.<br>The raffle (at the end of the 2016 Hackathon) will be held among all users of the Amadeus Sandbox.<br>Amadeus is a technology company dedicated to the global travel industry.<br>Use our Travel Innovation Sandbox and Make it happen!',
-          },
-          {
             companyName:'Backand',
             prizePicSrc:'../../assets/prizes-grid-photos/berlin.jpg',
             companyLogoSrc:'../../assets/logos/backand-logo.png',
@@ -28,6 +20,14 @@ angular.module('hackIdcApp')
             apiLink:'https://www.flying-cargo.com/he',
             prizeTitle:'iPad mini Wi-Fi Cellular',
             info:'Offers a variety of Logistic activities and acts not only as an Operator, but also as a lead player in the supply chain management arena.<br>We are here to offer start-up our advanced logistics services',
+          },
+          {
+            companyName:'Amadeus',
+            prizePicSrc:'../../assets/prizes-grid-photos/hamburg.jpg',
+            companyLogoSrc:'../../assets/logos/amadeus_logo_transparent.png',
+            prizeTitle:'Two Round-trip flight tickets to Hamburg, Germany',
+            apiLink: 'https://sandbox.amadeus.com',
+            info:'Win a pair of flight tickets to Europe!<br>The Amadeus Travel Innovation Sandbox currently includes APIs to help you build your travel related application or service proof-of-concept. <br>In order to increase your chances to win A pair of flight tickets to Europe you just need to use and work on Amadeus Sandbox.<br>The raffle (at the end of the 2016 Hackathon) will be held among all users of the Amadeus Sandbox.<br>Amadeus is a technology company dedicated to the global travel industry.<br>Use our Travel Innovation Sandbox and Make it happen!',
           },
           {
             companyName:'RapidAPI',
