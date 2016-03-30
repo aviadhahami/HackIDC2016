@@ -13,16 +13,9 @@ angular.module('hackIdcApp')
           scope.isMobile = isMobile.isMobile();
           scope.sponsorsData = sponsorsApiGetter.getData();
 
-          scope.calcFlexSize = scope.isMobile ? 0 : 20;
-          scope.enlarge = function(event){
-            var elem = angular.element(event.target);
-            elem.toggleClass('big-tile');
-          };
-          // var $grid = element.masonry();
-          // element.on('click','.grid-item',function(){
-          //   $grid.masonry();
-          // })
-
+          scope.toggleBrick = function(event){
+            console.log(event,event.target);
+          }
         }
       };
     }]);
