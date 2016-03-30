@@ -28,6 +28,11 @@ angular.module('hackIdcApp')
             }
           }
 
+          setInterval(function(){
+            element.masonry();
+          },0);
+
+
           // initial animation
           element.addClass('masonry');
 
@@ -37,6 +42,11 @@ angular.module('hackIdcApp')
 
             element.on("$destroy", function () {
               element.masonry('destroy')
+            });
+
+            element.on('click',function(){
+              console.log(this);
+              element.masonry();
             });
 
             if (options.model) {

@@ -40,6 +40,12 @@
   border-radius: 500px;
 }
 
+.big-tile{
+  width:500px!important;
+  height:500px!important;
+}
+
+
 /**** Transitions ****/
 
 .masonry,
