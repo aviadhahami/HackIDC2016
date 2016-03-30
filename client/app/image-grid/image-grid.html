@@ -5,14 +5,15 @@
       <div flex="33">
         <img class="image-grid-prize-image" ng-src="{{brick.prizePicSrc}}" alt="{{brick.companyName}}'s prize photo" >
       </div>
-      <div flex="10">
+      <div flex="10" style="height: 100px">
         <p class="md-display-1 prizes-title" ng-bind="brick.prizeTitle"></p>
       </div>
       <div flex="5" layout="column" layout-align="center center">
+        <br>
         <p class="md-subhead prizes-company-name">By {{brick.companyName}}</p>
       </div>
       <div flex="" ng-show="tiles[$index]" class="stuff-to-show">
-        <p class="prize-card-content" ng-bind-html="brick.info" ng-style="{'text-align':brick.info === 'TBD' ? 'center' : 'justify'}"></p>
+        <p class="prize-card-content md-headline mc-white" ng-bind-html="brick.info" ng-style="{'text-align':brick.info === 'TBD' ? 'center' : 'justify'}"></p>
         <a class="prize-link-href" ng-href="{{brick.apiLink}}" target="_blank">{{brick.companyName}}'s API</a>
       </div>
       <i ng-click="toggleBrick($event,$index);toggleChevron($index)" class="fa fa-2x mc-white {{chevrons[$index]}}"></i>
