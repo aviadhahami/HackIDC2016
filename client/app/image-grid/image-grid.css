@@ -41,8 +41,10 @@
 }
 
 .big-tile{
-  width:500px!important;
-  height:500px!important;
+  width:auto!important;
+  height:auto!important;
+
+  border-radius: 0!important;
 }
 
 
@@ -52,8 +54,8 @@
 .masonry li { /* apply before masonry add class */
   position: absolute; /* important to add it before enter animation start */
 
-  -webkit-transition-duration: .7s;
-  transition-duration: .7s;
+  -webkit-transition-duration: .5s;
+  transition-duration: .5s;
 
   -webkit-transition-property: all;
   transition-property: all;
