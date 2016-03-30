@@ -19,6 +19,16 @@ angular.module('hackIdcApp')
             3:false,
             4:false
           };
+          scope.chevrons={
+            0:'fa-chevron-down',
+            1:'fa-chevron-down',
+            2:'fa-chevron-down',
+            3:'fa-chevron-down',
+            4:'fa-chevron-down'
+          };
+          scope.toggleChevron= function(index){
+            scope.chevrons[index] = scope.chevrons[index] === 'fa-chevron-down' ? 'fa-chevron-up' : 'fa-chevron-down';
+          };
 
           scope.toggleBrick = function(event,index){
             console.log(event,event.target);

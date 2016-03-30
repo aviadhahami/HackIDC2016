@@ -30,13 +30,6 @@
 .hundred-pre-height{
   height:100%;
 }
-.animate-ease-1s{
-  -webkit-transition: all linear 1s;
-  -moz-transition: all linear 1s;
-  -ms-transition: all linear 1s;
-  -o-transition: all linear 1s;
-  transition: all linear 1s;
-}
 .prize-link-href{
   color:white;
   text-decoration: none;
@@ -53,3 +46,20 @@ i{
   outline:none;
 }
 
+
+.stuff-to-show {
+  /*position: relative;*/
+  height: auto;
+  -webkit-transition:opacity linear .2s;
+  transition:opacity linear .2s;
+  top: 0;
+}
+
+.stuff-to-show.ng-hide {
+  opacity: 0;
+  height: 0;
+}
+
+.stuff-to-show.ng-hide-add, .stuff-to-show.ng-hide-remove {
+  display:block!important;
+}

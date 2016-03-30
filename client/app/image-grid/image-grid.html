@@ -11,12 +11,12 @@
       <div flex="5" layout="column" layout-align="center center">
         <p class="md-subhead prizes-company-name">By {{brick.companyName}}</p>
       </div>
-      <div flex="" ng-show="tiles[$index]" class="animate-ease-1s">
-        <p class="prize-card-content" ng-bind-html="brick.info"></p>
+      <div flex="" ng-show="tiles[$index]" class="stuff-to-show">
+        <p class="prize-card-content" ng-bind-html="brick.info" ng-style="{'text-align':brick.info === 'TBD' ? 'center' : 'justify'}"></p>
         <a class="prize-link-href" ng-href="{{brick.apiLink}}" target="_blank">{{brick.companyName}}'s API</a>
       </div>
-      <i ng-click="toggleBrick($event,$index);" ng-if="!tiles[$index]" class="fa fa-chevron-down fa-2x mc-white"></i>
-      <i ng-click="toggleBrick($event,$index)" ng-if="tiles[$index]" class="fa fa-chevron-up fa-2x mc-white"></i>
+      <i ng-click="toggleBrick($event,$index);toggleChevron($index)" class="fa fa-2x mc-white {{chevrons[$index]}}"></i>
+      <!--<i ng-click="toggleBrick($event,$index)" ng-show="tiles[$index]" class="stuff-to-show fa fa-chevron-up fa-2x mc-white"></i>-->
     </div>
   </div>
 
