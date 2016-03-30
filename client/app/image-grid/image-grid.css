@@ -8,10 +8,14 @@
   margin:0 auto;
   padding: 10px;
 }
+
 .prizes-title{
   color:white;
   font-weight: 100;
+  margin-top: 0;
+  margin-bottom: 1vh;
 }
+
 .prizes-company-name{
   font-weight: 100;
   color:white
