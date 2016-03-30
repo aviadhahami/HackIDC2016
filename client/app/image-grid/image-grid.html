@@ -1,11 +1,12 @@
 
 <md-content class="image-grid-container md-padding">
-  <ul class="grid float even" masonry="true">
-    <li ng-repeat="item in sponsorsData" class="grid-item" ng-click="enlarge($event)">
-      <span>{{item.companyName}}</span>
-      <span>{{item.prizeTitle}}</span>
-    </li>
-  </ul>
+  <div layout="column" layout-gt-sm="row" layout-align="center center">
+    <div ng-repeat="brick in sponsorsData" flex="">
+      <img class="image-grid-prize-image" ng-src="{{brick.prizePicSrc}}" alt="{{brick.companyName}}'s prize photo" >
+        <p ng-bind="brick.companyName"></p>
+
+    </div>
+  </div>
 
 </md-content>
 
