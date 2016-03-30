@@ -1,11 +1,15 @@
 
 <md-content class="image-grid-container md-padding">
   <div layout="column" layout-gt-sm="row" layout-align="center center">
-    <div ng-repeat="brick in sponsorsData" flex="">
+    <div  ng-repeat="brick in sponsorsData" flex="">
       <img class="image-grid-prize-image" ng-src="{{brick.prizePicSrc}}" alt="{{brick.companyName}}'s prize photo" >
-      <p class="md-display-1 prizes-title" ng-bind="brick.prizeTitle"></h1>
-      <p class="md-subhead">By {{brick.companyName}}</p>
-      <button ng-click="toggleBrick($event)">click</button>
+      <div>
+        <p class="md-display-1 prizes-title" ng-bind="brick.prizeTitle"></p>
+      </div>
+      <div>
+        <p class="md-subhead prizes-company-name">By {{brick.companyName}}</p>
+      </div>
+      <i ng-click="toggleBrick($event)" class="fa fa-chevron-down fa-2x mc-white"></i>
     </div>
   </div>
 
