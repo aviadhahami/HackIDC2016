@@ -27,6 +27,7 @@
   padding-right: 2vw;
   padding-left: 2vw;
   transition: all 0.2s ease-in-out;
+  min-height: 300px;
 }
 .hundred-pre-height{
   height:100%;
