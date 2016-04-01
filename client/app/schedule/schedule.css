@@ -1,0 +1,17 @@
+.container{
+  margin:0 auto;
+  padding: 0;
+}
+.content-container{
+  background-color: #3F51B5;
+  height:100vh;
+}
+.header{
+  text-align: center;
+  color:white;
+  font-weight: 100;
+  margin-bottom:0;
+}
+.content{
+
+}

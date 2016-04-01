@@ -1,10 +1,25 @@
-<div class="container">
-  <md-button flex="5" ui-sref="main" style="float: left; margin-bottom: 0;">
+<div class="container" layout="column"  >
+  <md-button flex="5" ui-sref="main" style="float: left; margin-bottom: 0;width:20px;position: absolute; top:0;left: 0;">
     <i class="fa fa-chevron-left"></i>
     back
   </md-button>
-<div flex="" class="content">
-
-</div>
+  <div flex="" class="content-container" layout="column" layout-align="center center" >
+    <div class="header" flex="40">
+      <h1 class="md-display-4 header">Schedules</h1>
+      <p class="md-display-1 header">The place to be updated about our schedules</p>
+    </div>
+    <div class="content" flex>
+      <table at-table at-list="people">
+        <thead></thead>
+        <tbody>
+        <tr>
+          <td at-implicit at-attribute="name"></td>
+          <td at-implicit at-attribute="age"></td>
+          <td at-implicit at-attribute="birthdate"></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 
 </div>
