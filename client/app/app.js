@@ -11,8 +11,7 @@ angular.module('hackIdcApp', [
     'duScroll',
     'ng-mfb',
     'ngFitText',
-    'timer',
-    'ngFileUpload'
+    'angular-table'
   ])
   .config(function($mdIconProvider) {
     $mdIconProvider
