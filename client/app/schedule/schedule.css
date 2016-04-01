@@ -13,5 +13,25 @@
   margin-bottom:0;
 }
 .content{
-
+  margin: 0 auto;
+  text-align: center;
 }
+table{
+  min-width: 50vw;
+  text-align: center;
+  color:rgba(0,0,0,0.8);
+}
+.font-weight-100{
+  font-weight: 100;
+}
+
+tr:nth-child(even){
+  background-color: rgba(63, 81, 181, 0.95);
+}
+tr:nth-child(odd){
+  background-color: transparent;
+}
+
+/*tr:first-child{*/
+/*background-color: transparent;*/
+/*}*/

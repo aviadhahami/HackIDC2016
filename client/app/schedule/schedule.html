@@ -9,16 +9,24 @@
       <p class="md-display-1 header">The place to be updated about our schedules</p>
     </div>
     <div class="content" flex>
-      <table at-table at-list="people">
-        <thead></thead>
-        <tbody>
-        <tr>
-          <td at-implicit at-attribute="name"></td>
-          <td at-implicit at-attribute="age"></td>
-          <td at-implicit at-attribute="birthdate"></td>
-        </tr>
-        </tbody>
-      </table>
+      <md-card>
+        <md-card-content>
+          <table class="table table-striped" at-table at-list="times">
+            <thead>
+            <p class="md-display-1 font-weight-100">
+              Schedule for Pre-Hack day
+            </p>
+            </thead>
+            <tbody>
+            <tr>
+              <td at-implicit at-attribute="time" style="width: 50%;"></td>
+              <td at-implicit at-attribute="info" flex=""></td>
+            </tr>
+            </tbody>
+          </table>
+
+        </md-card-content>
+      </md-card>
     </div>
   </div>
 
