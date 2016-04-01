@@ -20,7 +20,43 @@ angular.module('hackIdcApp')
         },{
           time:'16:30',
           info:'something happens'
-        },
+        },{
+          time:'16:30',
+          info:'something happens'
+        },{
+          time:'16:30',
+          info:'something happens'
+        },{
+          time:'16:30',
+          info:'something happens'
+        },{
+          time:'16:30',
+          info:'something happens'
+        },{
+          time:'16:30',
+          info:'something happens'
+        },{
+          time:'16:30',
+          info:'something happens'
+        },{
+          time:'16:30',
+          info:'something happens'
+        },{
+          time:'16:30',
+          info:'something happens'
+        },{
+          time:'16:30',
+          info:'something happens'
+        },{
+          time:'16:30',
+          info:'something happens'
+        },{
+          time:'16:30',
+          info:'something happens'
+        },{
+          time:'16:30',
+          info:'something happens'
+        }
       ];
 
     }]);

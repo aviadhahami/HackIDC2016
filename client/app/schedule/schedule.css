@@ -1,10 +1,18 @@
+.md-white{
+  color: rgba(255,255,255,0.8);
+}
+
 .container{
-  margin:0 auto;
   padding: 0;
+  margin: 0 auto;
+  width:100%;
 }
 .content-container{
+  /*height:100vh;*/
   background-color: #3F51B5;
-  height:100vh;
+  margin: 0 auto;
+  padding: 0;
+  width:100vw;
 }
 .header{
   text-align: center;
