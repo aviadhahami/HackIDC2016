@@ -31,10 +31,6 @@ tr:nth-child(even){
 tr:nth-child(odd){
   background-color: #F5F5F5;
 }
-thead tr th{
-  font-weight: 300;
-  font-size: 3em;
-}
 /*tr:first-child{*/
 /*background-color: transparent;*/
 /*}*/
