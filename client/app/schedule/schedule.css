@@ -10,7 +10,7 @@
   min-height: 100vh;
 }
 .content-container{
-  /*height:100vh;*/
+  min-height:100vh;
   background-color: #3F51B5;
   margin: 0 auto;
   padding: 0;
@@ -21,6 +21,7 @@
   color:white;
   font-weight: 100;
   margin-bottom:0;
+
 }
 .content{
   margin: 0 auto;
