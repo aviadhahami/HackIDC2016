@@ -196,10 +196,10 @@ angular.module('hackIdcApp')
           bgColor : '#2185D5'
         },
         {
-          iconClass: 'fa-pencil',
-          label : 'Register',
+          iconClass: 'fa-calendar',
+          label : 'Schedules',
           action : function(){
-            $location.path( '/signup' );
+            $location.path( '/schedule' );
           },
           actionArgs: '',
           bgColor: '#2185D5'
