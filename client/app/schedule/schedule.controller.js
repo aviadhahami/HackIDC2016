@@ -8,55 +8,7 @@ angular.module('hackIdcApp')
     function ($scope,isMobile) {
       $scope.isMobile = isMobile.isMobile();
       $scope.times=[
-        {
-          time:'16:30',
-          info:'something happens'
-        },{
-          time:'16:30',
-          info:'something happens'
-        },{
-          time:'16:30',
-          info:'something happens'
-        },{
-          time:'16:30',
-          info:'something happens'
-        },{
-          time:'16:30',
-          info:'something happens'
-        },{
-          time:'16:30',
-          info:'something happens'
-        },{
-          time:'16:30',
-          info:'something happens'
-        },{
-          time:'16:30',
-          info:'something happens'
-        },{
-          time:'16:30',
-          info:'something happens'
-        },{
-          time:'16:30',
-          info:'something happens'
-        },{
-          time:'16:30',
-          info:'something happens'
-        },{
-          time:'16:30',
-          info:'something happens'
-        },{
-          time:'16:30',
-          info:'something happens'
-        },{
-          time:'16:30',
-          info:'something happens'
-        },{
-          time:'16:30',
-          info:'something happens'
-        },{
-          time:'16:30',
-          info:'something happens'
-        }
+        {}
       ];
 
     }]);
