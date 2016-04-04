@@ -17,9 +17,10 @@ angular.module('hackIdcApp')
             companyName:'Flying Cargo',
             prizePicSrc:'../../assets/prizes-grid-photos/ipad.jpg',
             companyLogoSrc:'../../assets/logos/fc_logo.png',
-            apiLink:'https://www.flying-cargo.com/he',
-            prizeTitle:'iPad mini Wi-Fi Cellular',
-            info:'Offers a variety of Logistic activities and acts not only as an Operator, but also as a lead player in the supply chain management arena.<br>We are here to offer start-up our advanced logistics services',
+            apiLink:'',
+            prizeTitle:'iPad mini 4',
+            // info:'Offers a variety of Logistic activities and acts not only as an Operator, but also as a lead player in the supply chain management arena.<br>We are here to offer start-up our advanced logistics services',
+            info:''
           },
           {
             companyName:'Amadeus',
