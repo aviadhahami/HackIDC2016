@@ -12,11 +12,14 @@
         <br>
         <p class="md-subhead prizes-company-name">By {{brick.companyName}}</p>
       </div>
-      <div style="height: 100%;" ng-show="tiles[$index]" class="stuff-to-show">
-        <p class="prize-card-content md-headline mc-white weight-300" ng-bind-html="brick.info" ng-style="{'text-align':brick.info === 'TBD' ? 'center' : 'justify'}"></p>
-        <a class="prize-link-href md-headline weight-300 mc-white" ng-href="{{brick.apiLink}}" target="_blank">{{brick.companyName}}'s API</a>
+      <div ng-if="brick.info.length>0">
+        <div style="height: 100%;" ng-show="tiles[$index]" class="stuff-to-show">
+          <p class="prize-card-content md-headline mc-white weight-300" ng-bind-html="brick.info" ng-style="{'text-align':brick.info === 'TBD' ? 'center' : 'justify'}"></p>
+          <a class="prize-link-href md-headline weight-300 mc-white" ng-href="{{brick.apiLink}}" target="_blank">{{brick.companyName}}'s API</a>
+        </div>
+        <i ng-click="toggleBrick($event,$index);toggleChevron($index)" class="fa fa-2x mc-white {{chevrons[$index]}}"></i>
+
       </div>
-      <i ng-click="toggleBrick($event,$index);toggleChevron($index)" class="fa fa-2x mc-white {{chevrons[$index]}}"></i>
     </div>
   </div>
 
