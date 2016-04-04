@@ -16,24 +16,24 @@
       </md-card>
       <md-card>
         <md-card-content>
-          <table cellspacing="0" cellpadding="0" class="table table-striped" at-table at-list="mentorship">
+          <table cellspacing="0" cellpadding="0" style="width:100%;" class="table table-striped" at-table at-list="mentorship">
             <thead>
             <p class="md-display-3">
               Mentorship Dates
             </p>
             <tr>
-              <th at-attribute="date" class="md-display-2">Date</th>
-              <th at-attribute="time" class="md-display-2">Time</th>
-              <th at-attribute="duration" class="md-display-2">Duration</th>
-              <th at-attribute="venue" class="md-display-2">Venue</th>
+              <th at-attribute="date" ng-class="{'md-display-2':!isMobile}">Date</th>
+              <th at-attribute="time" ng-class="{'md-display-2':!isMobile}">Time</th>
+              <th at-attribute="duration" ng-class="{'md-display-2':!isMobile}">Duration</th>
+              <th at-attribute="venue" ng-class="{'md-display-2':!isMobile}">Venue</th>
             </tr>
             </thead>
             <tbody>
             <tr>
-              <td at-implicit at-attribute="date" class="md-display-1"></td>
-              <td at-implicit at-attribute="time" class="md-display-1" ></td>
-              <td at-implicit at-attribute="duration" class="md-display-1" ></td>
-              <td at-implicit at-attribute="venue" class="md-display-1" ></td>
+              <td at-implicit at-attribute="date"  ng-class="{'md-display-2':!isMobile}"></td>
+              <td at-implicit at-attribute="time"  ng-class="{'md-display-2':!isMobile}"></td>
+              <td at-implicit at-attribute="duration"  ng-class="{'md-display-2':!isMobile}"></td>
+              <td at-implicit at-attribute="venue"  ng-class="{'md-display-2':!isMobile}"></td>
             </tr>
             </tbody>
           </table>
