@@ -10,5 +10,37 @@ angular.module('hackIdcApp')
       $scope.times=[
         {}
       ];
+      $scope.mentorship = [
+        {
+          date:'06.04',
+          time:'18:30',
+          venue:'TBA',
+          duration:'2.5 hours'
+        },
+        {
+          date:'10.04',
+          time:'18:30',
+          venue:'TBA',
+          duration:'2.5 hours'
+        },
+        {
+          date:'13.04',
+          time:'18:30',
+          venue:'TBA',
+          duration:'2.5 hours'
+        },
+        {
+          date:'01.05',
+          time:'18:30',
+          venue:'TBA',
+          duration:'2.5 hours'
+        },
+        {
+          date:'02.04',
+          time:'18:30',
+          venue:'TBA',
+          duration:'2.5 hours'
+        },
+      ];
 
     }]);
