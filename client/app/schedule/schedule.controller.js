@@ -36,7 +36,7 @@ angular.module('hackIdcApp')
           duration:'2.5 hours'
         },
         {
-          date:'02.04',
+          date:'02.05',
           time:'18:30',
           venue:'TBA',
           duration:'2.5 hours'
