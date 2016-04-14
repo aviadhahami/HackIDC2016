@@ -335,6 +335,17 @@ section#home{
   color: rgba(255,255,255,0.8);
   font-weight: 300;
 }
+
+.bronze-spons{
+  width:7vw;
+  padding: 2vh 2vw 2vh 2vw;
+  height: auto;
+}
+.bronze-spons-small{
+  width:14vw;
+  padding: 2vh 2vw 2vh 2vw;
+  height: auto;
+}
 .silver-spons{
   width:10vw;
   padding: 2vh 2vw 2vh 2vw;
