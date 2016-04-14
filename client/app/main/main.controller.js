@@ -73,7 +73,7 @@ angular.module('hackIdcApp')
           name:'Omri Gotlieb',
           imgSrc :  '../../assets/team-photos/gotlib.jpg',
           linkedin:' https://il.linkedin.com/in/omri-gotlieb-2930579b',
-          mail:'mailto:omri@hackidc.com'
+          mail:'mailto:omrigotlieb@gmail.com'
         },
         {
           name:'Shay Goldman',
