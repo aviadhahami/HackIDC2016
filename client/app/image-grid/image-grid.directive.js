@@ -9,7 +9,7 @@ angular.module('hackIdcApp')
         scope:{
           data: '='
         },
-        link: function (scope, element, attrs) {
+      link: function (scope, element, attrs) {
           scope.gridOpts = {
             swapping: false,
             draggable: {
@@ -19,8 +19,15 @@ angular.module('hackIdcApp')
 
 
 
-          scope.isMobile = isMobile.isMobile();
-          scope.sponsorsData = sponsorsApiGetter.getData();
+        scope.sponsorsData = sponsorsApiGetter.getData();
+        for (var i=0;i<scope.sponsorsData.length;i++){
+
+          scope.sponsorsData[i].sizeX = '1';
+          scope.sponsorsData[i].sizeY = '1';
+          // scope.sponsorsData[i].row = i;
+          // scope.sponsorsData[i].col = '0';
+        }
+        scope.isMobile = isMobile.isMobile();
 
           scope.tiles = {
             1: false,
