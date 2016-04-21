@@ -10,16 +10,40 @@ angular.module('hackIdcApp')
           data: '='
         },
       link: function (scope, element, attrs) {
+        scope.sponsorsData = sponsorsApiGetter.getData();
+        scope.isMobile = isMobile.isMobile();
+
           scope.gridOpts = {
+            columns:scope.sponsorsData.length*2,
+            width:'auto',
+            colWidth: 'auto', // can be an integer or 'auto'.  'auto' uses the pixel width of the element divided by 'columns'
+            rowHeight: 'match',
+            margins: [10, 10],
+            outerMargin: true,
+            isMobile:  scope.isMobile,
+            mobileBreakPoint: 600, // if the screen is not wider that this, remove the grid layout and stack the items
+            mobileModeEnabled: true, // whether or not to toggle mobile mode when screen width is less than mobileBreakPoint
+            minColumns: 1, // the minimum columns the grid must have
+            minRows: 2, // the minimum height of the grid, in rows
+            defaultSizeX: 2, // the default width of a gridster item, if not specifed
+            defaultSizeY: 1, // the default height of a gridster item, if not specified
+            minSizeX: 1, // minimum column width of an item
+            maxSizeX: null, // maximum column width of an item
+            minSizeY: 1, // minimum row height of an item
+            maxSizeY: null, // maximum row height of an item
             swapping: false,
-            draggable: {
-              enabled: false
+            resizable: {
+              enabled: false,
+              handles: ['n', 'e', 's', 'w', 'ne', 'se', 'sw', 'nw'],
+              start: function(event, $element, widget) {}, // optional callback fired when resize is started,
+              resize: function(event, $element, widget) {}, // optional callback fired when item is resized,
+              stop: function(event, $element, widget) {} // optional callback fired when item is finished resizing
             }
           };
 
 
 
-        scope.sponsorsData = sponsorsApiGetter.getData();
+
         for (var i=0;i<scope.sponsorsData.length;i++){
 
           scope.sponsorsData[i].sizeX = '1';
@@ -27,7 +51,7 @@ angular.module('hackIdcApp')
           // scope.sponsorsData[i].row = i;
           // scope.sponsorsData[i].col = '0';
         }
-        scope.isMobile = isMobile.isMobile();
+
 
           scope.tiles = {
             1: false,
