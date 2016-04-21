@@ -24,10 +24,13 @@
 
   <div gridster="gridOpts">
     <ul>
-      <li gridster-item="item" ng-repeat="item in sponsorsData" style="height:auto;background-color: white; border: 1px solid black;">
-        <!--<img ng-src="{{item.prizePicSrc}}" alt="">-->
-        <p class="md-display-3" ng-bind="item.prizeTitle"></p>
-        <p class="md-display-2" ng-bind="item.companyName"></p>
+      <li gridster-item="item" ng-repeat="item in sponsorsData">
+        <img src="{{item.prizePicSrc}}" alt="" style="border-radius: 200px;width:200px;height:200px;">
+        <p class="md-display-3 {{isMobile?'ten-vim':'five-vim' }}" ng-bind="item.prizeTitle"></p>
+        <p class="md-display-1 {{isMobile?'ten-vim':'five-vim' }}" ng-bind="item.companyName"></p>
+        <div ng-show="item.isOn">
+
+        </div>
       </li>
     </ul>
   </div>
