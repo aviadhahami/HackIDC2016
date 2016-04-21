@@ -10,6 +10,15 @@ angular.module('hackIdcApp')
           data: '='
         },
         link: function (scope, element, attrs) {
+          scope.gridOpts = {
+            swapping: false,
+            draggable: {
+              enabled: false
+            }
+          };
+
+
+
           scope.isMobile = isMobile.isMobile();
           scope.sponsorsData = sponsorsApiGetter.getData();
 
