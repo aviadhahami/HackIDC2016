@@ -7,40 +7,23 @@ angular.module('hackIdcApp')
   .controller('ScheduleCtrl',  ['$scope','isMobile',
     function ($scope,isMobile) {
       $scope.isMobile = isMobile.isMobile();
-      $scope.times=[
-        {}
+      $scope.friday=[
+        {what:'Arrival',
+        when:'08:00',
+        where:'IDC Campus'},
+
+        {what:'Arrival',
+          when:'08:00',
+          where:'IDC Campus'},
+        {what:'Arrival',
+          when:'08:00',
+          where:'IDC Campus'}
       ];
-      $scope.mentorship = [
-        {
-          date:'06.04',
-          time:'18:30',
-          venue:'TBA',
-          duration:'2.5 hours'
-        },
-        {
-          date:'10.04',
-          time:'18:30',
-          venue:'TBA',
-          duration:'2.5 hours'
-        },
-        {
-          date:'13.04',
-          time:'18:30',
-          venue:'TBA',
-          duration:'2.5 hours'
-        },
-        {
-          date:'01.05',
-          time:'18:30',
-          venue:'TBA',
-          duration:'2.5 hours'
-        },
-        {
-          date:'02.05',
-          time:'18:30',
-          venue:'TBA',
-          duration:'2.5 hours'
-        },
+
+      $scope.saturday = [
+        {what:'Finish',
+          when:'20:00',
+          where:'IDC Campus'}
       ];
 
     }]);
