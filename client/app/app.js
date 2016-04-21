@@ -11,7 +11,8 @@ angular.module('hackIdcApp', [
     'duScroll',
     'ng-mfb',
     'ngFitText',
-    'angular-table'
+    'angular-table',
+    'gridster'
   ])
   .config(function($mdIconProvider) {
     $mdIconProvider
