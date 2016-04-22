@@ -1,8 +1,27 @@
+.masonry-brick{
+  max-width: 30%;
+  margin: 2% auto;
+  width :auto;
+  height:auto;
+  background-color: #0d3349;
+  border:1px solid black;
+}
+.masonry-brick img{
+  border-radius: 500px;
+}
+.masonry-brick p{
+  margin-bottom:0;
+  padding: 0;
+  line-height: 1;
+}
 .mobile-prize{
   width:50vw;
   height:50vw;
 }
-.desktop-prize {
-  width:30vh;
-  height: 30vh;
+.desktop-prize{
+  width:20vw;
+  height: 20vw;
+}
+.seven-vim{
+  font-size:7vmin;
 }
