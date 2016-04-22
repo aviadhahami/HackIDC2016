@@ -22,7 +22,6 @@
     "ng-file-upload-shim": "~11.1.1",
     "ng-file-upload": "~11.1.1",
     "at-table": "^1.0.7",
-
     "angular-masonry": "^0.16.0"
 
   },
