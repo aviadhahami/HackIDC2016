@@ -1,67 +1,8 @@
-.image-grid-container{
-  background-color: transparent;
+.mobile-prize{
+  width:50vw;
+  height:50vw;
 }
-.image-grid-prize-image{
-  width:300px;
-  height: 300px;
-  border-radius: 500px;
-  margin:0 auto;
-  padding: 10px;
-  display: block;
-}
-
-.prizes-title{
-  color:white;
-  font-weight: 100;
-  margin-top: 0;
-  margin-bottom: 1vh;
-}
-
-.prizes-company-name{
-  font-weight: 100;
-  color:white
-}
-
-.prize-card{
-  padding-bottom: 5vh;
-  padding-right: 2vw;
-  padding-left: 2vw;
-  transition: all 0.2s ease-in-out;
-  min-height: 300px;
-}
-.hundred-pre-height{
-  height:100%;
-}
-.prize-link-href{
-  color:white;
-  text-decoration: none;
-  text-align: center;
-}
-.prize-card-content{
-  /*height: auto;*/
-  text-align: justify;
-}
-
-
-i{
-  cursor: pointer;
-  outline:none;
-}
-
-
-.stuff-to-show {
-  /*position: relative;*/
-  height: auto;
-  -webkit-transition:opacity linear .2s;
-  transition:opacity linear .2s;
-  top: 0;
-}
-
-.stuff-to-show.ng-hide {
-  opacity: 0;
-  height: 0;
-}
-
-.stuff-to-show.ng-hide-add, .stuff-to-show.ng-hide-remove {
-  display:block!important;
+.desktop-prize {
+  width:30vh;
+  height: 30vh;
 }
