@@ -21,10 +21,10 @@
 <!--</div>-->
 <!--</div>-->
 
-<div masonry>
+<div masonry class="grid">
   <div class="masonry-brick" ng-repeat="brick in bricks">
     <img src="{{brick.prizePicSrc}}" class="{{isMobile? 'mobile-prize' : 'desktop-prize'}}" alt="">
-    <p class="{{isMobile?'ten-vim':'ten-vim'}} md-display-3" ng-bind="brick.prizeTitle"></p>
-    <p class="{{isMobile?'five-vim':'ten-vim'}} md-display-4" >By {{brick.companyName}}</p>
+    <p class="md-display-3" ng-bind="brick.prizeTitle"></p>
+    <p class="md-headline" >By {{brick.companyName}}</p>
   </div>
 </div>
