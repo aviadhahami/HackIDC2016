@@ -3,6 +3,8 @@
   margin: 0 auto;
   padding-top: 2%;
   width:90%;
+  font-weight: 300;
+  color: rgba(255,255,255,0.8);
 }
 .masonry-brick-mobile{
   background-color: #0d3349;
@@ -22,6 +24,16 @@
   max-width: 30%;
   margin: 3%;
   font-size: 0;
+}
+.masonry-brick p{
+  font-weight: 300;
+  text-align: left;
+  margin-left: 1.5%;
+  color: rgba(255,255,255,0.8);
+}
+.masonry-brick-mobile p{
+  text-align: left;
+  color: rgba(255,255,255,0.8);
 }
 .masonry-brick img,.masonry-brick-mobile img{
   border-radius: 500px;
@@ -51,6 +63,8 @@
 .seven-vim{
   font-size:7vmin;
 }
-.grid{
-  margin:0 auto;
+.api-link{
+  color: rgba(255,255,255,0.80);
+  text-decoration: none;
+  text-align: center;
 }

@@ -25,10 +25,11 @@
      item-selector="{{isMobile?'masonry-brick-mobile':'masonry-brick'}}" class="masonry-container" reload-on-show reload-on-resize>
   <div ng-class="{'masonry-brick':!isMobile,'masonry-brick-mobile':isMobile}" ng-repeat="brick in bricks" ng-click="brick.toggle = !brick.toggle">
     <img src="{{brick.prizePicSrc}}" alt="">
-    <p class="md-display-3" ng-bind="brick.prizeTitle"></p>
-    <p class="md-headline" >By {{brick.companyName}}</p>>
+    <h1 class="md-display-3" ng-bind="brick.prizeTitle"></h1>
+    <h4 class="md-headline" >By {{brick.companyName}}</h4>>
     <div ng-show="brick.toggle">
       <p class="md-headline" ng-bind-html="brick.info"></p>
+      <a href="{{brick.apiLink}}" ng-if="brick.apiLink" class="api-link md-headline">{{brick.companyName}}'s API</a>
     </div>
   </div>
 </div>
