@@ -3,7 +3,15 @@
 }
 .masonry-container{
   margin: 0 auto;
-  width:90%;
+  /*width:90%;*/
+}
+.masonry-brick-mobile{
+  background-color: #0d3349;
+  border:1px solid black;
+  /*float: left;*/
+  /*max-width: 35%;*/
+  margin: 5px auto;
+  font-size: 0;
 }
 .masonry-brick{
   background-color: #0d3349;
@@ -13,12 +21,12 @@
   margin: 5px;
   font-size: 0;
 }
-.masonry-brick img{
+.masonry-brick img, .masonry-brick-mobile img{
   border-radius: 500px;
   width:200px;
   height:200px;
 }
-.masonry-brick p{
+.masonry-brick img, .masonry-brick-mobile img{
   margin-bottom:0;
   padding: 0;
   line-height: 1;
