@@ -21,7 +21,7 @@
 <!--</div>-->
 <!--</div>-->
 
-<div masonry column-width="22%" preserve-order reload-on-show reload-on-resize>
+<div masonry masonry-options="{'fitWidth': true,  'columnWidth': '35%', 'percentPosition': true}"  preserve-order reload-on-show reload-on-resize>
   <div class="masonry-brick" ng-repeat="brick in bricks">
     <img src="{{brick.prizePicSrc}}" class="{{isMobile? 'mobile-prize' : 'desktop-prize'}}" alt="">
     <p class="md-display-3" ng-bind="brick.prizeTitle"></p>

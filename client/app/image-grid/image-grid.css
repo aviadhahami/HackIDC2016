@@ -4,7 +4,7 @@
 
 .masonry-brick{
   max-width: 35%;
-  min-width: 35%;
+  /*min-width: 35%;*/
   margin: 1%;
   /*height:100%;*/
   background-color: #0d3349;
