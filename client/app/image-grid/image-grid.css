@@ -3,13 +3,13 @@
 }
 .masonry-container{
   margin: 0 auto;
-  width:80%;
+  width:90%;
 }
 .masonry-brick{
   background-color: #0d3349;
   border:1px solid black;
   float: left;
-  max-width: 25%;
+  max-width: 35%;
   margin: 5px;
   font-size: 0;
 }
@@ -22,14 +22,6 @@
   margin-bottom:0;
   padding: 0;
   line-height: 1;
-}
-.mobile-prize{
-  width:50vw;
-  height:50vw;
-}
-.desktop-prize{
-  width:20vw;
-  height: 20vw;
 }
 .seven-vim{
   font-size:7vmin;
