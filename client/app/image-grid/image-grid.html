@@ -22,13 +22,13 @@
 <!--</div>-->
 
 <div masonry masonry-options="{fitWidth: true, columnWidth:'200px',transitionDuration: '5s'}"
-     item-selector="{{isMobile?'masonry-brick-mobile':'masonry-brick'}}" class="masonry-container" preserve-order reload-on-show reload-on-resize>
+     item-selector="{{isMobile?'masonry-brick-mobile':'masonry-brick'}}" class="masonry-container" reload-on-show reload-on-resize>
   <div ng-class="{'masonry-brick':!isMobile,'masonry-brick-mobile':isMobile}" ng-repeat="brick in bricks" ng-click="brick.toggle = !brick.toggle">
     <img src="{{brick.prizePicSrc}}" alt="">
     <p class="md-display-3" ng-bind="brick.prizeTitle"></p>
     <p class="md-headline" >By {{brick.companyName}}</p>>
     <div ng-show="brick.toggle">
-      <p class="md-headline" >By {{brick.companyName}}</p>
+      <p class="md-headline" ng-bind-html="brick.info"></p>
     </div>
   </div>
 </div>
