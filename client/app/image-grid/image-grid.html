@@ -21,7 +21,7 @@
 <!--</div>-->
 <!--</div>-->
 
-<div masonry masonry-options="{fitWidth: true, columnWidth:'200px'}" class="masonry-container" preserve-order reload-on-show reload-on-resize>
+<div masonry="{ transitionDuration: '0.4s' }" masonry-options="{fitWidth: true, columnWidth:'200px'}" class="masonry-container" preserve-order reload-on-show reload-on-resize>
   <div ng-class="{'masonry-brick':!isMobile,'masonry-brick-mobile':isMobile}" ng-repeat="brick in bricks">
     <img src="{{brick.prizePicSrc}}" alt="">
     <p class="md-display-3" ng-bind="brick.prizeTitle"></p>

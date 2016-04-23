@@ -18,20 +18,19 @@
   /*min-width:25%;*/
   float: left;
   min-width: 15%;
-  max-width: 35%;
-  margin: 2%;
+  max-width: 30%;
+  margin: 3%;
   font-size: 0;
 }
-.masonry-brick img{
+.masonry-brick img,.masonry-brick-mobile img{
   border-radius: 500px;
-  width:15vw;
-  height:15vw;
+  width:40vw;
+  height:40vw;
+  margin: 0 auto;
+  max-height: 250px;
+  max-width: 250px;
 }
-.masonry-brick-mobile img{
-  border-radius: 500px;
-  width:200px;
-  height:200px;
-}
+
 .masonry-brick img, .masonry-brick-mobile img{
   margin-bottom:0;
   padding: 0;
