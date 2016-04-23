@@ -512,7 +512,7 @@ section#home{
   align-self: center;
 }
 .footer{
-  height: 30vh;
+  /*height: 30vh;*/
   padding-bottom: 0!important;
   min-height: 0;
   background-color: #1A237E;
@@ -523,7 +523,9 @@ section#home{
   padding-top: 5vh;
 }
 .small-long-logo{
-  height: 11vh!important;
+  /*height: 11vh!important;*/
+width:90%;
+  height:auto;
 }
 .footer-item{
   margin: 0 auto;
