@@ -1,14 +1,15 @@
 .gutter-sizer{
   width:4%;
 }
-
+.masonry-container{
+  margin: 0 auto;
+}
 .masonry-brick{
-  max-width: 35%;
-  /*min-width: 35%;*/
-  margin: 1%;
-  /*height:100%;*/
   background-color: #0d3349;
   border:1px solid black;
+  float: left;
+  margin: 5px;
+  font-size: 0;
 }
 .masonry-brick img{
   border-radius: 500px;
