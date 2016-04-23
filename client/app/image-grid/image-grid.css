@@ -17,8 +17,9 @@
 
   /*min-width:25%;*/
   float: left;
+  min-width: 15%;
   max-width: 35%;
-  margin: 5px;
+  margin: 2%;
   font-size: 0;
 }
 .masonry-brick img, .masonry-brick-mobile img{
@@ -30,6 +31,13 @@
   margin-bottom:0;
   padding: 0;
   line-height: 1;
+}
+.masonry-brick button, .masonry-brick-mobile button{
+  background-color: transparent;
+  border:0;
+}
+.masonry-brick button:focus, .masonry-brick-mobile button:focus{
+  outline: none;
 }
 .seven-vim{
   font-size:7vmin;
