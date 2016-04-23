@@ -579,8 +579,8 @@ a{
 }
 .memeber-profile-pic-mobile{
   border-radius: 999px;
-  width:25vw;
-  height: 25vw;
+  /*width:25vw;*/
+  height: 200px;
 }
 .mc-light-blue{
   color: #2196F3;
