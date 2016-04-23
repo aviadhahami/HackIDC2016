@@ -7,18 +7,15 @@
   color: rgba(255,255,255,0.8);
 }
 .masonry-brick-mobile{
-  background-color: #0d3349;
-  border:1px solid black;
+  /*background-color: #0d3349;*/
+  border-radius: 20px;
+  border:1px solid rgba(255,255,255,0.5);
   /*float: left;*/
   /*max-width: 35%;*/
   margin: 5px auto;
   font-size: 0;
 }
 .masonry-brick{
-  background-color: #0d3349;
-  border:1px solid black;
-
-  /*min-width:25%;*/
   float: left;
   min-width: 15%;
   max-width: 30%;
