@@ -1,6 +1,7 @@
 .masonry-container{
   margin: 0 auto;
   padding-top: 2%;
+  width:90%;
 }
 .masonry-brick-mobile{
   background-color: #0d3349;
@@ -13,6 +14,8 @@
 .masonry-brick{
   background-color: #0d3349;
   border:1px solid black;
+
+  /*min-width:25%;*/
   float: left;
   max-width: 35%;
   margin: 5px;
@@ -20,8 +23,8 @@
 }
 .masonry-brick img, .masonry-brick-mobile img{
   border-radius: 500px;
-  width:200px;
-  height:200px;
+  width:15vw;
+  height:15vw;
 }
 .masonry-brick img, .masonry-brick-mobile img{
   margin-bottom:0;
