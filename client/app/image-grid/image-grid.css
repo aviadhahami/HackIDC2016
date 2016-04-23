@@ -3,11 +3,13 @@
 }
 .masonry-container{
   margin: 0 auto;
+  width:80%;
 }
 .masonry-brick{
   background-color: #0d3349;
   border:1px solid black;
   float: left;
+  max-width: 25%;
   margin: 5px;
   font-size: 0;
 }
