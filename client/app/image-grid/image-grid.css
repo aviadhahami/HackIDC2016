@@ -22,10 +22,15 @@
   margin: 2%;
   font-size: 0;
 }
-.masonry-brick img, .masonry-brick-mobile img{
+.masonry-brick img{
   border-radius: 500px;
   width:15vw;
   height:15vw;
+}
+.masonry-brick-mobile img{
+  border-radius: 500px;
+  width:20vh;
+  height:20vh;
 }
 .masonry-brick img, .masonry-brick-mobile img{
   margin-bottom:0;
