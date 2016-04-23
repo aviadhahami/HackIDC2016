@@ -1,9 +1,6 @@
-.gutter-sizer{
-  width:4%;
-}
 .masonry-container{
   margin: 0 auto;
-  /*width:90%;*/
+  padding-top: 2%;
 }
 .masonry-brick-mobile{
   background-color: #0d3349;
