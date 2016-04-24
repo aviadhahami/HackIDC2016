@@ -645,6 +645,7 @@ a{
     transform: translateY(-1vh);
   }
 }
+
 .box-one.ng-hide-add {
   -webkit-animation:0.5s hide;
   animation:0.5s hide;
