@@ -5,13 +5,13 @@
   width:90%;
   font-weight: 300;
   color: rgba(255,255,255,0.8);
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -o-transition:  all 200ms ease;
+  transition: all 200ms ease;
+
 }
 .masonry-brick-mobile{
-  /*background-color: #0d3349;*/
-  border-radius: 20px;
-  border:1px solid rgba(255,255,255,0.5);
-  /*float: left;*/
-  /*max-width: 35%;*/
   margin: 5px auto;
   font-size: 0;
 }
@@ -65,3 +65,73 @@
   text-decoration: none;
   text-align: center;
 }
+
+
+.brick-data.ng-hide-add {
+  -webkit-animation:0.5s hide;
+  animation:0.5s hide;
+}
+
+@keyframes hide {
+  0% {
+    opacity:1;
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.02);
+  }
+  100% {
+    opacity:0;
+    transform: scale(0.5);
+  }
+}
+
+@-webkit-keyframes hide {
+  0% {
+    opacity:1;
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.02);
+  }
+  100% {
+    opacity:0;
+    transform: scale(0.5);
+  }
+}
+
+
+.brick-data.ng-hide-remove {
+  -webkit-animation:0.3s show;
+  animation:0.3s show;
+}
+
+@keyframes show {
+  0% {
+    opacity:0;
+    transform: scale(0.5);
+  }
+  70% {
+    transform: scale(1.02);
+  }
+  100% {
+    opacity:1;
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes show {
+  0% {
+    opacity:0;
+    transform: scale(0.5);
+  }
+  70% {
+    transform: scale(1.02);
+  }
+  100% {
+    opacity:1;
+    transform: scale(1);
+  }
+}
+
+
