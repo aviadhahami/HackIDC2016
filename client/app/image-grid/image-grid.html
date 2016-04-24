@@ -31,7 +31,7 @@
     <h4 class="md-headline" >By {{brick.companyName}}</h4>>
     <div ng-show="brick.toggle" class="brick-data">
       <p class="md-headline" ng-bind-html="brick.info" ng-style="{'text-align':brick.info=='TBD' ? 'center' : ''}"></p>
-      <a href="{{brick.apiLink}}" ng-if="brick.apiLink" class="api-link md-headline">{{brick.companyName}}'s API</a>
+      <a href="{{brick.apiLink}}" ng-if="brick.apiLink" class="api-link md-headline" target="_blank">{{brick.companyName}}'s API</a>
     </div>
   </div>
 </div>
