@@ -35,7 +35,7 @@ angular.module('hackIdcApp')
             prizePicSrc:'../../assets/icons/tbd.png',
             companyLogoSrc:'../../assets/logos/rapid-api-logo.png',
             apiLink:'',
-            prizeTitle:'Rapid API\'s secret prize',
+            prizeTitle:'Secret Prize',
             info:'TBD'
           },
           {
