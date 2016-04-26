@@ -37,6 +37,14 @@ angular.module('hackIdcApp')
             apiLink:'',
             prizeTitle:'Rapid API\'s secret prize',
             info:'TBD'
+          },
+          {
+            companyName:'Orcam',
+            prizePicSrc:'../../assets/prizes-grid-photos/zurich.png',
+            companyLogoSrc:'../../assets/logos/orcam.png',
+            apiLink:'https://goo.gl/pjSlpc',
+            prizeTitle:'Zurich Hackathon + Vacation',
+            info:'Participants will have a chance to create innovative applications for MyMe.<br> The winning team with the most innovative app will be flown to Zurich to attend the largest hackathon in Europe, and a vacation.'
           }
         ];
         return data;
