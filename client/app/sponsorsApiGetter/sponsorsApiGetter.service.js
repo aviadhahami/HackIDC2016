@@ -45,6 +45,14 @@ angular.module('hackIdcApp')
             apiLink:'https://goo.gl/pjSlpc',
             prizeTitle:'Zurich Hackathon + Vacation',
             info:'Participants will have a chance to create innovative applications for MyMe.<br> The winning team with the most innovative app will be flown to Zurich to attend the largest hackathon in Europe, and a vacation.'
+          },
+          {
+            companyName:'Produvia',
+            prizePicSrc:'../../assets/prizes-grid-photos/pi.png',
+            companyLogoSrc:'../../assets/logos/produvia.png',
+            apiLink:'http://weavingthings.com',
+            prizeTitle:'Win a Raspberry Pi  3 plus a colored Smart-Light bulb',
+            info:'Integrating smart devices into apps and services is now easier than ever.<br>All you need to do is use our service and get direct access over mobile or Raspberry Pi to control different kinds of smart IOT devices.<br>The winning team will be the one who will build the most innovative and awesome use-case (application or web service) by using our WeavingThings lighting service that lets you control different kinds of smart light-bulbs with a single API along with an additional public API such as weather, date and time, etc.'
           }
         ];
         return data;
