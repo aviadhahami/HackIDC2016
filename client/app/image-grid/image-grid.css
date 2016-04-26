@@ -1,8 +1,8 @@
 .masonry-container{
-  padding-left: 5%;
+  /*padding-left: 5%;*/
   margin: 0 auto;
   padding-top: 2%;
-  width:90%;
+  /*width:90%;*/
   font-weight: 300;
   color: rgba(255,255,255,0.8);
   -webkit-transition: all 200ms ease;
@@ -19,7 +19,7 @@
   float: left;
   min-width: 15%;
   max-width: 30%;
-  margin: 3%;
+  margin: 1%;
   font-size: 0;
 }
 .masonry-brick p{
