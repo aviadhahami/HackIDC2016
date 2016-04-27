@@ -11,9 +11,10 @@ angular.module('hackIdcApp')
         },
         link: function (scope, element, attrs) {
           var isoOpts = {
-            percentPosition: true
+            // percentPosition: true,
+            // transitionDuration: '0.8s'
           };
-          scope.$emit('iso-option', isoOpts);
+          // scope.$emit('iso-option', {'percentPosition': 'true'});
           scope.sponsorsData = sponsorsApiGetter.getData();
           scope.isMobile = isMobile.isMobile();
           scope.bricks=  scope.sponsorsData;
