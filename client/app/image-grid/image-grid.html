@@ -30,7 +30,7 @@
     <h1 class="md-headline five-vim" style="line-height: 1.2" ng-bind="brick.prizeTitle"></h1>
     <p class="md-headline" style="text-align: center">By {{brick.companyName}}</p>>
     <div ng-show="brick.toggle" class="brick-data" ng-style="{'width':isMobile?'80%':''}">
-      <p class="md-headline" ng-bind-html="brick.info" ng-style="{'text-align':brick.info=='TBD' ? 'center' : ''}"></p>
+      <p class="{{isMobile?'md-subhead':'md-headline'}}" ng-bind-html="brick.info" ng-style="{'text-align':brick.info=='TBD' ? 'center' : ''}"></p>
       <a href="{{brick.apiLink}}" ng-if="brick.apiLink" class="api-link md-headline" target="_blank">{{brick.companyName}}'s API</a>
     </div>
   </div>
