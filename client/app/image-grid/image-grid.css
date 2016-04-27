@@ -5,10 +5,8 @@
   list-style: none;
 }
 .isotope-item{
-  /*width: 200px;*/
   max-width: 40%;
-  /*max-height: 30%;*/
-  margin: 5px;
+  margin: 2%;
   float: left;
   overflow: hidden;
 }
