@@ -1,6 +1,6 @@
 .masonry-container{
   /*padding-left: 5%;*/
-  margin: 0 auto;
+  margin: auto;
   padding-top: 2%;
   /*width:90%;*/
   font-weight: 300;
@@ -14,6 +14,11 @@
 .masonry-brick-mobile{
   margin: 5px auto;
   font-size: 0;
+}
+.masonry-brick-mobile:before{
+  content: ' ';
+  display: block;
+  height: 80px ;
 }
 .masonry-brick{
   float: left;

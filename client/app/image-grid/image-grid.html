@@ -22,7 +22,7 @@
 <!--</div>-->
 
 <div masonry
-     masonry-options="{fitWidth: true, columnWidth:'200px',transitionDuration: '40ms'}"
+     masonry-options="{fitWidth: true, columnWidth:'120',transitionDuration: '40ms'}"
      item-selector="{{isMobile?'.masonry-brick-mobile':'.masonry-brick'}}"
      class="masonry-container" reload-on-show reload-on-resize>
   <div ng-class="{'masonry-brick':!isMobile,'masonry-brick-mobile':isMobile}" ng-repeat="brick in bricks" ng-click="brick.toggle = !brick.toggle">
