@@ -12,7 +12,7 @@ angular.module('hackIdcApp')
         link: function (scope, element, attrs) {
           scope.sponsorsData = sponsorsApiGetter.getData();
           scope.isMobile = isMobile.isMobile();
-          scope.bricks =  scope.sponsorsData;
+          scope.bricks=  scope.sponsorsData;
 
         }
 
