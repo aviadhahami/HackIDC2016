@@ -425,14 +425,13 @@
 
   <section class="footer" ng-style="{'min-height':isMobile? '80vh':'37vh'}">
     <div layout="row" class="text-center" ng-if="!isMobile">
-      <div class="inline-flex" flex="40">
+      <div class="inline-flex" layout="column" layout-align="center center" flex="40">
         <a href="http://portal.idc.ac.il/en/schools/entrepreneurship/homepage/pages/homepage.aspx" target="_blank" class="margin-auto" >
           <img style="max-width:90%" ng-class="{'small-footer-logo':isMobile}" class="footer-logo" src="../../assets/logos/idc-entre-effi.png" alt="">
         </a>
       </div>
       <div layout="column"  class="inline-flex" flex>
-        <div flex="10"></div>
-        <div layout="column" layout-align="center center" flex="20" class="margin-auto" >
+        <div layout="column" layout-align="center center" style="height: 110px;" class="margin-auto" >
           <p class=" md-headline  three-vim mc-white weight-300">Contact us at <a class="mc-light-blue" href="mailto:contact@hackidc.com">contact@hackidc.com</a></p>
         </div>
         <div flex layout="row"  layout-align="space-around center" class="margin-auto" >
