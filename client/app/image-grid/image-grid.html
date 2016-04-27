@@ -1,26 +1,3 @@
-<!--<div layout="column" layout-gt-sm="row">-->
-<!--<div layout="column" class="prize-card hundred-pre-height" ng-repeat="brick in sponsorsData track by $index">-->
-<!--<div style="height:33%;">-->
-<!--<img class="image-grid-prize-image" ng-src="{{brick.prizePicSrc}}" alt="{{brick.companyName}}'s prize photo" >-->
-<!--</div>-->
-<!--<div  style="min-height: 100px;height:10%;">-->
-<!--<p class="md-display-1 prizes-title" ng-bind="brick.prizeTitle"></p>-->
-<!--</div>-->
-<!--<div style="height: 5%;;" layout="column" layout-align="center center">-->
-<!--<br>-->
-<!--<p class="md-subhead prizes-company-name">By {{brick.companyName}}</p>-->
-<!--</div>-->
-<!--<div ng-if="brick.info.length>0">-->
-<!--<div style="height: 100%;" ng-show="tiles[$index]" class="stuff-to-show">-->
-<!--<p class="prize-card-content md-headline mc-white weight-300" ng-bind-html="brick.info" ng-style="{'text-align':brick.info === 'TBD' ? 'center' : 'justify'}"></p>-->
-<!--<a class="prize-link-href md-headline weight-300 mc-white" ng-href="{{brick.apiLink}}" target="_blank">{{brick.companyName}}'s API</a>-->
-<!--</div>-->
-<!--<i ng-click="toggleBrick($event,$index);toggleChevron($index)" class="fa fa-2x mc-white {{chevrons[$index]}}"></i>-->
-
-<!--</div>-->
-<!--</div>-->
-<!--</div>-->
-
 <div masonry
      masonry-options="{fitWidth: true, columnWidth:'120',isAnimated: true}"
      item-selector="{{isMobile?'.masonry-brick-mobile':'.masonry-brick'}}"
