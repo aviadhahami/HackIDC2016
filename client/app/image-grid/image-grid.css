@@ -5,10 +5,18 @@
   list-style: none;
 }
 .isotope-item{
-  max-width:300px;
+  /*max-width:40%;*/
+  min-width:40vw;
+  max-width: 300px;
   margin: 2%;
   float: left;
   overflow: hidden;
+  text-align: left;
+}
+.expand{
+  width:500px;
+  /*width:400px;*/
+  /*height: auto;*/
 }
 .brick-img{
   height:40vw;

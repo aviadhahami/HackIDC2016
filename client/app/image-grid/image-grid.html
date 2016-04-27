@@ -13,7 +13,7 @@
 <!--</div>-->
 <!--</div>-->
 <ul isotope-container="isotope-container" class="isotope-container">
-  <li ng-repeat="brick in bricks" isotope-item="isotope-item" class="isotope-item" ng-click="toggle(brick)">
+  <li ng-repeat="brick in bricks" isotope-item="isotope-item" ng-class="brick.toggle ? 'expand' : 'collapsed'" class="isotope-item" ng-click="toggle(brick)">
     <div>
       <img class="brick-img" src="{{brick.prizePicSrc}}" alt="">
     </div>
