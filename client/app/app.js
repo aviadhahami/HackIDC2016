@@ -10,7 +10,6 @@ angular.module('hackIdcApp', [
     'ngMaterial',
     'duScroll',
     'ng-mfb',
-    'ngFitText',
     'angular-table'
   ])
   .config(function($mdIconProvider) {
