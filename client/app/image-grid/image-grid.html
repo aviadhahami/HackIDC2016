@@ -22,14 +22,14 @@
 <!--</div>-->
 
 <div masonry
-     masonry-options="{fitWidth: true, columnWidth:'120',transitionDuration: '40ms'}"
+     masonry-options="{fitWidth: true, columnWidth:'120'}"
      item-selector="{{isMobile?'.masonry-brick-mobile':'.masonry-brick'}}"
      class="masonry-container" reload-on-show reload-on-resize>
   <div ng-class="{'masonry-brick':!isMobile,'masonry-brick-mobile':isMobile}" ng-repeat="brick in bricks" ng-click="brick.toggle = !brick.toggle">
     <img src="{{brick.prizePicSrc}}" alt="">
     <h1 class="md-headline five-vim" style="line-height: 1.2" ng-bind="brick.prizeTitle"></h1>
     <p class="md-headline" style="text-align: center">By {{brick.companyName}}</p>>
-    <div ng-show="brick.toggle" class="brick-data">
+    <div ng-show="brick.toggle" class="brick-data" ng-style="{'width':isMobile?'80%':''}">
       <p class="md-headline" ng-bind-html="brick.info" ng-style="{'text-align':brick.info=='TBD' ? 'center' : ''}"></p>
       <a href="{{brick.apiLink}}" ng-if="brick.apiLink" class="api-link md-headline" target="_blank">{{brick.companyName}}'s API</a>
     </div>

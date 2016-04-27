@@ -26,6 +26,11 @@
   max-width: 30%;
   margin: 1%;
   font-size: 0;
+  tion: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -o-transition:  all 200ms ease;
+  transition: all 200ms ease;
+
 }
 .masonry-brick p{
   font-weight: 300;
@@ -71,6 +76,9 @@
   text-align: center;
 }
 
+.brick-data{
+  margin:auto;
+}
 
 .brick-data.ng-hide-add {
   -webkit-animation:0.5s hide;
