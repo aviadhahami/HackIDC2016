@@ -79,6 +79,13 @@
 .brick-data{
   margin:auto;
 }
+.item{
+  -webkit-transition: left 1s ease-in-out, top 1s ease-in-out 1s;
+  -moz-transition: left 1s ease-in-out, top 1s ease-in-out 1s;
+  -ms-transition: left 1s ease-in-out, top 1s ease-in-out 1s;
+  -o-transition: left 1s ease-in-out, top 1s ease-in-out 1s;
+  transition: left 1s ease-in-out, top 1s ease-in-out 1s;
+}
 
 .brick-data.ng-hide-add {
   -webkit-animation:0.5s hide;

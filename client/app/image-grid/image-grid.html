@@ -22,10 +22,10 @@
 <!--</div>-->
 
 <div masonry
-     masonry-options="{fitWidth: true, columnWidth:'120'}"
+     masonry-options="{fitWidth: true, columnWidth:'120',isAnimated: true}"
      item-selector="{{isMobile?'.masonry-brick-mobile':'.masonry-brick'}}"
      class="masonry-container" reload-on-show reload-on-resize>
-  <div ng-class="{'masonry-brick':!isMobile,'masonry-brick-mobile':isMobile}" ng-repeat="brick in bricks" ng-click="brick.toggle = !brick.toggle">
+  <div class="item" ng-class="{'masonry-brick':!isMobile,'masonry-brick-mobile':isMobile}" ng-repeat="brick in bricks" ng-click="brick.toggle = !brick.toggle">
     <img src="{{brick.prizePicSrc}}" alt="">
     <h1 class="md-headline five-vim" style="line-height: 1.2" ng-bind="brick.prizeTitle"></h1>
     <p class="md-headline" style="text-align: center">By {{brick.companyName}}</p>>
