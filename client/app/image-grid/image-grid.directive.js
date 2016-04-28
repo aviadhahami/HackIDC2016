@@ -1,8 +1,8 @@
 'use strict';
 
 angular.module('hackIdcApp')
-  .directive('imageGrid',['isMobile','sponsorsApiGetter','$timeout',
-    function (isMobile,sponsorsApiGetter,$timeout) {
+  .directive('imageGrid',['isMobile','sponsorsApiGetter','$timeout','$window',
+    function (isMobile,sponsorsApiGetter,$timeout,$window) {
       return {
         templateUrl: 'app/image-grid/image-grid.html',
         restrict: 'E',
@@ -18,6 +18,20 @@ angular.module('hackIdcApp')
               layoutMode: 'masonry'
             });
           };
+          function updateHeightCFactor(){
+
+            scope.heightBiggerThanWidth = document.body.offsetHeight >document.body.offsetWidth;
+          }
+
+          
+          updateHeightCFactor();
+          var win = angular.element($window);
+          win.bind("resize",function(e){
+            updateHeightCFactor();
+          });
+
+
+
           $timeout(isoOptions,1000);
           scope.sponsorsData = sponsorsApiGetter.getData();
           scope.isMobile = isMobile.isMobile();
