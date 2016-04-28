@@ -16,13 +16,13 @@ angular.module('hackIdcApp')
           scope.bricks=  scope.sponsorsData;
 
           // Forcing isotope render
-          // if(scope.isMobile ) {
-          //   var iso = angular.element(document.getElementById('isotope-container'));
-          //   iso.isotope({
-          //     layoutMode: 'masonry'
-          //
-          //   });
-          // }
+          if(scope.isMobile ) {
+            var iso = angular.element(document.getElementById('isotope-container'));
+            iso.isotope({
+              layoutMode: 'masonry'
+
+            });
+          }
 
           var isoOptions = function(){
             scope.$emit('iso-option', {
