@@ -11,22 +11,22 @@ angular.module('hackIdcApp')
         },
         link: function (scope, element, attrs) {
 
-          // Forcing isotope render
-          var iso = angular.element(document.getElementById('isotope-container'));
-          iso.isotope({});
+
 
           var isoOptions = function(){
+            // Forcing isotope render
+            angular.element(document.getElementById('isotope-container')).isotope();
             scope.$emit('iso-option', {
               layoutMode: 'masonry'
             });
           };
+          $timeout(isoOptions,50);
 
           var emitLayout = function () {
             scope.$emit('iso-method', {name:'layout',params:null});
           };
 
 
-          $timeout(isoOptions,50);
           scope.sponsorsData = sponsorsApiGetter.getData();
           scope.isMobile = isMobile.isMobile();
           scope.bricks=  scope.sponsorsData;
