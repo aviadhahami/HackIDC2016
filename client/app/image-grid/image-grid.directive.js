@@ -10,17 +10,25 @@ angular.module('hackIdcApp')
           data: '='
         },
         link: function (scope, element, attrs) {
-          var emitLayout = function () {
-            scope.$emit('iso-method', {name:'layout',params:null});
-          };
+
+          // Forcing isotope render
+          var iso = angular.element(document.getElementById('isotope-container'));
+          iso.isotope({
+            layoutMode: 'masonry'
+          });
+
           var isoOptions = function(){
             scope.$emit('iso-option', {
               layoutMode: 'masonry'
             });
           };
 
+          var emitLayout = function () {
+            scope.$emit('iso-method', {name:'layout',params:null});
+          };
 
-          $timeout(isoOptions,1000);
+
+          $timeout(isoOptions,50);
           scope.sponsorsData = sponsorsApiGetter.getData();
           scope.isMobile = isMobile.isMobile();
           scope.bricks=  scope.sponsorsData;
@@ -29,7 +37,6 @@ angular.module('hackIdcApp')
 
 
           scope.isLandscape = scope.isMobile && (document.body.offsetHeight < document.body.offsetWidth);
-          console.log(scope.isLandscape)
           var win = angular.element($window);
           win.bind("resize",function(e){
             scope.isLandscape = scope.isMobile && (document.body.offsetHeight < document.body.offsetWidth);

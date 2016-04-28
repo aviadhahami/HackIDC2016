@@ -12,7 +12,7 @@
 <!--</div>-->
 <!--</div>-->
 <!--</div>-->
-<ul isotope-container="isotope-container" class="isotope-container" ng-class="{'landscape':isLandscape}">
+<ul isotope-container="isotope-container" id="isotope-container" class="isotope-container" ng-class="{'landscape':isLandscape}">
   <li ng-repeat="brick in bricks" isotope-item="isotope-item" class="isotope-item {{brick.toggle?'large':''}} {{isMobile?'mobile-brick':''}}">
     <div ng-click="toggle(brick)" class="no-outline">
       <div>
