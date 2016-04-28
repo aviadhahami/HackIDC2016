@@ -18,24 +18,24 @@ angular.module('hackIdcApp')
               layoutMode: 'masonry'
             });
           };
-          function updateHeightFactor(){
-
-            scope.heightBiggerThanWidth = document.body.offsetHeight >document.body.offsetWidth;
-          }
-          updateHeightFactor();
-
-          var win = angular.element($window);
-          win.bind("resize",function(e){
-          console.log('event!');
-            updateHeightFactor();
-          });
-
 
 
           $timeout(isoOptions,1000);
           scope.sponsorsData = sponsorsApiGetter.getData();
           scope.isMobile = isMobile.isMobile();
           scope.bricks=  scope.sponsorsData;
+
+
+
+
+          scope.isLandscape = scope.isMobile && (document.body.offsetHeight < document.body.offsetWidth);
+          console.log(scope.isLandscape)
+          var win = angular.element($window);
+          win.bind("resize",function(e){
+            scope.isLandscape = scope.isMobile && (document.body.offsetHeight < document.body.offsetWidth);
+          });
+
+
 
           scope.toggle = function(brick){
             brick.toggle = !brick.toggle;

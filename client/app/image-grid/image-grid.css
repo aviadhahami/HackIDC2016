@@ -1,12 +1,10 @@
 .isotope-container{
   margin: auto;
   padding: 0;
+  width:90%;
 }
 .landscape{
-  width:75%;
-}
-.portrait{
-  width:90%;
+  width: 75%!important;
 }
 .isotope-container ul li{
   list-style: none;
