@@ -1,8 +1,8 @@
 'use strict';
 
 angular.module('hackIdcApp')
-  .directive('imageGrid',['isMobile','sponsorsApiGetter',
-    function (isMobile,sponsorsApiGetter) {
+  .directive('imageGrid',['isMobile','sponsorsApiGetter','$timeout',
+    function (isMobile,sponsorsApiGetter,$timeout) {
       return {
         templateUrl: 'app/image-grid/image-grid.html',
         restrict: 'E',
@@ -10,22 +10,17 @@ angular.module('hackIdcApp')
           data: '='
         },
         link: function (scope, element, attrs) {
-
           scope.sponsorsData = sponsorsApiGetter.getData();
           scope.isMobile = isMobile.isMobile();
           scope.bricks=  scope.sponsorsData;
+          var emitLayout = function () {
+            scope.$emit('iso-method', {name:'layout',params:null});
 
-          scope.$emit('iso-option', {
-            percentPosition: true,
-            transitionDuration: '0.2s',
-            masonry: {
-              columnWidth: 100
-            }
-          });
+          };
+
           scope.toggle = function(brick){
             brick.toggle = !brick.toggle;
-            scope.$emit('iso-method', {name:'layout', params:null});
-
+            $timeout(emitLayout, 50);
           }
         }
 
