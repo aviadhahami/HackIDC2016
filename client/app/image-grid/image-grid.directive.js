@@ -10,17 +10,22 @@ angular.module('hackIdcApp')
           data: '='
         },
         link: function (scope, element, attrs) {
+          var emitLayout = function () {
+            scope.$emit('iso-method', {name:'layout',params:null});
+          };
+          var isoOptions = function(){
+            scope.$emit('iso-option', {
+              layoutMode: 'masonry'
+            });
+          };
+          $timeout(isoOptions,1000);
           scope.sponsorsData = sponsorsApiGetter.getData();
           scope.isMobile = isMobile.isMobile();
           scope.bricks=  scope.sponsorsData;
-          var emitLayout = function () {
-            scope.$emit('iso-method', {name:'layout',params:null});
-
-          };
 
           scope.toggle = function(brick){
             brick.toggle = !brick.toggle;
-            $timeout(emitLayout, 50);
+            $timeout(emitLayout, 350);
           }
         }
 

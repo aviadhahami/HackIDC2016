@@ -13,7 +13,7 @@
 <!--</div>-->
 <!--</div>-->
 <ul isotope-container="isotope-container" class="isotope-container">
-  <li ng-repeat="brick in bricks" id={{brick.id}} isotope-item="isotope-item" class="isotope-item" ng-click="toggle(brick)">
+  <li ng-repeat="brick in bricks" isotope-item="isotope-item" class="isotope-item {{brick.toggle?'large':''}}" ng-click="toggle(brick)">
     <div>
       <img class="brick-img" src="{{brick.prizePicSrc}}" alt="">
     </div>
@@ -21,7 +21,7 @@
       <h1 class="md-headline" ng-bind="brick.prizeTitle"></h1>
       <p class="md-headline">By {{brick.companyName}}</p>
     </div>
-    <div ng-show="brick.toggle">
+    <div ng-show="brick.toggle" class="brick-hidden">
       <p class="{{isMobile?'md-subhead':'md-headline'}}" ng-bind-html="brick.info" ng-style="{'text-align':brick.info=='TBD' ? 'center' : 'justify'}"></p>
     </div>
   </li>

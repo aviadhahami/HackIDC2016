@@ -4,6 +4,9 @@
 .isotope-container ul li{
   list-style: none;
 }
+.isotope-item:focus{
+  outline: none;
+}
 .isotope-item{
   min-width:20vw;
   max-width: 300px;
@@ -11,6 +14,12 @@
   float: left;
   overflow: hidden;
 }
+.isotope-item.large{
+  /*padding: 2%;*/
+  /*border:1px solid white;*/
+  /*border-radius: 20px;*/
+}
+
 .brick-img{
   height:40vw;
   width:40vw;
@@ -18,3 +27,51 @@
   max-width: 300px;
   border-radius: 500px;
 }
+
+.brick-hidden.ng-hide-add {
+  -webkit-animation:0.3s hide;
+  animation:0.3s hide;
+}
+
+
+.brick-hidden.ng-hide-remove {
+  -webkit-animation:0.3s show;
+  animation:0.3s show;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
