@@ -1,5 +1,7 @@
 .isotope-container{
   margin: auto;
+  padding: 0;
+  width:90%;
 }
 .isotope-container ul li{
   list-style: none;
@@ -10,7 +12,7 @@
 .isotope-item{
   min-width:20vw;
   max-width: 450px;
-  margin: 2%;
+  margin: 3%;
   float: left;
   overflow: hidden;
   color: rgba(255,255,255,0.85);

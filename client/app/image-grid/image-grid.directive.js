@@ -25,6 +25,7 @@ angular.module('hackIdcApp')
 
           scope.toggle = function(brick){
             brick.toggle = !brick.toggle;
+
             // IMPORTANT! timeout MUST be larger than animation time!
             $timeout(emitLayout, 350);
           }
