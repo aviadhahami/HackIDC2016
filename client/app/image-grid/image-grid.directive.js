@@ -11,11 +11,20 @@ angular.module('hackIdcApp')
         },
         link: function (scope, element, attrs) {
 
+          scope.sponsorsData = sponsorsApiGetter.getData();
+          scope.isMobile = isMobile.isMobile();
+          scope.bricks=  scope.sponsorsData;
 
+          // Forcing isotope render
+          if(scope.isMobile ) {
+            var iso = angular.element(document.getElementById('isotope-container'));
+            iso.isotope({
+              layoutMode: 'masonry'
+
+            });
+          }
 
           var isoOptions = function(){
-            // Forcing isotope render
-            angular.element(document.getElementById('isotope-container')).isotope();
             scope.$emit('iso-option', {
               layoutMode: 'masonry'
             });
@@ -26,21 +35,11 @@ angular.module('hackIdcApp')
             scope.$emit('iso-method', {name:'layout',params:null});
           };
 
-
-          scope.sponsorsData = sponsorsApiGetter.getData();
-          scope.isMobile = isMobile.isMobile();
-          scope.bricks=  scope.sponsorsData;
-
-
-
-
           scope.isLandscape = scope.isMobile && (document.body.offsetHeight < document.body.offsetWidth);
           var win = angular.element($window);
           win.bind("resize",function(e){
             scope.isLandscape = scope.isMobile && (document.body.offsetHeight < document.body.offsetWidth);
           });
-
-
 
           scope.toggle = function(brick){
             brick.toggle = !brick.toggle;
