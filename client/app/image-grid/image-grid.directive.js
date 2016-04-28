@@ -13,9 +13,7 @@ angular.module('hackIdcApp')
 
           // Forcing isotope render
           var iso = angular.element(document.getElementById('isotope-container'));
-          iso.isotope({
-            layoutMode: 'masonry'
-          });
+          iso.isotope({});
 
           var isoOptions = function(){
             scope.$emit('iso-option', {
