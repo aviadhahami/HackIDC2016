@@ -18,16 +18,16 @@ angular.module('hackIdcApp')
               layoutMode: 'masonry'
             });
           };
-          function updateHeightCFactor(){
+          function updateHeightFactor(){
 
             scope.heightBiggerThanWidth = document.body.offsetHeight >document.body.offsetWidth;
           }
+          updateHeightFactor();
 
-          
-          updateHeightCFactor();
           var win = angular.element($window);
           win.bind("resize",function(e){
-            updateHeightCFactor();
+          console.log('event!');
+            updateHeightFactor();
           });
 
 
