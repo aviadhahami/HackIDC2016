@@ -14,7 +14,7 @@
 }
 .isotope-item{
   min-width:20vw;
-  max-width: 450px;
+  max-width: 300px;
   margin: 3%;
   float: left;
   overflow: hidden;
