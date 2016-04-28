@@ -13,16 +13,21 @@
 <!--</div>-->
 <!--</div>-->
 <ul isotope-container="isotope-container" class="isotope-container">
-  <li ng-repeat="brick in bricks" isotope-item="isotope-item" class="isotope-item {{brick.toggle?'large':''}}" ng-click="toggle(brick)">
-    <div>
-      <img class="brick-img" src="{{brick.prizePicSrc}}" alt="">
-    </div>
-    <div>
-      <h1 class="md-headline" ng-bind="brick.prizeTitle"></h1>
-      <p class="md-headline">By {{brick.companyName}}</p>
+  <li ng-repeat="brick in bricks" isotope-item="isotope-item" class="isotope-item {{brick.toggle?'large':''}} {{isMobile?'mobile-brick':''}}">
+    <div ng-click="toggle(brick)" class="no-outline">
+      <div>
+        <img class="brick-img" src="{{brick.prizePicSrc}}" alt="">
+      </div>
+      <div>
+        <h1 class="md-headline" ng-bind="brick.prizeTitle"></h1>
+        <p class="md-headline">By {{brick.companyName}}</p>
+      </div>
     </div>
     <div ng-show="brick.toggle" class="brick-hidden">
-      <p class="{{isMobile?'md-subhead':'md-headline'}}" ng-bind-html="brick.info" ng-style="{'text-align':brick.info=='TBD' ? 'center' : 'justify'}"></p>
+      <p ng-click="toggle(brick)" class="{{isMobile?'md-subhead':'md-headline'}} no-outline" ng-bind-html="brick.info" ng-style="{'text-align':brick.info=='TBD' ? 'center' : 'justify'}"></p>
+      <a ng-href="{{brick.apiLink}}" target="_blank" class="brick-link" ng-if="brick.apiLink !== ''">
+        <p>{{brick.companyName}}'s API</p>
+      </a>
     </div>
   </li>
 </ul>
