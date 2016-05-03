@@ -47,12 +47,12 @@ angular.module('hackIdcApp')
             info:''
           },
           {
-            companyName:'RapidAPI',
-            prizePicSrc:'../../assets/icons/tbd.png',
+            companyName:'RapidAPI & eBay',
+            prizePicSrc:'../../assets/prizes-grid-photos/iphone.png',
             companyLogoSrc:'../../assets/logos/rapid-api-logo.png',
-            apiLink:'',
+            apiLink:'http://goo.gl/n3abYC',
             prizeTitle:'Secret Prize',
-            info:'TBD'
+            info:'Want to pitch your Idea to <b>Ebay leaders</b> and to get new iPhones for you and for your team? RapidAPI and Ebay happy to present their challenge'
           }
         ];
         return data;
