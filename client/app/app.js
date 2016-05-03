@@ -10,9 +10,8 @@ angular.module('hackIdcApp', [
     'ngMaterial',
     'duScroll',
     'ng-mfb',
-    'ngFitText',
     'angular-table',
-    'wu.masonry'
+    'iso.directives'
   ])
   .config(function($mdIconProvider) {
     $mdIconProvider
