@@ -30,6 +30,14 @@ angular.module('hackIdcApp')
             info:'Participants will have a chance to create innovative applications for MyMe.<br> The winning team with the most innovative app will be flown to Zurich to attend the largest hackathon in Europe, and a vacation.'
           },
           {
+            companyName:'RapidAPI & eBay',
+            prizePicSrc:'../../assets/prizes-grid-photos/iphone.png',
+            companyLogoSrc:'../../assets/logos/rapid-api-logo.png',
+            apiLink:'http://goo.gl/n3abYC',
+            prizeTitle:'New iPhones for the whole team',
+            info:'Want to pitch your Idea to <b>Ebay leaders</b> and to get new iPhones for you and for your team? RapidAPI and Ebay happy to present their challenge'
+          },
+          {
             companyName:'Produvia',
             prizePicSrc:'../../assets/prizes-grid-photos/pi.png',
             companyLogoSrc:'../../assets/logos/produvia.png',
@@ -45,14 +53,6 @@ angular.module('hackIdcApp')
             prizeTitle:'iPad mini 4',
             // info:'Offers a variety of Logistic activities and acts not only as an Operator, but also as a lead player in the supply chain management arena.<br>We are here to offer start-up our advanced logistics services',
             info:''
-          },
-          {
-            companyName:'RapidAPI & eBay',
-            prizePicSrc:'../../assets/prizes-grid-photos/iphone.png',
-            companyLogoSrc:'../../assets/logos/rapid-api-logo.png',
-            apiLink:'http://goo.gl/n3abYC',
-            prizeTitle:'New iPhones for the whole team',
-            info:'Want to pitch your Idea to <b>Ebay leaders</b> and to get new iPhones for you and for your team? RapidAPI and Ebay happy to present their challenge'
           }
         ];
         return data;
