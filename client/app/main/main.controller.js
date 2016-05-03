@@ -283,10 +283,8 @@ angular.module('hackIdcApp')
         {
           iconClass: 'fa-calendar',
           label : 'Schedules',
-          action : function(){
-            $location.path( '/schedule' );
-          },
-          actionArgs: '',
+          action :$scope.scrollTo,
+          actionArgs: 'schedule',
           bgColor: '#2185D5'
         },
         {
