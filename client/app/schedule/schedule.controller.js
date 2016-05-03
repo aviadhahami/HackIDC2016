@@ -26,27 +26,27 @@ angular.module('hackIdcApp')
         {
           what:'Lunch',
           when:'13:00',
-          where:'IDC Campus'
+          where:'Outside Psychology Building'
         },
         {
           what:'How To Pitch',
           when:'15:00',
-          where:'IDC Campus'
+          where:'PEB20'
         },
         {
           what:'Friday Dinner',
           when:'19:30',
-          where:'IDC Campus'
+          where:'Outside Psychology Building'
         },
         {
           what:'Midnight Meal',
           when:'00:30',
-          where:'IDC Campus'
+          where:'Outside Psychology Building'
         },
         {
           what:'Surprise Snack',
           when:'03:00',
-          where:'IDC Campus'
+          where:'Psychology Building Lobby'
         }
       ];
 
@@ -54,42 +54,42 @@ angular.module('hackIdcApp')
         {
           what:'Breakfast',
           when:'07:00',
-          where:'IDC Campus'
+          where:'Outside Psychology Building'
         },
         {
           what:'Yoga Session',
           when:'09:30',
-          where:'IDC Campus'
+          where:'Outside Arison Building'
         },
         {
           what:'Lunch',
           when:'12:00',
-          where:'IDC Campus'
+          where:'Outside Psychology Building'
         },
         {
           what:'Snack',
           when:'16:00',
-          where:'IDC Campus'
+          where:'Outside Psychology Building'
         },
         {
           what:'Hacking Ends',
           when:'17:30',
-          where:'IDC Campus'
+          where:'Psychology Building'
         },
         {
           what:'Judging Round 1',
           when:'18:00',
-          where:'IDC Campus'
+          where:'Psychology Building'
         },
         {
           what:'Dinner',
           when:'19:00',
-          where:'IDC Campus'
+          where:'Outside Psychology Building'
         },
         {
           what:'Final Judging and Closing Ceremony',
           when:'20:00',
-          where:'IDC Campus'
+          where:'PEB20'
         }
       ];
 
