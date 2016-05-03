@@ -11,17 +11,17 @@ angular.module('hackIdcApp')
         {
           what:'Registration',
           when:'08:00',
-          where:'IDC Campus'
+          where:'Psychology Building'
         },
         {
           what:'Opening Ceremony',
           when:'09:00',
-          where:'IDC Campus'
+          where:'PEB20'
         },
         {
           what:'Hacking Starts!',
           when:'10:00',
-          where:'IDC Campus'
+          where:'Psychology Building'
         },
         {
           what:'Lunch',
