@@ -11,7 +11,7 @@ angular.module('hackIdcApp')
         {
           what:'Registration',
           when:'08:00',
-          where:'Psychology Building'
+          where:'Psychology Building Lobby'
         },
         {
           what:'Opening Ceremony',
@@ -37,7 +37,11 @@ angular.module('hackIdcApp')
           what:'Friday Dinner',
           when:'19:30',
           where:'Outside Psychology Building'
-        },
+        }
+      ];
+
+      $scope.saturday = [
+
         {
           what:'Midnight Meal',
           when:'00:30',
@@ -47,10 +51,7 @@ angular.module('hackIdcApp')
           what:'Surprise Snack',
           when:'03:00',
           where:'Psychology Building Lobby'
-        }
-      ];
-
-      $scope.saturday = [
+        },
         {
           what:'Breakfast',
           when:'07:00',
