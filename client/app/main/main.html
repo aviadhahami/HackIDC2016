@@ -1,23 +1,23 @@
-  <div ng-controller="MainCtrl" layout="column" ng-cloak>
-    <header layout="row"  layout-align="center center"
-            data-header-scroll  ng-class="{min:boolChangeClass}" ng-if="!isMobile">
+<div ng-controller="MainCtrl" layout="column" ng-cloak>
+  <header layout="row"  layout-align="center center"
+          data-header-scroll  ng-class="{min:boolChangeClass}" ng-if="!isMobile">
 
-      <div class="transition-ease" ng-class="{'flex-10':boolChangeClass,'flex-0':!boolChangeClass}">
-        <figure>
-          <a href="#home" du-smooth-scroll>
-            <img id="hackidc-logo" ng-class="{'big-logo' : !boolChangeClass, 'small-logo' : boolChangeClass}" src="../../assets/logos/HerzelHeadWhite.png"  alt="">
-          </a>
-        </figure>
-      </div>
-      <div du-scrollspy="description" flex>
+    <div class="transition-ease" ng-class="{'flex-10':boolChangeClass,'flex-0':!boolChangeClass}">
+      <figure>
+        <a href="#home" du-smooth-scroll>
+          <img id="hackidc-logo" ng-class="{'big-logo' : !boolChangeClass, 'small-logo' : boolChangeClass}" src="../../assets/logos/HerzelHeadWhite.png"  alt="">
+        </a>
+      </figure>
+    </div>
+    <div du-scrollspy="description" flex>
         <span ng-class="{'md-display-1':!boolChangeClass}">
           <a href="#description" du-smooth-scroll>
             FAQ
             <div class="track-bar"></div></a>
           </a>
         </span>
-      </div>
-      <div du-scrollspy="sponsors" flex>
+    </div>
+    <div du-scrollspy="sponsors" flex>
         <span flex ng-class="{'md-display-1':!boolChangeClass}" layout="column">
           <a href="#sponsors" du-smooth-scroll>
             Sponsors
@@ -25,560 +25,558 @@
           </a>
 
         </span>
-      </div>
-      <div du-scrollspy="mentorship" flex>
+    </div>
+    <div du-scrollspy="mentorship" flex>
         <span flex ng-class="{'md-display-1':!boolChangeClass}" layout="column">
           <a href="#mentorship" du-smooth-scroll>
             Mentorship
             <div class="track-bar"></div>
           </a>
         </span>
-      </div>
-      <div du-scrollspy="prizes" flex>
+    </div>
+    <div du-scrollspy="prizes" flex>
         <span ng-class="{'md-display-1':!boolChangeClass}" layout="column">
           <a href="#prizes" du-smooth-scroll>
             Prizes
             <div class="track-bar"></div>
           </a>
         </span>
-      </div>
-      <div du-scrollspy="schedule" flex>
+    </div>
+    <div du-scrollspy="schedule" flex>
         <span flex ng-class="{'md-display-1':!boolChangeClass}" layout="column">
           <a href="#schedule" du-smooth-scroll style="color: #FF6F00;font-weight: bold;">
             Schedules
             <div class="track-bar"></div>
           </a>
         </span>
-      </div>
-
-
-
-    </header>
-
-    <mobile-nav
-      ng-if="isMobile"
-      links="mobileLinks"
-      trigger-fab-color="#1565C0"
-      bg-grid-color="rgba(1,1,1,0.9)"></mobile-nav>
-
-
-    <div id="main-page-content" class="md-padding">
-      <section id="home" class="md-padding">
-
-        <div ng-style="{'height': isMobile ? '10vh' : '20vh'}"></div>
-        <div id="home-content" class="md-padding text-center" layout="column" ng-style="{'max-width':isMobile? '90vw' : '50vw'}">
-          <div>
-            <img src="../../assets/logos/test.png" ng-style="{'width': isMobile? '90vw' : '50vw'}">
-
-          </div>
-
-          <h2 class="md-display-1 no-margins no-paddings five-vim" ng-bind="titles.eventDate" ></h2>
-
-          <div class="cta">
-            <a href="#description" du-smooth-scroll>
-              <p class="mc-white weight-300 five-vim margin-auto">Start hacking!</p>
-              <i class="fa fa-chevron-down fa-4x mc-white bounce"></i>
-            </a>
-          </div>
-        </div>
-
-
-
-
-      </section>
-      <section id="description" class="md-padding">
-        <div class="section-header">
-          <h2 class="md-display-4 section-title">{{titles.description}}</h2>
-
-          <p class="section-subtitle">{{content.descriptionContent}}</p>
-        </div>
-
-        <div id="description-cards">
-          <md-content class="md-padding">
-            <div layout-gt-sm="row" layout="column" id="top-questions">
-              <div flex class="card">
-                <div class="card-content">
-                  <h3 class="md-display-1 card-title" ng-class="{'three-vim':!isMobile,'five-vim':isMobile}">
-                    What is HackIDC?
-                  </h3>
-                  <p class="md-headline" ng-class="{'three-vim':!isMobile,'five-vim':isMobile}">
-                    HackIDC is Israel’s leading student Hackathon, held annually at IDC Herzliya.
-                    <br>
-                    It is a great opportunity to build something new and exciting, together with coding and design enthusiasts.
-                    <br>
-                    Students work in teams of up to five people for thirty-six hours to create a web, mobile, or hardware product.
-                  </p>
-                </div>
-              </div>
-              <div flex class="card" >
-                <div class="card-content ">
-                  <h3 class="md-display-1 card-title" ng-class="{'three-vim':!isMobile,'five-vim':isMobile}">Who can apply?</h3>
-                  <p class="md-headline" ng-class="{'three-vim':!isMobile,'five-vim':isMobile}">
-                    Any current student at any academic institution, majoring in any subject.
-                    <br>
-                    Most accepted participants come with some coding or design background, to make sure they can contribute to the event.
-                    <br>
-                    If you believe you are able to contribute in another way, we encourage you to apply.
-                  </p>
-                </div>
-              </div>
-
-              <div flex class="card" >
-                <div class="card-content">
-                  <h3 class="md-display-1 card-title" ng-class="{'three-vim':!isMobile,'five-vim':isMobile}">When can I apply?</h3>
-                  <p class="md-headline" ng-class="{'three-vim':!isMobile,'five-vim':isMobile}">
-                    Registration to the event is now closed.
-                    <br><br>
-                    Pre-Hack Day will be held on <b>Thursday, April 7th at 17:00 p.m.</b><br> We strongly recommend at least one member from each group to attend this day.
-                    <br>Details are sent to accepted participants.
-                    <br>
-                    The event will start at 08:00 a.m. on May 6th, and run until 22:00 p.m. on May 7th.
-                  </p>
-                </div>
-              </div>
-              <span id="showMore" style="width:0; height:0;"></span>
-            </div>
-
-            <md-button ng-show="!showQuestions"  ng-click="showQuestions = !showQuestions">
-              <div layout="column">
-                <p>Tell me more!</p>
-                <i class="fa fa-chevron-down fa-2x"></i>
-              </div>
-
-            </md-button>
-
-            <div class="box-one" layout-gt-sm="row" ng-show="showQuestions" id="collapse-questions" layout="column" ng-repeat="q in FAQ track by $index" ng-if="$index % 3 == 0">
-              <div flex class="card" ng-if="FAQ[$index]">
-                <div class="card-content">
-                  <h3 class="md-display-1 card-title" ng-class="{'three-vim':!isMobile,'five-vim':isMobile}" ng-bind="FAQ[$index].title"></h3>
-
-                  <p class="md-headline" ng-class="{'three-vim':!isMobile,'five-vim':isMobile}" ng-bind-html="FAQ[$index].content"></p>
-                </div>
-              </div>
-              <div flex class="card" ng-if="FAQ[$index+1]">
-                <div class="card-content ">
-                  <h3 class="md-display-1 card-title" ng-class="{'three-vim':!isMobile,'five-vim':isMobile}" ng-bind="FAQ[$index+1].title"></h3>
-
-                  <p class="md-headline" ng-class="{'three-vim':!isMobile,'five-vim':isMobile}" ng-bind-html="FAQ[$index+1].content"></p>
-                </div>
-              </div>
-
-              <div flex class="card" ng-if="FAQ[$index+2]">
-                <div class="card-content">
-                  <h3 class="md-display-1 card-title" ng-class="{'three-vim':!isMobile,'five-vim':isMobile}" ng-bind="FAQ[$index+2].title"></h3>
-
-                  <p class="md-headline" ng-class="{'three-vim':!isMobile,'five-vim':isMobile}" ng-bind-html="FAQ[$index+2].content"></p>
-                </div>
-              </div>
-            </div>
-            <md-button class="" ng-show="showQuestions" ng-click="showQuestions = !showQuestions; scrollTo('showMore')">
-              <div layout="column">
-                <p>Ok, got it, close this scroll-scroll</p>
-                <i class="fa fa-chevron-up fa-2x"></i>
-              </div>
-
-            </md-button>
-          </md-content>
-        </div>
-      </section>
-      <section id="sponsors"  class="md-padding">
-        <div class="section-header">
-          <h2 class="md-display-4 section-title">{{titles.sponsors}}</h2>
-
-          <p class="section-subtitle">{{content.sponsorsSub}}</p>
-        </div>
-
-        <div layout="column">
-          <div layout="row">
-
-            <div flex layout="column">
-
-              <div flex layout="column">
-                <p class="cohost-text md-headline">Co-Hosted by</p>
-                <br>
-                <a href="http://www.amadeus.co.il/" title="Amadeus" target="_blank">
-                  <img src="../../assets/logos/amadeus_logo_transparent.png" class="cohost-logo" alt="amadeus">
-                </a>
-                <div style="height: 2vh;"></div>
-                <a href="https://www.palantir.com/" title="Palantir" target="_blank">
-                  <img src="../../assets/logos/palantir-logo.png" class="platinum-logo" alt="Palantir">
-                </a>
-              </div>
-              <div class="padd-top-5vh">
-                <!--<h2 class="lines-before lines-after"> Silver </h2>-->
-                <div flex="" layout="column" layout-gt-sm="row" layout-align="center center">
-                  <a href="http://myme.orcam.com/" title="Orcam"  target="_blank">
-                    <img src="../../assets/logos/orcam.png" ng-class="{'gold-spons-small': isMobile, 'gold-spons': !isMobile}" alt="Orcam">
-                  </a>
-                </div>
-
-                <div flex layout="column" layout-gt-sm="row" layout-align="center center">
-                  <a href="https://www.backand.com/" title="Back&"  target="_blank">
-                    <img src="../../assets/logos/backand-logo.png" ng-class="{'silver-spons-small': isMobile, 'silver-spons': !isMobile}" alt="Back&">
-                  </a>
-                  <a href="https://rapidapi.com/" title="Rapid API" target="_blank">
-                    <img ng-style="{'width': isMobile? '14vw' : '7vw'}" src="../../assets/logos/rapid-api-logo.png" ng-class="{'silver-spons-small': isMobile, 'silver-spons': !isMobile}" alt="Rapid API">
-                  </a>
-                  <a href="https://google.com/" title="Google" target="_blank">
-                    <img src="../../assets/logos/google-logo.png" ng-class="{'silver-spons-small': isMobile, 'silver-spons': !isMobile}" alt="Google">
-                  </a>
-                </div>
-              </div>
-              <div  ng-class="{'padd-top-5vh':!isMobile}">
-                <div flex layout="column" layout-gt-sm="row" layout-align="center center">
-                  <a href="https://www.flying-cargo.com/he" title="Flying Cargo"  target="_blank">
-                    <img ng-style="{'width': isMobile? '14vw' : '7vw'}" src="../../assets/logos/fc_logo.png" ng-class="{'silver-spons-small': isMobile, 'silver-spons': !isMobile}" alt="Flying Cargo">
-                  </a>
-                  <a href="https://www.microsoft.com/he-il/" title="Microsoft"  target="_blank">
-                    <img ng-style="{'width': isMobile? '22vw' : '14vw'}" src="../../assets/logos/microsoft-logo.png" ng-class="{'silver-spons-small': isMobile, 'silver-spons': !isMobile}" alt="Microsoft">
-                  </a>
-                  <a href="http://www.dominos.co.il/" title="Dominos Pizza"  target="_blank">
-                    <img ng-style="{'width': isMobile? '14vw' : '7vw'}" src="../../assets/logos/dominos-logo.png" ng-class="{'silver-spons-small': isMobile, 'silver-spons': !isMobile}" alt="Dominos Pizza">
-                  </a>
-                </div>
-              </div>
-              <div  ng-class="{'padd-top-5vh':!isMobile}">
-                <div flex layout="column" layout-gt-sm="row" layout-align="center center">
-                  <a href="http://thehivepro.com/" title="The Hive Studio"  target="_blank">
-                    <img ng-style="{'width': isMobile? '14vw' : '7vw'}" src="../../assets/logos/the-hive-studio.png" ng-class="{'silver-spons-small': isMobile, 'silver-spons': !isMobile}" alt="The Hive Studio">
-                  </a>
-                  <a href="https://www.ebay.com/" title="eBay" target="_blank">
-                    <img ng-style="{'width': isMobile? '22vw' : '14vw'}" src="../../assets/logos/ebay.png" ng-class="{'silver-spons-small': isMobile, 'silver-spons': !isMobile}" alt="ebay">
-                  </a>
-                  <a href="http://www.checkpoint.com/" title="CheckPoint"  target="_blank">
-                    <img ng-style="{'width': isMobile? '30vw' : '18vw'}" src="../../assets/logos/checkpoint.png" ng-class="{'silver-spons-small': isMobile, 'silver-spons': !isMobile}" alt="CheckPoint">
-                  </a>
-                </div>
-              </div>
-              <div ng-class="{'padd-top-5vh':!isMobile}">
-                <div flex layout="column" layout-gt-sm="row" layout-align="center center">
-                  <a href="http://www.blu4lifeusa.com/" title="Blu"  target="_blank">
-                    <img ng-style="{'width': isMobile? '14vw' : '7vw'}" src="../../assets/logos/blue-logo.png" ng-class="{'bronze-spons-small': isMobile, 'bronze-spons': !isMobile}" alt="Blu">
-                  </a>
-                  <a href="https://www.bizzabo.com/" title="Bizzabo"  target="_blank">
-                    <img ng-style="{'width': isMobile? '14vw' : '7vw'}" src="../../assets/logos/bizzabo.png" ng-class="{'bronze-spons-small': isMobile, 'bronze-spons': !isMobile}" alt="Bizzabo">
-                  </a>
-                  <a href="https://www.wework.com/" title="WeWork"  target="_blank">
-                    <img ng-style="{'width': isMobile? '14vw' : '7vw'}" src="../../assets/logos/wework.png" ng-class="{'bronze-spons-small': isMobile, 'bronze-spons': !isMobile}" alt="WeWork">
-                  </a>
-                </div>
-                <div flex layout="column" layout-gt-sm="row" layout-align="center center">
-                  <a href="http://weavingthings.com/" title="Produvia"  target="_blank">
-                    <img ng-style="{'width': isMobile? '14vw' : '7vw'}" src="../../assets/logos/produvia.png" ng-class="{'bronze-spons-small': isMobile, 'bronze-spons': !isMobile}" alt="Produvia">
-                  </a>
-                  <a href="http://elite-coffee.co.il" title="Elite-Coffee"  target="_blank">
-                    <img ng-style="{'width': isMobile? '14vw' : '7vw'}" src="../../assets/logos/elit.png" ng-class="{'bronze-spons-small': isMobile, 'bronze-spons': !isMobile}" alt="Elite-Coffee">
-                  </a>
-                  <a href="http://plusventures.co.il" title="Plus-Ventures"  target="_blank">
-                    <img ng-style="{'width': isMobile? '14vw' : '7vw'}" src="../../assets/logos/plusVentures.png" ng-class="{'bronze-spons-small': isMobile, 'bronze-spons': !isMobile}" alt="PlusVentures">
-                  </a>
-                </div>
-                <div flex layout="column" layout-gt-sm="row" layout-align="center center">
-                  <a href="http://www.intel.co.il/content/www/il/he/homepage.html" title="Intel"  target="_blank">
-                    <img ng-style="{'width': isMobile? '14vw' : '7vw'}" src="../../assets/logos/intel.png" ng-class="{'bronze-spons-small': isMobile, 'bronze-spons': !isMobile}" alt="Intel">
-                  </a>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div style="height: 10vh;"></div>
-        <div style="height: 10vh;"></div>
-        <p class="five-vim" id="sponsor-us">
-          Interested in sponsoring?
-          <br>
-          Contact us at: <a href="mailto:sponsors@hackidc.com">sponsors@hackidc.com</a>
-        </p>
-      </section>
-      <section id="mentorship" class="md-padding">
-        <div class="section-header">
-          <h2 class="md-display-4 section-title">{{titles.mentorship}}</h2>
-
-          <p class="section-subtitle">{{content.mentorshipContent}}</p>
-        </div>
-        <div class="mentorship-card-container" layout-gt-sm="row" layout="column">
-          <div flex class="card" ng-repeat="d in mentorshipFAQ">
-            <div class="card-content ">
-              <h3 class="md-display-1 card-title" ng-class="{'three-vim':!isMobile,'five-vim':isMobile}">{{d.title}}</h3>
-
-              <p class="md-headline" ng-class="{'three-vim':!isMobile,'five-vim':isMobile}"  ng-bind-html="d.content"></p>
-            </div>
-          </div>
-        </div>
-
-
-      </section>
-      <section id="prizes" class="md-padding transition-ease">
-        <div class="section-header">
-          <h2 class="md-display-4 section-title mc-white">{{titles.prizes}}</h2>
-          <p class="section-subtitle mc-white">{{content.prizesSub}}</p>
-        </div>
-        <div layout="column">
-          <div class="prizes-container" ng-if="!isMobile" layout="column" layout-gt-sm="row">
-            <div layout="column" flex="33">
-              <img class="prize-coin" src="../../assets/images/2-coin.png" alt="">
-              <p class="md-headline ten-vim mc-white">7,000₪</p>
-            </div>
-            <div layout="column" flex="33">
-              <img class="prize-coin" src="../../assets/images/1-coin.png" alt="">
-              <p class="md-headline ten-vim mc-white">15,000₪</p>
-            </div>
-            <div layout="column" flex="33">
-              <img class="prize-coin" src="../../assets/images/3-coin.png" alt="">
-              <p class="md-headline ten-vim mc-white">3,000₪</p>
-            </div>
-          </div>
-          <div class="prizes-container" ng-if="isMobile" layout="column">
-            <div layout="column" flex>
-              <img class="prize-coin" src="../../assets/images/1-coin.png" alt="">
-              <p class="md-headline ten-vim mc-white">15,000₪</p>
-            </div>
-            <div layout="column" flex>
-              <img class="prize-coin" src="../../assets/images/2-coin.png" alt="">
-              <p class="md-headline ten-vim mc-white">7,000₪</p>
-            </div>
-            <div layout="column" flex>
-              <img class="prize-coin" src="../../assets/images/3-coin.png" alt="">
-              <p class="md-headline ten-vim mc-white">3,000₪</p>
-            </div>
-          </div>
-          <br>
-          <p class="section-subtitle mc-white"> Additional prizes from our sponsors </p>
-          <image-grid data="sponsorsApiArr"></image-grid>
-        </div>
-
-      </section>
-      <section id="schedule">
-        <div flex="" class="content-container" layout="column" layout-align="center center" >
-          <div class="header" flex="40">
-            <h1 class="header" ng-class="{'md-display-3' : isMobile,'md-display-4':!isMobile}" style="font-weight: 300;">Schedules</h1>
-            <p class="md-display-1 header">The place to be updated about our schedules</p>
-          </div>
-          <br>
-          <div class="content" flex>
-            <md-card>
-              <md-card-content>
-                <table cellspacing="0" cellpadding="0" style="width:100%;" class="table table-striped" at-table at-list="friday">
-                  <thead>
-                  <p class="md-display-3">
-                    Friday, 06.05
-                  </p>
-                  <tr>
-                    <th at-attribute="when" ng-class="{'md-display-2':!isMobile}">When</th>
-                    <th at-attribute="what" ng-class="{'md-display-2':!isMobile}">What</th>
-                    <th at-attribute="where" ng-class="{'md-display-2':!isMobile}">Where</th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                  <tr>
-                    <td at-implicit at-attribute="when"  ng-class="{'md-display-2':!isMobile}"></td>
-                    <td at-implicit at-attribute="what"  ng-class="{'md-display-2':!isMobile}"></td>
-                    <td at-implicit at-attribute="where"  ng-class="{'md-display-2':!isMobile}"></td>
-                  </tr>
-                  </tbody>
-                </table>
-              </md-card-content>
-            </md-card>
-            <md-card>
-              <md-card-content>
-                <table cellspacing="0" cellpadding="0" style="width:100%;" class="table table-striped" at-table at-list="saturday">
-                  <thead>
-                  <p class="md-display-3">
-                    Saturday, 07.05
-                  </p>
-                  <tr>
-                    <th at-attribute="when" ng-class="{'md-display-2':!isMobile}">When</th>
-                    <th at-attribute="what" ng-class="{'md-display-2':!isMobile}">What</th>
-                    <th at-attribute="where" ng-class="{'md-display-2':!isMobile}">Where</th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                  <tr>
-                    <td at-implicit at-attribute="when"  ng-class="{'md-display-2':!isMobile}"></td>
-                    <td at-implicit at-attribute="what"  ng-class="{'md-display-2':!isMobile}"></td>
-                    <td at-implicit at-attribute="where"  ng-class="{'md-display-2':!isMobile}"></td>
-                  </tr>
-                  </tbody>
-                </table>
-              </md-card-content>
-            </md-card>
-
-          </div>
-        </div>
-
-
-      </section>
-      <section id="team" class="md-padding">
-        <div class="section-header">
-          <h2 class="md-display-4 section-title">{{titles.team}}</h2>
-          <p class="section-subtitle">{{content.teamSub}}</p>
-        </div>
-        <div class="team-showcase-container">
-          <div layout-gt-sm="row" layout="column" class="padd-bottom-2vh" ng-repeat="p in team track by $index" ng-if="$index %4 ==0">
-
-            <div class="margin-auto inline-block" ng-if="team[$index]" layout="column">
-              <img ng-class="{'memeber-profile-pic':!isMobile, 'memeber-profile-pic-mobile':isMobile}" ng-src="{{team[$index].imgSrc}}" alt="">
-              <div layout="column">
-                <div layout="row">
-                  <p class="margin-auto" ng-bind="team[$index].name"></p>
-                </div>
-                <div  class="margin-auto" layout="row">
-                  <a class="margin-auto md-padding" ng-href="{{team[$index].linkedin}}" target="_blank" >
-                    <i class="fa fa-linkedin-square fa-2x"></i>
-                  </a>
-
-                  <a class="margin-auto  md-padding" ng-href="{{team[$index].mail}}" target="_blank" >
-                    <i class="fa fa-envelope fa-2x"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="margin-auto  inline-block" ng-if="team[$index+1]" layout="column">
-              <img ng-class="{'memeber-profile-pic':!isMobile, 'memeber-profile-pic-mobile':isMobile}" ng-src="{{team[$index+1].imgSrc}}" alt="">
-              <div layout="column">
-                <div layout="row">
-                  <p class="margin-auto" ng-bind="team[$index+1].name"></p>
-                </div>
-                <div  class="margin-auto" layout="row">
-                  <a class="margin-auto md-padding" ng-href="{{team[$index+1].linkedin}}" target="_blank" >
-                    <i class="fa fa-linkedin-square fa-2x"></i>
-                  </a>
-                  <a class="margin-auto  md-padding" ng-href="{{team[$index+1].mail}}" target="_blank" >
-                    <i class="fa fa-envelope fa-2x"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="margin-auto  inline-block" ng-if="team[$index+2]" layout="column">
-              <img ng-class="{'memeber-profile-pic':!isMobile, 'memeber-profile-pic-mobile':isMobile}" ng-src="{{team[$index+2].imgSrc}}" alt="">
-              <div layout="column">
-                <div layout="row">
-                  <p class="margin-auto" ng-bind="team[$index+2].name"></p>
-                </div>
-                <div  class="margin-auto" layout="row">
-                  <a class="margin-auto md-padding" ng-href="{{team[$index+2].linkedin}}" target="_blank" >
-                    <i class="fa fa-linkedin-square fa-2x"></i>
-                  </a>
-
-                  <a class="margin-auto  md-padding" ng-href="{{team[$index+2].mail}}" target="_blank" >
-                    <i class="fa fa-envelope fa-2x"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="margin-auto  inline-block" ng-if="team[$index+3]" layout="column">
-              <img ng-class="{'memeber-profile-pic':!isMobile, 'memeber-profile-pic-mobile':isMobile}" ng-src="{{team[$index+3].imgSrc}}" alt="">
-              <div layout="column">
-                <div layout="row">
-                  <p class="margin-auto" ng-bind="team[$index+3].name"></p>
-                </div>
-                <div  class="margin-auto" layout="row">
-                  <a class="margin-auto md-padding" ng-href="{{team[$index+3].linkedin}}" target="_blank" >
-                    <i class="fa fa-linkedin-square fa-2x"></i>
-                  </a>
-
-                  <a class="margin-auto  md-padding" ng-href="{{team[$index+3].mail}}" target="_blank" >
-                    <i class="fa fa-envelope fa-2x"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
     </div>
 
 
-    <section class="footer" ng-style="{'min-height':isMobile? '80vh':'37vh'}">
-      <div layout="row" class="text-center" ng-if="!isMobile">
-        <div class="inline-flex" layout="column" layout-align="center center" flex="40">
-          <a href="http://portal.idc.ac.il/en/schools/entrepreneurship/homepage/pages/homepage.aspx" target="_blank" class="margin-auto" >
-            <img style="max-width:90%" ng-class="{'small-footer-logo':isMobile}" class="footer-logo" src="../../assets/logos/idc-entre-effi.png" alt="">
-          </a>
-        </div>
-        <div layout="column"  class="inline-flex" flex>
-          <div layout="column" layout-align="center center" style="height: 110px;" class="margin-auto" >
-            <p class=" md-headline  three-vim mc-white weight-300">Contact us at <a class="mc-light-blue" href="mailto:contact@hackidc.com">contact@hackidc.com</a></p>
-          </div>
-          <div flex layout="row"  layout-align="space-around center" class="margin-auto" >
-            <a href="https://www.facebook.com/HackIDC" flex target="_blank" class="social-media-icon mc-white soc-facebook">
-              <i class="fa fa-facebook fa-3x"></i>
-            </a>
-            <a href="https://twitter.com/HackIDC" flex target="_blank" class="social-media-icon mc-white  soc-twitter">
-              <i class="fa fa-twitter fa-3x"></i>
-            </a>
-            <a href="https://youtu.be/DEidjDFqXYw"  flex target="_blank" class="social-media-icon mc-white  soc-youtube">
-              <i class="fa fa-youtube fa-3x"></i>
-            </a>
-            <a href="https://twitter.com/search?q=%23hackidc"  flex target="_blank" class="social-media-icon mc-white soc-insta">
-              <i class="fa fa-instagram fa-3x"></i>
-            </a>
-          </div>
-          <div flex class="margin-auto">
-            <p class="weight-300 two-vim mc-white">© HackIDC 2016</p>
-          </div>
-          <div flex class="margin-auto">
-            <small class="mc-white weight-300" style="min-height: 3vh;"><a class="mc-white" href="http://2016.hackidc.com/assets/PDF/HackIDCTermsofService2016.pdf" target="_blank">Terms and Conditions</a></small>
-            <p class="md-caption weight-300 mc-white">built by <a class="weight-300 mc-light-blue" href="https://www.linkedin.com/in/aviad-hahami-09058133" target="_blank">Aviad Hahami</a></p>
-          </div>
-        </div>
-        <div flex="40" layout="row" class="inline-flex">
-          <a href="http://www.iec.idc.ac.il/" flex="" class="margin-auto" target="_blank">
-            <img class="footer-logo" ng-class="{'small-footer-logo':isMobile}" src="../../assets/logos/IEC-white.png" alt="">
-          </a>
-          <a href="http://www.myidc.org.il/" flex="" target="_blank" class="margin-auto" >
 
-            <img style="height: 17vh; margin-top: 2vh" ng-class="{'small-footer-logo':isMobile}" class="footer-logo" src="../../assets/logos/agoda-white-english.png" alt="">
-          </a>
+  </header>
+
+  <mobile-nav
+    ng-if="isMobile"
+    links="mobileLinks"
+    trigger-fab-color="#1565C0"
+    bg-grid-color="rgba(1,1,1,0.9)"></mobile-nav>
+
+
+  <div id="main-page-content" class="md-padding">
+    <section id="home" class="md-padding">
+
+      <div ng-style="{'height': isMobile ? '10vh' : '20vh'}"></div>
+      <div id="home-content" class="md-padding text-center" layout="column" ng-style="{'max-width':isMobile? '90vw' : '50vw'}">
+        <div>
+          <img src="../../assets/logos/test.png" ng-style="{'width': isMobile? '90vw' : '50vw'}">
+
         </div>
 
+        <h2 class="md-display-1 no-margins no-paddings five-vim" ng-bind="titles.eventDate" ></h2>
+
+        <div class="cta">
+          <a href="#description" du-smooth-scroll>
+            <p class="mc-white weight-300 five-vim margin-auto">Start hacking!</p>
+            <i class="fa fa-chevron-down fa-4x mc-white bounce"></i>
+          </a>
+        </div>
       </div>
 
-      <div flex layout="column" class="text-center" ng-if="isMobile">
-        <div flex="10"></div>
-        <div flex class="margin-auto" >
-          <p class="five-vim mc-white weight-300">Contact us at <a class="mc-light-blue" href="mailto:contact@hackidc.com">contact@hackidc.com</a></p>
+
+
+
+    </section>
+    <section id="description" class="md-padding">
+      <div class="section-header">
+        <h2 class="md-display-4 section-title">{{titles.description}}</h2>
+
+        <p class="section-subtitle">{{content.descriptionContent}}</p>
+      </div>
+
+      <div id="description-cards">
+        <md-content class="md-padding">
+          <div layout-gt-sm="row" layout="column" id="top-questions">
+            <div flex class="card">
+              <div class="card-content">
+                <h3 class="md-display-1 card-title" ng-class="{'three-vim':!isMobile,'five-vim':isMobile}">
+                  What is HackIDC?
+                </h3>
+                <p class="md-headline" ng-class="{'three-vim':!isMobile,'five-vim':isMobile}">
+                  HackIDC is Israel’s leading student Hackathon, held annually at IDC Herzliya.
+                  <br>
+                  It is a great opportunity to build something new and exciting, together with coding and design enthusiasts.
+                  <br>
+                  Students work in teams of up to five people for thirty-six hours to create a web, mobile, or hardware product.
+                </p>
+              </div>
+            </div>
+            <div flex class="card" >
+              <div class="card-content ">
+                <h3 class="md-display-1 card-title" ng-class="{'three-vim':!isMobile,'five-vim':isMobile}">Who can apply?</h3>
+                <p class="md-headline" ng-class="{'three-vim':!isMobile,'five-vim':isMobile}">
+                  Any current student at any academic institution, majoring in any subject.
+                  <br>
+                  Most accepted participants come with some coding or design background, to make sure they can contribute to the event.
+                  <br>
+                  If you believe you are able to contribute in another way, we encourage you to apply.
+                </p>
+              </div>
+            </div>
+
+            <div flex class="card" >
+              <div class="card-content">
+                <h3 class="md-display-1 card-title" ng-class="{'three-vim':!isMobile,'five-vim':isMobile}">When can I apply?</h3>
+                <p class="md-headline" ng-class="{'three-vim':!isMobile,'five-vim':isMobile}">
+                  Registration to the event is now closed.
+                  <br><br>
+                  Pre-Hack Day will be held on <b>Thursday, April 7th at 17:00 p.m.</b><br> We strongly recommend at least one member from each group to attend this day.
+                  <br>Details are sent to accepted participants.
+                  <br>
+                  The event will start at 08:00 a.m. on May 6th, and run until 22:00 p.m. on May 7th.
+                </p>
+              </div>
+            </div>
+            <span id="showMore" style="width:0; height:0;"></span>
+          </div>
+
+          <md-button ng-show="!showQuestions"  ng-click="showQuestions = !showQuestions">
+            <div layout="column">
+              <p>Tell me more!</p>
+              <i class="fa fa-chevron-down fa-2x"></i>
+            </div>
+
+          </md-button>
+
+          <div class="box-one" layout-gt-sm="row" ng-show="showQuestions" id="collapse-questions" layout="column" ng-repeat="q in FAQ track by $index" ng-if="$index % 3 == 0">
+            <div flex class="card" ng-if="FAQ[$index]">
+              <div class="card-content">
+                <h3 class="md-display-1 card-title" ng-class="{'three-vim':!isMobile,'five-vim':isMobile}" ng-bind="FAQ[$index].title"></h3>
+
+                <p class="md-headline" ng-class="{'three-vim':!isMobile,'five-vim':isMobile}" ng-bind-html="FAQ[$index].content"></p>
+              </div>
+            </div>
+            <div flex class="card" ng-if="FAQ[$index+1]">
+              <div class="card-content ">
+                <h3 class="md-display-1 card-title" ng-class="{'three-vim':!isMobile,'five-vim':isMobile}" ng-bind="FAQ[$index+1].title"></h3>
+
+                <p class="md-headline" ng-class="{'three-vim':!isMobile,'five-vim':isMobile}" ng-bind-html="FAQ[$index+1].content"></p>
+              </div>
+            </div>
+
+            <div flex class="card" ng-if="FAQ[$index+2]">
+              <div class="card-content">
+                <h3 class="md-display-1 card-title" ng-class="{'three-vim':!isMobile,'five-vim':isMobile}" ng-bind="FAQ[$index+2].title"></h3>
+
+                <p class="md-headline" ng-class="{'three-vim':!isMobile,'five-vim':isMobile}" ng-bind-html="FAQ[$index+2].content"></p>
+              </div>
+            </div>
+          </div>
+          <md-button class="" ng-show="showQuestions" ng-click="showQuestions = !showQuestions; scrollTo('showMore')">
+            <div layout="column">
+              <p>Ok, got it, close this scroll-scroll</p>
+              <i class="fa fa-chevron-up fa-2x"></i>
+            </div>
+
+          </md-button>
+        </md-content>
+      </div>
+    </section>
+    <section id="sponsors"  class="md-padding">
+      <div class="section-header">
+        <h2 class="md-display-4 section-title">{{titles.sponsors}}</h2>
+
+        <p class="section-subtitle">{{content.sponsorsSub}}</p>
+      </div>
+
+      <div layout="column">
+        <div layout="row">
+
+          <div flex layout="column">
+
+            <div flex layout="column">
+              <p class="cohost-text md-headline">Co-Hosted by</p>
+              <br>
+              <a href="http://www.amadeus.co.il/" title="Amadeus" target="_blank">
+                <img src="../../assets/logos/amadeus_logo_transparent.png" class="cohost-logo" alt="amadeus">
+              </a>
+              <div style="height: 2vh;"></div>
+              <a href="https://www.palantir.com/" title="Palantir" target="_blank">
+                <img src="../../assets/logos/palantir-logo.png" class="platinum-logo" alt="Palantir">
+              </a>
+            </div>
+            <div class="padd-top-5vh">
+              <!--<h2 class="lines-before lines-after"> Silver </h2>-->
+              <div flex="" layout="column" layout-gt-sm="row" layout-align="center center">
+                <a href="http://myme.orcam.com/" title="Orcam"  target="_blank">
+                  <img src="../../assets/logos/orcam.png" ng-class="{'gold-spons-small': isMobile, 'gold-spons': !isMobile}" alt="Orcam">
+                </a>
+              </div>
+
+              <div flex layout="column" layout-gt-sm="row" layout-align="center center">
+                <a href="https://www.backand.com/" title="Back&"  target="_blank">
+                  <img src="../../assets/logos/backand-logo.png" ng-class="{'silver-spons-small': isMobile, 'silver-spons': !isMobile}" alt="Back&">
+                </a>
+                <a href="https://rapidapi.com/" title="Rapid API" target="_blank">
+                  <img ng-style="{'width': isMobile? '14vw' : '7vw'}" src="../../assets/logos/rapid-api-logo.png" ng-class="{'silver-spons-small': isMobile, 'silver-spons': !isMobile}" alt="Rapid API">
+                </a>
+                <a href="https://google.com/" title="Google" target="_blank">
+                  <img src="../../assets/logos/google-logo.png" ng-class="{'silver-spons-small': isMobile, 'silver-spons': !isMobile}" alt="Google">
+                </a>
+              </div>
+            </div>
+            <div  ng-class="{'padd-top-5vh':!isMobile}">
+              <div flex layout="column" layout-gt-sm="row" layout-align="center center">
+                <a href="https://www.flying-cargo.com/he" title="Flying Cargo"  target="_blank">
+                  <img ng-style="{'width': isMobile? '14vw' : '7vw'}" src="../../assets/logos/fc_logo.png" ng-class="{'silver-spons-small': isMobile, 'silver-spons': !isMobile}" alt="Flying Cargo">
+                </a>
+                <a href="https://www.microsoft.com/he-il/" title="Microsoft"  target="_blank">
+                  <img ng-style="{'width': isMobile? '22vw' : '14vw'}" src="../../assets/logos/microsoft-logo.png" ng-class="{'silver-spons-small': isMobile, 'silver-spons': !isMobile}" alt="Microsoft">
+                </a>
+                <a href="http://www.dominos.co.il/" title="Dominos Pizza"  target="_blank">
+                  <img ng-style="{'width': isMobile? '14vw' : '7vw'}" src="../../assets/logos/dominos-logo.png" ng-class="{'silver-spons-small': isMobile, 'silver-spons': !isMobile}" alt="Dominos Pizza">
+                </a>
+              </div>
+            </div>
+            <div  ng-class="{'padd-top-5vh':!isMobile}">
+              <div flex layout="column" layout-gt-sm="row" layout-align="center center">
+                <a href="http://thehivepro.com/" title="The Hive Studio"  target="_blank">
+                  <img ng-style="{'width': isMobile? '14vw' : '7vw'}" src="../../assets/logos/the-hive-studio.png" ng-class="{'silver-spons-small': isMobile, 'silver-spons': !isMobile}" alt="The Hive Studio">
+                </a>
+                <a href="https://www.ebay.com/" title="eBay" target="_blank">
+                  <img ng-style="{'width': isMobile? '22vw' : '14vw'}" src="../../assets/logos/ebay.png" ng-class="{'silver-spons-small': isMobile, 'silver-spons': !isMobile}" alt="ebay">
+                </a>
+                <a href="http://www.checkpoint.com/" title="CheckPoint"  target="_blank">
+                  <img ng-style="{'width': isMobile? '30vw' : '18vw'}" src="../../assets/logos/checkpoint.png" ng-class="{'silver-spons-small': isMobile, 'silver-spons': !isMobile}" alt="CheckPoint">
+                </a>
+              </div>
+            </div>
+            <div ng-class="{'padd-top-5vh':!isMobile}">
+              <div flex layout="column" layout-gt-sm="row" layout-align="center center">
+                <a href="http://www.blu4lifeusa.com/" title="Blu"  target="_blank">
+                  <img ng-style="{'width': isMobile? '14vw' : '7vw'}" src="../../assets/logos/blue-logo.png" ng-class="{'bronze-spons-small': isMobile, 'bronze-spons': !isMobile}" alt="Blu">
+                </a>
+                <a href="https://www.bizzabo.com/" title="Bizzabo"  target="_blank">
+                  <img ng-style="{'width': isMobile? '14vw' : '7vw'}" src="../../assets/logos/bizzabo.png" ng-class="{'bronze-spons-small': isMobile, 'bronze-spons': !isMobile}" alt="Bizzabo">
+                </a>
+                <a href="https://www.wework.com/" title="WeWork"  target="_blank">
+                  <img ng-style="{'width': isMobile? '14vw' : '7vw'}" src="../../assets/logos/wework.png" ng-class="{'bronze-spons-small': isMobile, 'bronze-spons': !isMobile}" alt="WeWork">
+                </a>
+              </div>
+              <div flex layout="column" layout-gt-sm="row" layout-align="center center">
+                <a href="http://weavingthings.com/" title="Produvia"  target="_blank">
+                  <img ng-style="{'width': isMobile? '14vw' : '7vw'}" src="../../assets/logos/produvia.png" ng-class="{'bronze-spons-small': isMobile, 'bronze-spons': !isMobile}" alt="Produvia">
+                </a>
+                <a href="http://elite-coffee.co.il" title="Elite-Coffee"  target="_blank">
+                  <img ng-style="{'width': isMobile? '14vw' : '7vw'}" src="../../assets/logos/elit.png" ng-class="{'bronze-spons-small': isMobile, 'bronze-spons': !isMobile}" alt="Elite-Coffee">
+                </a>
+                <a href="http://plusventures.co.il" title="Plus-Ventures"  target="_blank">
+                  <img ng-style="{'width': isMobile? '14vw' : '7vw'}" src="../../assets/logos/plusVentures.png" ng-class="{'bronze-spons-small': isMobile, 'bronze-spons': !isMobile}" alt="PlusVentures">
+                </a>
+              </div>
+              <div flex layout="column" layout-gt-sm="row" layout-align="center center">
+                <a href="http://www.intel.co.il/content/www/il/he/homepage.html" title="Intel"  target="_blank">
+                  <img ng-style="{'width': isMobile? '14vw' : '7vw'}" src="../../assets/logos/intel.png" ng-class="{'bronze-spons-small': isMobile, 'bronze-spons': !isMobile}" alt="Intel">
+                </a>
+
+              </div>
+            </div>
+          </div>
         </div>
-        <div flex class="margin-auto">
-          <p class="five-vim mc-white weight-300">© HackIDC 2016</p>
+      </div>
+      <div style="height: 10vh;"></div>
+      <div style="height: 10vh;"></div>
+      <p class="five-vim" id="sponsor-us">
+        Interested in sponsoring?
+        <br>
+        Contact us at: <a href="mailto:sponsors@hackidc.com">sponsors@hackidc.com</a>
+      </p>
+    </section>
+    <section id="mentorship" class="md-padding">
+      <div class="section-header">
+        <h2 class="md-display-4 section-title">{{titles.mentorship}}</h2>
+
+        <p class="section-subtitle">{{content.mentorshipContent}}</p>
+      </div>
+      <div class="mentorship-card-container" layout-gt-sm="row" layout="column">
+        <div flex class="card" ng-repeat="d in mentorshipFAQ">
+          <div class="card-content ">
+            <h3 class="md-display-1 card-title" ng-class="{'three-vim':!isMobile,'five-vim':isMobile}">{{d.title}}</h3>
+
+            <p class="md-headline" ng-class="{'three-vim':!isMobile,'five-vim':isMobile}"  ng-bind-html="d.content"></p>
+          </div>
         </div>
-        <div flex="" layout="row" class="margin-auto">
-          <a href="https://www.facebook.com/HackIDC" target="_blank"  flex class="social-media-icon mc-white soc-facebook">
-            <i class="fa fa-facebook fa-2x"></i>
+      </div>
+
+
+    </section>
+    <section id="prizes" class="md-padding transition-ease">
+      <div class="section-header">
+        <h2 class="md-display-4 section-title mc-white">{{titles.prizes}}</h2>
+        <p class="section-subtitle mc-white">{{content.prizesSub}}</p>
+      </div>
+      <div layout="column">
+        <div class="prizes-container" ng-if="!isMobile" layout="column" layout-gt-sm="row">
+          <div layout="column" flex="33">
+            <img class="prize-coin" src="../../assets/images/2-coin.png" alt="">
+            <p class="md-headline ten-vim mc-white">7,000₪</p>
+          </div>
+          <div layout="column" flex="33">
+            <img class="prize-coin" src="../../assets/images/1-coin.png" alt="">
+            <p class="md-headline ten-vim mc-white">15,000₪</p>
+          </div>
+          <div layout="column" flex="33">
+            <img class="prize-coin" src="../../assets/images/3-coin.png" alt="">
+            <p class="md-headline ten-vim mc-white">3,000₪</p>
+          </div>
+        </div>
+        <div class="prizes-container" ng-if="isMobile" layout="column">
+          <div layout="column" flex>
+            <img class="prize-coin" src="../../assets/images/1-coin.png" alt="">
+            <p class="md-headline ten-vim mc-white">15,000₪</p>
+          </div>
+          <div layout="column" flex>
+            <img class="prize-coin" src="../../assets/images/2-coin.png" alt="">
+            <p class="md-headline ten-vim mc-white">7,000₪</p>
+          </div>
+          <div layout="column" flex>
+            <img class="prize-coin" src="../../assets/images/3-coin.png" alt="">
+            <p class="md-headline ten-vim mc-white">3,000₪</p>
+          </div>
+        </div>
+        <br>
+        <p class="section-subtitle mc-white"> Additional prizes from our sponsors </p>
+        <image-grid data="sponsorsApiArr"></image-grid>
+      </div>
+
+    </section>
+    <section id="schedule">
+      <div flex="" class="content-container" layout="column" layout-align="center center" >
+        <div class="header" flex="40">
+          <h1 class="header" ng-class="{'md-display-3' : isMobile,'md-display-4':!isMobile}" style="font-weight: 300;">Schedules</h1>
+          <p class="md-display-1 header">The place to be updated about our schedules</p>
+        </div>
+        <br>
+        <div  layout-gt-sm="row" layout="column">
+          <md-card>
+            <md-card-content>
+              <table cellspacing="0" cellpadding="0" style="width:100%;" class="table table-striped" at-table at-list="friday">
+                <thead>
+                <p class="md-display-3">
+                  Friday, 06.05
+                </p>
+                <tr>
+                  <th at-attribute="when" ng-class="{'md-display-2':!isMobile}">When</th>
+                  <th at-attribute="what" ng-class="{'md-display-2':!isMobile}">What</th>
+                  <th at-attribute="where" ng-class="{'md-display-2':!isMobile}">Where</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td at-implicit at-attribute="when"  ng-class="{'md-display-1':!isMobile}"></td>
+                  <td at-implicit at-attribute="what"  ng-class="{'md-display-1':!isMobile}"></td>
+                  <td at-implicit at-attribute="where"  ng-class="{'md-display-1':!isMobile}"></td>
+                </tr>
+                </tbody>
+              </table>
+            </md-card-content>
+          </md-card>
+          <md-card>
+            <md-card-content>
+              <table cellspacing="0" cellpadding="0" style="width:100%;" class="table table-striped" at-table at-list="saturday">
+                <thead>
+                <p class="md-display-3">
+                  Saturday, 07.05
+                </p>
+                <tr>
+                  <th at-attribute="when" ng-class="{'md-display-2':!isMobile}">When</th>
+                  <th at-attribute="what" ng-class="{'md-display-2':!isMobile}">What</th>
+                  <th at-attribute="where" ng-class="{'md-display-2':!isMobile}">Where</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td at-implicit at-attribute="when"  ng-class="{'md-display-1':!isMobile}"></td>
+                  <td at-implicit at-attribute="what"  ng-class="{'md-display-1':!isMobile}"></td>
+                  <td at-implicit at-attribute="where"  ng-class="{'md-display-1':!isMobile}"></td>
+                </tr>
+                </tbody>
+              </table>
+            </md-card-content>
+          </md-card>
+
+        </div>
+      </div>
+    </section>
+    <section id="team" class="md-padding">
+      <div class="section-header">
+        <h2 class="md-display-4 section-title">{{titles.team}}</h2>
+        <p class="section-subtitle">{{content.teamSub}}</p>
+      </div>
+      <div class="team-showcase-container">
+        <div layout-gt-sm="row" layout="column" class="padd-bottom-2vh" ng-repeat="p in team track by $index" ng-if="$index %4 ==0">
+
+          <div class="margin-auto inline-block" ng-if="team[$index]" layout="column">
+            <img ng-class="{'memeber-profile-pic':!isMobile, 'memeber-profile-pic-mobile':isMobile}" ng-src="{{team[$index].imgSrc}}" alt="">
+            <div layout="column">
+              <div layout="row">
+                <p class="margin-auto" ng-bind="team[$index].name"></p>
+              </div>
+              <div  class="margin-auto" layout="row">
+                <a class="margin-auto md-padding" ng-href="{{team[$index].linkedin}}" target="_blank" >
+                  <i class="fa fa-linkedin-square fa-2x"></i>
+                </a>
+
+                <a class="margin-auto  md-padding" ng-href="{{team[$index].mail}}" target="_blank" >
+                  <i class="fa fa-envelope fa-2x"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="margin-auto  inline-block" ng-if="team[$index+1]" layout="column">
+            <img ng-class="{'memeber-profile-pic':!isMobile, 'memeber-profile-pic-mobile':isMobile}" ng-src="{{team[$index+1].imgSrc}}" alt="">
+            <div layout="column">
+              <div layout="row">
+                <p class="margin-auto" ng-bind="team[$index+1].name"></p>
+              </div>
+              <div  class="margin-auto" layout="row">
+                <a class="margin-auto md-padding" ng-href="{{team[$index+1].linkedin}}" target="_blank" >
+                  <i class="fa fa-linkedin-square fa-2x"></i>
+                </a>
+                <a class="margin-auto  md-padding" ng-href="{{team[$index+1].mail}}" target="_blank" >
+                  <i class="fa fa-envelope fa-2x"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="margin-auto  inline-block" ng-if="team[$index+2]" layout="column">
+            <img ng-class="{'memeber-profile-pic':!isMobile, 'memeber-profile-pic-mobile':isMobile}" ng-src="{{team[$index+2].imgSrc}}" alt="">
+            <div layout="column">
+              <div layout="row">
+                <p class="margin-auto" ng-bind="team[$index+2].name"></p>
+              </div>
+              <div  class="margin-auto" layout="row">
+                <a class="margin-auto md-padding" ng-href="{{team[$index+2].linkedin}}" target="_blank" >
+                  <i class="fa fa-linkedin-square fa-2x"></i>
+                </a>
+
+                <a class="margin-auto  md-padding" ng-href="{{team[$index+2].mail}}" target="_blank" >
+                  <i class="fa fa-envelope fa-2x"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="margin-auto  inline-block" ng-if="team[$index+3]" layout="column">
+            <img ng-class="{'memeber-profile-pic':!isMobile, 'memeber-profile-pic-mobile':isMobile}" ng-src="{{team[$index+3].imgSrc}}" alt="">
+            <div layout="column">
+              <div layout="row">
+                <p class="margin-auto" ng-bind="team[$index+3].name"></p>
+              </div>
+              <div  class="margin-auto" layout="row">
+                <a class="margin-auto md-padding" ng-href="{{team[$index+3].linkedin}}" target="_blank" >
+                  <i class="fa fa-linkedin-square fa-2x"></i>
+                </a>
+
+                <a class="margin-auto  md-padding" ng-href="{{team[$index+3].mail}}" target="_blank" >
+                  <i class="fa fa-envelope fa-2x"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </div>
+
+
+  <section class="footer" ng-style="{'min-height':isMobile? '80vh':'37vh'}">
+    <div layout="row" class="text-center" ng-if="!isMobile">
+      <div class="inline-flex" layout="column" layout-align="center center" flex="40">
+        <a href="http://portal.idc.ac.il/en/schools/entrepreneurship/homepage/pages/homepage.aspx" target="_blank" class="margin-auto" >
+          <img style="max-width:90%" ng-class="{'small-footer-logo':isMobile}" class="footer-logo" src="../../assets/logos/idc-entre-effi.png" alt="">
+        </a>
+      </div>
+      <div layout="column"  class="inline-flex" flex>
+        <div layout="column" layout-align="center center" style="height: 110px;" class="margin-auto" >
+          <p class=" md-headline  three-vim mc-white weight-300">Contact us at <a class="mc-light-blue" href="mailto:contact@hackidc.com">contact@hackidc.com</a></p>
+        </div>
+        <div flex layout="row"  layout-align="space-around center" class="margin-auto" >
+          <a href="https://www.facebook.com/HackIDC" flex target="_blank" class="social-media-icon mc-white soc-facebook">
+            <i class="fa fa-facebook fa-3x"></i>
           </a>
-          <a href="https://twitter.com/HackIDC" target="_blank"  flex class="social-media-icon mc-white  soc-twitter">
-            <i class="fa fa-twitter fa-2x"></i>
+          <a href="https://twitter.com/HackIDC" flex target="_blank" class="social-media-icon mc-white  soc-twitter">
+            <i class="fa fa-twitter fa-3x"></i>
           </a>
           <a href="https://youtu.be/DEidjDFqXYw"  flex target="_blank" class="social-media-icon mc-white  soc-youtube">
-            <i class="fa fa-youtube fa-2x"></i>
+            <i class="fa fa-youtube fa-3x"></i>
           </a>
           <a href="https://twitter.com/search?q=%23hackidc"  flex target="_blank" class="social-media-icon mc-white soc-insta">
-            <i class="fa fa-instagram fa-2x"></i>
+            <i class="fa fa-instagram fa-3x"></i>
           </a>
         </div>
-        <div flex layout="row"  layout-align="space-around center"  class="margin-auto inline-block" >
-          <a href="http://portal.idc.ac.il/en/schools/entrepreneurship/homepage/pages/homepage.aspx" class="margin-auto"  flex target="_blank">
-            <img class="footer-logo" ng-class="{'small-long-logo':isMobile}" src="../../assets/logos/idc-entre-effi.png" alt="">
-          </a>
-        </div>
-        <div flex layout="row"  layout-align="space-around center"  class="margin-auto inline-block" >
-          <a href="http://www.iec.idc.ac.il/" class="margin-auto"  flex target="_blank">
-            <img class="footer-logo" ng-class="{'small-footer-logo':isMobile}" src="../../assets/logos/IEC-white.png" alt="">
-          </a>
-          <a href="http://www.myidc.org.il/" flex target="_blank" class="margin-auto" >
-            <img style="height: 22vh;" ng-class="{'small-footer-logo':isMobile}" class="footer-logo" src="../../assets/logos/agoda-white-english.png" alt="">
-          </a>
+        <div flex class="margin-auto">
+          <p class="weight-300 two-vim mc-white">© HackIDC 2016</p>
         </div>
         <div flex class="margin-auto">
           <small class="mc-white weight-300" style="min-height: 3vh;"><a class="mc-white" href="http://2016.hackidc.com/assets/PDF/HackIDCTermsofService2016.pdf" target="_blank">Terms and Conditions</a></small>
           <p class="md-caption weight-300 mc-white">built by <a class="weight-300 mc-light-blue" href="https://www.linkedin.com/in/aviad-hahami-09058133" target="_blank">Aviad Hahami</a></p>
         </div>
       </div>
-    </section>
-  </div>
+      <div flex="40" layout="row" class="inline-flex">
+        <a href="http://www.iec.idc.ac.il/" flex="" class="margin-auto" target="_blank">
+          <img class="footer-logo" ng-class="{'small-footer-logo':isMobile}" src="../../assets/logos/IEC-white.png" alt="">
+        </a>
+        <a href="http://www.myidc.org.il/" flex="" target="_blank" class="margin-auto" >
+
+          <img style="height: 17vh; margin-top: 2vh" ng-class="{'small-footer-logo':isMobile}" class="footer-logo" src="../../assets/logos/agoda-white-english.png" alt="">
+        </a>
+      </div>
+
+    </div>
+
+    <div flex layout="column" class="text-center" ng-if="isMobile">
+      <div flex="10"></div>
+      <div flex class="margin-auto" >
+        <p class="five-vim mc-white weight-300">Contact us at <a class="mc-light-blue" href="mailto:contact@hackidc.com">contact@hackidc.com</a></p>
+      </div>
+      <div flex class="margin-auto">
+        <p class="five-vim mc-white weight-300">© HackIDC 2016</p>
+      </div>
+      <div flex="" layout="row" class="margin-auto">
+        <a href="https://www.facebook.com/HackIDC" target="_blank"  flex class="social-media-icon mc-white soc-facebook">
+          <i class="fa fa-facebook fa-2x"></i>
+        </a>
+        <a href="https://twitter.com/HackIDC" target="_blank"  flex class="social-media-icon mc-white  soc-twitter">
+          <i class="fa fa-twitter fa-2x"></i>
+        </a>
+        <a href="https://youtu.be/DEidjDFqXYw"  flex target="_blank" class="social-media-icon mc-white  soc-youtube">
+          <i class="fa fa-youtube fa-2x"></i>
+        </a>
+        <a href="https://twitter.com/search?q=%23hackidc"  flex target="_blank" class="social-media-icon mc-white soc-insta">
+          <i class="fa fa-instagram fa-2x"></i>
+        </a>
+      </div>
+      <div flex layout="row"  layout-align="space-around center"  class="margin-auto inline-block" >
+        <a href="http://portal.idc.ac.il/en/schools/entrepreneurship/homepage/pages/homepage.aspx" class="margin-auto"  flex target="_blank">
+          <img class="footer-logo" ng-class="{'small-long-logo':isMobile}" src="../../assets/logos/idc-entre-effi.png" alt="">
+        </a>
+      </div>
+      <div flex layout="row"  layout-align="space-around center"  class="margin-auto inline-block" >
+        <a href="http://www.iec.idc.ac.il/" class="margin-auto"  flex target="_blank">
+          <img class="footer-logo" ng-class="{'small-footer-logo':isMobile}" src="../../assets/logos/IEC-white.png" alt="">
+        </a>
+        <a href="http://www.myidc.org.il/" flex target="_blank" class="margin-auto" >
+          <img style="height: 22vh;" ng-class="{'small-footer-logo':isMobile}" class="footer-logo" src="../../assets/logos/agoda-white-english.png" alt="">
+        </a>
+      </div>
+      <div flex class="margin-auto">
+        <small class="mc-white weight-300" style="min-height: 3vh;"><a class="mc-white" href="http://2016.hackidc.com/assets/PDF/HackIDCTermsofService2016.pdf" target="_blank">Terms and Conditions</a></small>
+        <p class="md-caption weight-300 mc-white">built by <a class="weight-300 mc-light-blue" href="https://www.linkedin.com/in/aviad-hahami-09058133" target="_blank">Aviad Hahami</a></p>
+      </div>
+    </div>
+  </section>
+</div>
