@@ -176,7 +176,6 @@ angular.module('hackIdcApp')
       ];
 
       $scope.saturday = [
-
         {
           what:'Breakfast',
           when:'07:00',
@@ -199,22 +198,22 @@ angular.module('hackIdcApp')
         },
         {
           what:'Hacking Ends',
-          when:'17:30',
+          when:'17:00',
           where:''
         },
         {
           what:'Judging Round 1',
-          when:'18:00',
+          when:'17:30',
           where:''
         },
         {
           what:'Dinner',
-          when:'19:00',
+          when:'18:30',
           where:'Outside'
         },
         {
           what:'Final Judging and Closing Ceremony',
-          when:'20:00',
+          when:'19:30',
           where:'PEB20'
         }
       ];

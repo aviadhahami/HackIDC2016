@@ -753,7 +753,9 @@ table{
 .font-weight-100{
   font-weight: 100;
 }
-
+.tableHead{
+  text-align: center;
+}
 tr:nth-child(even){
   background-color: #FAFAFA;
 }
